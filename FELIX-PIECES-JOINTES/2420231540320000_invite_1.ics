@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REPLY
+BEGIN:VEVENT
+DTSTART:20231026T170000Z
+DTEND:20231026T180000Z
+DTSTAMP:20231024T154032Z
+ORGANIZER;CN=jsleboeuf3@gmail.com:mailto:jsleboeuf3@gmail.com
+UID:hucoj6t29f31qgkg21gbu6p4i8@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Felix 
+ Hamel;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/xuw-pfoj-yzu
+CREATED:20231024T142041Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/xu
+ w-pfoj-yzu\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20231024T154032Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Meeting cpa Emmanuel
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

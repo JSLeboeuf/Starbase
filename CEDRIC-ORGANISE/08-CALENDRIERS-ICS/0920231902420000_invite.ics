@@ -1,0 +1,64 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20230810T113000
+DTEND;TZID=America/New_York:20230810T120000
+DTSTAMP:20230809T190242Z
+ORGANIZER;CN=maria@hrsupportusa.com:mailto:maria@hrsupportusa.com
+UID:2icj5jts33hjq684u3g4hhjgsa@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Felix Hamel;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=C-e-d L;X-NUM-GUESTS=0:mailto:info@cedricleboeuf.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=joshuawolfe397@gmail.com;X-NUM-GUESTS=0:mailto:joshuawolfe397@gmail
+ .com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=maria@hrsupportusa.com;X-NUM-GUESTS=0:mailto:maria@hrsupportusa.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/syn-zcyr-mkc
+X-MICROSOFT-CDO-OWNERAPPTID:1700567492
+CREATED:20230809T190241Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet : https://meet.google.
+ com/syn-zcyr-mkc\nOu composez le : (US) +1 478-331-6010 Code PIN : 85330338
+ 6#\nPlus de numéros de téléphone: https://tel.meet/syn-zcyr-mkc?pin=7135688
+ 194503&hs=7\n\nPour en savoir plus sur Meet : https://support.google.com/a/
+ users/answer/9282720\n\nVeuillez ne pas modifier cette section.\n-::~:~::~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~:
+ :-
+LAST-MODIFIED:20230809T190241Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Business Development Representative candidate: Joshua Wolfe
+TRANSP:OPAQUE
+ATTACH;FILENAME=JOSHUA_WOLFE_Resume.pdf;FMTTYPE=application/pdf:https://dri
+ ve.google.com/open?id=1lWR72Y8e7k9uWkLnv5ivw8vJwcmbuwLd&authuser=0
+ATTACH;FILENAME=Business Development Representative.pdf;FMTTYPE=application
+ /pdf:https://drive.google.com/open?id=13zJ2Pc-25DKgHWNENu3TFRCh0CenFAcI&aut
+ huser=0
+END:VEVENT
+END:VCALENDAR

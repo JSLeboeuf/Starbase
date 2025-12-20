@@ -1,0 +1,94 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T020000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Ingrid Boisart:mailto:i.boisart@physiotherapieuniverselle.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=miguel@rhs
+ upport.ca:mailto:miguel@rhsupport.ca
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Patrick Fa
+ fard:mailto:p.fafard@physiotherapieuniverselle.com
+DESCRIPTION;LANGUAGE=fr-FR:Bonjour Miguel\,\n\nMerci pour l’appel de ce m
+ atin\,\n\nComme convenu\, voici le lien pour se parler mercredi prochain 2
+ 7 mars\, à 10h.\nNotre directeur provincial\, @Patrick Fafard<mailto:p.fa
+ fard@physiotherapieuniverselle.com>\, se joindra à nous.\n\nLe but de la 
+ rencontre\,\n\n  *   avoir une idée de l’étendue des services offerts 
+ (chasse de tête…)\n  *   vos idées sur le plan promotionnel (évèneme
+ nts\, vidéo promotionnels\, podcast…)\n  *   la façon dont vous gérez
+  la compétition (ex Kinatex) et les possibilités de travailler en exclus
+ ivité\n  *   autres…\n\nMerci beaucoup et bonne journée\nÀ bientôt !
+ \n\nIngrid Boisart\n\n\n__________________________________________________
+ ______________________________\nRéunion Microsoft Teams\nParticipez à pa
+ rtir de votre ordinateur\, de votre application mobile ou de l’appareil 
+ de la salle\nCliquez ici pour rejoindre la réunion<https://teams.microsof
+ t.com/l/meetup-join/19%3ameeting_NzUwMTE3MDktMWY2YS00Y2I5LTgxNzctN2NjY2VlM
+ WM0OTg4%40thread.v2/0?context=%7b%22Tid%22%3a%229a3a5cf2-01bb-40c3-97b6-a4
+ f78a3aaf1a%22%2c%22Oid%22%3a%22175e5f34-caa4-4377-977b-c4f0df8b7047%22%7d>
+ \nID de la réunion : 283 704 293 204\nCode secret : XgMiGh\nTélécharger
+  Teams<https://www.microsoft.com/en-us/microsoft-teams/download-app> | Rej
+ oindre sur le web<https://www.microsoft.com/microsoft-teams/join-a-meeting
+ >\nPour en savoir plus<https://aka.ms/JoinTeamsMeeting> | Options de réun
+ ion<https://teams.microsoft.com/meetingOptions/?organizerId=175e5f34-caa4-
+ 4377-977b-c4f0df8b7047&tenantId=9a3a5cf2-01bb-40c3-97b6-a4f78a3aaf1a&threa
+ dId=19_meeting_NzUwMTE3MDktMWY2YS00Y2I5LTgxNzctN2NjY2VlMWM0OTg4@thread.v2&
+ messageId=0&language=fr-FR>\n_____________________________________________
+ ___________________________________\n\n
+UID:040000008200E00074C5B7101A82E008000000009037C5697A7BDA01000000000000000
+ 010000000FA67DA06B403644CB90A1C25FAD975CF
+SUMMARY;LANGUAGE=fr-FR:Discussion initiale RH support
+DTSTART;TZID=Eastern Standard Time:20240327T100000
+DTEND;TZID=Eastern Standard Time:20240327T110000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20240321T143135Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=fr-FR:Réunion Microsoft Teams
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:1123366888
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_NzUwMTE3MDktMWY2YS00Y2I5LTgxNzctN2NjY2VlMWM0OTg4%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%229a3a5cf2-01bb-40c3-97b6-a4f78a3aaf1a%22%2c%22O
+ id%22%3a%22175e5f34-caa4-4377-977b-c4f0df8b7047%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/9a3a5cf2-01bb-40c3-97b6-a4f78a3aaf1a/175e5f34-caa4-4377-977b-c
+ 4f0df8b7047/19_meeting_NzUwMTE3MDktMWY2YS00Y2I5LTgxNzctN2NjY2VlMWM0OTg4@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_NzUwMTE3MDktMWY2YS00Y2I
+ 5LTgxNzctN2NjY2VlMWM0OTg4@thread.v2"\,"private":true\,"type":0\,"mid":0\,"
+ rid":0\,"uid":null}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONS:[ { "DisplayName" : "Réunion Microsoft Teams"\, "Loc
+ ationAnnotation" : ""\, "LocationSource" : 0\, "Unresolved" : false\, "Loc
+ ationUri" : "" } ]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

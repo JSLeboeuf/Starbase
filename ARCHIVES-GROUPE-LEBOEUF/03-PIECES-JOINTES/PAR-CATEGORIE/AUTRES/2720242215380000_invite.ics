@@ -1,0 +1,94 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T020000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Karine Degré:mailto:karine@medzy.ca
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=felixhamel
+ 1991@gmail.com:mailto:felixhamel1991@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Sonia Bout
+ in:mailto:sonia@medzy.ca
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=info@cedri
+ cleboeuf.com:mailto:info@cedricleboeuf.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Dominique-
+ Sébastien Forest:mailto:ds@medzy.ca
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=jsleboeuf3
+ @gmail.com:mailto:jsleboeuf3@gmail.com
+DESCRIPTION;LANGUAGE=en-US:\n\n\n__________________________________________
+ ______________________________________\nMicrosoft Teams Besoin d’aide?<h
+ ttps://aka.ms/JoinTeamsMeeting?omkt=fr-CA>\nRejoignez la réunion maintena
+ nt<https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzliNGEzMGItNTYx
+ OS00ZTkxLWIyMjItNmM2NjgwNmVkODli%40thread.v2/0?context=%7b%22Tid%22%3a%228
+ 214546b-1c4b-44fd-9320-019413086044%22%2c%22Oid%22%3a%22a0b7bb01-d46c-4323
+ -809d-c6dbc9340037%22%7d>\nID de réunion : 297 555 374 674\nCode secret :
+  Qfs4hj\n________________________________\nPour les organisateurs : Option
+ s de réunion<https://teams.microsoft.com/meetingOptions/?organizerId=a0b7
+ bb01-d46c-4323-809d-c6dbc9340037&tenantId=8214546b-1c4b-44fd-9320-01941308
+ 6044&threadId=19_meeting_MzliNGEzMGItNTYxOS00ZTkxLWIyMjItNmM2NjgwNmVkODli@
+ thread.v2&messageId=0&language=fr-CA> | Réinitialisez la connexion au cod
+ e NIP<https://dialin.teams.microsoft.com/usp/pstnconferencing>\n__________
+ ______________________________________________________________________\n
+UID:040000008200E00074C5B7101A82E00800000000B56B133B9480DA01000000000000000
+ 0100000001C8F410B19E25840B2F78E70ACFF79F0
+SUMMARY;LANGUAGE=en-US:Rencontre de suivi Medzy
+DTSTART;TZID=Eastern Standard Time:20240403T113000
+DTEND;TZID=Eastern Standard Time:20240403T130000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20240327T221538Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:1
+LOCATION;LANGUAGE=en-US:Microsoft Teams Meeting
+X-MICROSOFT-CDO-APPT-SEQUENCE:1
+X-MICROSOFT-CDO-OWNERAPPTID:2122569909
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_MzliNGEzMGItNTYxOS00ZTkxLWIyMjItNmM2NjgwNmVkODli%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%228214546b-1c4b-44fd-9320-019413086044%22%2c%22O
+ id%22%3a%22a0b7bb01-d46c-4323-809d-c6dbc9340037%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/8214546b-1c4b-44fd-9320-019413086044/a0b7bb01-d46c-4323-809d-c
+ 6dbc9340037/19_meeting_MzliNGEzMGItNTYxOS00ZTkxLWIyMjItNmM2NjgwNmVkODli@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_MzliNGEzMGItNTYxOS00ZTk
+ xLWIyMjItNmM2NjgwNmVkODli@thread.v2"\,"rid":"0"\,"private":true\,"type":0\
+ ,"uid":"karine@medzy.ca"}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONDISPLAYNAME:Microsoft Teams Meeting
+X-MICROSOFT-LOCATIONSOURCE:None
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Microsoft Teams Meeting"\,"LocationA
+ nnotation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":""\,"
+ LocationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"Locatio
+ nFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

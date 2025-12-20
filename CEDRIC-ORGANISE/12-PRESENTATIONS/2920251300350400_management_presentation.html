@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Dashboard - Week May 20-23, 2025</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+        
+        .metric-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .metric-label {
+            color: #666;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .profit { color: #28a745; }
+        .warning { color: #ffc107; }
+        .danger { color: #dc3545; }
+        .info { color: #17a2b8; }
+        
+        .charts-container {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .chart-wrapper {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .chart-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        
+        .full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .alert {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 20px;
+            margin: 20px 30px;
+            border-radius: 10px;
+            border-left: 5px solid #ffc107;
+        }
+        
+        .alert h3 {
+            margin-top: 0;
+            color: #dc3545;
+        }
+        
+        @media (max-width: 768px) {
+            .charts-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>Clinique Vétérinaire VETA</h1>
+            <p>Financial Performance Dashboard | Week of May 20-23, 2025</p>
+        </div>
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Total Revenue</div>
+                <div class="metric-value info">$31,877</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Net Profit</div>
+                <div class="metric-value danger">$688</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Profit Margin</div>
+                <div class="metric-value danger">2.2%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Payroll Ratio</div>
+                <div class="metric-value warning">40.1%</div>
+            </div>
+        </div>
+        
+        <div class="alert">
+            <h3>⚠️ Critical Alert</h3>
+            <p><strong>Profit margin at 2.2% is critically low.</strong> Industry target is 10-15%. Immediate action required to improve profitability through revenue optimization and cost management.</p>
+        </div>
+        
+        <div class="charts-container">
+            <div class="chart-wrapper">
+                <div class="chart-title">Expense Breakdown</div>
+                <canvas id="expenseChart"></canvas>
+            </div>
+            
+            <div class="chart-wrapper">
+                <div class="chart-title">Daily Revenue Performance</div>
+                <canvas id="revenueChart"></canvas>
+            </div>
+            
+            <div class="chart-wrapper">
+                <div class="chart-title">Revenue vs Expenses</div>
+                <canvas id="profitChart"></canvas>
+            </div>
+            
+            <div class="chart-wrapper">
+                <div class="chart-title">Key Ratios vs Industry Targets</div>
+                <canvas id="ratiosChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Expense Breakdown Pie Chart
+        const expenseCtx = document.getElementById('expenseChart').getContext('2d');
+        new Chart(expenseCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Payroll', 'COGS', 'Debt Service', 'Rent', 'General Expenses'],
+                datasets: [{
+                    data: [12771.62, 10628.51, 3680.00, 2077.87, 2231.42],
+                    backgroundColor: [
+                        '#FF6384',
+                        '#36A2EB',
+                        '#FFCE56',
+                        '#4BC0C0',
+                        '#9966FF'
+                    ],
+                    borderWidth: 2,
+                    borderColor: '#fff'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 20,
+                            font: {
+                                size: 12
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const value = context.parsed;
+                                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                const percentage = ((value / total) * 100).toFixed(1);
+                                return context.label + ': $' + value.toLocaleString() + ' (' + percentage + '%)';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Daily Revenue Bar Chart
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(revenueCtx, {
+            type: 'bar',
+            data: {
+                labels: ['May 20', 'May 21', 'May 22', 'May 23'],
+                datasets: [{
+                    label: 'Daily Revenue',
+                    data: [7286.83, 7250.99, 12004.88, 4925.36],
+                    backgroundColor: [
+                        '#36A2EB',
+                        '#36A2EB',
+                        '#4BC0C0',
+                        '#FF6384'
+                    ],
+                    borderColor: [
+                        '#2E8BC0',
+                        '#2E8BC0',
+                        '#3A9B9B',
+                        '#E55468'
+                    ],
+                    borderWidth: 2,
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return '$' + value.toLocaleString();
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Revenue vs Expenses Chart
+        const profitCtx = document.getElementById('profitChart').getContext('2d');
+        new Chart(profitCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Financial Overview'],
+                datasets: [{
+                    label: 'Revenue',
+                    data: [31877.47],
+                    backgroundColor: '#4BC0C0',
+                    borderColor: '#3A9B9B',
+                    borderWidth: 2
+                }, {
+                    label: 'Total Expenses',
+                    data: [31189.42],
+                    backgroundColor: '#FF6384',
+                    borderColor: '#E55468',
+                    borderWidth: 2
+                }, {
+                    label: 'Net Profit',
+                    data: [688.05],
+                    backgroundColor: '#FFCE56',
+                    borderColor: '#E6B800',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return '$' + value.toLocaleString();
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Ratios vs Targets Chart
+        const ratiosCtx = document.getElementById('ratiosChart').getContext('2d');
+        new Chart(ratiosCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Payroll Ratio', 'Total Expenses', 'Profit Margin'],
+                datasets: [{
+                    label: 'Current',
+                    data: [40.1, 97.8, 2.2],
+                    backgroundColor: ['#FFC107', '#DC3545', '#DC3545'],
+                    borderColor: ['#E6B800', '#C62333', '#C62333'],
+                    borderWidth: 2
+                }, {
+                    label: 'Target',
+                    data: [43, 90, 12.5],
+                    backgroundColor: ['#28A745', '#28A745', '#28A745'],
+                    borderColor: ['#1E7E34', '#1E7E34', '#1E7E34'],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: {
+                            callback: function(value) {
+                                return value + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

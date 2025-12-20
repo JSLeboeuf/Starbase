@@ -1,0 +1,66 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20230810T103000
+DTEND;TZID=America/New_York:20230810T110000
+DTSTAMP:20230808T191912Z
+ORGANIZER;CN=maria@hrsupportusa.com:mailto:maria@hrsupportusa.com
+UID:1cuc3oe7phn1d99c08k6v2o8nl@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=felixhamel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail
+ .com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=C-e-d L;X-NUM-GUESTS=0:mailto:info@cedricleboeuf.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=mcparisien@bloomcomptabilite.com;X-NUM-GUESTS=0:mailto:mcparisien@b
+ loomcomptabilite.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=maria@hrsupportusa.com;X-NUM-GUESTS=0:mailto:maria@hrsupportusa.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=darren.seeman@outlook.com;X-NUM-GUESTS=0:mailto:darren.seeman@outlo
+ ok.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/cvj-hsus-iny
+X-MICROSOFT-CDO-OWNERAPPTID:-2028054076
+CREATED:20230808T191910Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet : https://meet.google.
+ com/cvj-hsus-iny\nOu composez le : (US) +1 530-637-0174 Code PIN : 88822996
+ 0#\nPlus de numéros de téléphone: https://tel.meet/cvj-hsus-iny?pin=1704916
+ 417577&hs=7\n\nPour en savoir plus sur Meet : https://support.google.com/a/
+ users/answer/9282720\n\nVeuillez ne pas modifier cette section.\n-::~:~::~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~:
+ :-
+LAST-MODIFIED:20230808T191910Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:HR Support - Regional Manager of Business Development candidate: Da
+ rren Burke Seeman
+TRANSP:OPAQUE
+ATTACH;FILENAME=Darren Burke Resume.pdf;FMTTYPE=application/pdf:https://dri
+ ve.google.com/open?id=1UTy9noD3eP2pM87qk_mg30LZ-_ypLkO7&authuser=0
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REPLY
+BEGIN:VEVENT
+DTSTART:20250505T150000Z
+DTEND:20250505T160000Z
+DTSTAMP:20250502T171338Z
+ORGANIZER;CN=jsleboeuf3@gmail.com:mailto:jsleboeuf3@gmail.com
+UID:jcpo403bd09981mvv22fh9gvk0@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Felix 
+ Hamel;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/apt-hugv-jhq
+CREATED:20250502T171251Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/ap
+ t-hugv-jhq\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20250502T171337Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Financement Grenier
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,63 @@
+# Cursor Rules - Configuration Optimisee pour Agentic Coding
+
+## Langue et Style
+- Repondre en francais
+- Code comments en francais
+- Messages utilisateur clairs et concis
+
+## Conventions de Code
+
+### PowerShell
+- Utiliser $ErrorActionPreference = "Continue" ou "Stop" selon le contexte
+- Toujours tester les droits admin avec Test-Admin
+- Eviter les emojis (problemes d'encodage Windows)
+- Utiliser Write-Host avec -ForegroundColor pour la lisibilite
+
+### JavaScript/TypeScript
+- Utiliser ESM (import/export)
+- Preferer const > let > var
+- Utiliser async/await au lieu de .then()
+- TypeScript strict mode
+
+### Git
+- Commits atomiques et descriptifs
+- Format: "type: description courte"
+- Types: feat, fix, docs, style, refactor, test, chore
+
+## Structure de Projet
+- Scripts admin: *-ADMIN.ps1 ou ADMIN-*.ps1
+- Documentation: *.md en MAJUSCULES
+- Configuration: fichiers en minuscules
+
+## Performance
+- Toujours considerer la performance
+- Eviter les boucles inutiles
+- Utiliser le parallelisme quand possible
+- Minimiser les appels reseau/disque
+
+## Securite
+- Ne jamais hardcoder de credentials
+- Utiliser des variables d'environnement
+- Valider les inputs utilisateur
+- Gerer les erreurs proprement
+
+## Workflow Agentic Optimal
+1. Lire et comprendre le contexte avant de modifier
+2. Proposer un plan avant d'implementer des changements majeurs
+3. Implementer par petites etapes testables
+4. Verifier chaque etape avant de continuer
+5. Documenter les changements importants
+
+## Outils Preferes
+- pnpm > npm > yarn
+- PowerShell 7+ > cmd
+- Git CLI > GUI
+- Cursor > VS Code
+
+## Ne Pas Faire
+- Ne pas creer de fichiers README.md sans demande explicite
+- Ne pas ajouter de dependances inutiles
+- Ne pas sur-ingenieriser les solutions simples
+- Ne pas ignorer les erreurs silencieusement
+
+

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20230912T140000Z
+DTEND:20230912T150000Z
+DTSTAMP:20230906T143505Z
+ORGANIZER;CN=major@vetaveterinaire.com:mailto:major@vetaveterinaire.com
+UID:9se8ho42602ha85c35k37m49n4@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=C-e-d L;X-NUM-GUESTS=0:mailto:cedric2177@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=major@vetaveterinaire.com;X-NUM-GUESTS=0:mailto:major@vetaveterinaire.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/for-kdjw-vek
+X-MICROSOFT-CDO-OWNERAPPTID:-34662594
+CREATED:20230906T143501Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet : https://meet.google.
+ com/for-kdjw-vek\nOu composez le : (US) +1 626-790-8244 Code PIN : 29982496
+ 8#\nPlus de numéros de téléphone: https://tel.meet/for-kdjw-vek?pin=7575585
+ 490397&hs=7\n\nPour en savoir plus sur Meet : https://support.google.com/a/
+ users/answer/9282720\n\nVeuillez ne pas modifier cette section.\n-::~:~::~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~:
+ :-
+LAST-MODIFIED:20230906T143501Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Entrevue Vanessa Houston
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

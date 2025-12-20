@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REPLY
+BEGIN:VEVENT
+DTSTART:20250203T140000Z
+DTEND:20250203T143000Z
+DTSTAMP:20250202T182358Z
+ORGANIZER;CN=jsleboeuf3@gmail.com:mailto:jsleboeuf3@gmail.com
+UID:f0bhpr7bg60dn9reggidnt684g@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=C-e-d 
+ L;X-NUM-GUESTS=0:mailto:info@cedricleboeuf.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/jcw-jpys-fnk
+CREATED:20250202T182336Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/jc
+ w-jpys-fnk\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20250202T182357Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rencontre Amanda
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20230922T180000Z
+DTEND:20230922T200000Z
+DTSTAMP:20230920T165736Z
+ORGANIZER;CN=major@vetaveterinaire.com:mailto:major@vetaveterinaire.com
+UID:c5bc8ua3n9qdsf5seds508q3g4@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=C-e-d L;X-NUM-GUESTS=0:mailto:cedric2177@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=major@vetaveterinaire.com;X-NUM-GUESTS=0:mailto:major@vetaveterinaire.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/ghx-zmfc-hdg
+X-MICROSOFT-CDO-OWNERAPPTID:-1841081553
+CREATED:20230920T165733Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet : https://meet.google.
+ com/ghx-zmfc-hdg\nOu composez le : (US) +1 512-518-4686 Code PIN : 70342823
+ 0#\nPlus de numéros de téléphone: https://tel.meet/ghx-zmfc-hdg?pin=2111975
+ 575380&hs=7\n\nPour en savoir plus sur Meet : https://support.google.com/a/
+ users/answer/9282720\n\nVeuillez ne pas modifier cette section.\n-::~:~::~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~:
+ :-
+LAST-MODIFIED:20230920T165733Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Village des écluses Dr.Deak
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:CANCEL
+BEGIN:VEVENT
+DTSTART:20230504T183000Z
+DTEND:20230504T200000Z
+DTSTAMP:20230503T160535Z
+ORGANIZER;CN=joelle.cote@rhsupport.ca:mailto:joelle.cote@rhsupport.ca
+UID:3pf37qjgbes3guqurntf2o99bc@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=fe
+ lixhamel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=joelle
+ .cote@rhsupport.ca;X-NUM-GUESTS=0:mailto:joelle.cote@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=js
+ leboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=in
+ fo@bloomcomptabilite.com;X-NUM-GUESTS=0:mailto:info@bloomcomptabilite.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/hab-wstk-tds
+CREATED:20230502T172642Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/ha
+ b-wstk-tds\nOr dial: (CA) +1 647-733-5124 PIN: 794629280#\nMore phone numbe
+ rs: https://tel.meet/hab-wstk-tds?pin=8523186854080&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230503T160533Z
+LOCATION:
+SEQUENCE:1
+STATUS:CANCELLED
+SUMMARY:Entrevue Marise Lévesque (poste de Direction)
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

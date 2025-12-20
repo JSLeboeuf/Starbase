@@ -1,0 +1,64 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240301T150000
+DTEND;TZID=America/New_York:20240301T160000
+DTSTAMP:20240227T175312Z
+ORGANIZER;CN=Mohammed Ahmed:mailto:mohammed.ahmed@zoominfo.com
+UID:0hqbn0rvfgvatd781t0f72694f@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=info@rhsupport.ca;X-NUM-GUESTS=0:mailto:info@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Mohammed Ahmed;X-NUM-GUESTS=0:mailto:mohammed.ahmed@zoominfo.com
+X-MICROSOFT-CDO-OWNERAPPTID:-701369615
+CREATED:20240227T175311Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nRejoindre Zoom Meeting\nhttps://zoominfo.zoom.us/
+ j/92097342649 (ID: 92097342649)\n\nParticiper par téléphone\n(US) +1 719-35
+ 9-4580\n\nParticiper via SIP\n92097342649@zoomcrc.com\n\nInstructions pour 
+ participer: https://www.google.com/url?q=https://applications.zoom.us/addon
+ /invitation/detail?meetingUuid%3D2u837ohUTzqAhSZrjGBY4g%253D%253D%26signatu
+ re%3D7acad51cff268e2f5005c09066f8b1ccce436bdf44483d337d5b5dc829f3a2a9%26v%3
+ D1&sa=D&source=calendar&usg=AOvVaw0hGQPXeQZDI5KndqX0zUyh\n\n------------<br
+  /><a href="https://www.google.com/url?q=https://support.zoom.us/hc/en-us/a
+ rticles/360020187492-Zoom-for-GSuite-add-on-Troubleshooting%23h_01FRGZTWJYR
+ GRDMPQW4N041QF7&amp\;sa=D&amp\;source=calendar&amp\;usg=AOvVaw3pOlmJKYg-DG3
+ 7_G4Qn9Q2" target="_blank">Zoom for G Suite Add-On Help</a><br />----------
+ --<br /><br />Meeting host: <a href="mailto:mohammed.ahmed@zoominfo.com" ta
+ rget="_blank">mohammed.ahmed@zoominfo.com</a><br /><br />Join Zoom Meeting:
+  <br /><a href="https://www.google.com/url?q=https://zoominfo.zoom.us/j/920
+ 97342649&amp\;sa=D&amp\;source=calendar&amp\;usg=AOvVaw1lzw5BwxgRAQ81PlxamB
+ Lk" target="_blank">https://zoominfo.zoom.us/j/92097342649</a>\n\nVeuillez 
+ ne pas modifier cette section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20240227T175311Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:HR Support USA & ZoomInfo SalesOS Kickoff Call
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

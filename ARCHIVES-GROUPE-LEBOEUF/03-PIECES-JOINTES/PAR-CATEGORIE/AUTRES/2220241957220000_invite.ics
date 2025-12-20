@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REPLY
+BEGIN:VEVENT
+DTSTART:20240422T203000Z
+DTEND:20240422T204500Z
+DTSTAMP:20240422T195722Z
+ORGANIZER;CN=jsleboeuf3@gmail.com:mailto:jsleboeuf3@gmail.com
+UID:44k4s40fjigs5nvl677def9id7@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=C-e-d 
+ L;X-NUM-GUESTS=0:mailto:info@cedricleboeuf.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/phh-omzy-qxf
+CREATED:20240422T195430Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/ph
+ h-omzy-qxf\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20240422T195721Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Meeting
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

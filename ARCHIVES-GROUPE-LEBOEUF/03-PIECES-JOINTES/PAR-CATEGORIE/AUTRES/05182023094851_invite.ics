@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:CANCEL
+BEGIN:VEVENT
+DTSTART:20230518T233000Z
+DTEND:20230519T000000Z
+DTSTAMP:20230518T134851Z
+ORGANIZER;CN=joelle.cote@rhsupport.ca:mailto:joelle.cote@rhsupport.ca
+UID:3ujnot3gtr20n9f8ufo861qe2k@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=fe
+ lixhamel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=joelle
+ .cote@rhsupport.ca;X-NUM-GUESTS=0:mailto:joelle.cote@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=C-
+ e-d L;X-NUM-GUESTS=0:mailto:info@cedricleboeuf.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=js
+ leboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=in
+ fo@rhsupport.ca;X-NUM-GUESTS=0:mailto:info@rhsupport.ca
+X-GOOGLE-CONFERENCE:https://meet.google.com/qkp-qnwf-ics
+CREATED:20230517T204939Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/qk
+ p-qnwf-ics\nOr dial: (CA) +1 587-786-4167 PIN: 819760440#\nMore phone numbe
+ rs: https://tel.meet/qkp-qnwf-ics?pin=8711261976733&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230518T134849Z
+LOCATION:
+SEQUENCE:1
+STATUS:CANCELLED
+SUMMARY:Entrevue Marisela Sanchez - Directeur RH
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

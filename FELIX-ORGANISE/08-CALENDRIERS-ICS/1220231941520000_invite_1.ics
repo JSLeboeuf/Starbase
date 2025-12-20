@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:CANCEL
+BEGIN:VEVENT
+DTSTART:20230915T140000Z
+DTEND:20230915T160000Z
+DTSTAMP:20230912T194152Z
+ORGANIZER;CN=felixhamel1991@gmail.com:mailto:felixhamel1991@gmail.com
+UID:pnho046q54ma9s2k2rk1dgnd7o@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=felixh
+ amel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=C-
+ e-d L;X-NUM-GUESTS=0:mailto:cedric2177@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=js
+ leboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/gxk-ysgz-ega
+CREATED:20230820T103851Z
+DESCRIPTION:250 000 vue sur quelque vidéo TikTok\n\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin with
+  Google Meet: https://meet.google.com/gxk-ysgz-ega\n\nLearn more about Meet
+  at: https://support.google.com/a/users/answer/9282720\n\nPlease do not edi
+ t this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230912T194150Z
+LOCATION:
+SEQUENCE:1
+STATUS:CANCELLED
+SUMMARY:Podcast zen house/ plan zen Jasynte et carl Labelle
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

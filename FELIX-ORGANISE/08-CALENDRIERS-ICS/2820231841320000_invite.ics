@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REPLY
+BEGIN:VEVENT
+DTSTART:20230629T160000Z
+DTEND:20230629T170000Z
+DTSTAMP:20230628T184132Z
+ORGANIZER;CN=jsleboeuf3@gmail.com:mailto:jsleboeuf3@gmail.com
+UID:pl10fq30mlp26jin5knvso599o@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=felixh
+ amel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/rya-prve-nah
+CREATED:20230628T180913Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/ry
+ a-prve-nah\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230628T184131Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Philippe Robert
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

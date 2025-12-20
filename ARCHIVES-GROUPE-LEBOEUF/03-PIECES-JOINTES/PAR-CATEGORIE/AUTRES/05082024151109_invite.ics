@@ -1,0 +1,102 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T020000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Christine Corbin:mailto:ccorbin@pjc.jeancoutu.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Alain Poir
+ ier:mailto:apoirier@pjc.jeancoutu.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Miguel@rhs
+ upport.ca:mailto:Miguel@rhsupport.ca
+DESCRIPTION;LANGUAGE=fr-CA:\n______________________________________________
+ __________________________________\nMicrosoft Teams Besoin d’aide?<https
+ ://aka.ms/JoinTeamsMeeting?omkt=fr-CA>\nRejoignez la réunion maintenant<h
+ ttps://teams.microsoft.com/l/meetup-join/19%3ameeting_MGM4YTVhMGMtMDgwZS00
+ YzlmLThmMWItYmFlNDczNTlmZDg3%40thread.v2/0?context=%7b%22Tid%22%3a%221c824
+ dff-9735-475a-9bfa-a16070bc0fd6%22%2c%22Oid%22%3a%229a2a1ae5-0113-410d-a1d
+ 6-1230d2b3727a%22%7d>\nID de réunion : 269 231 634 485\nCode secret : J8w
+ 4Jc\n________________________________\nSe connecter à un périphérique d
+ e vidéoconférence\nClé de locataire : teams@teams.metro.ca\nID vidéo :
+  119 878 090 1\nPlus d’informations<https://pexip.me/teams/teams.metro.c
+ a/1198780901>\nPour les organisateurs : Options de réunion<https://teams.
+ microsoft.com/meetingOptions/?organizerId=9a2a1ae5-0113-410d-a1d6-1230d2b3
+ 727a&tenantId=1c824dff-9735-475a-9bfa-a16070bc0fd6&threadId=19_meeting_MGM
+ 4YTVhMGMtMDgwZS00YzlmLThmMWItYmFlNDczNTlmZDg3@thread.v2&messageId=0&langua
+ ge=fr-CA> | Réinitialisez la connexion au code NIP<https://dialin.teams.m
+ icrosoft.com/usp/pstnconferencing>\n______________________________________
+ __________________________________________\n\n\nAVIS DE CONFIDENTIALITÉ -
+  L'information apparaissant dans ce message électronique est de nature co
+ nfidentielle et privilégiée. Si ce message vous est parvenu par erreur e
+ t que vous n'êtes pas le destinataire visé\, vous êtes par les présent
+ es avisé que tout usage\, copie ou distribution de ce message est stricte
+ ment interdit. Vous êtes donc prié de nous informer immédiatement de ce
+ tte erreur et de détruire ce message.\n\nCONFIDENTIALITY NOTICE - The inf
+ ormation in this message is confidential and privileged. In the event of a
+  transmission error and if you are not the individual or entity mentioned 
+ above\, you are hereby advised that any use\, copying or reproduction of t
+ his document is strictly forbidden. Please advise us of this error and des
+ troy this message.\n
+UID:040000008200E00074C5B7101A82E0080000000002AAAEC473A1DA01000000000000000
+ 010000000E09164FDFF03CF449C3C51808244AEF0
+SUMMARY;LANGUAGE=fr-CA:Bloom ''ATP '' 
+DTSTART;TZID=Eastern Standard Time:20240527T141500
+DTEND;TZID=Eastern Standard Time:20240527T144500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20240508T182440Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:1
+LOCATION;LANGUAGE=fr-CA:Réunion Microsoft Teams
+X-MICROSOFT-CDO-APPT-SEQUENCE:1
+X-MICROSOFT-CDO-OWNERAPPTID:2122663682
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_MGM4YTVhMGMtMDgwZS00YzlmLThmMWItYmFlNDczNTlmZDg3%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%221c824dff-9735-475a-9bfa-a16070bc0fd6%22%2c%22O
+ id%22%3a%229a2a1ae5-0113-410d-a1d6-1230d2b3727a%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/1c824dff-9735-475a-9bfa-a16070bc0fd6/9a2a1ae5-0113-410d-a1d6-1
+ 230d2b3727a/19_meeting_MGM4YTVhMGMtMDgwZS00YzlmLThmMWItYmFlNDczNTlmZDg3@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_MGM4YTVhMGMtMDgwZS00Yzl
+ mLThmMWItYmFlNDczNTlmZDg3@thread.v2"\,"rid":0\,"mid":0\,"uid":null\,"priva
+ te":true\,"type":0}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONDISPLAYNAME:Réunion Microsoft Teams
+X-MICROSOFT-LOCATIONSOURCE:None
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Réunion Microsoft Teams"\,"Location
+ Annotation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":""\,
+ "LocationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"Locati
+ onFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

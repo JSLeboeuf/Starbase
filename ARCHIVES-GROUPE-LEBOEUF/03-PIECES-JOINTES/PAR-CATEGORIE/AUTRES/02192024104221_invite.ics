@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/Kentucky/Monticello
+X-LIC-LOCATION:America/Kentucky/Monticello
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Kentucky/Monticello:20240219T113000
+DTEND;TZID=America/Kentucky/Monticello:20240219T120000
+DTSTAMP:20240219T154221Z
+ORGANIZER:mailto:info@rhsupport.ca
+UID:44p5imf8um2q3bn85fmh6okp4p@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=miguel@rhsupport.ca;X-NUM-GUESTS=0:mailto:miguel@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;X-NUM-GUESTS=0:mailto:info@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=martine@rhsupport.ca;X-NUM-GUESTS=0:mailto:martine@rhsupport.ca
+X-GOOGLE-CONFERENCE:https://meet.google.com/jta-tqhs-knq
+X-MICROSOFT-CDO-OWNERAPPTID:-1494968644
+CREATED:20240219T154220Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet : https://meet.google.
+ com/jta-tqhs-knq\nOu composez le : (CA) +1 289-948-7487 Code PIN : 65830352
+ 3#\nPlus de numéros de téléphone: https://tel.meet/jta-tqhs-knq?pin=4307461
+ 263304&hs=7\n\nPour en savoir plus sur Meet : https://support.google.com/a/
+ users/answer/9282720\n\nVeuillez ne pas modifier cette section.\n-::~:~::~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~:
+ :-
+LAST-MODIFIED:20240219T154220Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Meet
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

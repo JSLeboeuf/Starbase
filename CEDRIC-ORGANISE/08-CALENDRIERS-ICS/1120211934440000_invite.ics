@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20210512T170000Z
+DTEND:20210512T190000Z
+DTSTAMP:20210511T193444Z
+ORGANIZER;CN=cgarand.viva@gmail.com:mailto:cgarand.viva@gmail.com
+UID:2o90s7jdf60ca003e6fi442d8j@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=cgarand.viva@gmail.com;X-NUM-GUESTS=0:mailto:cgarand.viva@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=C-e-d L;X-NUM-GUESTS=0:mailto:cedric2177@gmail.com
+X-MICROSOFT-CDO-OWNERAPPTID:-1986573910
+CREATED:20210511T193440Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nVeuillez ne pas modifier cette section de la desc
+ ription.\n\nUn appel vidéo est associé à cet événement.\nParticiper : https
+ ://meet.google.com/cqh-myok-gqg\n\nAffichez votre événement sur la page htt
+ ps://calendar.google.com/calendar/event?action=VIEW&eid=Mm85MHM3amRmNjBjYTA
+ wM2U2Zmk0NDJkOGoganNsZWJvZXVmM0Bt&tok=MjIjY2dhcmFuZC52aXZhQGdtYWlsLmNvbTVkZ
+ jFlNWUzNDM5OWNlYjM4ODI1MjgxOWE2ODU4ZjhiMWUzNGNiM2E&ctz=America%2FToronto&hl
+ =fr&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20210511T193441Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Brainstorming viva vibe
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

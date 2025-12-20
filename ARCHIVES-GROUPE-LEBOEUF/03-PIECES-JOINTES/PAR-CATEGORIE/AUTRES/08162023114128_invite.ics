@@ -1,0 +1,66 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:CANCEL
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+X-LIC-LOCATION:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Toronto:20230828T091500
+DTEND;TZID=America/Toronto:20230828T094500
+DTSTAMP:20230816T154128Z
+ORGANIZER;CN=kassem@rhsupport.ca:mailto:kassem@rhsupport.ca
+UID:7h8e5fotkt51ivc8hivisegr5l_R20230811T131500@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=fe
+ lixhamel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=js
+ leboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cl
+ audia@rhsupport.ca;X-NUM-GUESTS=0:mailto:claudia@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ ria@hrsupportusa.com;X-NUM-GUESTS=0:mailto:maria@hrsupportusa.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=pi
+ erre@rhsupport.ca;X-NUM-GUESTS=0:mailto:pierre@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=kassem
+ @rhsupport.ca;X-NUM-GUESTS=0:mailto:kassem@rhsupport.ca
+X-GOOGLE-CONFERENCE:https://meet.google.com/dyj-qzbz-eav
+RECURRENCE-ID;TZID=America/Toronto:20230828T091500
+CREATED:20230809T154649Z
+DESCRIPTION:Good day Team\, <br><br>I hope all is well\, <br><br>As a team 
+ we will be doing some role playing on a daily basis until the end of august
+ \, (30 minutes per day) (9:15am TO 9:45am)<br><br><b>Goal:</b> Becoming ver
+ y comfortable and naturals in phone sales pitches\, (booking lots of appoin
+ tments)<br><br>We could all learn from each other\, and we could all learn 
+ different ways of booking appointments\, <br><br>We will have real life sit
+ uation to work on\, <br><br>Looking forward in seing you all\, <br><br>Than
+ k you\, <br><br>Kassem\,\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://me
+ et.google.com/dyj-qzbz-eav\nOr dial: (CA) +1 289-323-6648 PIN: 114082664#\n
+ More phone numbers: https://tel.meet/dyj-qzbz-eav?pin=5721357155052&hs=7\n\
+ nLearn more about Meet at: https://support.google.com/a/users/answer/928272
+ 0\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230816T154126Z
+LOCATION:google meets
+SEQUENCE:1
+STATUS:CANCELLED
+SUMMARY:Role play 
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

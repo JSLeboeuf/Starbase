@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REPLY
+BEGIN:VEVENT
+DTSTART:20240603T150000Z
+DTEND:20240603T151500Z
+DTSTAMP:20240603T150151Z
+ORGANIZER;CN=jsleboeuf3@gmail.com:mailto:jsleboeuf3@gmail.com
+UID:6q4frf654kp7bpf14s3l7p5pgk@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Martin
+ e Lussier;X-NUM-GUESTS=0:mailto:martine@rhsupport.ca
+X-GOOGLE-CONFERENCE:https://meet.google.com/woq-ujwc-pmx
+CREATED:20240603T150117Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/wo
+ q-ujwc-pmx\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20240603T150150Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:meet
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

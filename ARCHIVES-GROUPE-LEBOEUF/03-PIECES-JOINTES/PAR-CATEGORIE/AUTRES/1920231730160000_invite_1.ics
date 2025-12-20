@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20231221T140000Z
+DTEND:20231221T170000Z
+DTSTAMP:20231219T173016Z
+ORGANIZER;CN=Milissa Major:mailto:major@vetaveterinaire.com
+UID:90r25kva6ev3ju4j11rtoku7pk@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=cedric2177@gmail.com;X-NUM-GUESTS=0:mailto:cedric2177@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Milissa Major;X-NUM-GUESTS=0:mailto:major@vetaveterinaire.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/htf-frsh-sgn
+X-MICROSOFT-CDO-OWNERAPPTID:921744861
+CREATED:20231219T173014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet : https://meet.google.
+ com/htf-frsh-sgn\nOu composez le : (US) +1 256-607-4178 Code PIN : 64679874
+ 9#\nPlus de numéros de téléphone: https://tel.meet/htf-frsh-sgn?pin=1033336
+ 859708&hs=7\n\nPour en savoir plus sur Meet : https://support.google.com/a/
+ users/answer/9282720\n\nVeuillez ne pas modifier cette section.\n-::~:~::~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~:
+ :-
+LAST-MODIFIED:20231219T173014Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Meeting chez Mili
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

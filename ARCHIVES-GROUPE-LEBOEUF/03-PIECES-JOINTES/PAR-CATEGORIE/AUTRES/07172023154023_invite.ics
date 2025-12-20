@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:CANCEL
+BEGIN:VEVENT
+DTSTART:20230718T130000Z
+DTEND:20230718T140000Z
+DTSTAMP:20230717T194023Z
+ORGANIZER;CN=kassem@rhsupport.ca:mailto:kassem@rhsupport.ca
+UID:44akief8053lbbnuee81rmv2o3@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=fe
+ lixhamel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=js
+ leboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=kassem
+ @rhsupport.ca;X-NUM-GUESTS=0:mailto:kassem@rhsupport.ca
+X-GOOGLE-CONFERENCE:https://meet.google.com/iiz-cqsa-ybe
+CREATED:20230713T201935Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/ii
+ z-cqsa-ybe\nOr dial: (CA) +1 778-724-7042 PIN: 759552656#\nMore phone numbe
+ rs: https://tel.meet/iiz-cqsa-ybe?pin=7424746451226&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230717T194022Z
+LOCATION:
+SEQUENCE:1
+STATUS:CANCELLED
+SUMMARY:KEAP TRAINING
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

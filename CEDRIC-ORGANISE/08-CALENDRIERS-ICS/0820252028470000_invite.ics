@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REPLY
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+X-LIC-LOCATION:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Toronto:20240813T113000
+DTEND;TZID=America/Toronto:20240813T120000
+RRULE:FREQ=WEEKLY;BYDAY=TU
+DTSTAMP:20250108T202847Z
+ORGANIZER;CN=jsleboeuf3@gmail.com:mailto:jsleboeuf3@gmail.com
+UID:64k8j7ghrdit9er531o722frep@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=C-e-d 
+ L;X-NUM-GUESTS=0:mailto:info@cedricleboeuf.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/cap-oyas-wiq
+CREATED:20240809T195755Z
+DESCRIPTION:<p><strong>Objectif :</strong> Créer un espace dédié à l’analys
+ e stratégique\, où l’équipe de direction et le CEO alignent les initiatives
+  clés sur la vision à long terme de l’entreprise.</p><p><strong>Agenda :</s
+ trong></p><ul><li><p><strong>Revue des performances hebdomadaires :</strong
+ ></p><ul><li>Analyse approfondie des indicateurs financiers et opérationnel
+ s critiques.</li><li>Focus sur les écarts par rapport aux objectifs.</li></
+ ul></li><li><p><strong>Évaluation des projets stratégiques :</strong></p><u
+ l><li>Bilan des initiatives en cours.</li><li>Ajustement des priorités en f
+ onction des résultats et des opportunités émergentes.</li></ul></li><li><p>
+ <strong>Détection des leviers de croissance :</strong></p><ul><li>Identific
+ ation des nouvelles opportunités de croissance et d'efficacité opérationnel
+ le.</li><li>Discussion sur les actions à entreprendre.</li></ul></li><li><p
+ ><strong>Alignement sur la vision à long terme :</strong></p><ul><li>Valida
+ tion que chaque action et projet soutient les objectifs stratégiques globau
+ x de l’entreprise.</li></ul></li><li><p><strong>Planification stratégique :
+ </strong></p><ul><li>Définition des priorités et des actions clés pour la s
+ emaine à venir.</li><li>Focus sur l'exécution rapide et efficace.</li></ul>
+ </li><li><p><strong>Suggestions des employés :</strong></p><ul><li>Les sugg
+ estions provenant des conversations avec les employés sont partagées à la r
+ éunion hebdomadaire de l’équipe de direction.</li></ul></li></ul><p><strong
+ >Durée :</strong> 30 minutes</p>\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: ht
+ tps://meet.google.com/cap-oyas-wiq\n\nLearn more about Meet at: https://sup
+ port.google.com/a/users/answer/9282720\n\nPlease do not edit this section.\
+ n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~::~:~::-
+LAST-MODIFIED:20250108T202847Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:VETA - Réunion stratégique hebdomadaire
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

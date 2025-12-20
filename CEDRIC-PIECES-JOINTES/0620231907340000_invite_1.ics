@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20230707T150000Z
+DTEND:20230707T160000Z
+DTSTAMP:20230706T190734Z
+ORGANIZER;CN=veta.major@gmail.com:mailto:veta.major@gmail.com
+UID:p2himn37vbmcifo1e3bqgm06gc@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=C-e-d L;X-NUM-GUESTS=0:mailto:cedric2177@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=veta.major@gmail.com;X-NUM-GUESTS=0:mailto:veta.major@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/odm-tiwb-tty
+X-MICROSOFT-CDO-OWNERAPPTID:109722249
+CREATED:20230706T190730Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet : https://meet.google.
+ com/odm-tiwb-tty\n\nPour en savoir plus sur Meet : https://support.google.c
+ om/a/users/answer/9282720\n\nVeuillez ne pas modifier cette section.\n-::~:
+ ~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ :~:~::-
+LAST-MODIFIED:20230706T190730Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Meeting avec mili
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

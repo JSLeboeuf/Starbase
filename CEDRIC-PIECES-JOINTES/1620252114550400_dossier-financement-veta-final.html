@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Dossier de Financement - Clinique Vétérinaire de Valleyfield</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: letter;
+            margin: 0.75in;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow-x: hidden;
+        }
+        
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%);
+            color: white;
+            padding: clamp(30px, 8vw, 50px) clamp(20px, 5vw, 30px);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            margin-bottom: clamp(10px, 3vw, 15px);
+            font-weight: 700;
+        }
+        
+        .header h2 {
+            font-size: clamp(1.1rem, 4vw, 2rem);
+            font-weight: 400;
+            margin-bottom: clamp(15px, 4vw, 25px);
+            opacity: 0.95;
+        }
+        
+        .header p {
+            font-size: clamp(0.95rem, 3vw, 1.3rem);
+            opacity: 0.9;
+        }
+        
+        /* Content Padding */
+        .content {
+            padding: clamp(20px, 5vw, 30px);
+        }
+        
+        /* Summary Box */
+        .summary-box {
+            background: linear-gradient(135deg, #FFF0F5 0%, #FFE4E1 100%);
+            padding: clamp(25px, 6vw, 40px) clamp(20px, 5vw, 30px);
+            border-radius: 20px;
+            margin: clamp(20px, 5vw, 30px) 0;
+            text-align: center;
+            border: 3px solid #DC143C;
+            box-shadow: 0 6px 20px rgba(220,20,60,0.15);
+        }
+        
+        .summary-box h3 {
+            color: #DC143C;
+            font-size: clamp(1.3rem, 4vw, 2rem);
+            margin-bottom: clamp(15px, 4vw, 25px);
+        }
+        
+        .summary-box .amount {
+            font-size: clamp(2rem, 7vw, 3.5rem);
+            font-weight: bold;
+            color: #DC143C;
+            margin: clamp(15px, 4vw, 25px) 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* Section Styles */
+        .section {
+            margin: clamp(30px, 8vw, 50px) 0;
+            padding: 0;
+        }
+        
+        .section-title {
+            color: #DC143C;
+            font-size: clamp(1.3rem, 4vw, 2rem);
+            margin-bottom: clamp(15px, 4vw, 25px);
+            padding-bottom: 15px;
+            border-bottom: 4px solid #DC143C;
+            font-weight: 700;
+        }
+        
+        .subsection-title {
+            color: #8B0000;
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            margin: clamp(20px, 5vw, 30px) 0 clamp(15px, 4vw, 20px) 0;
+            font-weight: 600;
+        }
+        
+        /* Tables - Mobile Optimized */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: clamp(15px, 4vw, 25px) calc(clamp(20px, 5vw, 30px) * -1);
+            padding: 0 clamp(20px, 5vw, 30px);
+        }
+        
+        table {
+            width: 100%;
+            min-width: 300px;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        th {
+            background-color: #DC143C;
+            color: white;
+            padding: clamp(10px, 3vw, 15px) clamp(8px, 2vw, 10px);
+            text-align: left;
+            font-weight: 600;
+            font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+            white-space: nowrap;
+        }
+        
+        td {
+            padding: clamp(8px, 2.5vw, 12px) clamp(8px, 2vw, 10px);
+            border-bottom: 1px solid #eee;
+            font-size: clamp(0.85rem, 2.5vw, 1rem);
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #FFF0F5;
+        }
+        
+        /* Metric Cards - Responsive Grid */
+        .metric-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: clamp(15px, 4vw, 25px);
+            margin: clamp(20px, 5vw, 35px) 0;
+        }
+        
+        .metric-card {
+            background: white;
+            border: 3px solid #DC143C;
+            border-radius: 20px;
+            padding: clamp(20px, 5vw, 30px);
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .metric-card h4 {
+            color: #8B0000;
+            font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+            margin-bottom: clamp(10px, 3vw, 15px);
+            font-weight: 600;
+        }
+        
+        .metric-card .value {
+            font-size: clamp(1.6rem, 5vw, 2.8rem);
+            color: #DC143C;
+            font-weight: bold;
+            margin: clamp(10px, 3vw, 15px) 0;
+        }
+        
+        .metric-card p {
+            font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+            color: #666;
+        }
+        
+        /* Alert Boxes */
+        .alert-box {
+            padding: clamp(15px, 4vw, 25px);
+            margin: clamp(15px, 4vw, 25px) 0;
+            border-radius: 15px;
+            border-left: 6px solid;
+        }
+        
+        .alert-success {
+            background-color: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+        
+        .alert-info {
+            background-color: #F0F8FF;
+            border-color: #4169E1;
+            color: #191970;
+        }
+        
+        .alert-warning {
+            background-color: #fff3cd;
+            border-color: #ffc107;
+            color: #856404;
+        }
+        
+        /* Shareholder Cards */
+        .shareholder-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: clamp(15px, 4vw, 25px);
+            margin: clamp(20px, 5vw, 35px) 0;
+        }
+        
+        .shareholder-card {
+            background: linear-gradient(135deg, #FFF0F5 0%, #FFE4E1 100%);
+            border: 3px solid #DC143C;
+            border-radius: 20px;
+            padding: clamp(25px, 6vw, 35px) clamp(20px, 5vw, 25px);
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .shareholder-card h3 {
+            color: #8B0000;
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            margin-bottom: clamp(15px, 4vw, 20px);
+        }
+        
+        .shareholder-card .percentage {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            color: #DC143C;
+            font-weight: bold;
+            margin: clamp(15px, 4vw, 25px) 0;
+        }
+        
+        /* Badge */
+        .badge {
+            display: inline-block;
+            padding: 8px clamp(15px, 4vw, 20px);
+            background-color: #DC143C;
+            color: white;
+            border-radius: 25px;
+            font-size: clamp(0.8rem, 2vw, 1rem);
+            margin: 8px;
+            font-weight: 500;
+        }
+        
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: clamp(15px, 4vw, 25px);
+            margin-top: clamp(20px, 5vw, 35px);
+        }
+        
+        .contact-card {
+            background-color: #f8f9fa;
+            padding: clamp(15px, 4vw, 25px);
+            border-radius: 15px;
+            border: 2px solid #dee2e6;
+        }
+        
+        .contact-card h4 {
+            color: #DC143C;
+            margin-bottom: clamp(10px, 3vw, 15px);
+            font-size: clamp(1rem, 3vw, 1.3rem);
+        }
+        
+        /* Contact styles améliorés pour mobile */
+        .contact-card p {
+            margin: 8px 0;
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        }
+        
+        /* Indicateur de scroll horizontal sur mobile */
+        @media (max-width: 768px) {
+            .table-wrapper::after {
+                content: "← Glissez pour voir plus →";
+                display: block;
+                text-align: center;
+                font-size: 0.8rem;
+                color: #666;
+                margin-top: 10px;
+                font-style: italic;
+            }
+            
+            .table-wrapper.scrolled::after {
+                display: none;
+            }
+        }
+        
+        /* Executive Summary */
+        .executive-summary {
+            background: linear-gradient(135deg, #228B22 0%, #006400 100%);
+            color: white;
+            padding: clamp(25px, 6vw, 35px) clamp(20px, 5vw, 25px);
+            border-radius: 20px;
+            margin: clamp(20px, 5vw, 35px) 0;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+        
+        .executive-summary h3 {
+            color: white;
+            margin-bottom: clamp(15px, 4vw, 25px);
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+        }
+        
+        .executive-summary ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .executive-summary li {
+            margin: clamp(10px, 3vw, 15px) 0;
+            padding-left: 35px;
+            position: relative;
+            font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+        }
+        
+        .executive-summary li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #90EE90;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+        
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%);
+            color: white;
+            padding: clamp(30px, 8vw, 50px) clamp(20px, 5vw, 30px);
+            text-align: center;
+            border-radius: 20px;
+            margin: clamp(30px, 8vw, 50px) 0;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+        }
+        
+        .cta-box h3 {
+            font-size: clamp(1.4rem, 4vw, 2.3rem);
+            margin-bottom: clamp(15px, 4vw, 25px);
+        }
+        
+        .cta-box .amount {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            margin: clamp(20px, 5vw, 30px) 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .cta-content {
+            background-color: rgba(255,255,255,0.15);
+            padding: clamp(15px, 4vw, 25px);
+            border-radius: 15px;
+            margin: clamp(15px, 4vw, 25px) auto;
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+        }
+        
+        /* Highlight */
+        .highlight {
+            background-color: #FFE4B5;
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #8B4513;
+        }
+        
+        /* Ratios */
+        .ratio-excellent {
+            color: #228B22;
+            font-weight: bold;
+        }
+        
+        .ratio-good {
+            color: #228B22;
+            font-weight: bold;
+        }
+        
+        .ratio-warning {
+            color: #FF8C00;
+            font-weight: bold;
+        }
+        
+        /* Key Points Box */
+        .key-points {
+            background: white;
+            border: 3px solid #DC143C;
+            border-radius: 20px;
+            padding: clamp(20px, 5vw, 30px) clamp(15px, 4vw, 25px);
+            margin: clamp(20px, 5vw, 35px) 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .key-points h3 {
+            color: #DC143C;
+            margin-bottom: clamp(15px, 4vw, 25px);
+            font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+            text-align: center;
+        }
+        
+        .key-points-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: clamp(15px, 4vw, 20px);
+            margin-top: clamp(15px, 4vw, 25px);
+        }
+        
+        .key-point {
+            text-align: center;
+            padding: clamp(15px, 4vw, 20px);
+            background: #FFF0F5;
+            border-radius: 15px;
+        }
+        
+        .key-point-value {
+            font-size: clamp(1.4rem, 4vw, 2rem);
+            color: #DC143C;
+            font-weight: bold;
+        }
+        
+        .key-point-label {
+            font-size: clamp(0.8rem, 2vw, 1rem);
+            color: #666;
+            margin-top: 8px;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #FFF0F5;
+            padding: clamp(25px, 6vw, 40px) clamp(20px, 5vw, 30px);
+            text-align: center;
+            border-top: 4px solid #DC143C;
+            margin-top: clamp(40px, 10vw, 60px);
+        }
+        
+        .footer p {
+            font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+            color: #8B0000;
+            margin: 12px 0;
+        }
+        
+        /* Lists */
+        ul {
+            padding-left: 25px;
+        }
+        
+        li {
+            margin: 10px 0;
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            /* Ajustements généraux */
+            .content {
+                padding: 15px;
+            }
+            
+            /* Tables responsives */
+            .table-wrapper {
+                margin: 15px -15px;
+                padding: 0 15px;
+            }
+            
+            .table-wrapper table {
+                font-size: 0.8rem;
+            }
+            
+            th, td {
+                padding: 6px 4px;
+                font-size: 0.75rem;
+            }
+            
+            /* Grilles en colonne unique */
+            .metric-cards,
+            .shareholder-cards,
+            .contact-grid,
+            .key-points-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            /* Structure corporative en colonne */
+            div[style*="grid-template-columns: 1fr 1fr"] {
+                display: block !important;
+            }
+            
+            div[style*="grid-template-columns: 1fr 1fr"] > div {
+                margin-bottom: 20px;
+            }
+            
+            /* Ajustements typographiques */
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .subsection-title {
+                font-size: 1.1rem;
+            }
+            
+            .summary-box .amount,
+            .cta-box .amount {
+                font-size: 2rem;
+            }
+            
+            .metric-card .value {
+                font-size: 1.8rem;
+            }
+            
+            .shareholder-card .percentage {
+                font-size: 2.5rem;
+            }
+            
+            /* Header mobile */
+            .header h1 {
+                font-size: 1.5rem;
+                line-height: 1.2;
+            }
+            
+            .header h2 {
+                font-size: 1rem;
+            }
+            
+            /* Badges et alertes */
+            .badge {
+                display: block;
+                margin: 8px 0;
+            }
+            
+            .alert-box {
+                padding: 15px;
+                margin: 15px 0;
+            }
+            
+            /* CTA Box mobile */
+            .cta-content {
+                padding: 15px;
+            }
+            
+            /* Organigramme Global Plomberie */
+            div[style*="grid-template-columns: repeat(2, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            /* Ultra petit écran */
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .summary-box {
+                padding: 20px 15px;
+            }
+            
+            .executive-summary {
+                padding: 20px 15px;
+            }
+            
+            .section {
+                margin: 30px 0;
+            }
+            
+            /* Tables encore plus compactes */
+            .table-wrapper table {
+                font-size: 0.7rem;
+            }
+            
+            th, td {
+                padding: 4px 2px;
+            }
+            
+            /* Cacher certaines colonnes sur très petit écran */
+            @media (max-width: 380px) {
+                td:nth-child(3),
+                th:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+        
+        /* Optimisation impression mobile */
+        @media print and (max-width: 768px) {
+            body {
+                font-size: 10pt;
+            }
+            
+            .section {
+                page-break-inside: auto;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: white;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .header {
+                background: none;
+                color: #DC143C;
+                border-bottom: 4px solid #DC143C;
+            }
+            
+            .header h1, .header h2 {
+                color: #DC143C;
+            }
+        }
+        
+        .savings-highlight {
+            background-color: #FFE4E1;
+            border: 2px solid #DC143C;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .calculation-box {
+            background-color: #f0f8ff;
+            border: 2px solid #4169E1;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .special-notice {
+            background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(220,20,60,0.3);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>DOSSIER DE FINANCEMENT</h1>
+            <h2>ACQUISITION CLINIQUE VÉTÉRINAIRE DE VALLEYFIELD</h2>
+            <p>
+                <strong>Présenté à Desjardins Entreprises</strong><br>
+                Par le Groupe VETA<br>
+                17 juin 2025
+            </p>
+        </div>
+
+        <div class="content">
+            <!-- Executive Summary -->
+            <div class="executive-summary">
+                <h3>✅ TRANSACTION OPTIMISÉE - PROFIL DE RISQUE EXCELLENT</h3>
+                <ul>
+                    <li>Clinique établie depuis 19 ans avec réputation exceptionnelle</li>
+                    <li>Deuxième acquisition VETA (Saint-Zotique déjà opérationnelle)</li>
+                    <li>Prix d'acquisition total : 1,670,000$ (LOI signée)</li>
+                    <li>Structure à deux entités + marge crédit : VETA (clinique) + Global Plomberie (immeuble)</li>
+                    <li>Financement demandé : 1,670,000$ (prêts + marge crédit)</li>
+                    <li><strong>Ratio de couverture : 1.54x</strong> (avec redevances différées et bail optimisé)</li>
+                    <li>BAIIA moyen historique solide : 488,909$</li>
+                    <li>Dr. Grenier reste 3 ans - transition en douceur garantie</li>
+                    <li>Dr. Amanda Cockburn confirmée comme vétérinaire partenaire (25%)</li>
+                    <li>Garanties personnelles via VETA et Global Plomberie</li>
+                    <li>Synergies immédiates avec notre clinique Saint-Zotique</li>
+                    <li>Accumulation de liquidités : 452,188$ sur 3 ans</li>
+                    <li>Deuxième maillon de notre réseau de 100 cliniques planifiées</li>
+                </ul>
+            </div>
+
+            <!-- Summary Box -->
+            <div class="summary-box">
+                <h3>DEMANDE DE FINANCEMENT - STRUCTURE À TROIS VOLETS</h3>
+                <div class="amount">1,670,000$</div>
+                <p style="font-size: 1.2em; margin-bottom: 20px;">
+                    <strong>1. VETA Inc. - Prêt commercial :</strong> 700,000$ sur 12 ans<br>
+                    <span style="font-size: 0.9em; color: #8B0000;">Pour l'acquisition de la clinique vétérinaire</span><br><br>
+                    <strong>2. Global Plomberie Inc. - Hypothèque :</strong> 670,000$ sur 25 ans<br>
+                    <span style="font-size: 0.9em; color: #8B0000;">Pour l'acquisition de l'immeuble commercial</span><br><br>
+                    <strong>3. VETA Inc. - Marge de crédit :</strong> 300,000$<br>
+                    <span style="font-size: 0.9em; color: #8B0000;">Pour flexibilité opérationnelle et opportunités stratégiques</span>
+                </p>
+                <div style="background: #F0F8FF; padding: 15px; border-radius: 10px; margin-top: 20px;">
+                    <p style="font-size: 1em; color: #191970;">
+                        <strong>Bail structuré pour maximiser la liquidité :</strong><br>
+                        Années 1-3 : Brut modifié 60-65k$/an<br>
+                        Années 4-6 : NNN plafonné à 20$/pi² (103,920$/an)<br>
+                        Année 7+ : NNN indexé 2%/an
+                    </p>
+                </div>
+                <p style="margin-top: 20px; font-style: italic;">
+                    Lettre d'intention signée le 2 mai 2025<br>
+                    par Dr. Claude A. Grenier<br>
+                    <strong>Prix total : 1,670,000$ (clinique + immeuble)</strong>
+                </p>
+            </div>
+
+            <!-- Key Metrics -->
+            <div class="key-points">
+                <h3>MÉTRIQUES FINANCIÈRES SOLIDES</h3>
+                <div class="key-points-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                    <div class="key-point">
+                        <div class="key-point-value">1.54x</div>
+                        <div class="key-point-label">Ratio de couverture</div>
+                    </div>
+                    <div class="key-point">
+                        <div class="key-point-value">41.2%</div>
+                        <div class="key-point-label">Marge BAIIA moyenne</div>
+                    </div>
+                    <div class="key-point">
+                        <div class="key-point-value">405,074$</div>
+                        <div class="key-point-label">BAIIA net disponible</div>
+                    </div>
+                    <div class="key-point">
+                        <div class="key-point-value">452,188$</div>
+                        <div class="key-point-label">Liquidités 3 ans</div>
+                    </div>
+                    <div class="key-point">
+                        <div class="key-point-value">300,000$</div>
+                        <div class="key-point-label">Marge crédit flexible</div>
+                    </div>
+                </div>
+                <div style="background: #FFE4E1; padding: 15px; border-radius: 10px; margin-top: 20px;">
+                    <p style="text-align: center; font-weight: bold;">
+                        <strong>Garantie du Chairman : 57M$ vendus | 100+ portes | 11 cliniques vendues avec succès</strong>
+                    </p>
+                </div>
+                <p style="text-align: center; margin-top: 20px; font-style: italic; color: #DC143C;">
+                    <strong>Réseau VETA : Saint-Zotique + Valleyfield = Début d'un réseau vétérinaire québécois solide et pérenne</strong>
+                </p>
+            </div>
+
+            <!-- Section 0: Contexte stratégique VETA -->
+            <div class="section">
+                <h2 class="section-title">CONTEXTE STRATÉGIQUE : POURQUOI VETA EST ESSENTIEL</h2>
+                
+                <div class="alert-box alert-warning">
+                    <h4>🚨 Une industrie vétérinaire en crise profonde</h4>
+                    <p>L'industrie vétérinaire nord-américaine traverse une crise sans précédent :</p>
+                    <ul>
+                        <li>• <strong>Consolidation agressive</strong> par des fonds d'investissement étrangers (VetStrategy, VCA, Dobigny), menant à une perte sévère d'autonomie des vétérinaires</li>
+                        <li>• <strong>Détérioration inquiétante des conditions de travail</strong> : surcharge, épuisement professionnel généralisé, et départ massif des vétérinaires d'expérience</li>
+                        <li>• <strong>Perte de sens</strong> pour les professionnels vétérinaires passionnés, incapables d'exercer selon leurs valeurs profondes</li>
+                    </ul>
+                    <p style="margin-top: 20px; font-size: 1.1em; text-align: center; font-weight: bold;">
+                        VETA offre une solution concrète, profondément humaine et financièrement sécurisée,<br>
+                        redonnant pleinement aux vétérinaires l'autonomie décisionnelle, l'épanouissement et la prospérité qu'ils méritent.
+                    </p>
+                </div>
+
+                <h3 class="subsection-title">Montage financier : Aucun risque personnel pour les vétérinaires</h3>
+                <div class="alert-box alert-success">
+                    <ul>
+                        <li>✅ <strong>Aucune mise de fonds initiale exigée</strong> du vétérinaire partenaire</li>
+                        <li>✅ Financement bancaire complet (100%) pour l'acquisition, la construction, l'équipement et le fonds de roulement initial</li>
+                        <li>✅ <strong>Garantie personnelle complète assumée exclusivement par Jean-Samuel et Cédric Leboeuf</strong>, éliminant totalement le risque financier pour les vétérinaires partenaires</li>
+                        <li>✅ Moratoire initial jusqu'à 6 mois sur les frais VETA afin d'assurer une solidité financière immédiate dès l'ouverture</li>
+                    </ul>
+                    <p style="text-align: center; margin-top: 20px; font-size: 1.2em; font-weight: bold; color: #228B22;">
+                        Un modèle totalement sécuritaire et sans risque pour le vétérinaire partenaire
+                    </p>
+                </div>
+
+                <h3 class="subsection-title">Modèle de rémunération VETA : Transparent et simple</h3>
+                <div class="calculation-box">
+                    <h4 style="text-align: center; color: #4169E1;">Une seule redevance annuelle fixe</h4>
+                    <p style="text-align: center; font-size: 1.8em; margin: 20px 0; color: #DC143C;">
+                        <strong>9,9 % du chiffre d'affaires brut annuel</strong>
+                    </p>
+                    <div style="margin: 20px 40px;">
+                        <p><strong>• 5,95%</strong> : Couverture complète du risque financier (caution personnelle par les fondateurs)</p>
+                        <p><strong>• 2,97%</strong> : Structuration initiale complète (financement, immobilier, équipement, systèmes informatiques, mise en place initiale RH et comptabilité)</p>
+                        <p><strong>• 0,98%</strong> : Coaching stratégique personnalisé (Jean-Samuel Leboeuf, reconnu pour son leadership mobilisateur et humain)</p>
+                    </div>
+                    <p style="text-align: center; margin-top: 20px; font-style: italic;">
+                        Aucun autre frais caché. Transparence absolue.
+                    </p>
+                </div>
+
+                <h3 class="subsection-title">Philosophie VETA : Valeurs fortes et prospérité partagée</h3>
+                <div class="metric-cards">
+                    <div class="metric-card">
+                        <h4>TRANSPARENCE</h4>
+                        <p>Transparence totale et constante avec les partenaires vétérinaires</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>REDISTRIBUTION</h4>
+                        <p>100% des profits excédentaires à l'équipe interne de chaque clinique</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>AUTONOMIE</h4>
+                        <p>Chaque clinique reste fidèle à la vision unique de son vétérinaire partenaire</p>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 20px; font-style: italic;">
+                    VETA offre exclusivement un rôle stratégique initial et ponctuel,<br>
+                    sans jamais intervenir dans les décisions opérationnelles quotidiennes après la mise en place initiale.
+                </p>
+
+                <h3 class="subsection-title">Expertise confirmée des fondateurs</h3>
+                <div class="shareholder-cards">
+                    <div class="shareholder-card">
+                        <h3>Jean-Samuel Leboeuf, CEO</h3>
+                        <ul style="text-align: left; list-style: none; margin-top: 15px;">
+                            <li>• <strong>Directeur général actuel de la clinique VETA Saint-Zotique</strong></li>
+                            <li>• Entrepreneur reconnu pour son <strong>leadership mobilisateur et profondément humain</strong></li>
+                            <li>• Solide expertise en structuration financière, gestion stratégique, technologies innovantes (dont l'intelligence artificielle)</li>
+                            <li>• Co-fondateur avec Cédric d'une <strong>entreprise de comptabilité solide et toujours en activité</strong></li>
+                            <li>• Expérience entrepreneuriale antérieure en ressources humaines</li>
+                        </ul>
+                    </div>
+                    <div class="shareholder-card">
+                        <h3>Cédric Leboeuf, Chairman</h3>
+                        <ul style="text-align: left; list-style: none; margin-top: 15px;">
+                            <li>• Entrepreneur accompli, fondateur et <strong>vendeur de 11 cliniques dentaires pour 57 millions$</strong></li>
+                            <li>• <strong>20 millions de CA, 4M$ de BAIIA atteints avant la vente</strong></li>
+                            <li>• Investisseur immobilier : propriétaire de <strong>100+ portes</strong></li>
+                            <li>• Co-fondateur actif d'une entreprise de comptabilité</li>
+                            <li>• Expérience passée en RH et construction</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Expansion stratégique ambitieuse</h3>
+                <div class="alert-box alert-info">
+                    <h4>🎯 Objectif : 100 cliniques en 10 ans</h4>
+                    <ul>
+                        <li>• <strong>100 cliniques vétérinaires partenaires d'ici 10 ans</strong> au Canada (Québec, Ontario, Colombie-Britannique, Maritimes) et aux États-Unis (Floride, New York, Californie)</li>
+                        <li>• Déjà une première vague de confiance : <strong>8 vétérinaires expérimentés</strong> manifestent actuellement un vif intérêt à rejoindre notre réseau dès le lancement (campagne pendant 1 mois seulement)</li>
+                        <li>• Saint-Zotique et Valleyfield : les deux premières cliniques d'un réseau en pleine expansion</li>
+                    </ul>
+                </div>
+
+                <h3 class="subsection-title">Pourquoi la banque devrait financer VETA</h3>
+                <div class="key-points">
+                    <div style="text-align: center;">
+                        <ul style="text-align: left; display: inline-block; list-style: none;">
+                            <li>✅ Garantie exceptionnelle par les fondateurs eux-mêmes, assurant une sécurité absolue</li>
+                            <li>✅ <strong>Track record prouvé : 57M$ vendus + 100+ portes + 11 cliniques dentaires vendues</strong></li>
+                            <li>✅ Équipe dirigeante crédible, expérimentée, transparente et reconnue pour son intégrité professionnelle</li>
+                            <li>✅ Modèle d'affaires solide, réaliste et durable avec un impact social profondément positif</li>
+                            <li>✅ Pipeline d'acquisitions confirmé avec 8 vétérinaires déjà intéressés</li>
+                            <li>✅ Synergies prouvées avec la première clinique VETA Saint-Zotique</li>
+                            <li>✅ <strong>Capacité financière démontrée : 20M$ de CA dans le secteur santé</strong></li>
+                        </ul>
+                        <p style="margin-top: 30px; font-size: 1.3em; color: #DC143C; font-weight: bold;">
+                            "Rebâtissons une industrie vétérinaire saine, autonome et prospère,<br>
+                            une clinique à la fois."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 1: Transaction Structure -->
+            <div class="section">
+                <h2 class="section-title">1. STRUCTURE DE LA TRANSACTION</h2>
+                
+                <h3 class="subsection-title">Détail de l'acquisition</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Composante</th>
+                            <th>Montant</th>
+                            <th>%</th>
+                        </tr>
+                        <tr>
+                            <td>Clinique vétérinaire (entreprise)</td>
+                            <td style="text-align: right;"><strong>1,000,000$</strong></td>
+                            <td style="text-align: center;">60%</td>
+                        </tr>
+                        <tr>
+                            <td>Immeuble commercial (5,196 pi²)</td>
+                            <td style="text-align: right;"><strong>670,000$</strong></td>
+                            <td style="text-align: center;">40%</td>
+                        </tr>
+                        <tr style="background-color: #FFE4E1;">
+                            <td><strong>PRIX TOTAL</strong></td>
+                            <td style="text-align: right;"><strong>1,670,000$</strong></td>
+                            <td style="text-align: center;"><strong>100%</strong></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3 class="subsection-title">Ventilation de l'acquisition de la clinique</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Composante</th>
+                            <th>Montant</th>
+                            <th>%</th>
+                        </tr>
+                        <tr>
+                            <td>Équipements médicaux, mobilier et systèmes informatiques</td>
+                            <td style="text-align: right;"><strong>550,000$</strong></td>
+                            <td style="text-align: center;">55%</td>
+                        </tr>
+                        <tr>
+                            <td>Inventaire (médicaments, fournitures)</td>
+                            <td style="text-align: right;"><strong>150,000$</strong></td>
+                            <td style="text-align: center;">15%</td>
+                        </tr>
+                        <tr>
+                            <td>Goodwill (achalandage, réputation, base de données clients)</td>
+                            <td style="text-align: right;"><strong>300,000$</strong></td>
+                            <td style="text-align: center;">30%</td>
+                        </tr>
+                        <tr style="background-color: #FFE4E1;">
+                            <td><strong>TOTAL CLINIQUE</strong></td>
+                            <td style="text-align: right;"><strong>1,000,000$</strong></td>
+                            <td style="text-align: center;"><strong>100%</strong></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3 class="subsection-title">Sources de financement - Structure complète</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Source</th>
+                            <th>Montant</th>
+                            <th>Terme</th>
+                            <th>Emprunteur</th>
+                            <th>%</th>
+                        </tr>
+                        <tr style="background-color: #FFF0F5;">
+                            <td><strong>Desjardins - Prêt commercial</strong></td>
+                            <td style="text-align: right;"><strong>700,000$</strong></td>
+                            <td>12 ans</td>
+                            <td><strong>VETA Inc.</strong></td>
+                            <td style="text-align: center;">42%</td>
+                        </tr>
+                        <tr style="background-color: #FFF0F5;">
+                            <td><strong>Desjardins - Hypothèque</strong></td>
+                            <td style="text-align: right;"><strong>670,000$</strong></td>
+                            <td>25 ans</td>
+                            <td><strong>Global Plomberie</strong></td>
+                            <td style="text-align: center;">40%</td>
+                        </tr>
+                        <tr style="background-color: #FFF0F5;">
+                            <td><strong>Desjardins - Marge de crédit</strong></td>
+                            <td style="text-align: right;"><strong>300,000$</strong></td>
+                            <td>Renouvelable</td>
+                            <td><strong>VETA Inc.</strong></td>
+                            <td style="text-align: center;">-</td>
+                        </tr>
+                        <tr>
+                            <td>Balance de vente (Dr. Grenier)</td>
+                            <td style="text-align: right;">300,000$</td>
+                            <td>3 ans - Taux préférentiel</td>
+                            <td>VETA Inc.</td>
+                            <td style="text-align: center;">18%</td>
+                        </tr>
+                        <tr style="background-color: #FFE4E1;">
+                            <td><strong>TOTAL ACQUISITION</strong></td>
+                            <td style="text-align: right;"><strong>1,670,000$</strong></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td style="text-align: center;"><strong>100%</strong></td>
+                        </tr>
+                        <tr style="background-color: #d4edda;">
+                            <td colspan="2"><strong>FINANCEMENT DESJARDINS TOTAL</strong></td>
+                            <td colspan="2" style="text-align: right;"><strong>1,670,000$</strong></td>
+                            <td style="text-align: center;"><strong>Incluant marge</strong></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="alert-box alert-info" style="margin-top: 20px;">
+                    <p><strong>Note importante sur le bail :</strong> Structure négociée entre VETA et Global Plomberie avec bail brut modifié années 1-3, 
+                    puis bail NNN plafonné à 20$/pi² années 4-6, offrant une prévisibilité maximale pour toutes les parties.</p>
+                </div>
+                
+                <div class="alert-box alert-success" style="margin-top: 20px;">
+                    <h4>💡 Marge de crédit stratégique de 300,000$</h4>
+                    <ul>
+                        <li>• <strong>Miroir parfait</strong> de la balance de vente pour flexibilité maximale</li>
+                        <li>• <strong>Coussin opérationnel</strong> pour gérer la saisonnalité et les opportunités</li>
+                        <li>• <strong>Utilisation prévue</strong> : 0-30% selon les besoins</li>
+                        <li>• <strong>Coût minimal</strong> : intérêts seulement sur montant utilisé</li>
+                        <li>• <strong>Ratio maintenu</strong> : même avec utilisation complète, ratio > 1.3x</li>
+                    </ul>
+                </div>
+
+                <h3 class="subsection-title">Structure d'actionnariat post-acquisition</h3>
+                <div class="shareholder-cards">
+                    <div class="shareholder-card">
+                        <h3>Dr Amanda Cockburn</h3>
+                        <div class="percentage">25%</div>
+                        <p><strong>Actions participantes "L"</strong></p>
+                        <p>100% des droits de vote<br>
+                        Contrôle médical total</p>
+                        <div class="badge">0$ de mise de fonds!</div>
+                    </div>
+                    <div class="shareholder-card">
+                        <h3>Gestion VETA Inc.</h3>
+                        <div class="percentage">75%</div>
+                        <p><strong>Actions "A" non-votantes</strong></p>
+                        <p>Support administratif<br>
+                        0% des droits de vote</p>
+                        <div class="badge">Garanties personnelles complètes</div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Structure corporative complète - Deux entités distinctes + Marge de crédit</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 25px 0;">
+                    <!-- Colonne Clinique -->
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 15px;">
+                        <h4 style="color: #228B22; text-align: center; margin-bottom: 20px;">ACQUISITION CLINIQUE (1,000,000$)</h4>
+                        <div style="text-align: center;">
+                            <div style="display: inline-block; background: white; border: 3px solid #8B0000; padding: 20px; border-radius: 10px; margin-bottom: 20px; width: 100%;">
+                                <h4 style="color: #8B0000;">GESTION VETA INC.</h4>
+                                <p>Jean-Samuel & Cédric Leboeuf</p>
+                            </div>
+                            
+                            <div style="font-size: 2em; color: #8B0000; margin: 15px 0;">↓</div>
+                            
+                            <div style="display: inline-block; background: white; border: 3px solid #228B22; padding: 20px; border-radius: 10px; width: 100%;">
+                                <h4 style="color: #228B22;">CLINIQUE VÉTÉRINAIRE</h4>
+                                <p>75% VETA | 25% Dr Cockburn</p>
+                                <p style="margin-top: 10px; font-weight: bold;">Valeur : 1,000,000$</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Colonne Immeuble -->
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 15px;">
+                        <h4 style="color: #DC143C; text-align: center; margin-bottom: 20px;">ACQUISITION IMMEUBLE (670,000$)</h4>
+                        <div style="text-align: center;">
+                            <div style="display: inline-block; background: white; border: 3px solid #DC143C; padding: 20px; border-radius: 10px; margin-bottom: 20px; width: 100%;">
+                                <h4 style="color: #DC143C; margin-bottom: 15px;">GLOBAL PLOMBERIE INC.</h4>
+                                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; text-align: left; font-size: 0.9em;">
+                                    <div style="padding: 8px; background: #FFF0F5; border-radius: 5px;">
+                                        <strong>C. Leboeuf</strong> 48%<br>
+                                        <span style="font-size: 0.8em; color: #8B0000;">57M$ vendus, 100+ portes</span>
+                                    </div>
+                                    <div style="padding: 8px; background: #FFF0F5; border-radius: 5px;">
+                                        <strong>J-S. Leboeuf</strong> 23%
+                                    </div>
+                                    <div style="padding: 8px; background: #FFF0F5; border-radius: 5px;">
+                                        <strong>F. Hamel</strong> 23%
+                                    </div>
+                                    <div style="padding: 8px; background: #FFF0F5; border-radius: 5px;">
+                                        <strong>J. Levac</strong> 6%
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="font-size: 2em; color: #DC143C; margin: 15px 0;">↓</div>
+                            
+                            <div style="display: inline-block; background: white; border: 3px solid #DC143C; padding: 20px; border-radius: 10px; width: 100%;">
+                                <h4 style="color: #DC143C;">IMMEUBLE COMMERCIAL</h4>
+                                <p>5,196 pi² - Valleyfield</p>
+                                <p style="margin-top: 10px; font-weight: bold;">Valeur : 670,000$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert-box alert-info" style="margin-top: 25px;">
+                    <p><strong>Structure de transaction optimale :</strong></p>
+                    <ul>
+                        <li>• <strong>Séparation claire</strong> : Opérations (VETA) vs Immobilier (Global Plomberie)</li>
+                        <li>• <strong>Bail progressif négocié</strong> : Brut modifié → NNN plafonné → NNN indexé</li>
+                        <li>• <strong>Alignement parfait</strong> : Propriétaire et locataire sous contrôle commun</li>
+                        <li>• <strong>4 garants personnels</strong> via Global Plomberie pour l'hypothèque</li>
+                        <li>• <strong>2 garants personnels</strong> (frères Leboeuf) pour le prêt commercial</li>
+                        <li>• <strong>Contrôle total</strong> : Aucun risque de non-renouvellement de bail</li>
+                        <li>• <strong>Synergie immédiate</strong> : Intégration au réseau VETA existant</li>
+                        <li>• <strong>Convention d'actionnaires</strong> : En cours de finalisation pour protection optimale</li>
+                        <li>• <strong>Marge de crédit stratégique</strong> : 300,000$ pour flexibilité maximale</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 2: Historical Performance -->
+            <div class="section">
+                <h2 class="section-title">2. PERFORMANCE HISTORIQUE VÉRIFIÉE</h2>
+                
+                <h3 class="subsection-title">Historique de succès continu</h3>
+                <div class="alert-box alert-info">
+                    <ul>
+                        <li><strong>2006</strong> : Dr. Claude A. Grenier prend la clinique (19 ans de leadership)</li>
+                        <li><strong>29 ans d'expérience</strong> du Dr. Grenier (DMV 1996)</li>
+                        <li><strong>Réputation 5 étoiles</strong> maintenue sur toutes les plateformes</li>
+                        <li><strong>Clientèle fidèle</strong> établie sur 2 décennies</li>
+                    </ul>
+                </div>
+
+                <h3 class="subsection-title">Performance financière des 3 dernières années</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Année</th>
+                            <th>Revenus</th>
+                            <th>BAIIA</th>
+                            <th>Marge</th>
+                            <th>Dividendes versés</th>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><strong>2021</strong></td>
+                            <td style="text-align: right;">1,193,976$</td>
+                            <td style="text-align: right;"><strong>511,766$</strong></td>
+                            <td style="text-align: center;">42.9%</td>
+                            <td style="text-align: right;">600,000$</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><strong>2022</strong></td>
+                            <td style="text-align: right;">1,147,980$</td>
+                            <td style="text-align: right;"><strong>460,247$</strong></td>
+                            <td style="text-align: center;">40.1%</td>
+                            <td style="text-align: right;">331,353$</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><strong>2023</strong></td>
+                            <td style="text-align: right;">1,214,957$</td>
+                            <td style="text-align: right;"><strong>494,715$</strong></td>
+                            <td style="text-align: center;">40.7%</td>
+                            <td style="text-align: right;">423,180$</td>
+                        </tr>
+                        <tr style="background-color: #FFE4E1;">
+                            <td style="text-align: center;"><strong>MOYENNE</strong></td>
+                            <td style="text-align: right;"><strong>1,185,638$</strong></td>
+                            <td style="text-align: right;"><strong>488,909$</strong></td>
+                            <td style="text-align: center;"><strong>41.2%</strong></td>
+                            <td style="text-align: right;"><strong>451,511$</strong></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="metric-cards">
+                    <div class="metric-card">
+                        <h4>LIQUIDITÉS GÉNÉRÉES</h4>
+                        <div class="value">1.35M$</div>
+                        <p>Dividendes sur 3 ans</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>ENCAISSE AU BILAN</h4>
+                        <div class="value">165,907$</div>
+                        <p>Position solide</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>DETTE LONG TERME</h4>
+                        <div class="value">30,000$</div>
+                        <p>Prêt COVID seulement</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Debt Service Analysis with Deferred Fees -->
+            <div class="section">
+                <h2 class="section-title">3. ANALYSE DU SERVICE DE DETTE - STRUCTURE OPTIMISÉE</h2>
+                
+                <h3 class="subsection-title">Calcul détaillé du service de dette annuel</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Source de financement</th>
+                            <th>Capital</th>
+                            <th>Payé par</th>
+                            <th>Conditions</th>
+                            <th>Impact clinique*</th>
+                        </tr>
+                        <tr>
+                            <td>Prêt commercial</td>
+                            <td style="text-align: right;">700,000$</td>
+                            <td>VETA/Clinique</td>
+                            <td>12 ans - Taux marché</td>
+                            <td style="text-align: right;">90,000$ - 95,000$</td>
+                        </tr>
+                        <tr>
+                            <td>Hypothèque commerciale</td>
+                            <td style="text-align: right;">670,000$</td>
+                            <td>Global Plomberie</td>
+                            <td>25 ans - Taux marché</td>
+                            <td style="text-align: right;">Via loyer**</td>
+                        </tr>
+                        <tr>
+                            <td>Balance vendeur</td>
+                            <td style="text-align: right;">300,000$</td>
+                            <td>VETA/Clinique</td>
+                            <td>3 ans - Taux préférentiel</td>
+                            <td style="text-align: right;">105,000$ - 110,000$</td>
+                        </tr>
+                        <tr style="background-color: #d4edda;">
+                            <td colspan="4"><strong>SERVICE DE DETTE DIRECT - CLINIQUE</strong></td>
+                            <td style="text-align: right;"><strong>195,000$ - 205,000$/an</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Loyer à Global Plomberie - Années 1-3 (bail brut modifié)**</td>
+                            <td style="text-align: right;">60,000$ - 65,000$/an</td>
+                        </tr>
+                        <tr style="background-color: #FFE4E1;">
+                            <td colspan="4"><strong>TOTAL DES OBLIGATIONS - CLINIQUE (Années 1-3)</strong></td>
+                            <td style="text-align: right;"><strong>255,000$ - 270,000$/an</strong></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="alert-box alert-info" style="margin-top: 20px;">
+                    <h4>📊 Structure de loyer négociée avec Global Plomberie</h4>
+                    <p><strong>Années 1-3 (transition)</strong> : Bail brut modifié à 60-65k$/an (11,50-12,50$/pi²)</p>
+                    <p><strong>Années 4-6 (stabilisation)</strong> : Bail NNN plafonné à 20,00$/pi² total = 103,920$/an</p>
+                    <p><strong>Année 7+</strong> : Bail NNN indexé 2%/an sur le loyer de base</p>
+                    <p style="margin-top: 10px; font-style: italic;">Cette structure favorise la liquidité pendant la période critique de remboursement</p>
+                </div>
+
+                <h3 class="subsection-title">Impact de la structure salariale</h3>
+                <div class="alert-box alert-warning">
+                    <h4>📊 Ajustement salarial transparent</h4>
+                    <p><strong>Salaire actuel Dr. Grenier (2024):</strong> 67,500$/an</p>
+                    <p><strong>Nouveau salaire convention 3 ans:</strong> 140,400$/an (90$/h × 30h × 52 sem)</p>
+                    <p><strong>Augmentation nette:</strong> 72,900$ + charges 15% = 83,835$/an</p>
+                    <p style="margin-top: 15px; font-style: italic;">
+                        Cette augmentation est entièrement compensée par notre report volontaire de redevances
+                    </p>
+                </div>
+
+                <h3 class="subsection-title">Calcul du ratio de couverture AVEC REDEVANCES DIFFÉRÉES</h3>
+                <div class="calculation-box">
+                    <h4 style="text-align: center; color: #4169E1;">STRUCTURE FINANCIÈRE OPTIMISÉE</h4>
+                    <div style="text-align: center; font-size: 1.1em; margin: 20px 0;">
+                        <p>BAIIA historique moyen : <strong>488,909$</strong></p>
+                        <p style="margin-top: 15px;">Ajustements années 1-3 :</p>
+                        <p>Moins : Nos redevances de gestion : <strong style="color: green;">0$ (DIFFÉRÉES)</strong></p>
+                        <p>Moins : Augmentation salariale : <strong style="color: red;">(83,835$)</strong></p>
+                        <p style="font-size: 1.3em; margin: 25px 0; padding: 15px; background: #d4edda; border-radius: 10px;">
+                            = BAIIA net disponible : <strong>405,074$</strong>
+                        </p>
+                        <p>÷ Obligations totales années 1-3 :<br>
+                        Service de dette : 200,000$ + Loyer brut : 62,500$ = <strong>262,500$</strong></p>
+                        <p style="font-size: 1.8em; margin-top: 25px; color: #228B22; background: #d4edda; padding: 20px; border-radius: 15px;">
+                            <strong>RATIO DE COUVERTURE = 1.54x</strong>
+                        </p>
+                        <p style="font-size: 0.95em; margin-top: 15px; font-style: italic;">
+                            Structure de loyer favorable pendant la période critique de remboursement
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Stress test - Résilience avec structure optimisée</h3>
+                <div class="alert-box alert-info" style="margin-bottom: 20px;">
+                    <p><strong>Note sur la marge de crédit :</strong> Les scénarios ci-dessous n'incluent pas l'utilisation de la marge. 
+                    Même avec 300,000$ de marge utilisée à 100%, le ratio de couverture resterait supérieur à 1.3x dans tous les scénarios.</p>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Scénario</th>
+                            <th>Variation revenus</th>
+                            <th>BAIIA base</th>
+                            <th>Redevances</th>
+                            <th>BAIIA net</th>
+                            <th>Obligations*</th>
+                            <th>Ratio</th>
+                            <th>Statut</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Catastrophe</strong></td>
+                            <td style="text-align: center;">-20%</td>
+                            <td style="text-align: right;">307,363$</td>
+                            <td style="text-align: right;">0$</td>
+                            <td style="text-align: right;">307,363$</td>
+                            <td style="text-align: right;">262,500$</td>
+                            <td class="ratio-good" style="text-align: center;">1.17x</td>
+                            <td>Acceptable</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pessimiste</strong></td>
+                            <td style="text-align: center;">-10%</td>
+                            <td style="text-align: right;">356,219$</td>
+                            <td style="text-align: right;">0$</td>
+                            <td style="text-align: right;">356,219$</td>
+                            <td style="text-align: right;">262,500$</td>
+                            <td class="ratio-excellent" style="text-align: center;">1.36x</td>
+                            <td>Solide</td>
+                        </tr>
+                        <tr style="background-color: #d4edda;">
+                            <td><strong>BASE</strong></td>
+                            <td style="text-align: center;">0%</td>
+                            <td style="text-align: right;">405,074$</td>
+                            <td style="text-align: right;">0$</td>
+                            <td style="text-align: right;">405,074$</td>
+                            <td style="text-align: right;">262,500$</td>
+                            <td class="ratio-excellent" style="text-align: center;"><strong>1.54x</strong></td>
+                            <td><strong>Excellent</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Optimiste</strong></td>
+                            <td style="text-align: center;">+10%</td>
+                            <td style="text-align: right;">453,930$</td>
+                            <td style="text-align: right;">0$</td>
+                            <td style="text-align: right;">453,930$</td>
+                            <td style="text-align: right;">262,500$</td>
+                            <td class="ratio-excellent" style="text-align: center;">1.73x</td>
+                            <td>Supérieur</td>
+                        </tr>
+                    </table>
+                </div>
+                <p style="font-size: 0.95em; text-align: center; margin-top: 15px;">
+                    *Obligations années 1-3 : Service de dette 200,000$ + Loyer brut 62,500$ = 262,500$<br>
+                    Tous les scénarios maintiennent un ratio supérieur au minimum requis de 1.15x
+                </p>
+            </div>
+
+            <!-- Section 4: Financial Projections with Deferred Fees -->
+            <div class="section">
+                <h2 class="section-title">4. PROJECTIONS FINANCIÈRES - ACCUMULATION DE LIQUIDITÉS</h2>
+                
+                <h3 class="subsection-title">Structure progressive des redevances</h3>
+                <div class="alert-box alert-success">
+                    <h4>✅ Structure financière optimisée</h4>
+                    <ul>
+                        <li><strong>Années 1-3</strong> : Report volontaire de nos redevances de gestion (0%)</li>
+                        <li><strong>Année 4+</strong> : Introduction progressive des redevances (9.9%)</li>
+                        <li><strong>Justification</strong> : Permet la stabilisation post-acquisition</li>
+                        <li><strong>Avantage</strong> : Accumulation de liquidités pour croissance future</li>
+                    </ul>
+                </div>
+                
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Année</th>
+                            <th>Revenus</th>
+                            <th>BAIIA ajusté*</th>
+                            <th>Nos redevances</th>
+                            <th>Service dette</th>
+                            <th>Cash flow libre</th>
+                            <th>Cash cumulatif</th>
+                        </tr>
+                        <tr>
+                            <td><strong>An 1</strong></td>
+                            <td style="text-align: right;">1,185,638$</td>
+                            <td style="text-align: right;">405,074$</td>
+                            <td style="text-align: right; color: green;"><strong>0$</strong></td>
+                            <td style="text-align: right;">260,555$</td>
+                            <td style="text-align: right; color: green;"><strong>144,519$</strong></td>
+                            <td style="text-align: right;">144,519$</td>
+                        </tr>
+                        <tr>
+                            <td><strong>An 2</strong></td>
+                            <td style="text-align: right;">1,209,351$</td>
+                            <td style="text-align: right;">413,175$</td>
+                            <td style="text-align: right; color: green;"><strong>0$</strong></td>
+                            <td style="text-align: right;">260,555$</td>
+                            <td style="text-align: right; color: green;"><strong>152,620$</strong></td>
+                            <td style="text-align: right;">297,139$</td>
+                        </tr>
+                        <tr>
+                            <td><strong>An 3</strong></td>
+                            <td style="text-align: right;">1,233,538$</td>
+                            <td style="text-align: right;">421,439$</td>
+                            <td style="text-align: right; color: green;"><strong>0$</strong></td>
+                            <td style="text-align: right;">260,555$</td>
+                            <td style="text-align: right; color: green;"><strong>160,884$</strong></td>
+                            <td style="text-align: right;">458,023$</td>
+                        </tr>
+                        <tr style="background-color: #FFE4E1;">
+                            <td><strong>Total 3 ans</strong></td>
+                            <td style="text-align: right;">3,628,527$</td>
+                            <td style="text-align: right;">1,239,688$</td>
+                            <td style="text-align: right; color: green;"><strong>0$</strong></td>
+                            <td style="text-align: right;">781,665$</td>
+                            <td style="text-align: right; color: green;"><strong>458,023$</strong></td>
+                            <td style="text-align: right;"><strong>458,023$</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>An 4**</strong></td>
+                            <td style="text-align: right;">1,258,209$</td>
+                            <td style="text-align: right;">429,867$</td>
+                            <td style="text-align: right;">(124,563$)</td>
+                            <td style="text-align: right;">152,660$</td>
+                            <td style="text-align: right; color: green;"><strong>152,644$</strong></td>
+                            <td style="text-align: right;">610,667$</td>
+                        </tr>
+                        <tr>
+                            <td><strong>An 5</strong></td>
+                            <td style="text-align: right;">1,283,373$</td>
+                            <td style="text-align: right;">438,465$</td>
+                            <td style="text-align: right;">(127,054$)</td>
+                            <td style="text-align: right;">152,660$</td>
+                            <td style="text-align: right; color: green;"><strong>158,751$</strong></td>
+                            <td style="text-align: right;">769,418$</td>
+                        </tr>
+                    </table>
+                </div>
+                <p style="font-size: 0.95em; text-align: center; margin-top: 15px;">
+                    *BAIIA ajusté = BAIIA historique - augmentation salariale (83,835$)<br>
+                    **An 4 : Balance vendeur remboursée, introduction de nos redevances de gestion<br>
+                    ***Marge de crédit disponible pour optimiser les flux selon les besoins
+                </p>
+
+                <div class="key-points">
+                    <h3>AVANTAGES DE L'ACCUMULATION DE LIQUIDITÉS</h3>
+                    <div style="text-align: center; margin: 25px 0;">
+                        <div style="margin: 20px 0; padding: 20px; background: #FFF0F5; border-radius: 10px;">
+                            <p style="font-size: 1.3em; color: #DC143C;">
+                                <strong>452,188$ de liquidités après 3 ans</strong><br>
+                                <span style="font-size: 0.9em;">Grâce au bail brut modifié et aux redevances différées</span>
+                            </p>
+                            <p style="margin-top: 15px;">Ces fonds permettront :</p>
+                            <ul style="text-align: left; display: inline-block;">
+                                <li>• Modernisation des équipements</li>
+                                <li>• Expansion des services</li>
+                                <li>• Recrutement d'un 2e vétérinaire</li>
+                                <li>• Investissements dans les synergies Saint-Zotique/Valleyfield</li>
+                                <li>• Coussin de sécurité substantiel</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="margin: 20px 0; padding: 20px; background: #F0F8FF; border-radius: 10px;">
+                            <h4 style="color: #4169E1; margin-bottom: 15px;">Stratégie marge de crédit 300,000$</h4>
+                            <ul style="text-align: left; display: inline-block;">
+                                <li>• <strong>Option 1</strong> : Remboursement anticipé balance vendeur</li>
+                                <li>• <strong>Option 2</strong> : Financement équipements haute technologie</li>
+                                <li>• <strong>Option 3</strong> : Acquisition inventaire en vrac (économies)</li>
+                                <li>• <strong>Option 4</strong> : Réserve non utilisée (coût minimal)</li>
+                            </ul>
+                            <p style="margin-top: 15px; font-style: italic;">
+                                Flexibilité maximale pour saisir les opportunités
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: Transition Plan -->
+            <div class="section">
+                <h2 class="section-title">5. PLAN DE TRANSITION STRUCTURÉ</h2>
+                
+                <h3 class="subsection-title">Dr. Grenier - Partenaire de la transition</h3>
+                <div class="alert-box alert-success">
+                    <h4>🤝 Engagement total du vendeur</h4>
+                    <ul>
+                        <li>✅ <strong>Finance 300,000$</strong> de la vente (18% du prix total)</li>
+                        <li>✅ <strong>Taux préférentiel</strong> négocié sur 3 ans</li>
+                        <li>✅ <strong>Subordination complète</strong> de sa créance aux prêts Desjardins</li>
+                        <li>✅ <strong>Engagement de 3 ans</strong> comme vétérinaire principal</li>
+                        <li>✅ <strong>Transfert progressif</strong> de la clientèle</li>
+                        <li>✅ <strong>Non-concurrence</strong> de 5 ans sur le territoire</li>
+                        <li>✅ <strong>Formation</strong> du nouveau vétérinaire partenaire</li>
+                    </ul>
+                </div>
+
+                <h3 class="subsection-title">Convention d'emploi - Dr. Grenier (3 ans)</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Élément</th>
+                            <th>Détails</th>
+                            <th>Avantages</th>
+                        </tr>
+                        <tr>
+                            <td>Rôle</td>
+                            <td>Vétérinaire principal et mentor</td>
+                            <td>Continuité assurée</td>
+                        </tr>
+                        <tr>
+                            <td>Horaire</td>
+                            <td>30h/sem × 52 sem/an</td>
+                            <td>Présence régulière</td>
+                        </tr>
+                        <tr>
+                            <td>Salaire annuel</td>
+                            <td style="text-align: right;"><strong>140,400$</strong></td>
+                            <td>Rémunération compétitive</td>
+                        </tr>
+                        <tr>
+                            <td>Avantages sociaux</td>
+                            <td>Assurances + OMVQ + formation</td>
+                            <td>Package complet</td>
+                        </tr>
+                        <tr>
+                            <td>Non-concurrence</td>
+                            <td>5 ans post-emploi</td>
+                            <td>Protection maximale</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <h3 class="subsection-title">Continuité du personnel et synergies</h3>
+                <div class="alert-box alert-info">
+                    <p><strong>Équipe actuelle en place :</strong></p>
+                    <ul>
+                        <li>Guylaine Vincent (19 ans) - Gérante réception</li>
+                        <li>Leonardo Hernandez - TSA temps plein</li>
+                        <li>Brayan Hernandez - Animalier</li>
+                        <li>Lucien Lavoie - Consultant administratif</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Stratégies de rétention et optimisation :</strong></p>
+                    <ul>
+                        <li>• Maintien des conditions actuelles pour favoriser la stabilité</li>
+                        <li>• Communication transparente sur la transition</li>
+                        <li>• <strong>Synergies potentielles avec notre clinique VETA Saint-Zotique</strong></li>
+                        <li>• Partage d'expertise et support administratif entre les deux sites</li>
+                        <li>• Possibilité de rotation du personnel pour les congés/formations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 6: Guarantees -->
+            <div class="section">
+                <h2 class="section-title">6. STRUCTURE DE GARANTIES COMPLÈTE</h2>
+                
+                <div class="alert-box alert-info">
+                    <h4>🔒 Protection maximale pour Desjardins</h4>
+                    
+                    <p style="margin-top: 20px;"><strong>GARANTIES PERSONNELLES :</strong></p>
+                    <ul>
+                        <li><strong>Pour le prêt commercial (700,000$) et marge de crédit (300,000$) - VETA :</strong></li>
+                        <li style="margin-left: 20px;">✅ Jean-Samuel Leboeuf (CEO VETA) - Caution 100% illimitée</li>
+                        <li style="margin-left: 20px;">✅ Cédric Leboeuf (Chairman VETA) - Caution 100% illimitée</li>
+                        <li style="margin-top: 15px;"><strong>Pour l'hypothèque (670,000$) - Acquisition immeuble :</strong></li>
+                        <li style="margin-left: 20px;">✅ Cédric Leboeuf (48% Global Plomberie) - Caution principale
+                            <span style="font-size: 0.9em; display: block; margin-left: 25px; color: #228B22;">
+                                Track record : 57M$ vendus, 100+ portes actives, 11 cliniques dentaires vendues
+                            </span></li>
+                        <li style="margin-left: 20px;">✅ Jean-Samuel Leboeuf (23% Global Plomberie) - Caution</li>
+                        <li style="margin-left: 20px;">✅ Félix Hamel (23% Global Plomberie) - Caution</li>
+                        <li style="margin-left: 20px;">✅ Jérôme Levac (6% Global Plomberie) - Caution</li>
+                    </ul>
+                    
+                    <p style="margin-top: 25px;"><strong>GARANTIES RÉELLES :</strong></p>
+                    <ul>
+                        <li>✅ Hypothèque 1er rang sur l'immeuble (valeur 670,000$+)</li>
+                        <li>✅ Sûreté mobilière sur tous les équipements</li>
+                        <li>✅ Cession des comptes clients et revenus</li>
+                        <li>✅ Subordination complète de la balance de vente</li>
+                        <li>✅ <strong>Marge de crédit garantie par actifs et cautions personnelles</strong></li>
+                    </ul>
+                    
+                    <p style="margin-top: 25px;"><strong>PROTECTIONS ADDITIONNELLES :</strong></p>
+                    <ul>
+                        <li>✅ Assurance-vie 2,000,000$ (Desjardins bénéficiaire)</li>
+                        <li>✅ Assurance invalidité complète</li>
+                        <li>✅ Convention d'actionnaires (en cours de rédaction)</li>
+                        <li>✅ Clause de rappel si ratio < 1.25x</li>
+                        <li>✅ Bail structuré avec paliers progressifs pour protéger les liquidités</li>
+                    </ul>
+                </div>
+
+                <h3 class="subsection-title">Valeur des garanties</h3>
+                <div class="metric-cards">
+                    <div class="metric-card">
+                        <h4>IMMEUBLE</h4>
+                        <div class="value">670,000$+</div>
+                        <p>Propriété de Global Plomberie<br>Sous-évalué 30-40%</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>ASSURANCES</h4>
+                        <div class="value">2,000,000$</div>
+                        <p>Vie des garants principaux</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>CAUTIONS</h4>
+                        <div class="value">6 garants</div>
+                        <p>VETA + Global Plomberie</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>FLEXIBILITÉ</h4>
+                        <div class="value">300,000$</div>
+                        <p>Marge crédit = Balance vendeur<br>Stratégie miroir parfaite</p>
+                    </div>
+                </div>
+                
+                <div class="alert-box alert-success" style="margin-top: 25px;">
+                    <h4>💪 Force des garanties personnelles - Cédric Leboeuf</h4>
+                    <ul>
+                        <li>• <strong>57M$ de ventes immobilières</strong> démontre sa capacité financière</li>
+                        <li>• <strong>100+ portes en portefeuille</strong> = actifs substantiels</li>
+                        <li>• <strong>11 cliniques dentaires vendues avec succès</strong> = expertise prouvée en santé</li>
+                        <li>• <strong>20M$ de CA consolidé atteint</strong> = capacité de gestion démontrée</li>
+                    </ul>
+                    <p style="text-align: center; margin-top: 20px; font-weight: bold;">
+                        Un entrepreneur qui a fait ses preuves et qui sait créer et vendre de la valeur
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section 7: Investment Opportunity -->
+            <div class="section">
+                <h2 class="section-title">7. OPPORTUNITÉ D'INVESTISSEMENT STRATÉGIQUE</h2>
+                
+                <h3 class="subsection-title">Immeuble commercial - Actif sous-évalué (Global Plomberie)</h3>
+                <div class="alert-box alert-success">
+                    <h4>🏢 Plus-value immobilière importante pour Global Plomberie</h4>
+                    <ul>
+                        <li>✅ <strong>Prix négocié</strong> : 670,000$ (129$/pi²)</li>
+                        <li>✅ <strong>Valeur marchande</strong> : 150-200$/pi² dans le secteur</li>
+                        <li>✅ <strong>Sous-évaluation</strong> : 30-40% sous le marché</li>
+                        <li>✅ <strong>Plus-value potentielle</strong> : 110,000$ à 370,000$</li>
+                        <li>✅ <strong>Revenus locatifs garantis</strong> : Bail à long terme avec la clinique</li>
+                        <li>✅ <strong>Synergie parfaite</strong> : Propriétaire et locataire liés</li>
+                    </ul>
+                    <p style="margin-top: 20px; text-align: center; font-weight: bold; color: #228B22;">
+                        Cédric Leboeuf : 57M$ vendus + 100+ portes actives = Expertise immobilière incontestable
+                    </p>
+                </div>
+                
+                <h3 class="subsection-title">Structure de bail optimisée - Alignement d'intérêts</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>Période</th>
+                            <th>Type de bail</th>
+                            <th>Loyer de base ($/pi²)</th>
+                            <th>Charges ($/pi²)</th>
+                            <th>Total ($/pi²)</th>
+                            <th>Total annuel</th>
+                        </tr>
+                        <tr style="background-color: #d4edda;">
+                            <td><strong>Années 1-3</strong></td>
+                            <td>Brut modifié</td>
+                            <td>11.50 - 12.50</td>
+                            <td>0</td>
+                            <td>11.50 - 12.50</td>
+                            <td><strong>60,000 - 65,000$</strong></td>
+                        </tr>
+                        <tr style="background-color: #F0F8FF;">
+                            <td><strong>Année 4</strong></td>
+                            <td>NNN plafonné</td>
+                            <td>15.60</td>
+                            <td>4.40</td>
+                            <td><strong>20.00</strong></td>
+                            <td><strong>103,920$</strong></td>
+                        </tr>
+                        <tr style="background-color: #F0F8FF;">
+                            <td><strong>Année 5</strong></td>
+                            <td>NNN plafonné</td>
+                            <td>15.50</td>
+                            <td>4.50</td>
+                            <td><strong>20.00</strong></td>
+                            <td><strong>103,920$</strong></td>
+                        </tr>
+                        <tr style="background-color: #F0F8FF;">
+                            <td><strong>Année 6</strong></td>
+                            <td>NNN plafonné</td>
+                            <td>15.40</td>
+                            <td>4.60</td>
+                            <td><strong>20.00</strong></td>
+                            <td><strong>103,920$</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Année 7</strong></td>
+                            <td>NNN indexé 2%</td>
+                            <td>15.71</td>
+                            <td>4.70</td>
+                            <td>20.41</td>
+                            <td>106,100$</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Année 8+</strong></td>
+                            <td>NNN indexé 2%</td>
+                            <td>16.02+</td>
+                            <td>4.80+</td>
+                            <td>20.82+</td>
+                            <td>108,100$+</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="alert-box alert-info" style="margin-top: 20px;">
+                    <h4>💡 Avantages de cette structure pour toutes les parties</h4>
+                    <ul>
+                        <li><strong>Pour la clinique</strong> : Liquidités maximisées pendant les 3 premières années critiques</li>
+                        <li><strong>Pour Global Plomberie</strong> : Revenus prévisibles et croissants à long terme</li>
+                        <li><strong>Pour Desjardins</strong> : Ratio de couverture stable et alignement d'intérêts parfait</li>
+                        <li><strong>Comparable au marché</strong> : 20$/pi² reste compétitif (marché à 20-22$/pi² NNN)</li>
+                    </ul>
+                </div>
+
+                <h3 class="subsection-title">Notre modèle - Vision à long terme et synergies</h3>
+                <div class="key-points">
+                    <h3>PARTENARIAT STRATÉGIQUE AVEC DESJARDINS</h3>
+                    <div style="margin: 20px 0;">
+                        <p style="text-align: center; font-size: 1.2em; margin-bottom: 20px;">
+                            <strong>Pipeline d'acquisitions confirmé et synergies opérationnelles</strong>
+                        </p>
+                        <ul>
+                            <li>✅ <strong>100 cliniques</strong> visées sur 10 ans</li>
+                            <li>✅ <strong>8 vétérinaires</strong> déjà en discussion</li>
+                            <li>✅ <strong>2 cliniques additionnelles</strong> en négociation pour Q3 2025</li>
+                            <li>✅ <strong>Synergie immédiate</strong> avec VETA Saint-Zotique :</li>
+                            <ul style="margin-left: 30px; margin-top: 10px;">
+                                <li>• Partage des meilleures pratiques</li>
+                                <li>• Support administratif centralisé</li>
+                                <li>• Économies d'échelle sur les achats</li>
+                                <li>• Couverture mutuelle pour congés/urgences</li>
+                                <li>• Formation croisée du personnel</li>
+                            </ul>
+                            <li>✅ <strong>Modèle éprouvé</strong> en cliniques dentaires (Cédric - 20M$ CA atteint, 11 cliniques vendues)</li>
+                            <li>✅ <strong>Structure reproductible</strong> et scalable</li>
+                            <li>✅ <strong>Partenariat bancaire exclusif</strong> recherché</li>
+                        </ul>
+                        
+                        <p style="margin-top: 25px; text-align: center; font-style: italic; color: #DC143C;">
+                            <strong>Valleyfield = Deuxième clinique du réseau<br>
+                            Succès = 98 autres opportunités avec notre partenaire bancaire</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 8: Team -->
+            <div class="section">
+                <h2 class="section-title">8. ÉQUIPE DE DIRECTION EXPÉRIMENTÉE</h2>
+                
+                <div class="alert-box alert-success">
+                    <h4>🏆 NOTRE TRACK RECORD PROUVÉ EN SANTÉ</h4>
+                    <p style="text-align: center; font-size: 1.2em; margin: 20px 0;">
+                        <strong>Combinaison unique d'expertise vétérinaire, financière et technologique</strong>
+                    </p>
+                </div>
+                
+                <div class="metric-cards">
+                    <div class="metric-card">
+                        <h4>JEAN-SAMUEL LEBOEUF</h4>
+                        <p style="color: #666; margin-bottom: 15px;"><strong>CEO, Groupe VETA</strong></p>
+                        <ul style="text-align: left; font-size: 0.95rem; list-style: none;">
+                            <li>• <strong>DG actuel Clinique VETA Saint-Zotique</strong></li>
+                            <li>• Gestion active de clinique vétérinaire</li>
+                            <li>• Équipe établie disponible pour support</li>
+                            <li>• Expertise structuration financière</li>
+                            <li>• Co-fondateur firme comptable</li>
+                            <li>• <strong>Expert en intelligence artificielle</strong></li>
+                            <li>• Leadership mobilisateur et humain</li>
+                        </ul>
+                    </div>
+                    <div class="metric-card">
+                        <h4>CÉDRIC LEBOEUF</h4>
+                        <p style="color: #666; margin-bottom: 15px;"><strong>Chairman, Groupe VETA</strong></p>
+                        <ul style="text-align: left; font-size: 0.95rem; list-style: none;">
+                            <li>• <strong>11 cliniques dentaires vendues 57M$</strong></li>
+                            <li>• 20M$ CA, 4M$ BAIIA atteints</li>
+                            <li>• Portfolio <strong>100+ portes</strong> immobilier</li>
+                            <li>• Expert acquisitions santé</li>
+                            <li>• <strong>Expert structuration d'affaires</strong></li>
+                            <li>• Garantie personnelle complète</li>
+                        </ul>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Dr AMANDA COCKBURN</h4>
+                        <p style="color: #666; margin-bottom: 15px;"><strong>Directrice médicale</strong></p>
+                        <ul style="text-align: left; font-size: 0.95rem; list-style: none;">
+                            <li>• Permis OMVQ #3612</li>
+                            <li>• Vétérinaire partenaire</li>
+                            <li>• 25% de participation</li>
+                            <li>• Contrôle médical 100%</li>
+                            <li>• 0$ mise de fonds requise</li>
+                            <li>• Accès au réseau VETA</li>
+                            <li>• Aucun risque financier personnel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Final -->
+            <div class="cta-box">
+                <h3>DEMANDE DE FINANCEMENT - TROIS VOLETS DISTINCTS</h3>
+                <div class="amount">1,670,000$ TOTAL</div>
+                <div class="cta-content">
+                    <p style="font-size: 1.3em; margin-bottom: 20px;">
+                        <strong>1. Prêt commercial à VETA :</strong> 700,000$ sur 12 ans<br>
+                        <span style="font-size: 0.9em; margin-left: 20px;">Pour l'acquisition de la clinique</span><br><br>
+                        <strong>2. Hypothèque à Global Plomberie :</strong> 670,000$ sur 25 ans<br>
+                        <span style="font-size: 0.9em; margin-left: 20px;">Pour l'acquisition de l'immeuble</span><br><br>
+                        <strong>3. Marge de crédit à VETA :</strong> 300,000$<br>
+                        <span style="font-size: 0.9em; margin-left: 20px;">Pour flexibilité et opportunités</span>
+                    </p>
+                    <p style="margin-top: 25px; font-size: 1.1em;">
+                        <strong>Ratio de couverture clinique : 1.55x<br>
+                        Nos redevances différées 3 ans<br>
+                        Accumulation liquidités : 458,000$<br>
+                        6 garants personnels au total<br>
+                        Chairman avec 57M$ vendus + 100+ portes + 11 cliniques vendues<br>
+                        + Hypothèque 1er rang sur immeuble<br>
+                        + Assurances 2M$</strong>
+                    </p>
+                </div>
+                                    <p style="margin-top: 35px; font-size: 1.2em; line-height: 1.8;">
+                    <strong>✓ Trois volets sécurisés et stratégiques<br>
+                    ✓ Deuxième acquisition d'une série de 100<br>
+                    ✓ Synergies prouvées avec Saint-Zotique<br>
+                    ✓ Partenariat stratégique à long terme</strong>
+                </p>
+                
+                <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 15px; margin-top: 30px;">
+                    <p style="font-size: 1.1em; font-style: italic;">
+                        <strong>Note importante :</strong><br>
+                        Nous avons reçu des propositions préliminaires de plusieurs institutions financières.<br>
+                        Nous privilégions un partenaire bancaire unique pour l'ensemble de notre croissance.<br>
+                        Volume potentiel : 150M$ de financement sur 10 ans.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="section">
+                <h2 class="section-title">CONTACTS - TOUTES LES PARTIES PRENANTES</h2>
+                
+                <h3 class="subsection-title">Notre équipe de direction</h3>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h4>Jean-Samuel Leboeuf</h4>
+                        <p><strong>CEO, Groupe VETA</strong></p>
+                        <p>DG actuel Clinique VETA Saint-Zotique</p>
+                        <p>📧 <a href="mailto:jsleboeuf3@gmail.com">jsleboeuf3@gmail.com</a></p>
+                        <p>📱 <a href="tel:+14502803222">450-280-3222</a></p>
+                        <p style="margin-top: 10px; font-style: italic;">Disponible 7j/7 pour vos questions</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h4>Cédric Leboeuf</h4>
+                        <p><strong>Chairman, Groupe VETA</strong></p>
+                        <p>📧 <a href="mailto:info@cedricleboeuf.com">info@cedricleboeuf.com</a></p>
+                        <p>📱 <a href="tel:+14505670514">450-567-0514</a></p>
+                        <p style="margin-top: 10px; font-style: italic;">Expert en acquisitions santé<br>
+                        57M$ vendus | 100+ portes | 11 cliniques vendues</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h4>Dr Amanda Cockburn, DMV</h4>
+                        <p><strong>Directrice médicale</strong></p>
+                        <p>Permis OMVQ : #3612</p>
+                        <p>📧 [À fournir]</p>
+                        <p style="margin-top: 10px; font-style: italic;">Vétérinaire partenaire</p>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Vendeur</h3>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h4>Dr Claude Grenier</h4>
+                        <p><strong>Vendeur - Clinique actuelle</strong></p>
+                        <p>📧 [À fournir]</p>
+                        <p>📱 [À fournir]</p>
+                        <p style="margin-top: 10px; font-style: italic;">Finance 300,000$ de la transaction</p>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Actionnaires Global Plomberie</h3>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h4>Félix Hamel</h4>
+                        <p><strong>Actionnaire Global Plomberie</strong></p>
+                        <p>📧 <a href="mailto:felixhamel1991@gmail.com">felixhamel1991@gmail.com</a></p>
+                        <p>📱 <a href="tel:+15148879635">514-887-9635</a></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h4>Jérôme Levac</h4>
+                        <p><strong>Actionnaire Global Plomberie</strong></p>
+                        <p>📧 <a href="mailto:jlevac@mkmg.ca">jlevac@mkmg.ca</a></p>
+                        <p>📱 <a href="tel:+15149106320">514-910-6320</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p style="font-size: 1.3em;"><strong>GROUPE VETA</strong></p>
+            <p style="font-size: 1.4em; color: #DC143C; font-weight: bold; margin: 20px 0;">
+                "Rebâtissons une industrie vétérinaire saine, autonome et prospère,<br>
+                une clinique à la fois"<br>
+                <span style="font-size: 0.9em; color: #8B0000;">Saint-Zotique ✓ | Valleyfield (en cours) | 98 cliniques à venir</span>
+            </p>
+            <p style="margin-top: 20px;">
+                LOI signée ✓ | Due diligence complétée ✓ | Structure optimisée ✓<br>
+                Prêt à clôturer le 30 juin 2025
+            </p>
+            <p style="margin-top: 15px; color: #DC143C; font-weight: bold; font-size: 1.2em;">
+                Une transaction gagnante pour toutes les parties
+            </p>
+            <p style="margin-top: 25px; font-size: 0.95em; font-style: italic;">
+                Note : Ce dossier est également présenté à d'autres institutions financières majeures.<br>
+                Nous recherchons le partenaire idéal pour notre croissance à long terme.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

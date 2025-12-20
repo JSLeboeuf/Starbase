@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REPLY
+BEGIN:VEVENT
+DTSTART:20240514T140000Z
+DTEND:20240514T150000Z
+DTSTAMP:20240514T141130Z
+ORGANIZER;CN=jsleboeuf3@gmail.com:mailto:jsleboeuf3@gmail.com
+UID:1e8pc0ggbqbs7vp1meadaf686r@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Martin
+ e Lussier;X-NUM-GUESTS=0:mailto:martine@rhsupport.ca
+X-GOOGLE-CONFERENCE:https://meet.google.com/dmy-ukju-qro
+CREATED:20240514T141118Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/dm
+ y-ukju-qro\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20240514T141130Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:rh
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CREATED:20241230T040229Z
+DESCRIPTION:Emmanuel Daoust vous invite à une réunion Zoom programmée.\n\nSujet: Réunion Zoom de Emmanuel Daoust\nHeure: 30 déc. 2024 12:00 PM America/Toronto\nParticiper à la réunion Zoom\nhttps://us04web.zoom.us/j/77716186441?pwd=trDRXxUA4NrUSYMa90neUkab8aMNaa.1\n\nID de réunion: 777 1618 6441\nCode secret: veta\n\n
+DTEND:20241230T173000Z
+DTSTART:20241230T170000Z
+LOCATION:https://us04web.zoom.us/j/77716186441?pwd=trDRXxUA4NrUSYMa90neUkab8aMNaa.1
+SUMMARY;LANGUAGE=us-EN:Réunion Zoom de Emmanuel Daoust
+UID:3785785C-76C7-4A46-83B6-59BCDD9831F3
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

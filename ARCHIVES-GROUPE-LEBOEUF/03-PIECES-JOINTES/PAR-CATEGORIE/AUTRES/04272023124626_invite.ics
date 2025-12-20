@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:CANCEL
+BEGIN:VEVENT
+DTSTART:20230427T220000Z
+DTEND:20230427T230000Z
+DTSTAMP:20230427T164626Z
+ORGANIZER;CN=joelle.cote@rhsupport.ca:mailto:joelle.cote@rhsupport.ca
+UID:67v87q27dh7d4bdj5dabi9ebuv@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=joelle
+ .cote@rhsupport.ca;X-NUM-GUESTS=0:mailto:joelle.cote@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=js
+ leboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mc
+ parisien@bloomcomptabilite.com;X-NUM-GUESTS=0:mailto:mcparisien@bloomcompta
+ bilite.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/cgz-fqrv-xkn
+CREATED:20230425T201724Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/cg
+ z-fqrv-xkn\nOr dial: (CA) +1 587-687-4744 PIN: 812250302#\nMore phone numbe
+ rs: https://tel.meet/cgz-fqrv-xkn?pin=8096312753886&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230427T164625Z
+LOCATION:
+SEQUENCE:1
+STATUS:CANCELLED
+SUMMARY:Entrevue Jessy Wentholt - Technicienne Comptable (en personne)
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+X-LIC-LOCATION:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Toronto:20231114T103000
+DTEND;TZID=America/Toronto:20231114T113000
+DTSTAMP:20231114T152858Z
+ORGANIZER;CN=Kassem Durra:mailto:kassem@rhsupport.ca
+UID:1gpme2ffha337l2uqv3s8s27c0@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=felixhamel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=info@cedricleboeuf.com;X-NUM-GUESTS=0:mailto:info@cedricleboeuf.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=aren@shooga.ca;X-NUM-GUESTS=0:mailto:aren@shooga.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Kassem Durra;X-NUM-GUESTS=0:mailto:kassem@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/wzx-hcdo-xsi
+X-MICROSOFT-CDO-OWNERAPPTID:-525123070
+CREATED:20231113T205529Z
+DESCRIPTION:Agenda:<br><ol><li>Presentation Shooga</li><li>Presentation PCA
+ N</li><li>Presentation Tapclits</li></ol>\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nParticiper via G
+ oogle Meet : https://meet.google.com/wzx-hcdo-xsi\nOu composez le : (CA) +1
+  647-734-8773 Code PIN : 816968134#\nPlus de numéros de téléphone: https://
+ tel.meet/wzx-hcdo-xsi?pin=7774064262445&hs=7\n\nPour en savoir plus sur Mee
+ t : https://support.google.com/a/users/answer/9282720\n\nVeuillez ne pas mo
+ difier cette section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20231114T152855Z
+LOCATION:google meets
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Shooga // PCAN
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T020000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Melissa O'Connor:mailto:moconnor@bloomcomptabilite.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Jerome Lev
+ ac:mailto:jlevac@mkmg.ca
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Felix Hame
+ l:mailto:felixhamel1991@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Tanya Deni
+ s:mailto:tdenis@bloomcomptabilite.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Jean-Samue
+ l Leboeuf:mailto:jsleboeuf3@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Melissa O'
+ Connor:mailto:moconnor@bloomcomptabilite.com
+DESCRIPTION;LANGUAGE=fr-FR:Salut la gang\,\n\nDiner pour la fete a Val au R
+ estaurant La Basse Cour.\n\n\n____________________________________________
+ ____________________________________\nMicrosoft Teams Besoin d'aide ?<http
+ s://aka.ms/JoinTeamsMeeting?omkt=fr-FR>\nRejoignez la réunion maintenant<
+ https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzhmNjAxNjQtNjgyMS0
+ 0NDYzLTk2N2ItMjc3OTFmYmFhOGVk%40thread.v2/0?context=%7b%22Tid%22%3a%22dfbd
+ dad8-16b6-4118-a94d-79fb79fb4898%22%2c%22Oid%22%3a%2296775344-e765-470f-ad
+ fe-ef2ade7a9589%22%7d>\nID de réunion : 239 802 186 794\nCode secret : 2S
+ oMDM\n________________________________\nPour les organisateurs : Options d
+ e réunion<https://teams.microsoft.com/meetingOptions/?organizerId=9677534
+ 4-e765-470f-adfe-ef2ade7a9589&tenantId=dfbddad8-16b6-4118-a94d-79fb79fb489
+ 8&threadId=19_meeting_NzhmNjAxNjQtNjgyMS00NDYzLTk2N2ItMjc3OTFmYmFhOGVk@thr
+ ead.v2&messageId=0&language=fr-FR>\n______________________________________
+ __________________________________________\n\n
+UID:040000008200E00074C5B7101A82E0080000000010E9E095C605DB01000000000000000
+ 01000000034EAEE38636E5F42BFDECD0189A2859B
+SUMMARY;LANGUAGE=fr-FR:Fete a Val
+DTSTART;TZID=Eastern Standard Time:20240919T120000
+DTEND;TZID=Eastern Standard Time:20240919T130000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20240913T142948Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=fr-FR:Réunion Microsoft Teams
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:44931048
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_NzhmNjAxNjQtNjgyMS00NDYzLTk2N2ItMjc3OTFmYmFhOGVk%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%22dfbddad8-16b6-4118-a94d-79fb79fb4898%22%2c%22O
+ id%22%3a%2296775344-e765-470f-adfe-ef2ade7a9589%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/dfbddad8-16b6-4118-a94d-79fb79fb4898/96775344-e765-470f-adfe-e
+ f2ade7a9589/19_meeting_NzhmNjAxNjQtNjgyMS00NDYzLTk2N2ItMjc3OTFmYmFhOGVk@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_NzhmNjAxNjQtNjgyMS00NDY
+ zLTk2N2ItMjc3OTFmYmFhOGVk@thread.v2"\,"private":true\,"type":0\,"mid":0\,"
+ rid":0\,"uid":null}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONS:[ { "DisplayName" : "Réunion Microsoft Teams"\, "Loc
+ ationAnnotation" : ""\, "LocationSource" : 0\, "Unresolved" : false\, "Loc
+ ationUri" : "" } ]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

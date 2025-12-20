@@ -1,0 +1,676 @@
+Received: from YT3PR01MB6406.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:71::20)
+ by YT3PR01MB5469.CANPRD01.PROD.OUTLOOK.COM with HTTPS; Wed, 21 Aug 2024
+ 19:40:57 +0000
+Received: from YQBPR0101CA0249.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:66::7)
+ by YT3PR01MB6406.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:71::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7897.18; Wed, 21 Aug
+ 2024 19:40:55 +0000
+Received: from QB1PEPF00004E0F.CANPRD01.PROD.OUTLOOK.COM
+ (2603:10b6:c01:66:cafe::b5) by YQBPR0101CA0249.outlook.office365.com
+ (2603:10b6:c01:66::7) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7897.19 via Frontend
+ Transport; Wed, 21 Aug 2024 19:40:54 +0000
+Received: from mail-qk1-f172.google.com (209.85.222.172) by
+ QB1PEPF00004E0F.mail.protection.outlook.com (10.167.240.7) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.7897.11
+ via Frontend Transport; Wed, 21 Aug 2024 19:40:54 +0000
+Received: by mail-qk1-f172.google.com with SMTP id af79cd13be357-7a1da7cafccso5899285a.3
+        for <martine@rhsupport.ca>; Wed, 21 Aug 2024 12:40:54 -0700 (PDT)
+Received: from smtpclient.apple ([70.52.30.99])
+        by smtp.gmail.com with ESMTPSA id af79cd13be357-7a4ff048243sm660184985a.29.2024.08.21.12.40.52
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 21 Aug 2024 12:40:52 -0700 (PDT)
+From: Admin | Pharmacie J Morneault <pharmacie.jmorneault@gmail.com>
+To: "RH Support (Martine)" <martine@rhsupport.ca>
+CC: Julie Morneault <morneaultjulie@hotmail.com>
+Subject: Remboursement 
+Thread-Topic: Remboursement 
+Thread-Index: AQHa9AILsMvmSfHrXky0NFN9IA5Z6g==
+Importance: high
+X-Priority: 1
+Date: Wed, 21 Aug 2024 19:40:41 +0000
+Message-ID: <0F041F9A-129F-4526-9ABE-31910684DCF0@gmail.com>
+References: <20240405022237.80bb754af24d188c@email.pandadoc.net>
+ <6E86989A-035D-4C83-B0B7-19FF5123D4D0@hotmail.com>
+In-Reply-To: <6E86989A-035D-4C83-B0B7-19FF5123D4D0@hotmail.com>
+Content-Language: fr-CA
+X-MS-Exchange-Organization-AuthSource:
+ QB1PEPF00004E0F.CANPRD01.PROD.OUTLOOK.COM
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-Network-Message-Id:
+ 64c98484-2679-48c2-b097-08dcc2192bed
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.222.172 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.222.172; helo=mail-qk1-f172.google.com; pr=C
+x-ms-exchange-organization-originalclientipaddress: 209.85.222.172
+x-ms-exchange-organization-originalserveripaddress: 10.167.240.7
+x-ms-publictraffictype: Email
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+ =?utf-8?B?djY5T3Fza3dnTkFsRlpwK3RjTUdZcHVFeU5UN0JySENXUnkxVmszd2QvdndU?=
+ =?utf-8?B?WmlqZXRBVThWc0hLUlNSVTFrTUREMjNmWlBkQWl6Syt0WVNaRTkvcHMvWGU1?=
+ =?utf-8?B?SUt0ZEhRQytmWXpNT1UyUTBPakhiSEFxb2xtNjk2bHBEN1FmU2QwWGV3VVkx?=
+ =?utf-8?B?dVVmbmdwMFhzeGpCM2xFSVRCekQ1NG4xWk5MVmU0NXpkbktiTXVtU1U3bm5w?=
+ =?utf-8?B?ckVabjNJMmJDbUZycXJ6bEJLcDhjK20vZXczcVdraEF5K0E2b3h6YXVJV2VZ?=
+ =?utf-8?B?dFN5Q1lDMDJzMnRWUGhOa0YxREF2T1c2Mm5PSWtNMTZkSWJkNzNLTjBkR3Vo?=
+ =?utf-8?B?bXdTSHF2cDhvUjRuQXlrWmtLS0QwZ0hGandxdng1YTR0czJGVGxydDNBMzg3?=
+ =?utf-8?B?czRrZHNLdGlSdlQ2aTJERE1QMWhzTHV1aDBnbmlsNm0yMzFCcVNCQ0hoS3Ri?=
+ =?utf-8?B?dGtLbUkzSjNuUFlkdytwWVlNMnhRbk9nOFVMYnRGbGtVbEl5bFZCY0Z2UGdk?=
+ =?utf-8?B?NHRESitxb2lqMGQxSDFhSHkyRnJRaEVNWTF3ZDlyNG5PakVPQzVZMGd3V05C?=
+ =?utf-8?B?Z2FubzBEVGpyTmpnUW4vZ29EUis3UC9sRm04ZzRNTWM4Sm5wYVpmL3FFSkl5?=
+ =?utf-8?B?M2ZqUjFZZzJuMkt0LzRXNWtoVy9JZlNxS1pWOWZXZUt5ZGNWVFQ5a29SQUN1?=
+ =?utf-8?B?Zk1qTXNWZ2RxalZuT2hSNmc2R1FpdUlMeXFMMzVONFNBbktjalVqcXBaYndT?=
+ =?utf-8?B?TndhQXhsNmgvaW9kMXVYU05RUnRMa0dVTVlnM1RWUFdSVW5JM2hpdUFGaWpx?=
+ =?utf-8?B?NGl4MkllaFl5U3JKanppKzJWTVU0MmFhUm1GYk1lOVk5bjQrZlcwZEJPRXVD?=
+ =?utf-8?B?TjBaTVJsSnhVdkRodU9WREk0Tkt4T2lLdWFVYmR2Q0JrUnlweFlRU3N0SU9l?=
+ =?utf-8?B?RzUwQnhubWpRSTNhMElkVFFkMXZTeXhvalBEb2xIdm5VQWFMZFU2WE1HN0xI?=
+ =?utf-8?B?VEV3eENjWkhkODdmTnE0eCtHT3BFanY1M1hQbjIyWWhLdEJnZWY4OVdROW82?=
+ =?utf-8?B?bGtaZ3NyUFBhR1FnSkpJcTJyVXpkeU9kalhkd1grUUZFdEdvdDBYanpEa2Zh?=
+ =?utf-8?B?bmVvMEp1YWVjTXRVdVJLZlZGSjZZWDdEMG9mK2drRThzQXdWNmJkZHlaWkw0?=
+ =?utf-8?B?bE4zZlY1T0pLVi9oVzNYT3JyUU5kMmRVdjU0Ui8rZTQxMmNjWStoMkkxK1Nh?=
+ =?utf-8?B?bmNKM0tDYkQvOFRhQUdKak1WbUpZalVkRDg5U2JGQWVWeStIa0ozNnRBMkFG?=
+ =?utf-8?B?VGhTSTFPTDQ4N2FCeGxFV0ZQU2psQzY4cE5PSmdkTjdHRk9VM1ZUZkRuL0lu?=
+ =?utf-8?B?R1p3VkNncmVhdG1WZmVVMytPNDhTb1MvN0JhY096cmZva0NFMlExYkxGeDZr?=
+ =?utf-8?B?VzNMQ2pqa2lXVWlBcXhJSHNkdmNNRElZbzV6Rjh0bTFacmFsazZGNCtCWGUx?=
+ =?utf-8?B?UlJJcXpUcjJsSDhCTG5nWEdtc2tvQnNhTFE0YWQ2Vmd2TktkK1lTQ2hzSy9M?=
+ =?utf-8?B?b0pwengwRXdlVUJaQjRmUmNZQXE5WE9GbHRockdKczQ0Uy8yVGRlczF3WnFO?=
+ =?utf-8?B?YzlHT0tGa241MW1IeEdDb0ZPbDBhZ1BCSGx3RUNTSHl2OXJ0ZzBzUkVMbGJq?=
+ =?utf-8?B?VklteVdpdmhKTnZNSlY0aWRBaDZHRDN1T3lnekE4TWdUdkk0d3V4SlR3SzRp?=
+ =?utf-8?B?MUg2RkxOOUNqZ2RvQS9TaHdRQVhaMkljbWhGU1lML2lTR2xQc2lGcGhoMVBo?=
+ =?utf-8?B?YzF0RlpGeHBCVU1SRHVJQ0tpTi9iUHdzclF6c2xka1oxY3hBY0xBSCtxMVlR?=
+ =?utf-8?B?a3ZhTUN1UjJ1STRDci9GbmVRUjJRVWNFeWFXNFFCS2hiUVJ3TzdXSGJUMjgx?=
+ =?utf-8?B?TVJtc0pzSjZyL2xQM1BZaCt3QTdCTnNnZjNrVFZvZmhLa2tQRDhMeTRVSDdr?=
+ =?utf-8?B?RFU4aUlGUktuRDVjbHBLc0taMEN2OXoyVEw2d3hXVE9OVlR3a0YxaHlLUEdZ?=
+ =?utf-8?B?WkNwcFJyRlZ0dXo1SFpvMjZFaW83eE94QWtXbGEvTWtVbndOUDcvK0VaelpU?=
+ =?utf-8?B?bXNXbG5mNFpXSlNieUhFUjlFTXFYTTFNNHpJSTlIMktoamxRSHYxekFucXdy?=
+ =?utf-8?B?OTIzbkF3b1REeEhoNUVxOUwzbW11MjRXZHlLcndvNEI5cXJPSzMxdjJ3SFFt?=
+ =?utf-8?B?RlltTE9KVUNpd2w3MDIxSW9NY1lrYkZOeEM5RUE4dFVzOHRCRlhQT3EzYkM4?=
+ =?utf-8?B?OENVV3VHY2lLNVBGNnN3enhodEVnV1djTDZBSXFtMHo3Q0RUMkVHSVJvSTNB?=
+ =?utf-8?B?bTF6bHIwN2xERjNKYThEN0MzaUYwZm91NDhpQlFENkY1Rmk3SnlGeDhIc2pm?=
+ =?utf-8?B?TWJsSkRyUnpEVGZnQ09jdTBPM0EyWW1OQVBTUGpDbkM0ckRycWIrVTlCVkRP?=
+ =?utf-8?B?VmhyVXNwUXpHckZONG9JcmZoM2NyU1pOcHU4Y3JaUzFDR0xibnVRK0J5VGZt?=
+ =?utf-8?B?WHEycWJweE44K1pYL25ScUtkSTV1blZVRU9vUFpndzJQSUFmZWh0a2tGeitn?=
+ =?utf-8?B?bS9jdWFXaStzYmM1eXFEQzNvbHBNRkhzUm9yaHVQWnFYWE9WZzhFcHJlaWlj?=
+ =?utf-8?B?NFRyMk5kZXl5Mlp5TUJsUTBKcmlNMzJrRFh6R0o2aFZ3YTB5R0dtTVViSDZH?=
+ =?utf-8?B?SjBOVUszTm1KclA0K3BuQ0tUa2JTYkwxWFoxUVpzY2RUdXd6aHZ3b3IySkhl?=
+ =?utf-8?B?Tzg4WmlWZWdyVnlNWG5Od21tNzcvYkxucVQ1eGxDSnV6M3dra204ZjlwbDAy?=
+ =?utf-8?B?OURpQ1k3U2xNeFNCdDF5KzlTYnRCVUhlSDlyd1dMTWpSMHp6UXdURVBNemRW?=
+ =?utf-8?B?bFUxenladWwwNFE3WW5RdlZzcEFLeEY0NkI3TGlSWWRwTVFEenc9PQ==?=
+Content-Type: multipart/signed;
+	boundary="Apple-Mail=_F057EDFB-BE44-4152-A076-662BEE38370E";
+	protocol="application/pkcs7-signature";
+	micalg=sha-256
+MIME-Version: 1.0
+
+--Apple-Mail=_F057EDFB-BE44-4152-A076-662BEE38370E
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_4A412061-6D10-4A9C-BF05-100B65477735"
+
+
+--Apple-Mail=_4A412061-6D10-4A9C-BF05-100B65477735
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+RH Support Inc.
+
+ATT: Jean-Samuel Leboeuf
+
+Ref : contrat et facture #1181
+
+
+Objet : R=C3=A9siliation du contrat de services de placement de =
+personnels
+
+Monsieur,
+
+Par la pr=C3=A9sente, je vous informe de la d=C3=A9cision de madame =
+Morneault de r=C3=A9silier ledit contrat de services de placement de =
+personnels, sign=C3=A9 le 5 avril 2024, en raison des prestations =
+insatisfaisantes fournies par votre agence.=20
+
+Depuis le d=C3=A9but de votre collaboration, madame Morneault a =
+constat=C3=A9 plusieurs manquements de la part de votre agence, =
+notamment en ce qui concerne la qualit=C3=A9 des candidats propos=C3=A9s.
+=20
+Les profils des candidats ne correspondaient pas =C3=A0 aux attentes et =
+aux besoins de l'entreprise, ce qui a eu un impact n=C3=A9gatif sur les =
+op=C3=A9rations et des co=C3=BBts.
+
+Malgr=C3=A9 les multiples retours et demandes de correction, la =
+situation n'a pas =C3=A9volu=C3=A9 de mani=C3=A8re satisfaisante, ce qui =
+a conduit madame Morneault =C3=A0 prendre la d=C3=A9cision difficile de =
+mettre un terme au contrat en question.
+
+Conform=C3=A9ment aux termes et conditions des accords entre vous et =
+madame Morneault, je vous prie de consid=C3=A9rer cette lettre comme un =
+pr=C3=A9avis de r=C3=A9siliation car le message de madame Morneault ne =
+semble avoir =C3=A9t=C3=A9 entendu la derni=C3=A8re fois?
+
+Je vous remercie de bien vouloir prendre les mesures n=C3=A9cessaires =
+pour mettre fin =C3=A0 vos relations contractuelles dans les meilleurs =
+d=C3=A9lais et de proc=C3=A9der au remboursement de la facture #1181 au =
+montant de $3587.22 dans les plus brefs d=C3=A9lais.=20
+
+Je reste =C3=A0 votre disposition pour convenir des modalit=C3=A9s =
+pratiques de cette r=C3=A9siliation et pour r=C3=A9gler les =C3=A9ventuell=
+es questions administratives qui pourraient en d=C3=A9couler.
+
+Je vous prie d'agr=C3=A9er, Monsieur, l'expression de mes salutations =
+distingu=C3=A9es.
+
+Cordialement,
+
+
+Guy Montpetit, Dir. Adm.=20
+Pharmacie Julie>Morneault
+Acc=C3=A8s>pharma chez Walmart
+T: (450) 438-0556 F: (450) 438-5676
+pharmacie.jmorneault@gmail.com
+Facebook: @pharmacie.jmorneault
+
+
+
+
+
+
+> Le 20 ao=C3=BBt 2024 =C3=A0 15:32, Julie Morneault =
+<morneaultjulie@hotmail.com> a =C3=A9crit :
+>=20
+>=20
+>=20
+>> D=C3=A9but du message transf=C3=A9r=C3=A9 :
+>>=20
+>> De: PandaDoc <docs@email.pandadoc.net>
+>> Objet: Copie sign=C3=A9e de =C2=ABJulie Morneault-Pharmacie Julie =
+Morneault=C2=BB
+>> Date: 4 avril 2024 =C3=A0 22:22:37 HAE
+>> =C3=80: Julie Morneault <morneaultjulie@hotmail.com>
+>> R=C3=A9pondre =C3=A0: Bloom Comptabilit=C3=A9 RH Support =
+<info@bloomcomptabilite.com>
+>>=20
+>>=20
+>> Tout est pr=C3=AAt! Vous trouverez votre copie sign=C3=A9e de =C2=ABJul=
+ie Morneault-Pharmacie Julie Morneault=C2=BB en pi=C3=A8ce-jointe.
+>> Utilisez PandaDoc pour cr=C3=A9er, envoyer, suivre et signer =
+=C3=A9lectroniquement des documents de fa=C3=A7on rapide et s=C3=A9curis=C3=
+=A9e.
+>>=20
+>>=20
+>=20
+>=20
+> <Julie Morneault-Pharmacie Julie Morneault.pdf>
+
+
+--Apple-Mail=_4A412061-6D10-4A9C-BF05-100B65477735
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" class=3D""><div =
+class=3D""><div class=3D""><font size=3D"2" face=3D"Arial" class=3D"">RH =
+Support Inc.</font></div><div class=3D""><div style=3D"margin: 0px; =
+font-stretch: normal; line-height: normal; min-height: 14px;" =
+class=3D""><font face=3D"Arial" class=3D""><br =
+class=3D""></font></div><div style=3D"margin: 0px; font-stretch: normal; =
+line-height: normal; min-height: 14px;" class=3D""><span =
+style=3D"font-size: small;" class=3D""><font face=3D"Arial" =
+class=3D"">ATT: Jean-Samuel Leboeuf</font></span></div></div><div =
+class=3D""><font size=3D"2" face=3D"Arial" class=3D""><br =
+class=3D""></font></div><div class=3D""><font size=3D"2" face=3D"Arial" =
+class=3D"">Ref : contrat et facture #1181</font></div></div><div =
+class=3D""><font size=3D"2" face=3D"Arial" class=3D""><br =
+class=3D""></font></div><div class=3D""><div class=3D""><font size=3D"2" =
+face=3D"Arial" class=3D""><br class=3D""></font></div><div =
+class=3D""><font size=3D"2" face=3D"Arial" class=3D""><u class=3D"">Objet =
+: R=C3=A9siliation du contrat de services de placement de =
+personnels</u></font></div><div class=3D""><font size=3D"2" face=3D"Arial"=
+ class=3D""><br class=3D""></font></div><div class=3D""><font size=3D"2" =
+face=3D"Arial" class=3D"">Monsieur,</font></div><div class=3D""><font =
+size=3D"2" face=3D"Arial" class=3D""><br class=3D""></font></div><div =
+class=3D""><font size=3D"2" face=3D"Arial" class=3D"">Par la pr=C3=A9sente=
+, je vous informe de la d=C3=A9cision de madame Morneault de r=C3=A9silier=
+ ledit contrat de services de placement de personnels, sign=C3=A9 le 5 =
+avril 2024, en raison des prestations insatisfaisantes fournies par =
+votre agence.&nbsp;</font></div><div class=3D""><font size=3D"2" =
+face=3D"Arial" class=3D""><br class=3D""></font></div><div =
+class=3D""><font size=3D"2" face=3D"Arial" class=3D"">Depuis le d=C3=A9but=
+ de votre collaboration, madame Morneault a constat=C3=A9 plusieurs =
+manquements de la part de votre agence, notamment en ce qui concerne la =
+qualit=C3=A9 des candidats propos=C3=A9s.</font></div><div =
+class=3D""><span style=3D"font-size: small;" class=3D""><font =
+face=3D"Arial" class=3D"">&nbsp;</font></span></div><div class=3D""><font =
+size=3D"2" face=3D"Arial" class=3D"">Les profils des candidats ne =
+correspondaient pas =C3=A0 aux attentes et aux besoins de l'entreprise, =
+ce qui a eu un impact n=C3=A9gatif sur les op=C3=A9rations et des =
+co=C3=BBts.</font></div><div class=3D""><font size=3D"2" face=3D"Arial" =
+class=3D""><br class=3D""></font></div><div class=3D""><font size=3D"2" =
+face=3D"Arial" class=3D"">Malgr=C3=A9 les multiples retours et demandes =
+de correction, la situation n'a pas =C3=A9volu=C3=A9 de mani=C3=A8re =
+satisfaisante, ce qui a conduit madame Morneault =C3=A0 prendre la =
+d=C3=A9cision difficile de mettre un terme au contrat en =
+question.</font></div><div class=3D""><font size=3D"2" face=3D"Arial" =
+class=3D""><br class=3D""></font></div><div class=3D""><font size=3D"2" =
+face=3D"Arial" class=3D"">Conform=C3=A9ment aux termes et conditions des =
+accords entre vous et madame Morneault, je vous prie de consid=C3=A9rer =
+cette lettre comme un pr=C3=A9avis de&nbsp;r=C3=A9siliation car le =
+message de madame Morneault ne&nbsp;semble avoir =C3=A9t=C3=A9 entendu =
+la derni=C3=A8re fois?</font></div><div class=3D""><font size=3D"2" =
+face=3D"Arial" class=3D""><br class=3D""></font></div><div =
+class=3D""><font size=3D"2" face=3D"Arial" class=3D"">Je vous remercie =
+de bien vouloir prendre les mesures n=C3=A9cessaires pour mettre fin =C3=A0=
+ vos relations contractuelles dans les meilleurs d=C3=A9lais et de =
+proc=C3=A9der au remboursement de la facture #1181 au&nbsp;montant de =
+$3587.22 dans les plus brefs d=C3=A9lais.&nbsp;</font></div><div =
+class=3D""><font size=3D"2" face=3D"Arial" class=3D""><br =
+class=3D""></font></div><div class=3D""><font size=3D"2" face=3D"Arial" =
+class=3D"">Je reste =C3=A0 votre disposition pour convenir des =
+modalit=C3=A9s pratiques de cette r=C3=A9siliation et pour r=C3=A9gler =
+les =C3=A9ventuelles questions administratives qui pourraient en =
+d=C3=A9couler.</font></div><div class=3D""><font size=3D"2" face=3D"Arial"=
+ class=3D""><br class=3D""></font></div><div class=3D""><font size=3D"2" =
+face=3D"Arial" class=3D"">Je vous prie d'agr=C3=A9er, Monsieur, =
+l'expression de mes salutations distingu=C3=A9es.</font></div><div =
+class=3D""><font size=3D"2" face=3D"Arial" class=3D""><br =
+class=3D""></font></div><div class=3D""><font size=3D"2" face=3D"Arial" =
+class=3D"">Cordialement,</font></div><div class=3D""><font face=3D"Arial" =
+class=3D""><br class=3D""></font></div><div class=3D""><font =
+face=3D"Arial" class=3D""><br class=3D""></font></div><div =
+class=3D""><font face=3D"Arial" class=3D"">Guy Montpetit, Dir. =
+Adm.&nbsp;</font></div></div><div class=3D""><font color=3D"#0096ff" =
+style=3D"font-family: Optima-Bold; font-size: large; font-weight: bold;" =
+class=3D"">Pharmacie Julie</font><font face=3D"Monaco" size=3D"4" =
+color=3D"#ffce00" class=3D"">&gt;</font><font color=3D"#0096ff" =
+style=3D"font-family: Optima-Bold; font-size: large; font-weight: bold;" =
+class=3D"">Morneault</font></div><div class=3D""><div class=3D""><div =
+style=3D"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); =
+letter-spacing: normal; orphans: auto; text-align: start; text-indent: =
+0px; text-transform: none; white-space: normal; widows: auto; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; word-wrap: =
+break-word; -webkit-nbsp-mode: space; -webkit-line-break: =
+after-white-space;" class=3D""><div style=3D"background-color: rgb(255, =
+255, 255); color: rgb(0, 0, 0); letter-spacing: normal; orphans: auto; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: =
+after-white-space;" class=3D""><div style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; -webkit-line-break: after-white-space;" =
+class=3D""><div style=3D"font-variant-caps: normal; letter-spacing: =
+normal; orphans: auto; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; widows: auto; word-spacing: =
+0px; -webkit-text-stroke-width: 0px;"><font face=3D"Optima-Bold" =
+class=3D""><span style=3D"font-size: 14px;" class=3D""><b class=3D""><font=
+ color=3D"#0096ff" class=3D"">Acc=C3=A8s</font><font color=3D"#ffd000" =
+class=3D"">&gt;</font><font color=3D"#2697ff" class=3D"">p</font><font =
+color=3D"#0096ff" class=3D"">harma chez =
+Walmart</font></b></span></font></div><div style=3D"font-variant-caps: =
+normal; letter-spacing: normal; orphans: auto; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; widows: =
+auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">T: (450) =
+438-0556 F: (450) 438-5676</div><div style=3D"font-variant-caps: normal; =
+letter-spacing: normal; orphans: auto; text-align: start; text-indent: =
+0px; text-transform: none; white-space: normal; widows: auto; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px;"><a =
+href=3D"mailto:pharmacie.jmorneault@gmail.com" =
+class=3D"">pharmacie.jmorneault@gmail.com</a></div><div =
+style=3D"font-variant-caps: normal; letter-spacing: normal; orphans: =
+auto; text-align: start; text-indent: 0px; text-transform: none; =
+white-space: normal; widows: auto; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px;">Facebook: =
+@pharmacie.jmorneault</div><div style=3D"color: rgb(0, 0, 0); =
+font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+orphans: auto; text-align: start; text-indent: 0px; text-transform: =
+none; white-space: normal; widows: auto; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px;" class=3D""><br class=3D""></div><br =
+class=3D"Apple-interchange-newline"></div></div><br =
+class=3D"Apple-interchange-newline"></div><br =
+class=3D"Apple-interchange-newline"><br =
+class=3D"Apple-interchange-newline">
+</div>
+<br class=3D""><div><blockquote type=3D"cite" class=3D""><div =
+class=3D"">Le 20 ao=C3=BBt 2024 =C3=A0 15:32, Julie Morneault &lt;<a =
+href=3D"mailto:morneaultjulie@hotmail.com" =
+class=3D"">morneaultjulie@hotmail.com</a>&gt; a =C3=A9crit :</div><br =
+class=3D"Apple-interchange-newline"><div class=3D"">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" =
+class=3D"">
+
+<div class=3D"">
+<div style=3D"line-break:after-white-space" class=3D""><br =
+id=3D"x_lineBreakAtBeginningOfMessage" class=3D"">
+<div class=3D""><br class=3D"">
+<blockquote type=3D"cite" class=3D"">
+<div class=3D"">D=C3=A9but du message transf=C3=A9r=C3=A9 :</div>
+<br class=3D"x_Apple-interchange-newline">
+<div style=3D"margin-top:0px; margin-right:0px; margin-bottom:0px; =
+margin-left:0px" class=3D"">
+<span style=3D"font-family: -webkit-system-font, &quot;Helvetica =
+Neue&quot;, Helvetica, sans-serif;" class=3D""><b class=3D"">De:
+</b></span><span style=3D"font-family:-webkit-system-font,Helvetica =
+Neue,Helvetica,sans-serif" class=3D"">PandaDoc &lt;<a =
+href=3D"mailto:docs@email.pandadoc.net" =
+class=3D"">docs@email.pandadoc.net</a>&gt;<br class=3D"">
+</span></div>
+<div style=3D"margin-top:0px; margin-right:0px; margin-bottom:0px; =
+margin-left:0px" class=3D"">
+<span style=3D"font-family: -webkit-system-font, &quot;Helvetica =
+Neue&quot;, Helvetica, sans-serif;" class=3D""><b class=3D"">Objet:
+</b></span><span style=3D"font-family:-webkit-system-font,Helvetica =
+Neue,Helvetica,sans-serif" class=3D""><b class=3D"">Copie sign=C3=A9e de =
+=C2=ABJulie Morneault-Pharmacie Julie Morneault=C2=BB</b><br class=3D"">
+</span></div>
+<div style=3D"margin-top:0px; margin-right:0px; margin-bottom:0px; =
+margin-left:0px" class=3D"">
+<span style=3D"font-family: -webkit-system-font, &quot;Helvetica =
+Neue&quot;, Helvetica, sans-serif;" class=3D""><b class=3D"">Date:
+</b></span><span style=3D"font-family:-webkit-system-font,Helvetica =
+Neue,Helvetica,sans-serif" class=3D"">4 avril 2024 =C3=A0 22:22:37 =
+HAE<br class=3D"">
+</span></div>
+<div style=3D"margin-top:0px; margin-right:0px; margin-bottom:0px; =
+margin-left:0px" class=3D"">
+<span style=3D"font-family: -webkit-system-font, &quot;Helvetica =
+Neue&quot;, Helvetica, sans-serif;" class=3D""><b class=3D"">=C3=80:
+</b></span><span style=3D"font-family:-webkit-system-font,Helvetica =
+Neue,Helvetica,sans-serif" class=3D"">Julie Morneault &lt;<a =
+href=3D"mailto:morneaultjulie@hotmail.com" =
+class=3D"">morneaultjulie@hotmail.com</a>&gt;<br class=3D"">
+</span></div>
+<div style=3D"margin-top:0px; margin-right:0px; margin-bottom:0px; =
+margin-left:0px" class=3D"">
+<span style=3D"font-family: -webkit-system-font, &quot;Helvetica =
+Neue&quot;, Helvetica, sans-serif;" class=3D""><b class=3D"">R=C3=A9pondre=
+ =C3=A0:
+</b></span><span style=3D"font-family:-webkit-system-font,Helvetica =
+Neue,Helvetica,sans-serif" class=3D"">Bloom Comptabilit=C3=A9 RH Support =
+&lt;<a href=3D"mailto:info@bloomcomptabilite.com" =
+class=3D"">info@bloomcomptabilite.com</a>&gt;<br class=3D"">
+</span></div>
+<br class=3D"">
+<div class=3D"">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+id=3D"x_background-table" style=3D"background-color:rgb(229,229,229); =
+color:rgb(51,59,64); font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+font-style:normal; font-variant-caps:normal; font-weight:400; =
+letter-spacing:normal; orphans:auto; text-align:start; =
+text-transform:none; white-space:normal; widows:auto; word-spacing:0px; =
+text-decoration:none" class=3D"">
+<tbody class=3D"">
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td align=3D"center" bgcolor=3D"#e5e5e5" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse" class=3D"">
+<table class=3D"x_w_full" width=3D"480" cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0">
+<tbody class=3D"">
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_full" width=3D"480" height=3D"30" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+</tr>
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_full" width=3D"480" height=3D"30" align=3D"center" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+<img =
+src=3D"https://pd-ws-static.s3.us-west-2.amazonaws.com/4993131/logo-170732=
+2350-200x200.png" alt=3D"" title=3D"" height=3D"50" border=3D"0" =
+class=3D"x_logo" style=3D"outline:currentcolor; text-decoration:none; =
+display:block; text-align:center; border:medium; height:50px"></td>
+</tr>
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_full" width=3D"480" height=3D"30" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+</tr>
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_full" width=3D"480" id=3D"x_content-table" =
+bgcolor=3D"#ffffff" align=3D"center" style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse; =
+background-color:rgb(255,255,255); text-align:left">
+<table class=3D"x_w_full" width=3D"480" cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0" id=3D"x_email-base-table">
+<tbody class=3D"">
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_padding" width=3D"40" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+<td class=3D"x_w_full_with_padding" width=3D"400" height=3D"30" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+<td class=3D"x_w_padding" width=3D"40" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+</tr>
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_padding" width=3D"40" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+<td class=3D"x_w_full_with_padding" width=3D"400" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+<table class=3D"x_w_full_with_padding" width=3D"400" cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0" id=3D"x_basic-table">
+<tbody class=3D"">
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_full_with_padding" width=3D"400" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+<table class=3D"x_w_full_with_padding" width=3D"400" cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0">
+<tbody class=3D"">
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_message" width=3D"330" valign=3D"top" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+Tout est pr=C3=AAt! Vous trouverez votre copie sign=C3=A9e de =C2=AB<b =
+class=3D"">Julie Morneault-Pharmacie Julie Morneault</b>=C2=BB en =
+pi=C3=A8ce-jointe.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"x_w_padding" width=3D"40" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+</tr>
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_padding" width=3D"40" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+<td class=3D"x_w_full_with_padding" width=3D"400" height=3D"30" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+<td class=3D"x_w_padding" width=3D"40" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_full" width=3D"480" height=3D"20" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+</tr>
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_full" width=3D"480" height=3D"15" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+</tr>
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_full" width=3D"480" style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+<table class=3D"x_w_full" width=3D"480" cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0">
+<tbody class=3D"">
+<tr style=3D"border-collapse:collapse" class=3D"">
+<td class=3D"x_w_padding" width=3D"51" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+<td class=3D"x_w_full_with_padding" width=3D"378" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse"><p =
+class=3D"x_footer" align=3D"center" style=3D"color:rgb(118,118,118); =
+font-size:12px; line-height:15px; text-align:center; =
+padding-bottom:20px; font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif">
+Utilisez PandaDoc pour cr=C3=A9er, envoyer, suivre et signer =
+=C3=A9lectroniquement des documents de fa=C3=A7on rapide et =
+s=C3=A9curis=C3=A9e.</p>
+</td>
+<td class=3D"x_w_padding" width=3D"51" =
+style=3D"font-family:&quot;Helvetica =
+Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; =
+color:rgb(51,59,64); margin:0px; padding:0px; =
+line-height:22px!important; border-collapse:collapse">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<img width=3D"1px" height=3D"1px" alt=3D"" =
+src=3D"https://email.email.pandadoc.net/o/eJxM0EFrAjEQBeBfY24r2cnEZA97KFYo=
+xULVttZTySYZTXWTZc1a668vFlq8DQOP9_Fc3UxEQ5q5ZIfWx_wRXD2DarqRb7h9fL0EOVtepk=
+_Thzvm61KVAFooqdiudugFRyLiigi84QIBLDZWV1JNPLJQAwfkyCUHAKHGmjeNkmgI0JVa2xFy=
+35pwGHcmOuOSHUefWUw5ULAmhxSvGkFGqoqgqBCoQK3KQgtri0q5yjUaPDeOpX5rYrj8h6rTM3=
+XqFNerzlOvF_dmfRZz1tdt6qM3wyF_DofgR8h3Kf8abGpZrv9muDmLW9Dtv3PEvlK_P3bG-mvp=
+Iux3KxyOcrXcuPf5XJy_3f7lJwAA__8ibXSk" style=3D"outline:currentcolor; =
+text-decoration:none; display:block; color:rgb(51,59,64); =
+font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif; =
+font-size:15px; font-style:normal; font-variant-caps:normal; =
+font-weight:400; letter-spacing:normal; orphans:auto; text-align:start; =
+text-indent:0px; text-transform:none; white-space:normal; widows:auto; =
+word-spacing:0px; background-color:rgb(229,229,229)" class=3D""></div>
+</blockquote>
+</div>
+</div>
+<div style=3D"line-break:after-white-space" class=3D"">
+<div class=3D"">
+<blockquote type=3D"cite" class=3D"">
+<div class=3D""></div>
+</blockquote>
+</div>
+<br class=3D"">
+</div>
+</div>
+
+<span =
+id=3D"cid:7869894d-2662-4754-808d-c8c616caf888@EURPRD10.PROD.OUTLOOK.COM">=
+&lt;Julie Morneault-Pharmacie Julie =
+Morneault.pdf&gt;</span></div></blockquote></div><br =
+class=3D""></div></body></html>=
+
+--Apple-Mail=_4A412061-6D10-4A9C-BF05-100B65477735--
+
+--Apple-Mail=_F057EDFB-BE44-4152-A076-662BEE38370E
+Content-Disposition: attachment;
+	filename=smime.p7s
+Content-Type: application/pkcs7-signature;
+	name=smime.p7s
+Content-Transfer-Encoding: base64
+
+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
+
+--Apple-Mail=_F057EDFB-BE44-4152-A076-662BEE38370E--
