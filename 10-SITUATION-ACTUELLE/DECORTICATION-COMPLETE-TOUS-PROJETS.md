@@ -17,9 +17,8 @@
 |----------|-----|-------|-------------|--------|
 | VETA (Saint-Zotique) | 2.5M$ | 15% = 375k$ | **~1,500,000$** | ESTIME |
 | CVV (Valleyfield) | - | - | **1,000,000$** | CONFIRME |
-| Go Dentiste (existant) | 1.4M$ | 5% = 70k$ | **~280,000$** | 1/3 sites |
+| Go Dentiste (Valleyfield) | 1.4M$ | 5% = 70k$ | **~280,000$** | EXISTANT |
 | Go Dentiste (Dorion) | A det. | - | A venir | PLANIFIE |
-| Go Dentiste (Valleyfield) | A det. | - | A venir | PLANIFIE |
 | Bloom | - | - | 0$ | DETRUIT |
 | RH Support | - | - | 0$ | FERME |
 | **TOTAL OPERANTES** | | | **~2,780,000$+** | |
@@ -254,20 +253,19 @@
 | **Nom** | Go Dentiste |
 | **Type** | Clinique dentaire |
 
-### 3 Emplacements
-| Emplacement | Statut | CA estime |
-|-------------|--------|-----------|
-| **785 Mgr Langlois** | EXISTANT | 1,400,000$ |
-| **Dick Ledoux/Dorion** | A VENIR | A determiner |
-| **Valleyfield** | A VENIR | A determiner |
+### 2 Emplacements
+| Emplacement | Adresse | Statut | CA |
+|-------------|---------|--------|-----|
+| **Valleyfield** | 785 Mgr Langlois | EXISTANT | 1,400,000$ |
+| **Dorion** | Dick Ledoux | A VENIR | A determiner |
 
-### Valeur Actuelle (existant seulement)
+### Valeur Actuelle (Valleyfield seulement)
 | Element | Detail |
 |---------|--------|
-| **Chiffre d'affaires** | **1,400,000$** (785 Langlois) |
+| **Chiffre d'affaires** | **1,400,000$** (Valleyfield) |
 | **BAIIA** | **5% = 70,000$** |
 | **Valeur (4x BAIIA)** | **~280,000$** |
-| **Potentiel** | 3x plus avec Dorion + Valleyfield |
+| **Potentiel** | 2x avec Dorion |
 
 ### Structure Actionnariat
 | Actionnaire | % | Valeur actuelle | Role |
