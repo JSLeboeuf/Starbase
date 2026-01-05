@@ -5,21 +5,32 @@
 
 ## SITUATION EN UN COUP D'OEIL
 
-**Statut**: Actionnaire minoritaire (23%) dans structure injuste
-**Risque**: Cautionnement 100% illimite (seul avec Cedric)
-**Probleme**: Felix (23%) et Jerome (6%) exemptes de tout risque
+**Statut**: Actionnaire minoritaire (23%) dans structure desequilibree
+**Portfolio**: 5 projets immobiliers = 18.44M$
+**Operantes**: Exclu de Go Dentiste malgre avoir trouve Dick Ledoux
 
 ---
 
 ## FAITS ETABLIS
 
-### Structure Actionnariat
-| Actionnaire | Parts | Cautionnement | Contribution reelle |
-|-------------|-------|---------------|---------------------|
-| Cedric | 48% | 100% illimite | Faible (absent 5 mois) |
-| Jean-Samuel | 23% | 100% illimite | Tres elevee (740 emails RH Support) |
-| Felix | 23% | **EXEMPTE** | Moyenne |
-| Jerome | 6% | **EXEMPTE** | Faible |
+### Structure Actionnariat Immobilier (18.44M$)
+| Actionnaire | Parts | Valeur | Cautionnement |
+|-------------|-------|--------|---------------|
+| Cedric | 48% | 8.85M$ | Solidaire |
+| Jean-Samuel | 23% | 4.24M$ | Solidaire |
+| Felix | 23% | 4.24M$ | Solidaire |
+| Jerome | 6% | 1.11M$ | Solidaire |
+
+### Structure Operantes
+| Operante | JS | Cedric | Felix | Jerome |
+|----------|-----|--------|-------|--------|
+| VETA | 37.5% | 37.5% | 0% | **0%** |
+| CVV | 37.5% | 37.5% | 0% | **0%** |
+| Go Dentiste | **0%** | 48.5% | 48.5% | **0%** |
+| Bloom | 33% | 33% | 33% | **0%** |
+| RH Support | 33% | 33% | 33% | **0%** |
+
+**Jerome = 0% dans TOUTES les operantes (5/5)**
 
 ### Preuves Critiques Documentees
 1. **Aveux Jerome (2025-11-13)**: "Toi ta 6% moi je veux 18%"

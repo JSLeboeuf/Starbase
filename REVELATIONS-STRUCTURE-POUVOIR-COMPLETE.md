@@ -11,23 +11,26 @@
 Jerome a dit:
 > "Moi j'ai JUSTE l'immobilier. J'ai pas de part dans vos operantes non plus."
 
-### Structure des operantes
+### Structure des operantes (VRAIS POURCENTAGES)
 
-| Personne | Immobilier | Operante | Revenu passif |
-|----------|------------|----------|---------------|
-| **Jean-Samuel** | 23% | VETA Veterinaire | OUI |
-| **Felix** | 23% | Go Dentiste | OUI |
-| **Cedric** | 48% | Les deux | OUI |
-| **Jerome** | 6% | **AUCUNE** | **NON** |
+| Operante | JS | Cedric | Felix | Jerome |
+|----------|-----|--------|-------|--------|
+| VETA (St-Zotique) | 37.5% | 37.5% | 0% | **0%** |
+| CVV (Valleyfield) | 37.5% | 37.5% | 0% | **0%** |
+| Go Dentiste | **0%** | 48.5% | 48.5% | **0%** |
+| Bloom | 33% | 33% | 33% | **0%** |
+| RH Support | 33% | 33% | 33% | **0%** |
 
 ### Analyse
 
-Jerome est **EXCLU** des operantes:
-- Il n'est pas veterinaire (pas de part dans VETA)
-- Il n'est pas dentiste (pas de part dans Go Dentiste)
-- Il ne peut PAS avoir d'operante
+**Jerome est EXCLU de TOUTES les operantes (5/5)**:
+- 0% dans VETA, CVV, Go Dentiste, Bloom, RH Support
 - Les operantes generent du cash MAINTENANT
 - L'immobilier c'est du LONG TERME
+
+**Jean-Samuel est EXCLU de Go Dentiste (0%)**:
+- Malgre avoir TROUVE le projet Dick Ledoux/Dorion
+- Cedric et Felix ont 48.5% chacun
 
 **Sa frustration:** "Vous avez tous le beurre ET l'argent du beurre. Moi j'ai juste des miettes."
 

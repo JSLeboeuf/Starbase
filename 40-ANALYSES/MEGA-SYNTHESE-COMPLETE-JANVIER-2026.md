@@ -15,7 +15,7 @@
 | **timeline_events** | 26 | Chronologie des evenements cles |
 | **analyses_strategies** | 64 | Analyses strategiques (49 actionnables) |
 | **actionnaires** | 5 | Structure actionnariat |
-| **projets** | 4 | Projets immobiliers (~15M$ total) |
+| **projets** | 5 | Projets immobiliers (~18.44M$ total) |
 | **livres_critiques** | 55 | Livres analyses (241 MB) |
 | **nexus_insights** | 125 | Insights extraits |
 | **nexus_clavis** | 45 | Etats mentaux/rituels |
@@ -209,15 +209,18 @@
 
 # SECTION 5: STRUCTURE FINANCIERE
 
-## Projets Immobiliers
+## Projets Immobiliers (5 projets = 18.44M$)
 
-| Projet | Valeur | Cedric | Jean-Sam | Felix | Jerome |
-|--------|--------|--------|----------|-------|--------|
-| 450 Larocque | 1.44M$ | 48% | 23% | 23% | 6% |
-| 48 Portes Riviere-Baudette | 10.5M$ | 48% | 23% | 23% | 6% |
-| 6plex Saint-Zotique | 2.5M$ | 48% | 23% | 23% | 6% |
-| Dr Grenier | ~1M$ | 48% | 23% | 23% | 6% |
-| **TOTAL** | **~15.5M$** | | | | |
+| Projet | Valeur | Trouve par | Cedric 48% | JS 23% | Felix 23% | Jerome 6% |
+|--------|--------|------------|------------|--------|-----------|-----------|
+| 48 Portes | 10.5M$ | Cedric | 5,040,000$ | 2,415,000$ | 2,415,000$ | 630,000$ |
+| 6plex | 2.5M$ | Cedric | 1,200,000$ | 575,000$ | 575,000$ | 150,000$ |
+| 450 Larocque | 1.44M$ | **JS** | 691,200$ | 331,200$ | 331,200$ | 86,400$ |
+| Dick Ledoux/Dorion | 2M$ | **JS** | 960,000$ | 460,000$ | 460,000$ | 120,000$ |
+| 785 Mgr Langlois | 2M$ | Felix | 960,000$ | 460,000$ | 460,000$ | 120,000$ |
+| **TOTAL** | **18.44M$** | | **8.85M$** | **4.24M$** | **4.24M$** | **1.11M$** |
+
+**Note**: Dick Ledoux = 2M$ immeuble + 1M$ operante Go Dentiste = 3M$ financement total
 
 ## Valeur des Parts de Jean-Samuel
 
@@ -227,17 +230,29 @@
 | Autres | 1.1M$ | Si precedent, risque total |
 | **TOTAL** | **3.5M$** | **Risque: 2-3M$** |
 
-## Double Standard Cautionnements
+## Cautionnements (TOUS SOLIDAIRES)
 
 | Actionnaire | Parts | Cautionnement |
 |-------------|-------|---------------|
-| Jean-Samuel | 23% | **100% ILLIMITE** |
-| Cedric | 48% | 100% ILLIMITE |
-| Felix | 23% | **EXEMPTE** |
-| Jerome | 6% | **EXEMPTE** |
+| Jean-Samuel | 23% | **Solidaire** |
+| Cedric | 48% | **Solidaire** |
+| Felix | 23% | **Solidaire** |
+| Jerome | 6% | **Solidaire** |
 
-**Citation BNC (12 dec 2025)**:
-> "Felix Hamel et Jerome Levac ne sont pas impliques dans 9551 et ne cautionneront pas les obligations de 9551"
+**Note**: Tous les actionnaires sont caution solidaire sur les projets immobiliers.
+
+## Operantes (5 entreprises)
+
+| Operante | JS | Cedric | Felix | Jerome |
+|----------|-----|--------|-------|--------|
+| VETA (St-Zotique) | 37.5% | 37.5% | 0% | **0%** |
+| CVV (Valleyfield) | 37.5% | 37.5% | 0% | **0%** |
+| Go Dentiste | **0%** | 48.5% | 48.5% | **0%** |
+| Bloom | 33% | 33% | 33% | **0%** |
+| RH Support | 33% | 33% | 33% | **0%** |
+
+**Jerome = 0% dans TOUTES les operantes (5/5)**
+**JS = 0% dans Go Dentiste malgre avoir trouve Dick Ledoux**
 
 ---
 

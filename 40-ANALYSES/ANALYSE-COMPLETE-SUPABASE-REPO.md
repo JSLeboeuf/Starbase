@@ -47,17 +47,29 @@
 | **2025-12-12** | "Je viens de parler a Felix. Il me confirme que les exigences BNC ont bien ete expliquees..." | Nicolas valide APRES Felix |
 | **2025-10-30** | "Je n'ai pas retouche a ce dossier depuis plusieurs mois" | **AVEU NEGLIGENCE** - CEA demandee depuis mars 2025 |
 
-### 3. DOUBLE STANDARD CAUTIONNEMENTS (Importance: CRITIQUE)
+### 3. CAUTIONNEMENTS (TOUS SOLIDAIRES)
 
 | Actionnaire | Cautionnement | Implication |
 |-------------|---------------|-------------|
-| **Jean-Samuel** | 100% ILLIMITE | Porte tout le risque |
-| **Cedric** | 100% ILLIMITE | Normal (48%) |
-| **Felix** | **EXEMPTE** | Zero risque pour 23% |
-| **Jerome** | **EXEMPTE** | Zero risque pour 6% |
+| **Jean-Samuel** | Solidaire | Risque partage |
+| **Cedric** | Solidaire | Risque partage |
+| **Felix** | Solidaire | Risque partage |
+| **Jerome** | Solidaire | Risque partage |
 
-**Citation BNC (2025-12-12):**
-> "Des cautionnements personnels de Felix Hamel et Jerome Levac sont demandes. Ces derniers ne sont pas impliques dans 9551 et ne cautionneront pas les obligations de 9551"
+**Note**: Tous les actionnaires sont caution solidaire sur les projets immobiliers.
+
+### OPERANTES (5 entreprises)
+
+| Operante | JS | Cedric | Felix | Jerome |
+|----------|-----|--------|-------|--------|
+| VETA | 37.5% | 37.5% | 0% | **0%** |
+| CVV | 37.5% | 37.5% | 0% | **0%** |
+| Go Dentiste | **0%** | 48.5% | 48.5% | **0%** |
+| Bloom | 33% | 33% | 33% | **0%** |
+| RH Support | 33% | 33% | 33% | **0%** |
+
+**Jerome = EXCLU de TOUTES les operantes (5/5)**
+**JS = EXCLU de Go Dentiste malgre avoir trouve Dick Ledoux**
 
 ### 4. AVEUX DE CEDRIC (Importance: CRITIQUE)
 
