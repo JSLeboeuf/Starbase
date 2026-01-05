@@ -9,18 +9,18 @@
 | Categorie | Nombre | Valeur Estimee |
 |-----------|--------|----------------|
 | **Projets Immobiliers** | 5 | ~18.44M$ |
-| **Operantes** | 5 | ~2M$ (partiel) |
-| **TOTAL** | | **~20.44M$** |
+| **Operantes** | 5 | ~2.78M$ |
+| **TOTAL** | | **~21.22M$** |
 
-### Valeurs Operantes (Trouvees)
-| Operante | Valeur | Statut |
-|----------|--------|--------|
-| CVV (Valleyfield) | **1,000,000$** | CONFIRME |
-| Go Dentiste (Dick Ledoux) | ~1,000,000$ | ESTIME |
-| VETA (Saint-Zotique) | A determiner | - |
-| Go Dentiste (785 Langlois) | A determiner | - |
-| Bloom | 0$ | DETRUIT |
-| RH Support | 0$ | FERME |
+### Valeurs Operantes
+| Operante | CA | BAIIA | Valeur (4x) | Statut |
+|----------|-----|-------|-------------|--------|
+| VETA (Saint-Zotique) | 2.5M$ | 15% = 375k$ | **~1,500,000$** | ESTIME |
+| CVV (Valleyfield) | - | - | **1,000,000$** | CONFIRME |
+| Go Dentiste (existant) | 1.4M$ | 5% = 70k$ | **~280,000$** | ESTIME |
+| Bloom | - | - | 0$ | DETRUIT |
+| RH Support | - | - | 0$ | FERME |
+| **TOTAL OPERANTES** | | | **~2,780,000$** | |
 
 ### Liste Complete des Projets Immobiliers
 | # | Projet | Valeur | Statut | Trouve par |
@@ -206,16 +206,18 @@
 | **Nom** | Clinique Veterinaire VETA Inc. |
 | **Lieu** | Saint-Zotique |
 | **Type** | Services veterinaires |
-| **Valeur** | A DETERMINER |
+| **Chiffre d'affaires** | **2,500,000$** |
+| **BAIIA** | **15% = 375,000$** |
+| **Valeur (4x BAIIA)** | **~1,500,000$** |
 
 ### Structure Actionnariat
 | Actionnaire | % | Valeur | Role |
 |-------------|---|--------|------|
-| **Jean-Samuel** | 37.5% | - | Actionnaire |
-| **Cedric** | 37.5% | - | Actionnaire |
-| **Vet Partner** | 25% | - | Veterinaire |
-| **Felix** | **0%** | - | EXCLU |
-| **Jerome** | **0%** | - | EXCLU |
+| **Jean-Samuel** | 37.5% | **562,500$** | Actionnaire |
+| **Cedric** | 37.5% | **562,500$** | Actionnaire |
+| **Vet Partner** | 25% | 375,000$ | Veterinaire |
+| **Felix** | **0%** | 0$ | EXCLU |
+| **Jerome** | **0%** | 0$ | EXCLU |
 
 ---
 
@@ -248,18 +250,19 @@
 | Element | Detail |
 |---------|--------|
 | **Nom** | Go Dentiste |
-| **Lieux** | 785 Mgr Langlois + Dick Ledoux |
+| **Lieux** | 785 Mgr Langlois + Dick Ledoux (a venir) |
 | **Type** | Clinique dentaire |
-| **Valeur Dick Ledoux** | **~1,000,000$** (estime) |
-| **Valeur 785 Mgr Langlois** | A DETERMINER |
-| **Source** | Financement 3M$ total - 2M$ immeuble |
+| **Chiffre d'affaires** | **1,400,000$** (existant) |
+| **BAIIA** | **5% = 70,000$** |
+| **Valeur (4x BAIIA)** | **~280,000$** (existant) |
+| **Note** | Dick Ledoux ajoutera CA supplementaire |
 
 ### Structure Actionnariat
 | Actionnaire | % | Valeur (estime) | Role |
 |-------------|---|-----------------|------|
-| **Cedric** | 48.5% | ~485,000$ | Actionnaire |
-| **Felix** | 48.5% | ~485,000$ | Actionnaire principal |
-| **Dentiste Partner** | 3% | ~30,000$ | Dentiste |
+| **Cedric** | 48.5% | ~135,800$ | Actionnaire |
+| **Felix** | 48.5% | ~135,800$ | Actionnaire principal |
+| **Dentiste Partner** | 3% | ~8,400$ | Dentiste |
 | **Jean-Samuel** | **0%** | **0$** | **EXCLU** |
 | **Jerome** | **0%** | 0$ | EXCLU |
 
@@ -346,27 +349,28 @@
 
 ## ACTIONNARIAT OPERANTES
 
-### Resume par Operante (avec valeurs connues)
+### Resume par Operante (avec valeurs)
 | Operante | Valeur | JS | Cedric | Felix | Jerome |
 |----------|--------|-----|--------|-------|--------|
-| VETA | A det. | 37.5% | 37.5% | 0% | **0%** |
+| VETA | **1.5M$** | 37.5% = **562k$** | 37.5% = 562k$ | 0% | **0%** |
 | CVV | **1M$** | 37.5% = **375k$** | 37.5% = 375k$ | 0% | **0%** |
-| Go Dentiste | ~1M$ | **0%** | 48.5% = ~485k$ | 48.5% = ~485k$ | **0%** |
+| Go Dentiste | **280k$** | **0%** | 48.5% = ~136k$ | 48.5% = ~136k$ | **0%** |
 | Bloom | 0$ | 33% | 33% | 33% | **0%** |
 | RH Support | 0$ | 33% | 33% | 33% | **0%** |
+| **TOTAL** | **2.78M$** | | | | |
 
-### Valeur Operantes par Actionnaire (partiel)
-| Actionnaire | CVV | Go Dentiste | Total connu |
-|-------------|-----|-------------|-------------|
-| **Jean-Samuel** | **375,000$** | 0$ | **375,000$** |
-| **Cedric** | 375,000$ | ~485,000$ | ~860,000$ |
-| **Felix** | 0$ | ~485,000$ | ~485,000$ |
-| **Jerome** | 0$ | 0$ | **0$** |
+### Valeur Operantes par Actionnaire
+| Actionnaire | VETA | CVV | Go Dentiste | Total |
+|-------------|------|-----|-------------|-------|
+| **Jean-Samuel** | **562,500$** | **375,000$** | 0$ | **937,500$** |
+| **Cedric** | 562,500$ | 375,000$ | ~135,800$ | **~1,073,300$** |
+| **Felix** | 0$ | 0$ | ~135,800$ | **~135,800$** |
+| **Jerome** | 0$ | 0$ | 0$ | **0$** |
 
 ### Exclusions
 - **Jerome**: EXCLU de 5/5 operantes (100%) = **0$ d'operante**
 - **Jean-Samuel**: EXCLU de Go Dentiste (mais a trouve Dick Ledoux!)
-- **Felix**: EXCLU des 2 cliniques veterinaires
+- **Felix**: EXCLU des 2 cliniques veterinaires = perte de **937,500$**
 
 ---
 
@@ -398,13 +402,13 @@
 | 785 Mgr Langlois | 2,000,000$ | Felix | Construit |
 | **TOTAL** | **18,440,000$** | | |
 
-### Valeur par Actionnaire (Immobilier + Operantes connues)
+### Valeur par Actionnaire (Immobilier + Operantes)
 | Actionnaire | Immobilier | Operantes | Total | Dette | Net |
 |-------------|------------|-----------|-------|-------|-----|
-| **Cedric** | 8,851,200$ | ~860,000$ | ~9,711,200$ | - | ~9,711,200$ |
-| **Jean-Samuel** | 4,241,200$ | **375,000$** | ~4,616,200$ | 148,417$ | ~4,468,000$ |
-| **Felix** | 4,241,200$ | ~485,000$ | ~4,726,200$ | 150,000$? | ~4,576,000$ |
-| **Jerome** | 1,106,400$ | **0$** | 1,106,400$ | 0$ | 1,106,400$ |
+| **Cedric** | 8,851,200$ | 1,073,300$ | **~9,924,500$** | - | ~9,924,500$ |
+| **Jean-Samuel** | 4,241,200$ | **937,500$** | **~5,178,700$** | 148,417$ | **~5,030,000$** |
+| **Felix** | 4,241,200$ | 135,800$ | ~4,377,000$ | 150,000$? | ~4,227,000$ |
+| **Jerome** | 1,106,400$ | **0$** | **1,106,400$** | 0$ | 1,106,400$ |
 
 ---
 
