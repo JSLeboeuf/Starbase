@@ -17,10 +17,12 @@
 |----------|-----|-------|-------------|--------|
 | VETA (Saint-Zotique) | 2.5M$ | 15% = 375k$ | **~1,500,000$** | ESTIME |
 | CVV (Valleyfield) | - | - | **1,000,000$** | CONFIRME |
-| Go Dentiste (existant) | 1.4M$ | 5% = 70k$ | **~280,000$** | ESTIME |
+| Go Dentiste (existant) | 1.4M$ | 5% = 70k$ | **~280,000$** | 1/3 sites |
+| Go Dentiste (Dorion) | A det. | - | A venir | PLANIFIE |
+| Go Dentiste (Valleyfield) | A det. | - | A venir | PLANIFIE |
 | Bloom | - | - | 0$ | DETRUIT |
 | RH Support | - | - | 0$ | FERME |
-| **TOTAL OPERANTES** | | | **~2,780,000$** | |
+| **TOTAL OPERANTES** | | | **~2,780,000$+** | |
 
 ### Liste Complete des Projets Immobiliers
 | # | Projet | Valeur | Statut | Trouve par |
@@ -250,15 +252,25 @@
 | Element | Detail |
 |---------|--------|
 | **Nom** | Go Dentiste |
-| **Lieux** | 785 Mgr Langlois + Dick Ledoux (a venir) |
 | **Type** | Clinique dentaire |
-| **Chiffre d'affaires** | **1,400,000$** (existant) |
+
+### 3 Emplacements
+| Emplacement | Statut | CA estime |
+|-------------|--------|-----------|
+| **785 Mgr Langlois** | EXISTANT | 1,400,000$ |
+| **Dick Ledoux/Dorion** | A VENIR | A determiner |
+| **Valleyfield** | A VENIR | A determiner |
+
+### Valeur Actuelle (existant seulement)
+| Element | Detail |
+|---------|--------|
+| **Chiffre d'affaires** | **1,400,000$** (785 Langlois) |
 | **BAIIA** | **5% = 70,000$** |
-| **Valeur (4x BAIIA)** | **~280,000$** (existant) |
-| **Note** | Dick Ledoux ajoutera CA supplementaire |
+| **Valeur (4x BAIIA)** | **~280,000$** |
+| **Potentiel** | 3x plus avec Dorion + Valleyfield |
 
 ### Structure Actionnariat
-| Actionnaire | % | Valeur (estime) | Role |
+| Actionnaire | % | Valeur actuelle | Role |
 |-------------|---|-----------------|------|
 | **Cedric** | 48.5% | ~135,800$ | Actionnaire |
 | **Felix** | 48.5% | ~135,800$ | Actionnaire principal |
