@@ -9,8 +9,18 @@
 | Categorie | Nombre | Valeur Estimee |
 |-----------|--------|----------------|
 | **Projets Immobiliers** | 5 | ~18.44M$ |
-| **Operantes** | 5 | Non evaluees separement |
-| **TOTAL IMMOBILIER** | | **~18.44M$** |
+| **Operantes** | 5 | ~2M$ (partiel) |
+| **TOTAL** | | **~20.44M$** |
+
+### Valeurs Operantes (Trouvees)
+| Operante | Valeur | Statut |
+|----------|--------|--------|
+| CVV (Valleyfield) | **1,000,000$** | CONFIRME |
+| Go Dentiste (Dick Ledoux) | ~1,000,000$ | ESTIME |
+| VETA (Saint-Zotique) | A determiner | - |
+| Go Dentiste (785 Langlois) | A determiner | - |
+| Bloom | 0$ | DETRUIT |
+| RH Support | 0$ | FERME |
 
 ### Liste Complete des Projets Immobiliers
 | # | Projet | Valeur | Statut | Trouve par |
@@ -196,15 +206,16 @@
 | **Nom** | Clinique Veterinaire VETA Inc. |
 | **Lieu** | Saint-Zotique |
 | **Type** | Services veterinaires |
+| **Valeur** | A DETERMINER |
 
 ### Structure Actionnariat
-| Actionnaire | % | Role |
-|-------------|---|------|
-| **Jean-Samuel** | 37.5% | Actionnaire |
-| **Cedric** | 37.5% | Actionnaire |
-| **Vet Partner** | 25% | Veterinaire |
-| **Felix** | **0%** | EXCLU |
-| **Jerome** | **0%** | EXCLU |
+| Actionnaire | % | Valeur | Role |
+|-------------|---|--------|------|
+| **Jean-Samuel** | 37.5% | - | Actionnaire |
+| **Cedric** | 37.5% | - | Actionnaire |
+| **Vet Partner** | 25% | - | Veterinaire |
+| **Felix** | **0%** | - | EXCLU |
+| **Jerome** | **0%** | - | EXCLU |
 
 ---
 
@@ -217,15 +228,17 @@
 | **Lieu** | 450 Larocque, Valleyfield |
 | **Type** | Services veterinaires |
 | **Statut** | ACQUIS (17 dec 2025) |
+| **Valeur** | **1,000,000$** |
+| **Source** | Transaction Dr Grenier (dec 2025) |
 
 ### Structure Actionnariat
-| Actionnaire | % | Role |
-|-------------|---|------|
-| **Jean-Samuel** | 37.5% | Actionnaire |
-| **Cedric** | 37.5% | Actionnaire |
-| **Vet Partner** | 25% | Veterinaire |
-| **Felix** | **0%** | EXCLU |
-| **Jerome** | **0%** | EXCLU |
+| Actionnaire | % | Valeur | Role |
+|-------------|---|--------|------|
+| **Jean-Samuel** | 37.5% | **375,000$** | Actionnaire |
+| **Cedric** | 37.5% | **375,000$** | Actionnaire |
+| **Vet Partner** | 25% | **250,000$** | Veterinaire |
+| **Felix** | **0%** | 0$ | EXCLU |
+| **Jerome** | **0%** | 0$ | EXCLU |
 
 ---
 
@@ -237,15 +250,18 @@
 | **Nom** | Go Dentiste |
 | **Lieux** | 785 Mgr Langlois + Dick Ledoux |
 | **Type** | Clinique dentaire |
+| **Valeur Dick Ledoux** | **~1,000,000$** (estime) |
+| **Valeur 785 Mgr Langlois** | A DETERMINER |
+| **Source** | Financement 3M$ total - 2M$ immeuble |
 
 ### Structure Actionnariat
-| Actionnaire | % | Role |
-|-------------|---|------|
-| **Cedric** | 48.5% | Actionnaire |
-| **Felix** | 48.5% | Actionnaire principal |
-| **Dentiste Partner** | 3% | Dentiste |
-| **Jean-Samuel** | **0%** | **EXCLU** |
-| **Jerome** | **0%** | EXCLU |
+| Actionnaire | % | Valeur (estime) | Role |
+|-------------|---|-----------------|------|
+| **Cedric** | 48.5% | ~485,000$ | Actionnaire |
+| **Felix** | 48.5% | ~485,000$ | Actionnaire principal |
+| **Dentiste Partner** | 3% | ~30,000$ | Dentiste |
+| **Jean-Samuel** | **0%** | **0$** | **EXCLU** |
+| **Jerome** | **0%** | 0$ | EXCLU |
 
 ### ATTENTION
 **Jean-Samuel est EXCLU de Go Dentiste (0%)** malgre:
@@ -262,20 +278,23 @@
 |---------|--------|
 | **Nom** | Finances BLOOM Inc. |
 | **Type** | Services comptables |
+| **Statut** | **DETRUIT** |
+| **Valeur** | **0$** (clients perdus) |
 
 ### Structure Actionnariat
-| Actionnaire | % |
-|-------------|---|
-| **Jean-Samuel** | 33% |
-| **Cedric** | 33% |
-| **Felix** | 33% |
-| **Jerome** | **0%** |
+| Actionnaire | % | Valeur |
+|-------------|---|--------|
+| **Jean-Samuel** | 33% | 0$ |
+| **Cedric** | 33% | 0$ |
+| **Felix** | 33% | 0$ |
+| **Jerome** | **0%** | 0$ |
 
 ### Historique
 - Jean-Samuel a monte Bloom
 - Felix prend possession en mars 2024
 - Jean-Samuel ne touche plus rien de sa propre compagnie
 - Jean-Samuel se fait charger 53,000$ de comptabilite
+- **COMPAGNIE DETRUITE**: Presque tous les clients sont partis
 
 ---
 
@@ -287,19 +306,23 @@
 | **Nom** | RH Support Inc. |
 | **Type** | Recrutement |
 | **Constitution** | 18 avril 2023 |
+| **Fermeture** | 19 juin 2024 |
+| **Statut** | **FERME** |
+| **Valeur** | **0$** (ferme avec dette) |
 
 ### Structure Actionnariat
-| Actionnaire | % |
-|-------------|---|
-| **Jean-Samuel** | 33% |
-| **Cedric** | 33% |
-| **Felix** | 33% |
-| **Jerome** | **0%** |
+| Actionnaire | % | Valeur |
+|-------------|---|--------|
+| **Jean-Samuel** | 33% | 0$ (+ dette) |
+| **Cedric** | 33% | 0$ |
+| **Felix** | 33% | 0$ |
+| **Jerome** | **0%** | 0$ |
 
 ### Dette Associee
 - Origine: "Idee de marde" de Cedric (son aveu)
 - Montant: 148,417.08$
 - Taux: **10% COMPOSE** semestriellement
+- Felix = Presidence echec (200k$ marge loadee en 6 mois)
 
 ---
 
@@ -323,17 +346,25 @@
 
 ## ACTIONNARIAT OPERANTES
 
-### Resume par Operante
-| Operante | JS | Cedric | Felix | Jerome |
-|----------|-----|--------|-------|--------|
-| VETA | 37.5% | 37.5% | 0% | **0%** |
-| CVV | 37.5% | 37.5% | 0% | **0%** |
-| Go Dentiste | **0%** | 48.5% | 48.5% | **0%** |
-| Bloom | 33% | 33% | 33% | **0%** |
-| RH Support | 33% | 33% | 33% | **0%** |
+### Resume par Operante (avec valeurs connues)
+| Operante | Valeur | JS | Cedric | Felix | Jerome |
+|----------|--------|-----|--------|-------|--------|
+| VETA | A det. | 37.5% | 37.5% | 0% | **0%** |
+| CVV | **1M$** | 37.5% = **375k$** | 37.5% = 375k$ | 0% | **0%** |
+| Go Dentiste | ~1M$ | **0%** | 48.5% = ~485k$ | 48.5% = ~485k$ | **0%** |
+| Bloom | 0$ | 33% | 33% | 33% | **0%** |
+| RH Support | 0$ | 33% | 33% | 33% | **0%** |
+
+### Valeur Operantes par Actionnaire (partiel)
+| Actionnaire | CVV | Go Dentiste | Total connu |
+|-------------|-----|-------------|-------------|
+| **Jean-Samuel** | **375,000$** | 0$ | **375,000$** |
+| **Cedric** | 375,000$ | ~485,000$ | ~860,000$ |
+| **Felix** | 0$ | ~485,000$ | ~485,000$ |
+| **Jerome** | 0$ | 0$ | **0$** |
 
 ### Exclusions
-- **Jerome**: EXCLU de 5/5 operantes (100%)
+- **Jerome**: EXCLU de 5/5 operantes (100%) = **0$ d'operante**
 - **Jean-Samuel**: EXCLU de Go Dentiste (mais a trouve Dick Ledoux!)
 - **Felix**: EXCLU des 2 cliniques veterinaires
 
@@ -367,13 +398,13 @@
 | 785 Mgr Langlois | 2,000,000$ | Felix | Construit |
 | **TOTAL** | **18,440,000$** | | |
 
-### Valeur par Actionnaire (Immobilier)
-| Actionnaire | Valeur | Dette envers Cedric | Net |
-|-------------|--------|---------------------|-----|
-| **Cedric** | 8,851,200$ | - | 8,851,200$ |
-| **Jean-Samuel** | 4,241,200$ | 148,417$ | ~4,093,000$ |
-| **Felix** | 4,241,200$ | 150,000$? | ~4,091,000$ |
-| **Jerome** | 1,106,400$ | 0$ | 1,106,400$ |
+### Valeur par Actionnaire (Immobilier + Operantes connues)
+| Actionnaire | Immobilier | Operantes | Total | Dette | Net |
+|-------------|------------|-----------|-------|-------|-----|
+| **Cedric** | 8,851,200$ | ~860,000$ | ~9,711,200$ | - | ~9,711,200$ |
+| **Jean-Samuel** | 4,241,200$ | **375,000$** | ~4,616,200$ | 148,417$ | ~4,468,000$ |
+| **Felix** | 4,241,200$ | ~485,000$ | ~4,726,200$ | 150,000$? | ~4,576,000$ |
+| **Jerome** | 1,106,400$ | **0$** | 1,106,400$ | 0$ | 1,106,400$ |
 
 ---
 
