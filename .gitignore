@@ -1,1 +1,31 @@
+# Claude Code - Fichiers locaux (ne pas commiter)
+.claude/settings.local.json
+.claude/*.local.md
+*.local.json
+*.local.md
+
+# Secrets et credentials
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets/
+infisical-secrets.json
+
+# Node
+node_modules/
+package-lock.json
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporaires
+*.tmp
+*.temp
 nul
