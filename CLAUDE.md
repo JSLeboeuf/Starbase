@@ -12,8 +12,62 @@
 - Recherche web et fetch d'URLs
 - Tous les outils MCP configures
 
-## Contexte du Projet
-Ce workspace contient des scripts d'optimisation et des documents d'analyse.
+---
+
+## CONTEXTE DU PROJET
+
+### Nature du Projet
+Ce repo contient la documentation et analyse d'une situation d'actionnariat avec:
+- **5,366 emails** archives (Supabase + fichiers locaux)
+- **179 incidents** de manipulation documentes
+- **23 preuves formelles** avec implications juridiques
+- Analyses strategiques et psychologiques
+
+### Acteurs Principaux
+| Nom | Role | Notes |
+|-----|------|-------|
+| **Jean-Samuel** | Actionnaire 23% | Utilisateur, cible, porte tout le risque |
+| **Cedric Leboeuf** | Actionnaire 48% | Majoritaire, patterns manipulation |
+| **Felix Hamel** | Actionnaire 23% | Exempte cautionnement, alliance Jerome |
+| **Jerome Levac** | Actionnaire 6% | Exempte cautionnement, cible Jean-Samuel |
+
+### Probleme Central
+Double standard: Jean-Samuel et Cedric portent 100% du risque (cautionnement illimite)
+tandis que Felix et Jerome sont exemptes avec 29% des parts combines.
+
+### Base Supabase
+- **Projet**: jerome-analysis
+- **Tables**: emails, preuves, nexus_conflict_notes, timeline_events, analyses_strategies
+
+---
+
+## STRUCTURE DU REPO
+
+```
+jerome_repo/
+├── 00-INDEX/              <- INDEX-PRINCIPAL.md (navigation)
+├── 10-SITUATION-ACTUELLE/ <- Etat actuel, prochaines etapes
+├── 20-PREUVES/            <- Documents de preuve, transcripts
+├── 30-EMAILS/             <- Emails extraits par personne
+├── 40-ANALYSES/           <- Toutes les analyses strategiques
+├── 50-SCRIPTS/            <- Scripts PowerShell
+├── 60-RESSOURCES/         <- Livres, histoire, references
+├── 70-PROJETS/            <- RH Support, 6plex, Bloom
+├── 80-OUTILS-CLAUDE/      <- Prompts, config MCP, guides
+├── _ARCHIVES/             <- Fichiers archives
+├── ARCHIVES-GROUPE-LEBOEUF/ <- Archive complete originale
+├── ETAT-ACTUEL.md         <- Resume situation
+├── GLOSSAIRE.md           <- Personnes et termes cles
+└── CLAUDE.md              <- Ce fichier
+```
+
+### Fichiers Cles
+- `ETAT-ACTUEL.md` - Resume de la situation actuelle
+- `GLOSSAIRE.md` - Reference des personnes et termes
+- `00-INDEX/INDEX-PRINCIPAL.md` - Navigation centrale
+- `40-ANALYSES/ANALYSE-COMPLETE-SUPABASE-REPO.md` - Inventaire complet
+
+---
 
 ## Standards de Code
 - Utiliser PowerShell pour les scripts Windows (JAMAIS bash/sh/WSL)
@@ -32,6 +86,13 @@ Ce workspace contient des scripts d'optimisation et des documents d'analyse.
 - Git pour le versioning
 - pnpm au lieu de npm (plus rapide)
 - Cursor IDE pour le developpement
+
+## Outils MCP Disponibles
+- **GitHub** - Repos, issues, PRs
+- **Supabase** - Base de donnees jerome-analysis
+- **Notion** - Integration workspace
+- **Playwright** - Automatisation navigateur
+- **Context7** - Documentation librairies
 
 ## Instructions Performance
 1. Executer les operations en parallele quand possible
@@ -62,5 +123,4 @@ Ce workspace contient des scripts d'optimisation et des documents d'analyse.
 - MAXIMISER le parallelisme des appels d'outils
 
 ## Contact
-Workspace: c:\Users\Utilisateur\jerome
-
+Workspace: c:\Users\Utilisateur\jerome_repo
