@@ -8,9 +8,20 @@
 ### Portfolio Total
 | Categorie | Nombre | Valeur Estimee |
 |-----------|--------|----------------|
-| **Projets Immobiliers** | 4 | ~15.44M$ |
+| **Projets Immobiliers** | 7 | ~21.44M$ |
 | **Operantes** | 4 | Non evaluees |
-| **TOTAL IMMOBILIER** | | **~15.44M$** |
+| **TOTAL IMMOBILIER** | | **~21.44M$** |
+
+### Liste Complete des Projets Immobiliers
+| # | Projet | Valeur | Statut |
+|---|--------|--------|--------|
+| 1 | 48 Portes Riviere-Baudette | 10.5M$ | Permis en attente |
+| 2 | 6plex Saint-Zotique | 2.5M$ | En construction |
+| 3 | 450 Larocque (PropCo) | 1.44M$ | ACQUIS |
+| 4 | CVV 9551 (OpCo) | 1M$ | ACQUIS |
+| 5 | **Dick Ledoux** | 3M$ | Financement accepte |
+| 6 | **785 Mgr Langlois (Terrasse du Pont)** | ~2M$ | Construit |
+| 7 | **Dorion (VETA relocalisation)** | ~1M$ | En developpement |
 
 ---
 
@@ -187,6 +198,135 @@
 
 ---
 
+## PROJET 5: DICK LEDOUX (275 BOUL. HARWOOD, VAUDREUIL)
+
+### Informations Generales
+| Element | Detail |
+|---------|--------|
+| **Nom** | Dick Ledoux / Bar Chez Dick |
+| **Adresse** | 275 boulevard Harwood, Vaudreuil-Dorion |
+| **Route** | Route 342 (a hauteur autoroute 20) |
+| **Type** | Immeuble commercial + Clinique dentaire |
+| **Valeur Totale** | **3,000,000$** (immeuble + clinique) |
+| **Valeur Immeuble seul** | ~1,500,000$ - 2,000,000$ (estimee) |
+| **Statut** | Financement accepte, rien de fait encore |
+| **Plans** | 40,000$ depenses |
+
+### Structure Actionnariat (Global Plomberie)
+| Actionnaire | % | Valeur Immeuble ($) | Contribution | Travail |
+|-------------|---|---------------------|--------------|---------|
+| **Cedric** | 48% | ~720,000$ - 960,000$ | **AUCUNE** | **RIEN** |
+| **Jean-Samuel** | 23% | ~345,000$ - 460,000$ | Gestion | Role eval |
+| **Felix** | 23% | ~345,000$ - 460,000$ | Clinique dentaire | Go Dentiste |
+| **Jerome** | 6% | ~90,000$ - 120,000$ | **AUCUNE** | **RIEN** |
+
+### Historique du Batiment
+- **Bar Chez Dick** - Institution locale ouverte en 1962
+- **Fermeture** en 2024
+- **Richard "Dick" Ledoux** - Ancien proprietaire, ne aux Cedres
+- Transformation prevue en clinique dentaire (Go Dentiste)
+
+### Emails Pertinents
+| Sujet | Expediteur |
+|-------|-----------|
+| role evaluation Dick Ledoux | jsleboeuf3@gmail.com |
+| Documentation Dick Ledoux | jlevac@mkmg.ca |
+| Documentation Chez dick | jsleboeuf3@gmail.com |
+
+### Risque
+**MODERE** - Financement accepte mais aucun travail commence
+
+---
+
+## PROJET 6: 785 MGR LANGLOIS (TERRASSE DU PONT / GO DENTISTE)
+
+### Informations Generales
+| Element | Detail |
+|---------|--------|
+| **Nom** | Terrasse du Pont / Go Dentiste |
+| **Adresse** | 785 Mgr Langlois, Valleyfield |
+| **Type** | Immeuble commercial - Clinique dentaire |
+| **Valeur Estimee** | **~2,000,000$** (estimation) |
+| **Statut** | **CONSTRUIT** |
+| **Usage** | Clinique dentaire Go Dentiste |
+
+### Structure Actionnariat
+| Actionnaire | % | Valeur ($) | Contribution | Travail |
+|-------------|---|------------|--------------|---------|
+| **Cedric** | 48% | ~960,000$ | **AUCUNE** | **RIEN** |
+| **Jean-Samuel** | 23% | ~460,000$ | Gestion | A verifier |
+| **Felix** | 23% | ~460,000$ | **PROPRIETAIRE GO DENTISTE** | MAJEUR |
+| **Jerome** | 6% | ~120,000$ | Analyses urbanistiques | ~2-3 mois |
+
+### Travail de Jerome sur ce projet
+- Fiche d'analyse Lot 5 960 232 (2025-11-18)
+- Soumission plan preliminaire (2025-11-27)
+- Coordination avec Sebastien Carriere (urbaniste)
+- Grilles de zonage et analyses
+
+### Lien avec Go Dentiste (Operante)
+- L'immeuble 785 Mgr Langlois = **PropCo**
+- Go Dentiste = **OpCo** (locataire/operante de Felix)
+- Structure similaire a 450 Larocque/CVV
+
+### Risque
+**FAIBLE** - Projet complete
+
+---
+
+## PROJET 7: DORION (273-279 BOUL. HARWOOD - VETA RELOCALISATION)
+
+### Informations Generales
+| Element | Detail |
+|---------|--------|
+| **Nom** | Projet Dorion / VETA Vaudreuil-Dorion |
+| **Adresse** | 273-279 boulevard Harwood, Vaudreuil-Dorion |
+| **Route** | Route 342 |
+| **Type** | Bureau veterinaire (relocalisation VETA) |
+| **Superficie** | ~900 pieds carres (2e etage) |
+| **Valeur Estimee** | **~1,000,000$** (estimation) |
+| **Statut** | En developpement - Validation zonage en cours |
+
+### Demarches en Cours (Mars 2025)
+1. **Ville de Vaudreuil-Dorion (Urbanisme)**
+   - Validation zonage pour bureau veterinaire
+   - Confirmation usage commercial 2e etage
+   - Permis amenagement interieur, occupation, enseigne
+
+2. **MTQ (Ministere des Transports)**
+   - Validation acces Route 342
+   - Autorisation enseigne visible de la route
+
+3. **Sebastien Carriere (Urbaniste)**
+   - Mandate pour coordonner les demarches
+
+### Enjeux Identifies
+- Probleme de stationnements (Jerome ne veut pas informer la Ville)
+- Normes d'accessibilite (escalier vs ascenseur)
+- Issues de secours et securite incendie
+
+### Structure Actionnariat (Probable - A CONFIRMER)
+| Actionnaire | % | Role |
+|-------------|---|------|
+| **Jean-Samuel** | ? | Coordination, gestion |
+| **Cedric** | ? | Via VETA |
+| **Jerome** | 6% Global? | Coordination terrain |
+
+### Emails Pertinents (Mars 2025)
+| Sujet | Expediteur | Date |
+|-------|-----------|------|
+| Dorion | jsleboeuf3@gmail.com | 29 mars 2025 |
+| Re: Dorion | jlevac@mkmg.ca | 31 mars 2025 |
+| Recherche de local commercial a louer - Vaudreuil-Dorion | jsleboeuf3@gmail.com | - |
+
+### Citation Jerome (Email 31 mars 2025)
+> "Je prefere ne pas informer la Ville avant d'avoir recu notre permis, car ils risquent de refuser en raison du dossier de stationnements."
+
+### Risque
+**MODERE** - Projet en developpement, enjeux de zonage
+
+---
+
 # PARTIE 2: OPERANTES (ENTREPRISES)
 
 ---
@@ -331,14 +471,17 @@
 | 6plex | 48% | 23% | 23% | 6% | 100% |
 | 450 Larocque | 48% | 23% | 23% | 6% | 100% |
 | CVV (9551) | Via fiducie | 50% | 0% | 0% | - |
+| **Dick Ledoux** | 48% | 23% | 23% | 6% | 100% |
+| **785 Mgr Langlois** | 48% | 23% | 23% | 6% | 100% |
+| **Dorion** | ? | ? | ? | ? | A confirmer |
 
-### Valeur par Actionnaire (Immobilier)
+### Valeur par Actionnaire (Immobilier - 7 projets = ~21.44M$)
 | Actionnaire | % Global | Valeur Totale | Cashdown Total | Travail |
 |-------------|----------|---------------|----------------|---------|
-| **Cedric** | 48% | ~7,400,000$ | 800,000$ | AUCUN |
-| **Jean-Samuel** | 23% | ~3,550,000$ | 0$ | MAJEUR |
-| **Felix** | 23% | ~3,550,000$ | 0$ | VARIABLE |
-| **Jerome** | 6% | ~925,000$ | 0$ | 6plex surtout |
+| **Cedric** | 48% | ~10,300,000$ | 800,000$ | AUCUN |
+| **Jean-Samuel** | 23% | ~4,930,000$ | 0$ | MAJEUR |
+| **Felix** | 23% | ~4,930,000$ | 0$ | VARIABLE |
+| **Jerome** | 6% | ~1,285,000$ | 0$ | 6plex + Go Dentiste |
 
 ### Operantes (Exclusion Jerome)
 | Operante | JS | Cedric | Felix | Jerome |
@@ -374,13 +517,17 @@
 | **Felix** | 23% | ~10% (6plex) | **Surplus** |
 | **Jerome** | 6% | ~5% (6plex + Go Dentiste) | Equilibre |
 
-### Ce que Cedric recoit pour RIEN
+### Ce que Cedric recoit pour RIEN (Projets sans cashdown)
 | Projet | Valeur 48% | Cashdown | Travail |
 |--------|------------|----------|---------|
-| Dr Grenier | 321,600$ - 691,200$ | 0$ | 0 |
+| Dr Grenier (450 Larocque) | 321,600$ - 691,200$ | 0$ | 0 |
 | 6plex | ~1,200,000$ | 0$ | 0 |
-| Go Dentiste | ? | 0$ | 0 |
-| **TOTAL** | **~2,500,000$+** | **0$** | **0** |
+| Dick Ledoux | ~720,000$ - 960,000$ | 0$ | 0 |
+| 785 Mgr Langlois | ~960,000$ | 0$ | 0 |
+| Dorion | ~480,000$ | 0$ | 0 |
+| **TOTAL** | **~3,680,000$ - 4,290,000$** | **0$** | **0** |
+
+**Note**: Seul le 48 Portes a un cashdown de Cedric (800k$)
 
 ---
 
@@ -390,12 +537,20 @@
 
 ## Matrice de Risques
 
+### Projets Immobiliers
 | Projet | Risque Juridique | Risque Financier | Risque Relationnel | Global |
 |--------|------------------|------------------|---------------------|--------|
 | **48 Portes** | CRITIQUE | MODERE | CRITIQUE | **CRITIQUE** |
 | **6plex** | FAIBLE | FAIBLE | MODERE | **MODERE** |
 | **450 Larocque** | FAIBLE | FAIBLE | MODERE | **FAIBLE** |
 | **CVV (9551)** | FAIBLE | FAIBLE | FAIBLE | **FAIBLE** |
+| **Dick Ledoux** | FAIBLE | MODERE | FAIBLE | **MODERE** |
+| **785 Mgr Langlois** | FAIBLE | FAIBLE | FAIBLE | **FAIBLE** |
+| **Dorion** | MODERE | MODERE | FAIBLE | **MODERE** |
+
+### Operantes
+| Projet | Risque Juridique | Risque Financier | Risque Relationnel | Global |
+|--------|------------------|------------------|---------------------|--------|
 | **VETA** | MODERE | FAIBLE | FAIBLE | **FAIBLE** |
 | **Go Dentiste** | FAIBLE | FAIBLE | MODERE | **MODERE** |
 | **Bloom** | MODERE | MODERE | CRITIQUE | **MODERE** |
@@ -432,22 +587,25 @@
 
 ## Valeur Totale du Portfolio
 
-### Immobilier
+### Immobilier (7 Projets)
 | Projet | Valeur |
 |--------|--------|
 | 48 Portes Riviere-Baudette | 10,500,000$ |
 | 6plex Saint-Zotique | 2,500,000$ |
-| 450 Larocque | 1,440,000$ |
-| CVV (9551) | 1,000,000$ |
-| **TOTAL IMMOBILIER** | **15,440,000$** |
+| 450 Larocque (PropCo) | 1,440,000$ |
+| CVV 9551 (OpCo) | 1,000,000$ |
+| **Dick Ledoux** | 3,000,000$ |
+| **785 Mgr Langlois** | 2,000,000$ |
+| **Dorion** | 1,000,000$ |
+| **TOTAL IMMOBILIER** | **21,440,000$** |
 
-### Valeur par Actionnaire (Immobilier seul)
-| Actionnaire | Valeur | Dette envers Cedric | Net |
-|-------------|--------|---------------------|-----|
-| **Cedric** | ~7,400,000$ | - | ~7,400,000$ |
-| **Jean-Samuel** | ~3,550,000$ | 148,417$ | ~3,400,000$ |
-| **Felix** | ~3,550,000$ | 150,000$? | ~3,400,000$ |
-| **Jerome** | ~925,000$ | 0$ | ~925,000$ |
+### Valeur par Actionnaire (Immobilier - 7 projets)
+| Actionnaire | Valeur 48/23/23/6 | Dette envers Cedric | Net |
+|-------------|-------------------|---------------------|-----|
+| **Cedric** | ~10,300,000$ | - | ~10,300,000$ |
+| **Jean-Samuel** | ~4,930,000$ | 148,417$ | ~4,780,000$ |
+| **Felix** | ~4,930,000$ | 150,000$? | ~4,780,000$ |
+| **Jerome** | ~1,285,000$ | 0$ | ~1,285,000$ |
 
 ---
 
@@ -459,12 +617,25 @@
 3. **Jerome** = Frustre (exclu des operantes) + Demande le switch
 4. **Jean-Samuel** = Travailleur principal + Debiteur + Cible
 
-### Ce que les Donnees Revelent
-1. Cedric recoit ~2.5M$ pour RIEN (aucun cashdown sur 3/4 projets)
+### Ce que les Donnees Revelent (7 Projets = 21.44M$)
+1. **Cedric recoit ~3.7M$ - 4.3M$ pour RIEN** (aucun cashdown sur 6/7 projets)
 2. Jean-Samuel porte 100% du risque cautionnement avec Cedric
 3. Felix et Jerome sont EXEMPTES malgre leurs parts
 4. Jerome est exclu des operantes = frustration structurelle
 5. La dette de 148k$ = arme de controle, pas compensation juste
+
+### Gain Potentiel du Switch pour Jerome
+- **Avant switch**: 6% x 21.44M$ = ~1,285,000$
+- **Apres switch**: 23% x 21.44M$ = ~4,930,000$
+- **Gain Jerome**: **~3,645,000$** (sur l'ensemble du portfolio)
+
+### Projets Critiques a Surveiller
+| Projet | Risque | Enjeu |
+|--------|--------|-------|
+| **48 Portes** | CRITIQUE | Switch demande, CEA non signee |
+| **RH Support** | CRITIQUE | Dette 148k$ comme levier |
+| **Dorion** | MODERE | Probleme stationnements, zonage |
+| **Dick Ledoux** | MODERE | Rien fait encore, 40k$ plans depenses |
 
 ---
 
@@ -472,3 +643,4 @@
 *Source: Supabase (jerome-analysis) + Repository local*
 *Date: Janvier 2026*
 *Classification: EXHAUSTIF*
+*Mise a jour: Ajout Dick Ledoux, 785 Mgr Langlois, Dorion*
