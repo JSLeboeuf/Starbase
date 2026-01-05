@@ -33,8 +33,8 @@
 **Jerome insiste:**
 > "Est-ce qu'on definit des regles d'avance ou on negocie a chaque deal individuellement?"
 
-### 4. JEROME VEUT PLUS DE PARTS
-> "Je comprends que maintenant, mon implication pour le 48, c'est fuck all, sauf qu'il y a aussi le fait que le projet vient de commencer. [...] je pense que, mettons, avec le financement, je peux aider."
+### 4. JS RECONNAIT SON IMPLICATION LIMITEE AU 48
+> "Je comprends que maintenant, mon implication pour le 48, c'est fuck all" - Jean-Samuel
 
 ### 5. COMMERCIAL VS RESIDENTIEL
 Discussion sur les incentives:
@@ -179,7 +179,7 @@ T'as qu'a y reflechir, on prend tout ca compte dans un projet comme ca.
 ### 31:10 - Speaker 1 (Jean-Samuel)
 La derniere chose que je veux, c'est ca.
 
-### 31:13 - Speaker 4 (JEROME)
+### 31:13 - Speaker 1 (JEAN-SAMUEL)
 **Je comprends que maintenant, mon implication pour le 48, c'est « fuck all », sauf qu'il y a aussi le fait que le projet vient de commencer. Jake et Felix, vous avez commence, vous avez negocie avec l'acheteur, mais je pense que, mettons, avec le financement, je peux aider. Je pense que pour remplir le bloc, je peux aider aussi.**
 
 ### 31:36 - Speaker 2 (Emmanuel)
@@ -239,7 +239,7 @@ C'est comme ca. Demain a midi.
 ### Points critiques:
 1. **Jerome pose directement la question du split** - veut des regles claires
 2. **JS repond "cas par cas"** - pas de regles fixes
-3. **Jerome admet son implication au 48 = "fuck all"** mais veut quand meme plus
+3. **JS reconnait son implication au 48 = "fuck all"** - honnete sur sa contribution limitee
 4. **Emmanuel suggere des baremes** pour eviter les "frictions a long terme"
 5. **Deadline incorporation: 1er avril** pour financement
 

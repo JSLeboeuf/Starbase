@@ -175,7 +175,7 @@ Pour du residentiel?
 ### 24:06 - Speaker 2
 Pis, mettons, dans le commercial, c'est toi qui prends le risque, mais mettons, dans le futur, quand on va commencer a tout avoir une valeur, genre, qu'est-ce qu'on fait avec ca aussi, comme... **Le temps de trouver le deal, habituellement, ca vaut quoi, genre 1, 2, 3%?**
 
-### 24:45 - Speaker 1 (Jean-Samuel)
+### 24:45 - Speaker 3 (CEDRIC)
 Bonne question.
 
 ### 25:22 - Speaker 2
@@ -230,7 +230,7 @@ Tchao !
 1. **JS donne des conseils a quelqu'un** sur ses relations avec les partenaires
 2. **Discussion explicite sur Jay a 6% commercial** - question de le laisser a 6%
 3. **Question directe**: "Le temps de trouver le deal, ca vaut quoi, genre 1, 2, 3%?"
-4. **JS repond**: "Bonne question" - pas de reponse claire
+4. **Cedric repond**: "Bonne question" - pas de reponse claire, evitement
 5. **Mention du 6plex Saint-Zo** - 400k$ deja dessus, 650k$ mis
 
 ### Liens avec le conflit:
