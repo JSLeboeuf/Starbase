@@ -3,7 +3,7 @@
 
 ---
 
-# PARTIE 1 : IMMOBILIER (22,940,000$)
+# PARTIE 1 : IMMOBILIER (22,440,000$)
 
 ## 🏗️ Projet 1 : 48 PORTES RIVIÈRE-BAUDETTE
 
@@ -26,16 +26,16 @@
 
 | Élément | Valeur |
 |---------|--------|
-| **Valeur totale** | **2,500,000$** |
+| **Valeur totale** | **2,000,000$** |
 | Statut | En construction |
 | Trouvé par | Cédric |
 
 | Partenaire | % | Valeur |
 |------------|---|--------|
-| Cédric | 48% | 1,200,000$ |
-| JS | 23% | 575,000$ |
-| Félix | 23% | 575,000$ |
-| Jérôme | 6% | 150,000$ |
+| Cédric | 48% | 960,000$ |
+| JS | 23% | 460,000$ |
+| Félix | 23% | 460,000$ |
+| Jérôme | 6% | 120,000$ |
 
 ---
 
@@ -91,7 +91,7 @@
 
 ---
 
-# PARTIE 2 : OPÉRANTES (10,673,404$)
+# PARTIE 2 : OPÉRANTES (10,393,404$)
 
 ## 🏥 Opérante 1 : CVV (CLINIQUE VÉTÉRINAIRE VALLEYFIELD)
 
@@ -145,65 +145,24 @@
 
 ---
 
-## 🦷 Opérante 3 : GO DENTISTE (VALLEYFIELD)
+## ❌ Opérantes Inactives
 
-| Élément | Valeur |
-|---------|--------|
-| Adresse | 785 Mgr Langlois, Valleyfield |
-| **CA** | **1,400,000$** |
-| **BAIIA (5%)** | **70,000$** |
-| Multiple | 4x |
-| **VALEUR** | **280,000$** |
-
-### Actionnariat Go Dentiste
-| Partenaire | % | Valeur |
-|------------|---|--------|
-| Cédric | 48.5% | 135,800$ |
-| Félix | 48.5% | 135,800$ |
-| Dentiste Partner | 3% | 8,400$ |
-| JS | **0%** | 0$ |
-| Jérôme | **0%** | 0$ |
-
----
-
-## ❌ Opérante 4 : GO DENTISTE (DORION)
-
-| Élément | Valeur |
-|---------|--------|
-| Adresse | Dick Ledoux, Dorion |
-| Statut | **À VENIR** |
-| Valeur | À déterminer |
-
----
-
-## ❌ Opérante 5 : BLOOM COMPTABILITÉ
-
-| Élément | Valeur |
-|---------|--------|
-| Statut | **DÉTRUIT** |
-| Valeur | **0$** |
-
----
-
-## ❌ Opérante 6 : RH SUPPORT
-
-| Élément | Valeur |
-|---------|--------|
-| Statut | **FERMÉ** |
-| Valeur | **0$** |
-| Dette associée | 148,417$ |
+| Opérante | Statut | Valeur |
+|----------|--------|--------|
+| Bloom Comptabilité | DÉTRUIT | 0$ |
+| RH Support | FERMÉ | 0$ (+ dette 148,417$) |
 
 ---
 
 # PARTIE 3 : SYNTHÈSE GLOBALE
 
-## 📊 TOTAL PORTFOLIO : 33,613,404$
+## 📊 TOTAL PORTFOLIO : 32,833,404$
 
 | Catégorie | Valeur |
 |-----------|--------|
-| **IMMOBILIER (5 projets)** | **22,940,000$** |
-| **OPÉRANTES (actives)** | **10,673,404$** |
-| **TOTAL** | **33,613,404$** |
+| **IMMOBILIER (5 projets)** | **22,440,000$** |
+| **OPÉRANTES (2 actives)** | **10,393,404$** |
+| **TOTAL** | **32,833,404$** |
 
 ---
 
@@ -211,12 +170,11 @@
 
 | Partenaire | Immobilier | Opérantes | **TOTAL** | % |
 |------------|------------|-----------|-----------|---|
-| **Cédric** | 11,011,200$ | 4,033,327$ | **15,044,527$** | **45%** |
-| **JS** | 3,026,200$ | 3,897,527$ | **6,923,727$** | **21%** |
-| **Félix** | 5,276,200$ | 135,800$ | **5,412,000$** | **16%** |
-| **Jérôme** | 3,626,400$ | 0$ | **3,626,400$** | **11%** |
+| **Cédric** | 10,771,200$ | 3,897,527$ | **14,668,727$** | **45%** |
+| **JS** | 2,911,200$ | 3,897,527$ | **6,808,727$** | **21%** |
+| **Félix** | 5,161,200$ | 0$ | **5,161,200$** | **16%** |
+| **Jérôme** | 3,596,400$ | 0$ | **3,596,400$** | **11%** |
 | Vet Partners | 0$ | 2,598,351$ | 2,598,351$ | 8% |
-| Dentiste Partner | 0$ | 8,400$ | 8,400$ | 0% |
 
 ---
 
@@ -227,14 +185,7 @@
 |----------|--------|--------|
 | CVV | 5,893,404$ | **0%** |
 | VETA | 4,500,000$ | **0%** |
-| Go Dentiste | 280,000$ | **0%** |
-| **TOTAL EXCLU** | **10,673,404$** | **0$** |
-
-### JS = 0% de Go Dentiste
-- A trouvé le projet Dick Ledoux
-- Est caution solidaire (2M$)
-- A 23% de l'immeuble
-- Mais **0%** de l'opérante Go Dentiste
+| **TOTAL EXCLU** | **10,393,404$** | **0$** |
 
 ---
 
@@ -243,7 +194,6 @@
 | Type | Multiple | Source |
 |------|----------|--------|
 | Cliniques vétérinaires | **12x BAIIA** | Standard industrie (8-13x) |
-| Cliniques dentaires | 4x BAIIA | Conservateur |
 | Immobilier | Valeur marché | Évaluations |
 
 ---
