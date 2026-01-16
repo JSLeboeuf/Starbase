@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operating Manual — Exécution & Confiance (High‑Reliability)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg: #07090b;
+      --bg2: #0b0f14;
+      --bg3: #111824;
+      --card: rgba(255,255,255,0.04);
+      --border: rgba(255,255,255,0.14);
+      --border2: rgba(255,255,255,0.20);
+      --text: #ffffff;
+      --text2: rgba(255,255,255,0.84);
+      --text3: rgba(255,255,255,0.62);
+      --dim: rgba(255,255,255,0.48);
+      --accent: #00d9ff;
+      --accent2: #7cf5ff;
+      --danger: #ff4d6a;
+      --warn: #ffb020;
+      --ok: #00ff9f;
+      --shadow: 0 18px 60px rgba(0,0,0,0.55);
+      --glow: 0 0 18px rgba(0,217,255,0.35), 0 0 52px rgba(0,217,255,0.12);
+      --r: 14px;
+    }
+
+    *{ box-sizing:border-box; }
+    html, body{ margin:0; padding:0; }
+    body{
+      font-family: Inter, -apple-system, system-ui, Segoe UI, Roboto, sans-serif;
+      background:
+        radial-gradient(1200px 700px at 22% 6%, rgba(0,217,255,0.10), transparent 55%),
+        radial-gradient(900px 640px at 78% 12%, rgba(255,77,106,0.06), transparent 60%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a{ color: var(--accent2); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    h1,h2,h3,h4{ font-family:Sora, Inter, system-ui, sans-serif; margin:0; }
+    p{ margin:0 0 12px; color: var(--text2); }
+    .muted{ color: var(--text3); }
+    .dim{ color: var(--dim); }
+
+    .wrap{ max-width: 1120px; margin: 0 auto; padding: 26px 18px 90px; }
+
+    .hero{
+      border: 1px solid var(--border);
+      border-radius: calc(var(--r) + 6px);
+      background:
+        linear-gradient(180deg, rgba(0,217,255,0.12), rgba(0,0,0,0)),
+        radial-gradient(700px 320px at 55% 10%, rgba(0,217,255,0.11), transparent 70%),
+        var(--bg2);
+      padding: 40px 22px 18px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow:hidden;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background: linear-gradient(90deg, transparent, rgba(0,217,255,0.22), transparent);
+      opacity:0.35;
+      transform: translateX(-65%);
+      animation: scan 9s linear infinite;
+      pointer-events:none;
+    }
+    @keyframes scan{ 0%{ transform: translateX(-65%);} 100%{ transform: translateX(65%);} }
+    @media (prefers-reduced-motion: reduce){ .hero::after{ animation:none; } }
+
+    .heroTop{
+      display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,217,255,0.32);
+      background: rgba(0,217,255,0.10);
+      color: var(--accent2);
+      letter-spacing: .10em;
+      text-transform: uppercase;
+      font-size: 12px;
+      box-shadow: 0 0 14px rgba(0,217,255,0.22);
+      width: fit-content;
+    }
+    .hero h1{
+      font-size: clamp(26px, 3.7vw, 46px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-top: 10px;
+    }
+    .accent{ color: var(--accent2); text-shadow: var(--glow); }
+    .heroSub{ max-width: 880px; margin-top: 12px; font-size: 15.5px; }
+
+    .actions{ display:flex; gap:10px; flex-wrap:wrap; }
+    .btn{
+      border: 1px solid var(--border2);
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .02em;
+      cursor:pointer;
+      user-select:none;
+      transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+      display:inline-flex; align-items:center; gap:10px;
+    }
+    .btn:hover{ transform: translateY(-1px); border-color: rgba(0,217,255,0.38); background: rgba(0,217,255,0.10); }
+    .btn:active{ transform: translateY(0); }
+    .btn.primary{ border-color: rgba(0,217,255,0.48); background: rgba(0,217,255,0.12); color: var(--accent2); box-shadow: 0 0 16px rgba(0,217,255,0.16); }
+
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 14px;
+      margin-top: 18px;
+      align-items: stretch;
+    }
+    @media (max-width: 920px){ .heroGrid{ grid-template-columns:1fr; } }
+    .heroCard{
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      background: rgba(0,0,0,0.35);
+      padding: 14px;
+      position:relative;
+      overflow:hidden;
+    }
+    .heroCard::before{
+      content:"";
+      position:absolute; inset:0;
+      background: radial-gradient(540px 220px at 18% 0%, rgba(0,217,255,0.10), transparent 60%);
+      pointer-events:none;
+    }
+    .heroCard h3{ font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--text3); margin-bottom: 10px; }
+    .heroCard ul{ margin:0; padding-left: 18px; }
+    .heroCard li{ margin: 6px 0; color: var(--text2); }
+    .bigLine{
+      font-family:Sora, Inter, sans-serif;
+      font-weight: 900;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      line-height: 1.14;
+    }
+
+    .toc{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 14px;
+    }
+    @media (max-width: 1100px){ .toc{ grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 540px){ .toc{ grid-template-columns: 1fr; } }
+    .toc a{
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: rgba(0,0,0,0.30);
+      color: var(--text2);
+      display:block;
+      transition: transform 120ms ease, border-color 120ms ease;
+    }
+    .toc a:hover{ transform: translateY(-1px); border-color: rgba(0,217,255,0.35); }
+    .toc a strong{ display:block; color: var(--accent2); margin-bottom: 4px; }
+
+    .section{
+      margin-top: 18px;
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .sectionHead{
+      padding: 16px 16px 12px;
+      border-bottom: 1px solid var(--border);
+      background:
+        radial-gradient(900px 260px at 20% 0%, rgba(0,217,255,0.08), transparent 58%),
+        var(--bg2);
+    }
+    .sectionHead h2{ font-size: 18px; letter-spacing: -0.01em; }
+    .sectionBody{ padding: 16px; background: var(--bg2); }
+
+    .grid2{ display:grid; grid-template-columns:1fr 1fr; gap: 12px; }
+    .grid3{ display:grid; grid-template-columns:1fr 1fr 1fr; gap: 12px; }
+    @media (max-width: 920px){ .grid2,.grid3{ grid-template-columns:1fr; } }
+
+    .card{
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      background: var(--card);
+      padding: 14px;
+      position:relative;
+      overflow:hidden;
+    }
+    .card::before{
+      content:"";
+      position:absolute; inset:0;
+      background: radial-gradient(620px 220px at 15% 0%, rgba(0,217,255,0.06), transparent 60%);
+      pointer-events:none;
+    }
+    .card h3{ font-size: 14px; margin-bottom: 10px; }
+
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      color: var(--text2);
+      font-size: 12px;
+      margin: 6px 6px 0 0;
+    }
+    .pill.cyan{ border-color: rgba(0,217,255,0.34); background: rgba(0,217,255,0.08); color: var(--accent2); }
+    .pill.danger{ border-color: rgba(255,77,106,0.42); background: rgba(255,77,106,0.10); color: #ffd3da; }
+    .pill.warn{ border-color: rgba(255,176,32,0.40); background: rgba(255,176,32,0.10); color: #ffe1b3; }
+    .pill.ok{ border-color: rgba(0,255,159,0.30); background: rgba(0,255,159,0.08); color: #a7ffe2; }
+
+    .callout{
+      border-left: 3px solid var(--accent);
+      background: rgba(0,217,255,0.08);
+      border-radius: 10px;
+      padding: 12px 12px;
+      margin: 12px 0;
+    }
+    .callout.danger{ border-left-color: var(--danger); background: rgba(255,77,106,0.08); }
+    .callout.warn{ border-left-color: var(--warn); background: rgba(255,176,32,0.08); }
+    .callout.ok{ border-left-color: var(--ok); background: rgba(0,255,159,0.08); }
+    .callout h4{ font-size: 13px; margin-bottom: 8px; }
+    .callout ul{ margin:0; padding-left: 18px; }
+    .callout li{ margin: 6px 0; color: var(--text2); }
+
+    details{
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      background: rgba(255,255,255,0.03);
+      overflow:hidden;
+    }
+    details + details{ margin-top: 10px; }
+    summary{
+      list-style:none;
+      cursor:pointer;
+      padding: 14px 14px;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 10px;
+      user-select:none;
+    }
+    summary::-webkit-details-marker{ display:none; }
+    details[open] summary{ border-bottom: 1px solid var(--border); }
+    .sumTitle{ display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; }
+    .tag{
+      font-family:Sora, Inter, sans-serif;
+      font-weight: 900;
+      letter-spacing: .06em;
+      font-size: 12px;
+      color: var(--accent2);
+      text-shadow: 0 0 10px rgba(0,217,255,0.28);
+    }
+    .sumName{ font-family:Sora, Inter, sans-serif; font-weight: 900; letter-spacing: -0.01em; }
+    .sumMeta{ color: var(--dim); font-size: 12px; }
+    .sumBody{ padding: 14px 14px 16px; }
+
+    table{ width:100%; border-collapse:collapse; margin: 12px 0; }
+    th, td{ border-bottom: 1px solid var(--border); padding: 10px; text-align:left; vertical-align: top; }
+    th{ color: var(--accent2); font-family:Sora, Inter, sans-serif; font-size: 13px; }
+    td{ color: var(--text2); }
+
+    pre, code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    pre{
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(0,0,0,0.55);
+      padding: 12px;
+      overflow:auto;
+      color: #d7f7ff;
+      margin: 12px 0;
+    }
+
+    .footer{
+      margin-top: 18px;
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      background: rgba(255,255,255,0.03);
+      padding: 14px;
+      text-align:center;
+      color: var(--dim);
+    }
+
+    @page{ size:auto; margin: 0.6in; }
+    @media print{
+      :root{
+        --bg: #ffffff;
+        --bg2: #ffffff;
+        --bg3: #ffffff;
+        --card: #ffffff;
+        --border: rgba(0,0,0,0.18);
+        --border2: rgba(0,0,0,0.28);
+        --text: #000000;
+        --text2: rgba(0,0,0,0.88);
+        --text3: rgba(0,0,0,0.70);
+        --dim: rgba(0,0,0,0.55);
+        --shadow: none;
+        --glow: none;
+      }
+      body{ background:#fff; color:#000; }
+      .hero::after{ display:none; }
+      .btn{ display:none !important; }
+      a{ color:#000; text-decoration: underline; }
+      .hero, .section, .card, details, pre{ box-shadow:none; }
+      details{ break-inside: avoid; }
+      summary{ break-inside: avoid; }
+      .wrap{ padding-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero" id="top">
+      <div class="heroTop">
+        <div>
+          <div class="badge">Operating Manual • Exécution & Confiance</div>
+          <h1>Un système <span class="accent">vitesse‑clarté‑accountability</span> pour un partenariat <span class="accent">à haute fiabilité</span></h1>
+          <p class="heroSub">
+            Objectif: exécuter vite sans chaos. Ce manuel remplace les zones grises par des standards simples: décisions tracées, rôles clairs, délais tenus,
+            transparence minimale, et un protocole de réponse aux patterns qui détruisent la performance.
+          </p>
+          <p class="dim">Ce document est un guide de gouvernance opérationnelle. Pour contrats/dettes/juridique, prends conseil local si nécessaire.</p>
+        </div>
+        <div class="actions">
+          <button class="btn primary" type="button" onclick="window.print()">Imprimer</button>
+          <button class="btn" type="button" onclick="openAll()">Tout déplier</button>
+          <button class="btn" type="button" onclick="closeAll()">Tout replier</button>
+        </div>
+      </div>
+
+      <div class="heroGrid">
+        <div class="heroCard">
+          <h3>Quick Start (14 jours)</h3>
+          <ul>
+            <li><strong>Decision Log</strong>: chaque décision = owner + deadline + rationale.</li>
+            <li><strong>SLA 48h</strong>: validation/réponse sous 48h sinon “option par défaut”.</li>
+            <li><strong>Weekly review</strong>: “qu’est‑ce qui a été livré?”</li>
+            <li><strong>Écrit &gt; oral</strong>: tout engagement critique se résume par écrit.</li>
+            <li><strong>Anti‑patterns</strong> traités comme risques (pas “style”).</li>
+          </ul>
+        </div>
+        <div class="heroCard">
+          <div class="bigLine">SPEED + CLARITY + TRUST = <span class="accent">OUTPUTS</span></div>
+          <p class="muted" style="margin-top:10px">Quand tout est flou, les jeux de pouvoir gagnent. Quand tout est tracé, seule l’exécution gagne.</p>
+          <div style="margin-top:8px">
+            <span class="pill cyan">Owner unique</span>
+            <span class="pill cyan">Deadlines</span>
+            <span class="pill cyan">Trace</span>
+            <span class="pill cyan">Rétro (AAR)</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="toc" aria-label="Table des matières">
+        <a href="#foundations"><strong>01 — Fondations</strong><span class="dim">Outcomes • principes • cadence</span></a>
+        <a href="#trust"><strong>02 — Confiance</strong><span class="dim">modèle + standards + tests</span></a>
+        <a href="#patterns"><strong>03 — Patterns à risque</strong><span class="dim">12 tactiques destructrices</span></a>
+        <a href="#protocols"><strong>04 — Protocoles</strong><span class="dim">scripts • arbre de réponse</span></a>
+        <a href="#rules"><strong>05 — 21 règles</strong><span class="dim">gouvernance anti‑frottement</span></a>
+        <a href="#mindsets"><strong>06 — Mentalités</strong><span class="dim">extraction vs compounding</span></a>
+        <a href="#rollout"><strong>07 — Déploiement</strong><span class="dim">7 jours / 30 jours</span></a>
+        <a href="#redflags"><strong>08 — Red flags</strong><span class="dim">escalade • tiers • séparation</span></a>
+      </nav>
+    </header>
+
+    <!-- 01 Foundations -->
+    <section class="section" id="foundations">
+      <div class="sectionHead">
+        <h2>01 — Fondations: outcomes, principes, cadence</h2>
+        <p>On optimise pour <span class="pill cyan">vitesse</span> <span class="pill cyan">qualité</span> <span class="pill cyan">fiabilité</span> et <span class="pill cyan">valeur</span>. Tout le reste est secondaire.</p>
+      </div>
+      <div class="sectionBody">
+        <div class="grid2">
+          <div class="card">
+            <h3>Le filtre: 3 outcomes</h3>
+            <p>Chaque initiative doit servir au moins <strong>1</strong> outcome. Sinon, elle est réalignée ou stoppée.</p>
+            <div>
+              <span class="pill cyan">Capacité / tech différenciante</span>
+              <span class="pill cyan">Produit ou revenu scalable</span>
+              <span class="pill cyan">Nouvelle méthode de travail</span>
+            </div>
+            <div class="callout">
+              <h4>Test immédiat (30 secondes)</h4>
+              <ul>
+                <li><strong>Quel outcome?</strong> (1 phrase)</li>
+                <li><strong>Qui décide?</strong> (owner unique)</li>
+                <li><strong>Quand?</strong> (deadline)</li>
+                <li><strong>Quel 1er output?</strong> (next ship)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Cadence standard</h3>
+            <table>
+              <thead><tr><th>Standard</th><th>Ce que ça force</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Décision ≤ 7 jours</strong></td><td>Fin des projets “zombies”</td></tr>
+                <tr><td><strong>1er output ≤ 30 jours</strong></td><td>Fin de la recherche infinie</td></tr>
+                <tr><td><strong>SLA réponse 24–48h</strong></td><td>Fin du blocage silencieux</td></tr>
+                <tr><td><strong>Weekly review</strong></td><td>Outputs &gt; busy‑ness</td></tr>
+                <tr><td><strong>80% info = GO</strong></td><td>Itération &gt; perfection</td></tr>
+              </tbody>
+            </table>
+            <div class="callout warn">
+              <h4>Règle d’or</h4>
+              <ul>
+                <li>Une règle annoncée mais non appliquée devient une <strong>permission</strong>.</li>
+                <li>Le cadre doit être <strong>stable</strong> pour créer de la confiance.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>10 principes opérationnels</h3>
+          <p class="muted">Chaque principe = règle + anti‑pattern + phrase courte.</p>
+          <div class="grid2" style="margin-top:10px">
+            <div class="callout">
+              <h4>1) Vitesse &gt; perfection</h4>
+              <ul><li><strong>Règle:</strong> ship à 80%, itère.</li><li><strong>Anti‑pattern:</strong> “attendre d’être sûr”.</li><li><strong>Phrase:</strong> “Le risque = la lenteur.”</li></ul>
+            </div>
+            <div class="callout">
+              <h4>2) Owner unique</h4>
+              <ul><li><strong>Règle:</strong> 1 décision = 1 owner.</li><li><strong>Anti‑pattern:</strong> comité.</li><li><strong>Phrase:</strong> “Pas de ‘on’.”</li></ul>
+            </div>
+            <div class="callout">
+              <h4>3) Deadlines = contrat</h4>
+              <ul><li><strong>Règle:</strong> date + scope + done.</li><li><strong>Anti‑pattern:</strong> “on verra”.</li><li><strong>Phrase:</strong> “Date, owner, next ship.”</li></ul>
+            </div>
+            <div class="callout">
+              <h4>4) Échec → apprentissage</h4>
+              <ul><li><strong>Règle:</strong> AAR après incident.</li><li><strong>Anti‑pattern:</strong> cacher/blâmer.</li><li><strong>Phrase:</strong> “Signal, pas honte.”</li></ul>
+            </div>
+            <div class="callout">
+              <h4>5) Automatisation &amp; outils d’abord</h4>
+              <ul><li><strong>Règle:</strong> on change l’architecture, pas le vernis.</li><li><strong>Anti‑pattern:</strong> “plus tard”.</li><li><strong>Phrase:</strong> “Système &gt; effort.”</li></ul>
+            </div>
+            <div class="callout">
+              <h4>6) Barrières = risques</h4>
+              <ul><li><strong>Règle:</strong> un blocage = action/escale.</li><li><strong>Anti‑pattern:</strong> “c’est comme ça”.</li><li><strong>Phrase:</strong> “On coupe le frottement.”</li></ul>
+            </div>
+            <div class="callout">
+              <h4>7) Accountability hebdo</h4>
+              <ul><li><strong>Règle:</strong> “qu’est‑ce qui a été livré?”</li><li><strong>Anti‑pattern:</strong> “occupé”.</li><li><strong>Phrase:</strong> “Outputs only.”</li></ul>
+            </div>
+            <div class="callout">
+              <h4>8) Transparence par défaut</h4>
+              <ul><li><strong>Règle:</strong> info partagée (source unique).</li><li><strong>Anti‑pattern:</strong> info‑pouvoir.</li><li><strong>Phrase:</strong> “Shared by default.”</li></ul>
+            </div>
+            <div class="callout">
+              <h4>9) Focus outcomes</h4>
+              <ul><li><strong>Règle:</strong> si aucun outcome, stop.</li><li><strong>Anti‑pattern:</strong> “intéressant”.</li><li><strong>Phrase:</strong> “Realign or drop.”</li></ul>
+            </div>
+            <div class="callout">
+              <h4>10) Itération continue</h4>
+              <ul><li><strong>Règle:</strong> v1 → ship → learn.</li><li><strong>Anti‑pattern:</strong> “terminé”.</li><li><strong>Phrase:</strong> “Toujours améliorer.”</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 Trust -->
+    <section class="section" id="trust">
+      <div class="sectionHead">
+        <h2>02 — Confiance: modèle “haute fiabilité”</h2>
+        <p>Une équipe fiable sous pression traite la confiance comme une <span class="pill warn">infrastructure</span>: on la construit, on la mesure, on la protège.</p>
+      </div>
+      <div class="sectionBody">
+        <div class="grid2">
+          <div class="card">
+            <h3>Le cercle de confiance (4 axes)</h3>
+            <table>
+              <thead><tr><th>Axe</th><th>Question</th><th>Standard</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Compétence</strong></td><td>Peut‑il exécuter?</td><td>Preuve, pas promesse</td></tr>
+                <tr><td><strong>Caractère</strong></td><td>Choix sous pression?</td><td>Prévisible</td></tr>
+                <tr><td><strong>Intégrité</strong></td><td>Vérité même quand ça coûte?</td><td>100% ou out</td></tr>
+                <tr><td><strong>Team‑first</strong></td><td>Équipe &gt; ego?</td><td>Démontré</td></tr>
+              </tbody>
+            </table>
+            <div class="callout ok">
+              <h4>Test “mission” (version business)</h4>
+              <ul>
+                <li>Si cette personne était “entre toi et la faillite”, est‑ce que tu lui confierais le move critique?</li>
+                <li>Si non → ce n’est pas une opinion. C’est un risque opérationnel.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3>5 piliers (ce qui fabrique la confiance)</h3>
+            <div>
+              <span class="pill cyan">Prévisibilité</span>
+              <span class="pill cyan">Fiabilité</span>
+              <span class="pill cyan">Compétence prouvée</span>
+              <span class="pill cyan">Transparence</span>
+              <span class="pill cyan">Team‑first</span>
+            </div>
+            <div class="callout">
+              <h4>Standard simple</h4>
+              <ul>
+                <li><strong>Promesse = fait</strong> (ou préavis clair avant miss).</li>
+                <li><strong>Les surprises sont des défauts</strong> (en haut risque, elles tuent les missions; en business, elles tuent les deals).</li>
+                <li><strong>Le feedback est un outil</strong>, pas une attaque.</li>
+              </ul>
+            </div>
+            <div class="callout danger">
+              <h4>Brise‑trust (tolérance minimale)</h4>
+              <ul>
+                <li>Mensonge / déni documenté</li>
+                <li>Opacité répétée (info/finances) malgré demandes</li>
+                <li>Appropriation de crédit / sabotage</li>
+                <li>Triangulation / mise en compétition</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Rituels de fiabilité</h3>
+          <div class="grid3" style="margin-top:10px">
+            <div class="callout">
+              <h4>Rétro (AAR) systématique</h4>
+              <ul>
+                <li>Après ship/incident: “Qu’est‑ce qu’on garde? Qu’est‑ce qu’on change?”</li>
+                <li>Owner assigné à chaque action.</li>
+              </ul>
+            </div>
+            <div class="callout">
+              <h4>Décision tracée</h4>
+              <ul>
+                <li>Décision + rationale + date + owner + deadline.</li>
+                <li>Les changements sont des nouvelles entrées (pas réécriture).</li>
+              </ul>
+            </div>
+            <div class="callout">
+              <h4>Accountability hebdo</h4>
+              <ul>
+                <li>On mesure outputs (ships), pas “efforts”.</li>
+                <li>On coupe les blockers sous 48h.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Patterns -->
+    <section class="section" id="patterns">
+      <div class="sectionHead">
+        <h2>03 — Patterns à risque: 12 tactiques qui détruisent la performance</h2>
+        <p>Ces patterns sont traités comme des <span class="pill warn">risques opérationnels</span>. La réponse n’est pas “psychologique”: c’est <strong>gouvernance + trace + conséquence</strong>.</p>
+      </div>
+      <div class="sectionBody">
+        <div class="callout">
+          <h4>Principe anti‑pattern</h4>
+          <ul>
+            <li><strong>Tout ce qui compte est écrit.</strong> (décisions, owners, deadlines, chiffres)</li>
+            <li><strong>Le travail est traçable.</strong> (livrables, changelog, versions, docs)</li>
+            <li><strong>La transparence est par défaut.</strong> (métriques visibles, rétro)</li>
+            <li><strong>Un blocage = une action.</strong> (SLA, escalade, option par défaut)</li>
+          </ul>
+        </div>
+
+        <details open>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">01</span><span class="sumName">Capture du crédit</span>
+              <span class="pill danger">Turnover</span><span class="pill warn">Motivation ↓</span>
+            </div>
+            <span class="sumMeta">Impact: les meilleurs sortent, l’initiative meurt</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Ce que c’est:</strong> le récit externe efface les contributions réelles (“je” à la place de “nous”, attribution floue).</p>
+            <div class="callout danger">
+              <h4>Effet direct</h4>
+              <ul><li>Les top performers décrochent ou partent.</li><li>L’innovation baisse (initiative punie).</li></ul>
+            </div>
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul>
+                <li>Changelog / ship log avec owners + liens.</li>
+                <li>Attribution standard dans docs/slides/emails.</li>
+                <li>Règle: aucune communication externe sans section “Contributions”.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">02</span><span class="sumName">Double bind (consignes contradictoires)</span>
+              <span class="pill danger">Erreurs ↑</span><span class="pill warn">Rework ↑</span>
+            </div>
+            <span class="sumMeta">Impact: confusion intentionnelle → cycles explosent</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Ce que c’est:</strong> “vas vite” + “valide chaque détail”, puis punition quoi que tu fasses.</p>
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul>
+                <li>Critères de succès écrits (5 lignes) + définition du “done”.</li>
+                <li>Owner tranche les contradictions (par écrit) sous 24h.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">03</span><span class="sumName">Responsabilité élastique (blame‑shifting)</span>
+              <span class="pill danger">Fixes lents</span><span class="pill warn">Répétition</span>
+            </div>
+            <span class="sumMeta">Impact: pas d’ownership → mêmes problèmes</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Ce que c’est:</strong> quand ça marche, c’est “grâce à moi”; quand ça casse, “c’est la faute des autres”.</p>
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul><li>Rétro (AAR): “qu’est‑ce qu’on change dans le système?”</li><li>Pas de blame sans action + owner + deadline.</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">04</span><span class="sumName">Rétention d’information</span>
+              <span class="pill danger">Vitesse ↓</span><span class="pill warn">Dépendance</span>
+            </div>
+            <span class="sumMeta">Impact: monopoliser l’info = monopoliser le pouvoir</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Ce que c’est:</strong> docs/chiffres “chez moi”, validations en privé, source de vérité absente.</p>
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul><li>Source unique partagée (drive/repo) + accès minimum requis.</li><li>Dashboard métriques visible + reporting cadence fixe.</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">05</span><span class="sumName">Décisions unilatérales + réécritures</span>
+              <span class="pill danger">Chaos</span><span class="pill warn">Rework</span>
+            </div>
+            <span class="sumMeta">Impact: pivots sans trace → confiance détruite</span>
+          </summary>
+          <div class="sumBody">
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul><li>Decision log obligatoire; tout changement = nouvelle entrée (pas rétroactif).</li><li>Option A/B avec date limite; sinon option par défaut.</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">06</span><span class="sumName">Promesses non tenues (sans préavis)</span>
+              <span class="pill danger">Trust brisé</span><span class="pill warn">Deals perdus</span>
+            </div>
+            <span class="sumMeta">Impact: incertitude = lenteur</span>
+          </summary>
+          <div class="sumBody">
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul><li>Préavis obligatoire avant miss + nouveau plan écrit.</li><li>Deadlines = contrat; pas “élastique”.</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">07</span><span class="sumName">Ego‑first (entitlement)</span>
+              <span class="pill danger">Risques cachés</span><span class="pill warn">Psych safety ↓</span>
+            </div>
+            <span class="sumMeta">Impact: personne n’ose remonter les problèmes</span>
+          </summary>
+          <div class="sumBody">
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul><li>Feedback = donnée; on répond au point, pas à la personne.</li><li>Rituel: “une objection = un signal à traiter”.</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">08</span><span class="sumName">Triangulation (division de l’équipe)</span>
+              <span class="pill danger">Coordination ↓</span><span class="pill warn">Conflits ↑</span>
+            </div>
+            <span class="sumMeta">Impact: politique interne au lieu de livrer</span>
+          </summary>
+          <div class="sumBody">
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul><li>“Bring it to the table”: clarification à 3, pas par messagers.</li><li>Canal unique pour décisions/priorités.</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">09</span><span class="sumName">Réécriture des faits / déstabilisation</span>
+              <span class="pill danger">Énergie ↓</span><span class="pill warn">Paralysie</span>
+            </div>
+            <span class="sumMeta">Impact: tu doutes → tu ralentis</span>
+          </summary>
+          <div class="sumBody">
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul><li>Références: messages datés, docs, commits.</li><li>Pas d’engagement critique sans trace.</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">10</span><span class="sumName">Blocage silencieux (stonewalling)</span>
+              <span class="pill danger">Deadlines ratées</span><span class="pill warn">Frottement ↑</span>
+            </div>
+            <span class="sumMeta">Impact: tout ralentit sans “non” explicite</span>
+          </summary>
+          <div class="sumBody">
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul><li>SLA 24–48h + option par défaut + escalade.</li><li>Decision deadline: passé la date, on tranche.</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">11</span><span class="sumName">Victimisation stratégique</span>
+              <span class="pill danger">Accountability ↓</span><span class="pill warn">Faits noyés</span>
+            </div>
+            <span class="sumMeta">Impact: émotion remplace la décision</span>
+          </summary>
+          <div class="sumBody">
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul><li>Retour aux faits: donnée → impact → demande → deadline.</li><li>Pas de débat émotionnel sans action.</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">12</span><span class="sumName">Opacité financière / deals flous</span>
+              <span class="pill danger">Risque ↑</span><span class="pill warn">Perte $</span>
+            </div>
+            <span class="sumMeta">Impact: asymétrie d’info = levier</span>
+          </summary>
+          <div class="sumBody">
+            <div class="callout ok">
+              <h4>Contre‑protocole</h4>
+              <ul>
+                <li>Reporting cadence fixe + accès minimum requis (docs/comptes).</li>
+                <li>Tout accord par écrit (conditions, dates, obligations).</li>
+                <li>Pas de décision financière majeure sans transparence minimale.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 04 Protocols -->
+    <section class="section" id="protocols">
+      <div class="sectionHead">
+        <h2>04 — Protocoles: scripts, arbre de réponse, options stratégiques</h2>
+        <p>Objectif: reprendre le cadre sans escalade inutile. On parle <strong>standards + conséquences</strong>, pas personnalités.</p>
+      </div>
+      <div class="sectionBody">
+        <div class="grid2">
+          <div class="card">
+            <h3>Protocole 5 étapes (simple, brutal)</h3>
+            <ol style="margin:10px 0 0; padding-left:18px;">
+              <li style="margin:8px 0; color:var(--text2);"><strong>Comportement observé</strong> (faits datés).</li>
+              <li style="margin:8px 0; color:var(--text2);"><strong>Impact</strong> (vitesse, qualité, trust, coût).</li>
+              <li style="margin:8px 0; color:var(--text2);"><strong>Standard attendu</strong> (par écrit).</li>
+              <li style="margin:8px 0; color:var(--text2);"><strong>Mesure</strong> (SLA, logs, métriques).</li>
+              <li style="margin:8px 0; color:var(--text2);"><strong>Conséquence</strong> si répétition (scope, accès, tiers, séparation).</li>
+            </ol>
+            <div class="callout warn">
+              <h4>Règle</h4>
+              <ul><li>Tu n’annonces pas une conséquence si tu ne la tiens pas.</li></ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3>3 options stratégiques</h3>
+            <div class="callout ok">
+              <h4>A) Cadrer et continuer (pilot 14 jours)</h4>
+              <ul><li>Conditions: logs + SLA + transparence minimale + 0 attaques perso.</li><li>Succès: décisions/outputs augmentent, friction baisse.</li></ul>
+            </div>
+            <div class="callout">
+              <h4>B) Renégocier (structure)</h4>
+              <ul><li>But: rôles, droits de décision, reporting, buy‑sell, médiation.</li></ul>
+            </div>
+            <div class="callout danger">
+              <h4>C) Sortie (préparée)</h4>
+              <ul><li>But: protéger actifs/données/clients, clarifier dettes/parts, plan de transition.</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Arbre “si X → je réponds Y” (10 scénarios)</h3>
+          <table>
+            <thead><tr><th>Si…</th><th>Je réponds…</th></tr></thead>
+            <tbody>
+              <tr><td>Validation bloquée</td><td>SLA 48h. Sans réponse d’ici <strong>[date/heure]</strong>, j’exécute <strong>Option A</strong>.</td></tr>
+              <tr><td>Refus d’écrit</td><td>Alors pas d’engagement. “Mets‑le par écrit ici et je bouge.”</td></tr>
+              <tr><td>Réécriture du passé</td><td>“Je me base sur le message du <strong>[date]</strong>. Changement = nouvelle décision loggée.”</td></tr>
+              <tr><td>Attaque personnelle</td><td>“On revient aux faits/decision/deadline. Sinon on reprend par écrit.”</td></tr>
+              <tr><td>Triangulation</td><td>“Ajoutons X au thread/meeting. Je ne traite pas les propos rapportés sans la personne.”</td></tr>
+              <tr><td>Scope change sans accord</td><td>Nouveau scope = nouvelle décision + impact coût/délai + choix A/B sous 24h.</td></tr>
+              <tr><td>Crédit flou</td><td>Section “Contributions” obligatoire avant envoi externe.</td></tr>
+              <tr><td>Urgence artificielle</td><td>Décision binaire maintenant (A/B). Sinon A par défaut.</td></tr>
+              <tr><td>Opacité finances</td><td>Sans reporting + accès minimum, je suspends mon engagement et on passe en renégociation.</td></tr>
+              <tr><td>Menaces / intimidation</td><td>“On continue uniquement par écrit + tiers. Prochaine étape: médiation / conseil légal.”</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>5 scripts prêts à envoyer</h3>
+          <pre><code>[EMAIL — pilot 14 jours]
+Pour accélérer et éviter les malentendus, je propose un pilot 14 jours:
+1) décisions loggées (owner+deadline+rationale)
+2) SLA 48h (sinon option par défaut)
+3) reporting [cadence] sur finances/progrès
+4) 0 attaques perso (sinon reprise par écrit)
+Si OK, on démarre lundi. Si non, on renégocie la structure.
+
+[SMS — SLA]
+J’ai besoin de A/B d’ici 16h. Sans réponse, je pars sur A pour garder la vitesse.
+
+[CALL — dérapage]
+Stop. On reste sur faits→décision→deadline. Sinon on raccroche et on reprend par écrit.
+
+[TRIANGULATION]
+Ajoutons X ici. Je ne traite pas les propos rapportés sans la personne.
+
+[RECAP]
+Recap: décision=__, owner=__, deadline=__, option par défaut=__.</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Rules -->
+    <section class="section" id="rules">
+      <div class="sectionHead">
+        <h2>05 — 21 règles de gouvernance (anti‑frottement)</h2>
+        <p>But: rendre les zones grises coûteuses et l’exécution rentable. Choisis d’abord les <span class="pill cyan">7 non‑négociables</span>.</p>
+      </div>
+      <div class="sectionBody">
+        <div class="callout">
+          <h4>Les 7 non‑négociables</h4>
+          <ul>
+            <li>Tout engagement critique par écrit (conditions, dates, responsabilités)</li>
+            <li>Decision Log (owner+deadline+rationale)</li>
+            <li>SLA 24–48h + option par défaut</li>
+            <li>Deadlines renégociées avant miss</li>
+            <li>Attribution claire (contributions visibles)</li>
+            <li>Rétro (AAR) après incident/ship raté</li>
+            <li>Reporting minimal finances / cash / obligations</li>
+          </ul>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>I. Clarté &amp; Écrit</h3>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li>01 — Accords par écrit</li>
+              <li>02 — Scope + “done” défini</li>
+              <li>03 — Décisions loggées</li>
+              <li>04 — Changements = nouvelle entrée</li>
+              <li>05 — 80% info = GO</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>II. Ownership &amp; Délais</h3>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li>06 — Owner unique par décision</li>
+              <li>07 — Deadlines = contrat</li>
+              <li>08 — Préavis avant miss</li>
+              <li>09 — Option par défaut si silence</li>
+              <li>10 — Weekly review (ships)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>III. Transparence &amp; Apprentissage</h3>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li>11 — Source unique partagée</li>
+              <li>12 — Reporting cadence fixe</li>
+              <li>13 — Rétro (AAR) systématique</li>
+              <li>14 — Blockers traités sous 48h</li>
+              <li>15 — Pas de blame sans action</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid3" style="margin-top:12px">
+          <div class="card">
+            <h3>IV. Conduite &amp; Trust</h3>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li>16 — Pas d’insultes / humiliation</li>
+              <li>17 — Feedback = donnée, pas attaque</li>
+              <li>18 — Clarification en direct (pas triangulation)</li>
+              <li>19 — Attribution obligatoire</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>V. Finance &amp; Risque</h3>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li>20 — Transparence minimale finances</li>
+              <li>21 — Décision financière majeure = trace + approbation</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Mesures (4 métriques)</h3>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li>Cycle time (décision → ship)</li>
+              <li>Rework (heures perdues)</li>
+              <li>Respect SLA (réponses/validations)</li>
+              <li>Visibilité cash (reporting)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Mindsets -->
+    <section class="section" id="mindsets">
+      <div class="sectionHead">
+        <h2>06 — Mentalités: extraction vs compounding</h2>
+        <p>Deux logiques s’affrontent souvent. Une logique d’<span class="pill danger">extraction</span> (contrôle, opacité, domination) et une logique de <span class="pill ok">compounding</span> (contribution, confiance, long terme).</p>
+      </div>
+      <div class="sectionBody">
+        <div class="grid2">
+          <div class="card">
+            <h3>Mode extraction (zéro‑sum)</h3>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li>Le récit &gt; la réalité</li>
+              <li>Flou utile (exceptions, oral, réécriture)</li>
+              <li>Crédit capturé</li>
+              <li>Friction comme contrôle (silence, retards)</li>
+            </ul>
+            <div class="callout danger">
+              <h4>Résultat long terme</h4>
+              <ul><li>Turnover, lenteur, risques cachés.</li><li>Partenaires qui se protègent au lieu de créer.</li></ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Mode compounding (non‑zéro‑sum)</h3>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li>Trace, vérité, réciprocité</li>
+              <li>Clarté des rôles</li>
+              <li>Attribution juste</li>
+              <li>Apprentissage continu</li>
+            </ul>
+            <div class="callout ok">
+              <h4>Résultat long terme</h4>
+              <ul><li>Vitesse stable, confiance, deals.</li><li>Capital social qui augmente.</li></ul>
+            </div>
+          </div>
+        </div>
+        <div class="callout">
+          <h4>Règle</h4>
+          <ul><li>Tu ne “convaincs” pas une mentalité. Tu installes un cadre où la seule stratégie gagnante est de livrer.</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 Rollout -->
+    <section class="section" id="rollout">
+      <div class="sectionHead">
+        <h2>07 — Déploiement: plan 7 jours + plan 30 jours</h2>
+        <p>Tu installes le système vite. Ensuite seulement tu ajustes. Pas l’inverse.</p>
+      </div>
+      <div class="sectionBody">
+        <div class="grid2">
+          <div class="card">
+            <h3>Plan 7 jours (checklist)</h3>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li>Jour 1: inventaire accès (comptes, docs, IP, domaines, outils)</li>
+              <li>Jour 2: Decision Log + Ship Log + canal unique</li>
+              <li>Jour 3: meeting cadrage 60 min + pilot 14 jours écrit</li>
+              <li>Jour 4: SLA 48h + option par défaut activés</li>
+              <li>Jour 5: dashboard métriques (cycle time, SLA, rework, cash)</li>
+              <li>Jour 6: 1ère rétro (AAR) + ajustements</li>
+              <li>Jour 7: décision: continuer / renégocier / préparer sortie</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Plan 30 jours</h3>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li>Structure écrite (rôles, droits de décision, signature)</li>
+              <li>Reporting financier: cadence fixe + accès minimum</li>
+              <li>Buy‑sell / médiation / clauses de séparation</li>
+              <li>Rituels: weekly outputs + rétro après incident</li>
+              <li>Option de sortie prête (même si tu restes)</li>
+            </ul>
+            <div class="callout warn">
+              <h4>Mesure</h4>
+              <ul><li>Si en 30 jours les règles ne sont pas respectées, ce n’est pas un problème de “communication”. C’est un problème de compatibilité.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 Red flags -->
+    <section class="section" id="redflags">
+      <div class="sectionHead">
+        <h2>08 — Red flags: escalade, tiers, séparation</h2>
+        <p>Ces signaux déclenchent un changement de mode: <span class="pill warn">tiers</span> <span class="pill warn">avocat</span> <span class="pill warn">médiation</span> ou <span class="pill danger">rupture</span>.</p>
+      </div>
+      <div class="sectionBody">
+        <div class="callout danger">
+          <h4>Red flags critiques</h4>
+          <ul>
+            <li>Refus persistant de mettre les engagements critiques par écrit</li>
+            <li>Opacité financière répétée malgré demandes</li>
+            <li>Menaces / intimidation / représailles</li>
+            <li>Sabotage (blocage récurrent, destruction de traces)</li>
+            <li>Violations répétées des limites (insultes, humiliations)</li>
+          </ul>
+        </div>
+        <div class="callout ok">
+          <h4>Ce que tu fais (sans escalade émotionnelle)</h4>
+          <ul>
+            <li>Tu bascules en écrit + tiers neutre.</li>
+            <li>Tu appliques les standards (SLA, option par défaut, logs).</li>
+            <li>Tu prépares une sortie ordonnée si nécessaire.</li>
+          </ul>
+        </div>
+        <div class="footer">
+          <div style="margin-bottom:6px; font-weight:800; color:var(--text2)">Operating Manual — Exécution & Confiance</div>
+          <div class="dim">Retour en haut: <a href="#top">top</a></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function allDetails(){ return Array.from(document.querySelectorAll("details")); }
+    function openAll(){ allDetails().forEach((d) => d.setAttribute("open", "open")); }
+    function closeAll(){ allDetails().forEach((d) => d.removeAttribute("open")); }
+    window.addEventListener("beforeprint", openAll);
+  </script>
+</body>
+</html>
+
