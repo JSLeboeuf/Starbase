@@ -385,6 +385,9 @@
         <a href="#mindsets"><strong>06 — Mentalités</strong><span class="dim">Caïn vs Abel • compounding</span></a>
         <a href="#rollout"><strong>07 — Déploiement</strong><span class="dim">7 jours / 30 jours</span></a>
         <a href="#redflags"><strong>08 — Red flags</strong><span class="dim">escalade • tiers • séparation</span></a>
+        <a href="#casebook"><strong>09 — Casebook</strong><span class="dim">exemples anonymisés • réponses</span></a>
+        <a href="#evidence"><strong>10 — Études</strong><span class="dim">effets • preuves • liens</span></a>
+        <a href="#prompt"><strong>11 — Prompt</strong><span class="dim">copier‑coller • coaching</span></a>
       </nav>
     </header>
 
@@ -586,6 +589,25 @@
         </div>
 
         <div class="card" style="margin-top:12px">
+          <h3>Quand trust est brisé: réponse “high‑reliability”</h3>
+          <p class="muted">Le principe: <strong>corriger vite</strong> avant que le risque devienne systémique. Pas de théâtre, pas d’humiliation — des standards et des conséquences.</p>
+          <table>
+            <thead><tr><th>Étape</th><th>Action</th><th>Pourquoi</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td><strong>Nommer le fait</strong> (daté)</td><td>Coupe la confusion; crée une base commune</td></tr>
+              <tr><td>2</td><td><strong>Standard</strong> (ce qui est acceptable)</td><td>Évite les discussions infinies sur “l’intention”</td></tr>
+              <tr><td>3</td><td><strong>Règle + métrique</strong> (SLA, decision log)</td><td>Transforme le problème en système mesurable</td></tr>
+              <tr><td>4</td><td><strong>AAR</strong> (After Action Review)</td><td>On corrige le système; pas de blame sans action</td></tr>
+              <tr><td>5</td><td><strong>Relief / réduction de rôle</strong> si répétitif</td><td>En haute fiabilité, on retire l’accès au risque, sinon tout casse</td></tr>
+            </tbody>
+          </table>
+          <div class="callout warn">
+            <h4>Règle</h4>
+            <ul><li>Une personne peut faire une erreur. Un pattern de déni/opacité/humiliation est un <strong>risque</strong> — et se traite comme tel.</li></ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
           <h3>Navy SEAL ethos (principes d’exécution)</h3>
           <p class="muted">L’objectif n’est pas d’imiter l’armée. C’est d’emprunter les principes qui produisent des équipes stables sous pression.</p>
           <div class="grid3" style="margin-top:10px">
@@ -754,6 +776,26 @@
               <tr><td><strong>Opacité financière</strong></td><td>Chiffres inaccessibles, accords “flous”</td><td>Reporting + accès minimum requis, sinon suspension/renégociation</td></tr>
               <tr><td><strong>Humiliation / intimidation</strong></td><td>Piques, cris, menaces, honte</td><td>Couper l’échange; tout par écrit; tiers; conséquence</td></tr>
               <tr><td><strong>Campagne de discrédit</strong></td><td>Rumeurs, isolement, “kiss up / kick down”</td><td>Trace, témoins, communication sobre, protéger ton réseau</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>10 schémas de blocage (observables) — et contre‑mesures</h3>
+          <p class="muted">Objectif: transformer un “style relationnel” en <strong>risque mesurable</strong>, puis appliquer un protocole simple.</p>
+          <table>
+            <thead><tr><th>#</th><th>Schéma</th><th>À quoi ça ressemble</th><th>Contre‑mesure Starbase</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td><strong>Ambush calendrier</strong></td><td>Call posé à la dernière minute → zéro préparation, décision forcée</td><td>Clause “cooldown” 24–48h sur décisions critiques</td></tr>
+              <tr><td>2</td><td><strong>Tunnel d’urgence</strong></td><td>“Ce soir sinon le deal meurt” → pression sans preuves</td><td>Refus de signer sous pression + demander preuves + option par défaut</td></tr>
+              <tr><td>3</td><td><strong>Détournement comptable</strong></td><td>Factures déplacées / confusion des flux → cash drain</td><td>Freeze PDF horodatés + double validation + audit trail</td></tr>
+              <tr><td>4</td><td><strong>Ghosting stratégique</strong></td><td>Silence juste avant un jalon (closing, paiement, livrable)</td><td>SLA 24–48h + escalade + “no response = default”</td></tr>
+              <tr><td>5</td><td><strong>Triangulation “paiement”</strong></td><td>Met un tiers en compétition (“X attend, toi tu…”) pour te forcer</td><td>Canal unique + tout le monde au même thread + décisions tracées</td></tr>
+              <tr><td>6</td><td><strong>Réécriture de messages</strong></td><td>Édits/suppressions → mémoire sabotée, déni facile</td><td>Screenshot + export + hash + copie hors domaine</td></tr>
+              <tr><td>7</td><td><strong>Surcharge CC</strong></td><td>Noyade d’infos → l’important se perd, tu rates un détail</td><td>Résumé 5 lignes + liste d’actions + owner + deadline</td></tr>
+              <tr><td>8</td><td><strong>Mélange perso/pro</strong></td><td>Comptes, paiements, accès mélangés → confusion intentionnelle</td><td>Comptes séparés + accès partagés + règles de signature</td></tr>
+              <tr><td>9</td><td><strong>Expert fantôme</strong></td><td>“J’amène l’expert” → jamais livré, sert d’excuse</td><td>Condition: expert + date + livrable; sinon on exécute sans</td></tr>
+              <tr><td>10</td><td><strong>Humiliation → “joke”</strong></td><td>Attaque puis minimisation (“trop sensible”)</td><td>Standard conduite + non‑dépréciation + tiers + conséquence</td></tr>
             </tbody>
           </table>
         </div>
@@ -1368,6 +1410,41 @@
           </div>
         </div>
 
+        <div class="grid2" style="margin-top:12px">
+          <div class="card">
+            <h3>Influence (positive‑sum) — sans mensonge</h3>
+            <p class="muted">But: rendre la coopération rationnelle et rentable. Tu “alignes” via standards, métriques, et conséquences claires.</p>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li><strong>Parler en outcomes</strong>: vitesse, qualité, cash, deals, réputation.</li>
+              <li><strong>Rendre l’accord traçable</strong>: “si on est d’accord, on l’écrit ici”.</li>
+              <li><strong>Objectiver</strong>: “coût du délai” (burn × jours) + “coût du rework”.</li>
+              <li><strong>Pré‑commit</strong>: règles avant incidents (SLA, cooldown, decision log).</li>
+              <li><strong>Option par défaut</strong>: enlever la capacité de bloquer sans dire non.</li>
+            </ul>
+            <div class="callout">
+              <h4>Calibrated questions (neutres)</h4>
+              <ul>
+                <li>“Comment tu veux qu’on prenne des décisions sans trace?”</li>
+                <li>“Qu’est‑ce qui te ferait dire ‘oui’ à ce standard?”</li>
+                <li>“Comment on protège la vitesse <em>et</em> la confiance?”</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Si la personne est très “image / statut”</h3>
+            <p class="muted">Tu n’attaques pas l’ego. Tu attaches le cadre à ce qu’elle veut: image de leader, efficacité, deals, respect.</p>
+            <table>
+              <thead><tr><th>Ce que tu veux</th><th>Frame ROI (sans manipuler)</th></tr></thead>
+              <tbody>
+                <tr><td>Décisions écrites</td><td>“Ça réduit le rework et protège la crédibilité devant les tiers.”</td></tr>
+                <tr><td>SLA + option par défaut</td><td>“Ça accélère la machine et évite les blocages silencieux.”</td></tr>
+                <tr><td>0 humiliations</td><td>“Ça garde l’équipe performante et te protège d’un narratif toxique.”</td></tr>
+                <tr><td>Transparence minimale finances</td><td>“Ça diminue le risque, facilite banques/partenaires, et réduit les surprises.”</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         <div class="card" style="margin-top:12px">
           <h3>Arbre “si X → je réponds Y” (10 scénarios)</h3>
           <table>
@@ -1645,8 +1722,511 @@ Recap: décision=__, owner=__, deadline=__, option par défaut=__.</code></pre>
             <li>Tu prépares une sortie ordonnée si nécessaire.</li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    <!-- 09 Casebook -->
+    <section class="section" id="casebook">
+      <div class="sectionHead">
+        <h2>09 — Casebook: exemples anonymisés (composites)</h2>
+        <p>Exemples à la 3e personne (détails modifiés) pour reconnaître les patterns, mesurer l’impact, et répondre sans mensonge ni escalade inutile.</p>
+      </div>
+      <div class="sectionBody">
+        <div class="callout warn">
+          <h4>Note</h4>
+          <ul>
+            <li>Vignettes <strong>composites</strong>: détails changés (industrie, lieux, montants, dates) pour réduire le risque d’identification.</li>
+            <li>Objectif: <strong>gouvernance</strong> et réduction du risque; pas de diagnostic.</li>
+          </ul>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Mode d’emploi (simple)</h3>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+              <li>1) Nommer le pattern (MG‑xx) + l’écrire en 1 phrase factuelle.</li>
+              <li>2) Proposer une règle (SLA / decision log / “cooldown”) + une conséquence.</li>
+              <li>3) Répondre par écrit (calme, court) → pas de débat émotionnel.</li>
+              <li>4) Mesurer 14 jours: respect SLA, rework, décisions tracées.</li>
+              <li>5) Si répétition: réduire scope/accès, renégocier, ou préparer sortie.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Template d’analyse (copier‑coller)</h3>
+            <pre><code>Pattern:
+Fait observable:
+Impact opérationnel:
+Standard violé:
+Demande (concrète):
+Deadline + option par défaut:
+Conséquence si répétition:
+Référence (doc / message / décision):</code></pre>
+          </div>
+        </div>
+
+        <details open style="margin-top:12px">
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑01</span><span class="sumName">Validation → déni public → humiliation</span>
+              <span class="pill warn">Confusion</span><span class="pill danger">Trust cassé</span>
+            </div>
+            <span class="sumMeta">MG‑04 (réécriture) + MG‑08 (déni dénable)</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> Un associé A valide un point important (structure, budget, périmètre) plusieurs fois. En présence d’un tiers, A nie avoir validé et attaque B (“de quoi tu parles?”), créant un choc public. B a une preuve écrite.</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>Temps perdu en justification → rework + stress.</li>
+                  <li>Le tiers doute de la gouvernance (“qui décide?”) → ralentissement.</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Recap écrit <strong>immédiat</strong> (factuel + lien preuve) + “prochaine décision = par écrit”.</li>
+                  <li>Standard: pas d’attaque en présence de tiers; AAR sous 48h.</li>
+                  <li>Conséquence: décisions critiques = “cooldown” + témoin + decision log.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="callout">
+              <h4>Script (message)</h4>
+              <ul><li>“Pour éviter toute confusion: voici la décision validée le __ (lien). À partir de maintenant, tout changement passe par le decision log (owner, rationale, impact, date).”</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑02</span><span class="sumName">Humiliation “sans nom” (attaque dénable)</span>
+              <span class="pill warn">Honte</span><span class="pill danger">Isolement</span>
+            </div>
+            <span class="sumMeta">MG‑08 (plausible deniability) + MG‑09 (shame hook)</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> En réunion, A raconte un incident privé humiliant en le rendant reconnaissable — sans nommer personne. Si B réagit: “tu te sens visé pour rien”.</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>B se fige → baisse d’assertivité et de performance.</li>
+                  <li>Le groupe apprend: “ici, l’humiliation est permise”.</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Stopper en direct: “On ne fait pas d’allusions personnelles ici.”</li>
+                  <li>Revenir à l’agenda (faits, décisions, owner, deadline).</li>
+                  <li>Après: standard de conduite + conséquence si répétition.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="callout">
+              <h4>Script (call)</h4>
+              <ul><li>“Pause. Ce type d’allusion ne fait pas partie de notre standard. On reste sur l’exécution et le respect.”</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑03</span><span class="sumName">Retrait de reconnaissance (punition silencieuse)</span>
+              <span class="pill warn">Doute</span><span class="pill danger">Dépendance</span>
+            </div>
+            <span class="sumMeta">MG‑03 (intermittent) + vanité/image</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> B livre un résultat important. A ignore, répond froidement, ou dévie (“ok. et X?”). Quand B “chasse” l’approbation, A redevient chaleureux.</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>B optimise pour l’humeur d’A (au lieu des outcomes) → perte de focus.</li>
+                  <li>Priorités instables → cycle time augmente.</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Dashboard + weekly output review (outputs, pas humeur).</li>
+                  <li>“Done = done”: livrable tracé; pas d’attente d’approbation.</li>
+                  <li>Feedback standardisé (AAR) au lieu de récompense.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑04</span><span class="sumName">Triangulation par interruptions &amp; comparaisons</span>
+              <span class="pill warn">Compétition</span><span class="pill danger">Silos</span>
+            </div>
+            <span class="sumMeta">MG‑06 (triangulation)</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> En call, A interrompt pour “prioriser” un tiers ou cite “X a dit que…”. A compare B à d’autres pour créer rivalité. B n’obtient jamais une décision directe.</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>Information fragmentée → erreurs + délais.</li>
+                  <li>Le groupe se divise → trust s’effondre, productivité baisse.</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Tout le monde sur le même canal: pas de décisions en aparté.</li>
+                  <li>Décision = owner unique; pas de “propos rapportés”.</li>
+                  <li>Règle SEAL: <strong>Cover &amp; Move</strong> (pas de rivalité interne).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑05</span><span class="sumName">Dette invisible (“après tout ce que j’ai fait”)</span>
+              <span class="pill warn">Culpabilité</span><span class="pill danger">Contrôle</span>
+            </div>
+            <span class="sumMeta">MG‑10 (levier dette) + machiavélisme</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> A offre aide, accès, opportunités. Plus tard, A invoque ces “cadeaux” pour obtenir une concession non liée (parts, contrôle, conditions). Refuser devient “ingrat”.</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>B accepte des termes irrationnels pour éviter conflit.</li>
+                  <li>Le deal devient émotionnel → risque contractuel/financier.</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Dé‑personnaliser: “On négocie sur termes, pas sur gratitude.”</li>
+                  <li>Écrit: contributions ↔ contrepartie (vesting, milestones, dates).</li>
+                  <li>Stop‑loss: sans formalisation avant __, on stoppe.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="callout">
+              <h4>Script (SMS)</h4>
+              <ul><li>“Je reconnais l’aide. Pour éviter la confusion: on formalise contributions ↔ contrepartie par écrit. Sans ça, je ne peux pas engager la suite.”</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑06</span><span class="sumName">Parts fantômes &amp; promesses floues</span>
+              <span class="pill warn">Espoir</span><span class="pill danger">Capture</span>
+            </div>
+            <span class="sumMeta">MG‑02 (goalposts) + “future faking”</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> A promet une participation, un rôle, une rémunération “quand X arrivera”. Les conditions changent; rien n’est signé. B continue à livrer “pour mériter”.</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>Asymétrie: A capte la valeur maintenant, B reçoit plus tard (peut‑être).</li>
+                  <li>B perd son BATNA (alternatives) → dépendance.</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Vesting + milestones + date: sinon non.</li>
+                  <li>Créer un “stop‑loss”: sans formalisation avant __, on stoppe.</li>
+                  <li>Owner unique + scope clair (pas “tu fais tout”).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑07</span><span class="sumName">Contrôle économique (risque sur B, upside sur A)</span>
+              <span class="pill warn">Pression</span><span class="pill danger">Capture</span>
+            </div>
+            <span class="sumMeta">MG‑10 (levier financier) + intimidation froide</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> B porte dettes/cautions/risques personnels liés au business, tandis qu’A garde la flexibilité. Rémunération de B réduite/retardée, opacité financière persistante.</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>Décisions sous peur → mauvais choix.</li>
+                  <li>Risques concentrés → B devient “otage” du rythme d’A.</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Transparence minimale finances (reporting, accès) ou stop.</li>
+                  <li>Limiter l’exposition: plafonds, double signature, audit, séparation des comptes.</li>
+                  <li>Clauses de sortie (buy‑sell, médiation, “cooldown”).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑08</span><span class="sumName">Pathologisation (“trop sensible”, “t’es parano”)</span>
+              <span class="pill warn">Doute</span><span class="pill danger">Silence</span>
+            </div>
+            <span class="sumMeta">MG‑04 (doute) + DARVO</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> Quand B relève un fait (contradiction, promesse, deadline), A répond en attaquant l’état/la personnalité de B plutôt que le sujet. But: faire taire sans traiter le fond.</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>B internalise le doute → baisse d’assertivité.</li>
+                  <li>La discussion devient “qui tu es” au lieu de “qu’est‑ce qu’on fait”.</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Revenir au fait + impact + standard + deadline (une phrase).</li>
+                  <li>Stopper le registre perso: “on ne discute pas d’étiquettes”.</li>
+                  <li>Si répétition: tiers + réduction de rôle/accès.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="callout">
+              <h4>Script (email)</h4>
+              <ul><li>“Je ne réponds pas aux attaques personnelles. Sujet: décision __. Impact: __. Standard: __. Je propose option A/B d’ici __ (sinon option par défaut).”</li></ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑09</span><span class="sumName">Sabotage soft (conseils qui te plantent)</span>
+              <span class="pill warn">Erreur</span><span class="pill danger">Blâme</span>
+            </div>
+            <span class="sumMeta">Machiavélisme + MG‑01 (double bind)</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> A pousse B à une décision risquée (“vas‑y, c’est simple”) sans trace. Quand ça tourne mal, A se dissocie (“tu l’as décidé”).</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>B prend le risque, A conserve l’image.</li>
+                  <li>Le système apprend: “porter le risque = être puni”.</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Décisions risquées = decision log + owner + rationale.</li>
+                  <li>Two‑person integrity au‑delà d’un seuil.</li>
+                  <li>AAR sans blame: on corrige le système, pas l’ego.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑10</span><span class="sumName">Exclusion par timing (fait accompli)</span>
+              <span class="pill warn">Perte contrôle</span><span class="pill danger">Risque</span>
+            </div>
+            <span class="sumMeta">MG‑07 (urgence) + machiavélisme</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> A prend une décision structurante pendant une fenêtre où B ne peut pas réagir, puis annonce “c’est fait” et demande exécution immédiate.</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>B exécute une décision qu’il n’a pas validée.</li>
+                  <li>Risque juridique/financier augmente (pas de vérification).</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Décisions structurantes = cooldown + écrit + témoin.</li>
+                  <li>Si “fait accompli”: demander document, arrêter l’exécution, review.</li>
+                  <li>Owner unique + droits de signature définis.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑11</span><span class="sumName">Hook identitaire (rêve / héritage / loyauté)</span>
+              <span class="pill warn">Attachement</span><span class="pill danger">Capture</span>
+            </div>
+            <span class="sumMeta">MG‑10 (levier) + vanité/image</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> A se connecte à un thème identitaire fort chez B (rêve, héritage, loyauté). A promet “on va le réaliser ensemble”, puis utilise ce lien pour obtenir conformité, contrôle, ou silence.</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>Décisions prises au cœur → exposition.</li>
+                  <li>B tolère l’intolérable pour “ne pas briser le rêve”.</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Revenir au contrat: rôles, droits, chiffres, dates (écrit).</li>
+                  <li>Créer une alternative indépendante (BATNA) pour réduire la capture.</li>
+                  <li>Check the ego: les règles protègent l’idéal.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <div class="sumTitle">
+              <span class="tag">CB‑12</span><span class="sumName">Persona publique vs conduite privée (double standard)</span>
+              <span class="pill warn">Crédibilité</span><span class="pill danger">Narratif</span>
+            </div>
+            <span class="sumMeta">Vanité/image + MG‑08 (déni dénable)</span>
+          </summary>
+          <div class="sumBody">
+            <p><strong>Scénario (composite):</strong> A affiche publiquement des valeurs élevées (respect, authenticité), mais en privé utilise attaques, dénigrement, ou opacité. En cas de conflit, A s’appuie sur son image publique pour décrédibiliser B.</p>
+            <div class="grid2" style="margin-top:10px">
+              <div class="callout warn">
+                <h4>Effet direct</h4>
+                <ul>
+                  <li>B perd le reality‑check social → isolement.</li>
+                  <li>Le conflit devient narratif (image), pas opérationnel (faits).</li>
+                </ul>
+              </div>
+              <div class="callout ok">
+                <h4>Réponse Starbase / SEAL</h4>
+                <ul>
+                  <li>Rester factuel + documentation (pas de guerre d’ego).</li>
+                  <li>Protéger le réseau: communication sobre, pas de rant.</li>
+                  <li>Si nécessaire: tiers neutre + médiation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 10 Evidence -->
+    <section class="section" id="evidence">
+      <div class="sectionHead">
+        <h2>10 — Études: effets documentés sur la performance</h2>
+        <p>Objectif: parler d’effets (productivité, deviance, turnover, risque) plutôt que de labels.</p>
+      </div>
+      <div class="sectionBody">
+        <div class="card">
+          <h3>Ce que la recherche montre (résumé opérationnel)</h3>
+          <ul style="margin:10px 0 0; padding-left:18px;">
+            <li><strong>Leadership toxique</strong> → fatigue émotionnelle → comportements contre‑productifs et risque accru.</li>
+            <li><strong>Traits “dark”</strong> (image/contrôle/froideur/cruauté) → plus de deviance, surtout si la justice organisationnelle est faible.</li>
+            <li><strong>Environnements toxiques</strong> → baisse de productivité, plus d’erreurs, plus d’absences.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Mapping: pattern → impact → preuves</h3>
+          <table>
+            <thead><tr><th>Pattern</th><th>Impact typique</th><th>Références</th></tr></thead>
+            <tbody>
+              <tr><td>Leadership toxique</td><td>Exhaustion → deviance, cynisme, baisse performance</td><td><a href="#ref-r03">R03</a></td></tr>
+              <tr><td>Environnement toxique</td><td>Baisse productivité, stress, erreurs</td><td><a href="#ref-r04">R04</a></td></tr>
+              <tr><td>Traits “dark” &amp; deviance</td><td>Plus de comportements contre‑productifs; justice comme buffer</td><td><a href="#ref-r02">R02</a></td></tr>
+              <tr><td>Mesure (échelle)</td><td>Cadre de mesure du Dark Tetrad at Work (utile pour lecture, pas pour diagnostiquer)</td><td><a href="#ref-r01">R01</a></td></tr>
+              <tr><td>Bullying / cruauté</td><td>Harcèlement, humiliations → climat de peur et baisse performance</td><td><a href="#ref-r05">R05</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3>Références (sélection)</h3>
+          <ol style="margin:10px 0 0; padding-left: 18px;">
+            <li id="ref-r01"><strong>R01</strong> — Dark Tetrad at Work scale (open access). <span class="dim">PMC10889854.</span> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10889854/" target="_blank" rel="noopener">Lien</a></li>
+            <li id="ref-r02"><strong>R02</strong> — Dark Tetrad &amp; workplace deviance; rôle de la justice organisationnelle. <span class="dim">PMC9631426.</span> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9631426/" target="_blank" rel="noopener">Lien</a></li>
+            <li id="ref-r03"><strong>R03</strong> — Toxic leadership → workplace deviance. <span class="dim">PMC11414162.</span> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11414162/" target="_blank" rel="noopener">Lien</a></li>
+            <li id="ref-r04"><strong>R04</strong> — Job productivity in toxic workplace environments. <span class="dim">PMC5982074.</span> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5982074/" target="_blank" rel="noopener">Lien</a></li>
+            <li id="ref-r05"><strong>R05</strong> — Workplace bullying / Dark Tetrad (paywall possible). <span class="dim">SAGE 0306624X241236715.</span> <a href="https://journals.sagepub.com/doi/10.1177/0306624X241236715" target="_blank" rel="noopener">Lien</a></li>
+            <li id="ref-r06"><strong>R06</strong> — Review/meta sur traits “dark” en organisation (paywall possible). <span class="dim">SAGE 01492063241226904.</span> <a href="https://journals.sagepub.com/doi/pdf/10.1177/01492063241226904" target="_blank" rel="noopener">Lien</a></li>
+          </ol>
+          <div class="callout">
+            <h4>Important</h4>
+            <ul>
+              <li>Ces sources servent à parler des <strong>effets</strong> et de la <strong>gouvernance</strong>. Elles ne remplacent pas un avis juridique/financier.</li>
+              <li>Ne pas “diagnostiquer” quelqu’un: on gère les comportements et le risque.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 Prompt -->
+    <section class="section" id="prompt">
+      <div class="sectionHead">
+        <h2>11 — Prompt (copier‑coller) pour coaching négociation + risk</h2>
+        <p>Quand tu veux une réponse structurée (dynamique → options → scripts → plans), sans diagnostic ni escalade inutile.</p>
+      </div>
+      <div class="sectionBody">
+        <div class="card">
+          <pre><code>Agis comme un coach en négociation + risk manager (pas thérapeute; pas de diagnostic).
+Objectif: m’aider à stopper des tactiques de leadership toxique et reprendre un cadre sain, sans mensonge ni escalade inutile.
+
+Contexte:
+Relation avec la personne: [boss/partenaire/créancier/famille + rôle exact]
+Ce que je veux obtenir: [ex: arrêter blocage silencieux + décisions écrites + respect deadlines]
+Ce que je dois préserver: [revenu, réputation, équipe, contrat, etc.]
+Levier qu’il a sur moi: [argent/accès/réseau/peur/juridique]
+Levier que j’ai sur lui: [résultats, réputation, dépendance à moi, preuve, timing, alternatives]
+Mes non‑négociables: [liste]
+5 exemples récents (faits, pas interprétation): [date/lieu/canal/ce qui a été dit/fait + impact]
+Risques si j’agis: [faible/moyen/élevé + pourquoi]
+Contraintes: [contrats, dettes, NDA, équipe, délais]
+Ce que j’ai déjà mis en place: [decision log / SLA / tiers / clauses / etc.]
+
+Tu dois produire:
+1) Une lecture des dynamiques (mécanismes possibles) en 10 lignes max
+2) 3 options stratégiques: (A) cadrer et continuer, (B) renégocier, (C) sortie — avec conditions de succès/échec
+3) Un arbre “si X → je réponds Y” (10 scénarios concrets)
+4) 5 scripts prêts à envoyer (email + SMS + phrase en call)
+5) Un plan 7 jours + un plan 30 jours (checklists + métriques)
+6) Les red flags qui déclenchent escalade/tiers/avocat/rupture</code></pre>
+        </div>
+
         <div class="footer">
-          <div style="margin-bottom:6px; font-weight:800; color:var(--text2)"><span class="wordmark">STΛRBΛSE</span> — Operating Manual</div>
+          <div style="margin-bottom:6px; font-weight:800; color:var(--text2);"><span class="wordmark">STΛRBΛSE</span> — Operating Manual</div>
           <div class="dim">Retour en haut: <a href="#top">top</a></div>
         </div>
       </div>
