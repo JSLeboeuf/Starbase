@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STΛRBΛSE — Manifesto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-void: #000000;
+            --bg-primary: #0A0A0A;
+            --bg-secondary: #111111;
+            --bg-tertiary: #1A1A1A;
+            --bg-elevated: #222222;
+
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --text-tertiary: #707070;
+
+            --accent-cyan: #00D9FF;
+            --accent-cyan-dim: #00A3C4;
+            --accent-cyan-glow: rgba(0, 217, 255, 0.4);
+            --accent-cyan-subtle: rgba(0, 217, 255, 0.1);
+
+            --accent-visor: #FF8C00;
+            --accent-matrix: #00FF9F;
+            --error: #FF4D6A;
+
+            --glow-cyan-sm: 0 0 10px var(--accent-cyan-glow);
+            --glow-cyan-md: 0 0 20px var(--accent-cyan-glow), 0 0 40px rgba(0, 217, 255, 0.2);
+            --glow-cyan-lg: 0 0 30px var(--accent-cyan-glow), 0 0 60px rgba(0, 217, 255, 0.15);
+            --text-glow-cyan: 0 0 20px var(--accent-cyan-glow), 0 0 40px rgba(0, 217, 255, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Space Grotesk', -apple-system, sans-serif;
+            background: var(--bg-void);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .wordmark {
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 100;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Sora', sans-serif;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, var(--accent-cyan-subtle) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-brand {
+            font-size: clamp(0.8rem, 2vw, 1rem);
+            color: var(--accent-cyan);
+            margin-bottom: 2rem;
+            text-shadow: var(--text-glow-cyan);
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 10vw, 8rem);
+            font-weight: 800;
+            line-height: 0.9;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 .accent {
+            color: var(--accent-cyan);
+            text-shadow: var(--text-glow-cyan);
+        }
+
+        .hero-tagline {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        .hero-timecode {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+            letter-spacing: 0.1em;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-tertiary);
+            font-size: 0.75rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        /* GLOW LINE */
+        .glow-line {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+            box-shadow: var(--glow-cyan-md);
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .section-number {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 0.8rem;
+            color: var(--accent-cyan);
+            letter-spacing: 0.3em;
+            margin-bottom: 1rem;
+            text-shadow: var(--text-glow-cyan);
+        }
+
+        .section h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* QUOTE CARDS */
+        .quote-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .quote-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--bg-tertiary);
+            border-left: 3px solid var(--accent-cyan);
+            padding: 2rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .quote-card:hover {
+            border-color: var(--accent-cyan);
+            box-shadow: var(--glow-cyan-sm);
+            transform: translateX(8px);
+        }
+
+        .quote-card .timecode {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 0.7rem;
+            color: var(--accent-cyan);
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            text-shadow: var(--glow-cyan-sm);
+        }
+
+        .quote-card blockquote {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+        }
+
+        .quote-card .application {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            padding-top: 1rem;
+            border-top: 1px solid var(--bg-tertiary);
+        }
+
+        .quote-card .application strong {
+            color: var(--accent-visor);
+        }
+
+        /* HIGHLIGHT BOX */
+        .highlight-box {
+            background: var(--bg-primary);
+            border: 1px solid var(--accent-cyan);
+            padding: 4rem 2rem;
+            text-align: center;
+            margin: 4rem 0;
+            position: relative;
+            box-shadow: var(--glow-cyan-md);
+        }
+
+        .highlight-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--accent-cyan);
+            box-shadow: var(--glow-cyan-lg);
+        }
+
+        .highlight-box .big-quote {
+            font-family: 'Sora', sans-serif;
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-box .source {
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+            letter-spacing: 0.1em;
+        }
+
+        /* PRINCIPLES */
+        .principles-grid {
+            display: grid;
+            gap: 1px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--bg-tertiary);
+        }
+
+        .principle {
+            background: var(--bg-void);
+            padding: 2rem;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+        }
+
+        .principle:hover {
+            background: var(--bg-primary);
+        }
+
+        .principle-number {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 2rem;
+            font-weight: 100;
+            color: var(--accent-cyan);
+            text-shadow: var(--text-glow-cyan);
+            min-width: 60px;
+        }
+
+        .principle h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .principle p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-top: 1px solid var(--bg-tertiary);
+        }
+
+        footer .wordmark {
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            text-shadow: var(--text-glow-cyan);
+        }
+
+        footer p {
+            color: var(--text-tertiary);
+            font-size: 0.8rem;
+        }
+
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: var(--accent-cyan);
+        }
+
+        /* COPY BUTTON */
+        .copy-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: transparent;
+            border: 1px solid var(--bg-tertiary);
+            color: var(--text-tertiary);
+            padding: 0.4rem 0.75rem;
+            font-size: 0.7rem;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .copy-btn:hover {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+            box-shadow: var(--glow-cyan-sm);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .section {
+                padding: 4rem 1.5rem;
+            }
+            .quote-card {
+                padding: 1.5rem;
+            }
+            .principle {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-brand wordmark">STΛRBΛSE</div>
+        <h1>SPEED <span class="accent">WINS.</span><br>SPEED <span class="accent">DOMINATES.</span></h1>
+        <p class="hero-tagline">Citations exactes pour entrepreneurs — Urgence, IA-First, Injection Massive, Leverage Maximum</p>
+        <div class="hero-timecode">18:22</div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <span>↓</span>
+        </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- SECTION 1: URGENCE -->
+    <section class="section">
+        <div class="section-header">
+            <div class="section-number">01</div>
+            <h2>SENTIMENT D'URGENCE</h2>
+            <p class="section-subtitle">La fenêtre se ferme. Agis maintenant.</p>
+        </div>
+
+        <div class="quote-grid">
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">09:49</div>
+                <blockquote>"Question every requirement, delete the dumb ones, and accelerate like hell."</blockquote>
+                <div class="application"><strong>→</strong> Remets en question chaque process, supprime le superflu, accélère sans retenue.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">12:39</div>
+                <blockquote>"Overwhelming and lethal technology right now, not a decade from now."</blockquote>
+                <div class="application"><strong>→</strong> Lance maintenant. Pas dans 6 mois. Pas quand ce sera "parfait".</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">12:47</div>
+                <blockquote>"The fastest innovator and iterator will be the winner."</blockquote>
+                <div class="application"><strong>→</strong> C'est pas le meilleur qui gagne, c'est le plus rapide à itérer.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">18:41</div>
+                <blockquote>"The risks of moving too slowly outweigh the impacts of imperfect alignment."</blockquote>
+                <div class="application"><strong>→</strong> Le risque d'aller trop lentement > le risque de ne pas être parfaitement aligné.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">13:09</div>
+                <blockquote>"We are done running a peacetime science fair while our potential adversaries are running a wartime arms race."</blockquote>
+                <div class="application"><strong>→</strong> Arrête de "tester des trucs". Tes concurrents sont en mode guerre.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">44:05</div>
+                <blockquote>"If not now, it will be too late."</blockquote>
+                <div class="application"><strong>→</strong> La fenêtre se ferme. Agis maintenant ou regarde les autres la saisir.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">42:03</div>
+                <blockquote>"And the cycle never stops. Always iterating."</blockquote>
+                <div class="application"><strong>→</strong> Pas de "projet terminé". Juste des versions. V1 → ship → learn → V2 → repeat.</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- SECTION 2: IA-FIRST -->
+    <section class="section">
+        <div class="section-header">
+            <div class="section-number">02</div>
+            <h2>INVESTIR MASSIVEMENT DANS L'IA</h2>
+            <p class="section-subtitle">Pas du pixie dust. Une transformation profonde.</p>
+        </div>
+
+        <div class="quote-grid">
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">15:39</div>
+                <blockquote>"Becoming an AI first warfighting force across all domains."</blockquote>
+                <div class="application"><strong>→</strong> IA-first dans TOUS les domaines de ton business. Pas un département. Partout.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">16:51</div>
+                <blockquote>"We will not win the future by sprinkling AI onto old tactics like digital pixie dust."</blockquote>
+                <div class="application"><strong>→</strong> Pas de l'IA en saupoudrage cosmétique. Une refonte profonde de tes process.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">22:34</div>
+                <blockquote>"AI is only as good as the data that feeds it."</blockquote>
+                <div class="application"><strong>→</strong> Ton avantage compétitif IA = tes données propriétaires. Accumule-les.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">17:10</div>
+                <blockquote>"Continuous experimentation campaigns... AI coordinated swarms, agent-based cyber defense, and distributed command and control."</blockquote>
+                <div class="application"><strong>→</strong> Expérimentation continue. Agents IA, automatisation distribuée, systèmes autonomes.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">05:57</div>
+                <blockquote>"Innovation is happening at a pace we can't even foresee."</blockquote>
+                <div class="application"><strong>→</strong> L'IA évolue plus vite que tu ne peux prévoir. Reste en veille permanente.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">20:20</div>
+                <blockquote>"Build data centers on military land... dramatically increase the number and breadth of resources needed to power this computing infrastructure."</blockquote>
+                <div class="application"><strong>→</strong> Investis massivement dans ton infrastructure IA. Compute, APIs, modèles frontier.</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- HIGHLIGHT -->
+    <div class="highlight-box">
+        <div class="big-quote">"$4.5 BILLION DEPLOYED.<br>$5 BILLION LEVERAGED.<br>DEALS CLOSED IN 30 DAYS."</div>
+        <div class="source">LA VITESSE DU CAPITAL = AVANTAGE COMPÉTITIF</div>
+    </div>
+
+    <!-- SECTION 3: CAPITAL -->
+    <section class="section">
+        <div class="section-header">
+            <div class="section-number">03</div>
+            <h2>INJECTION MASSIVE DE CAPITAL</h2>
+            <p class="section-subtitle">Sous-investir = 10x le coût final.</p>
+        </div>
+
+        <div class="quote-grid">
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">36:47</div>
+                <blockquote>"Proposing a $1.5 trillion budget... in fiscal year 27."</blockquote>
+                <div class="application"><strong>→</strong> Pense en ordres de grandeur. Pas 10% de plus — 10x. Le budget doit matcher l'ambition.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">38:59</div>
+                <blockquote>"Deployed over $4.5 billion... closing six critical mineral deals."</blockquote>
+                <div class="application"><strong>→</strong> Déploie le capital rapidement. L'argent qui dort = opportunités perdues.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">39:28</div>
+                <blockquote>"Include nearly 5 billion from our private capital partners."</blockquote>
+                <div class="application"><strong>→</strong> Leverage le capital externe. Ton argent + celui des autres = effet multiplicateur massif.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">39:33</div>
+                <blockquote>"Closed most of those deals in less than 30 days, which is trump time."</blockquote>
+                <div class="application"><strong>→</strong> Deals en moins de 30 jours. Pas de due diligence qui traîne 6 mois. Décide et exécute.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">09:29</div>
+                <blockquote>"Delivered years behind schedule and cost 10 times what it should."</blockquote>
+                <div class="application"><strong>→</strong> Le sous-investissement initial = 10x le coût final. Mieux vaut trop investir tôt.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">08:53</div>
+                <blockquote>"We are playing a dangerous game with potentially fatal consequences."</blockquote>
+                <div class="application"><strong>→</strong> Sous-investir = risque existentiel. Le coût de ne PAS injecter massivement > le coût d'investir trop.</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- SECTION 4: LEVERAGE -->
+    <section class="section">
+        <div class="section-header">
+            <div class="section-number">04</div>
+            <h2>LEVERAGE MAXIMUM</h2>
+            <p class="section-subtitle">Coupe la bureaucratie avec une tronçonneuse.</p>
+        </div>
+
+        <div class="quote-grid">
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">12:52</div>
+                <blockquote>"No one can out-innovate an American entrepreneur who has been liberated from the constraints of stifling bureaucracy."</blockquote>
+                <div class="application"><strong>→</strong> Libère-toi de la bureaucratie interne. Process, réunions, validations — élimine.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">11:48</div>
+                <blockquote>"Cuts through the overgrown bureaucratic underbrush... preferably with a chainsaw, and to do so at speed and urgency."</blockquote>
+                <div class="application"><strong>→</strong> Coupe dans la bureaucratie. Avec une tronçonneuse. À toute vitesse.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">19:24</div>
+                <blockquote>"You want to block, you can work somewhere else."</blockquote>
+                <div class="application"><strong>→</strong> Les bloqueurs dehors. Zéro tolérance pour ceux qui ralentissent.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">19:31</div>
+                <blockquote>"Barriers are now treated as operational risks, not simply bureaucratic inconveniences. We are blowing up these barriers."</blockquote>
+                <div class="application"><strong>→</strong> Les obstacles = risques business. Explose-les, ne les contourne pas.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">16:07</div>
+                <blockquote>"What have you accomplished this week?"</blockquote>
+                <div class="application"><strong>→</strong> Le seul KPI qui compte : qu'as-tu LIVRÉ cette semaine?</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">28:54</div>
+                <blockquote>"No sacred cows, no exceptions."</blockquote>
+                <div class="application"><strong>→</strong> Pas de vaches sacrées. Tout peut être remis en question. Tout.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">COPY</button>
+                <div class="timecode">17:23</div>
+                <blockquote>"We never fail, which means we never learn. We're flipping that dynamic."</blockquote>
+                <div class="application"><strong>→</strong> Si tu n'échoues jamais, tu n'apprends jamais. Échoue vite, apprends vite.</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="glow-line"></div>
+
+    <!-- HIGHLIGHT FINAL -->
+    <div class="highlight-box">
+        <div class="big-quote">"WE WILL NOT STOP.<br>WE WILL NOT BACK DOWN."</div>
+        <div class="source">43:32</div>
+    </div>
+
+    <!-- PRINCIPLES -->
+    <section class="section">
+        <div class="section-header">
+            <div class="section-number">DOCTRINE</div>
+            <h2>LES 8 PRINCIPES</h2>
+        </div>
+
+        <div class="principles-grid">
+            <div class="principle">
+                <div class="principle-number">01</div>
+                <div>
+                    <h4>SPEED > PERFECTION</h4>
+                    <p>Le risque d'aller trop lentement dépasse toujours le risque d'imperfection.</p>
+                </div>
+            </div>
+            <div class="principle">
+                <div class="principle-number">02</div>
+                <div>
+                    <h4>IA-FIRST EVERYWHERE</h4>
+                    <p>Pas du saupoudrage. Une refonte profonde de chaque process avec l'IA.</p>
+                </div>
+            </div>
+            <div class="principle">
+                <div class="principle-number">03</div>
+                <div>
+                    <h4>INJECT CAPITAL MASSIVELY</h4>
+                    <p>Sous-investir = 10x le coût final. Déploie vite, leverage les autres, close en 30 jours.</p>
+                </div>
+            </div>
+            <div class="principle">
+                <div class="principle-number">04</div>
+                <div>
+                    <h4>CHAINSAW BUREAUCRACY</h4>
+                    <p>Coupe impitoyablement tout ce qui ralentit. Process, réunions, validations.</p>
+                </div>
+            </div>
+            <div class="principle">
+                <div class="principle-number">05</div>
+                <div>
+                    <h4>ONE OWNER, ONE DECISION</h4>
+                    <p>Pas de comités. Un responsable par projet qui décide et exécute.</p>
+                </div>
+            </div>
+            <div class="principle">
+                <div class="principle-number">06</div>
+                <div>
+                    <h4>WEEKLY ACCOUNTABILITY</h4>
+                    <p>"Qu'as-tu accompli cette semaine?" — Livrables, pas activité.</p>
+                </div>
+            </div>
+            <div class="principle">
+                <div class="principle-number">07</div>
+                <div>
+                    <h4>FAIL → LEARN → ITERATE</h4>
+                    <p>Échoue vite, documente, itère. Le cycle ne s'arrête jamais.</p>
+                </div>
+            </div>
+            <div class="principle">
+                <div class="principle-number">08</div>
+                <div>
+                    <h4>IF NOT NOW, TOO LATE</h4>
+                    <p>La fenêtre se ferme. Agis maintenant ou regarde les autres gagner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wordmark">STΛRBΛSE</div>
+        <p><a href="https://github.com/JSLeboeuf/Starbase">github.com/JSLeboeuf/Starbase</a></p>
+    </footer>
+
+    <script>
+        function copyQuote(btn) {
+            const card = btn.closest('.quote-card');
+            const quote = card.querySelector('blockquote').textContent;
+            const timecode = card.querySelector('.timecode').textContent;
+            const text = `${timecode} — ${quote}`;
+
+            navigator.clipboard.writeText(text).then(() => {
+                btn.textContent = 'COPIED';
+                setTimeout(() => btn.textContent = 'COPY', 1500);
+            });
+        }
+    </script>
+</body>
+</html>
