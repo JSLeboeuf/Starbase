@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Starbase Manifesto — Entrepreneur Edition</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #141414;
+            --surface-2: #1a1a1a;
+            --border: #2a2a2a;
+            --text: #e5e5e5;
+            --text-muted: #888;
+            --accent: #ff4d4d;
+            --accent-2: #ff6b35;
+            --gold: #ffd700;
+            --green: #00d26a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, #1a0a0a 0%, var(--bg) 100%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .tagline {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .section-icon.urgency { background: linear-gradient(135deg, var(--accent), #ff8866); }
+        .section-icon.ai { background: linear-gradient(135deg, var(--green), #00ff88); }
+        .section-icon.leverage { background: linear-gradient(135deg, var(--gold), #ffaa00); }
+
+        .section h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+        }
+
+        .quote-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quote-card::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            font-size: 8rem;
+            color: var(--border);
+            font-family: Georgia, serif;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .quote-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .quote-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .timecode {
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            background: var(--surface-2);
+            border-radius: 4px;
+            color: var(--text-muted);
+        }
+
+        .tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .tag.urgency { background: var(--accent); color: white; }
+        .tag.ai { background: var(--green); color: black; }
+        .tag.leverage { background: var(--gold); color: black; }
+        .tag.mindset { background: #8b5cf6; color: white; }
+
+        blockquote {
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 1.5;
+            position: relative;
+            z-index: 1;
+            color: var(--text);
+        }
+
+        .application {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .application strong {
+            color: var(--accent-2);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(255,77,77,0.1), rgba(255,215,0,0.1));
+            border: 1px solid var(--accent);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .highlight-box .big-quote {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-box .source {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .principles {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .principle {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .principle-number {
+            width: 32px;
+            height: 32px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .principle-content h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .principle-content p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 0.4rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            z-index: 2;
+        }
+
+        .copy-btn:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>STARBASE MANIFESTO</h1>
+        <p class="tagline">Citations exactes pour entrepreneurs — Urgence, IA-First, Leverage Maximum</p>
+    </header>
+
+    <main class="container">
+
+        <!-- HIGHLIGHT -->
+        <div class="highlight-box">
+            <div class="big-quote">"Speed wins. Speed dominates."</div>
+            <div class="source">18:22</div>
+        </div>
+
+        <!-- SECTION 1: URGENCE -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon urgency">⚡</div>
+                <h2>Sentiment d'Urgence</h2>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">09:49</span>
+                    <span class="tag urgency">Exécution</span>
+                </div>
+                <blockquote>"Question every requirement, delete the dumb ones, and accelerate like hell."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Remets en question chaque process, supprime le superflu, accélère sans retenue.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">12:39</span>
+                    <span class="tag urgency">Now</span>
+                </div>
+                <blockquote>"Overwhelming and lethal technology right now, not a decade from now."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Lance maintenant. Pas dans 6 mois. Pas quand ce sera "parfait".</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">12:47</span>
+                    <span class="tag urgency">Compétition</span>
+                </div>
+                <blockquote>"The fastest innovator and iterator will be the winner."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> C'est pas le meilleur qui gagne, c'est le plus rapide à itérer.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">18:41</span>
+                    <span class="tag urgency">Arbitrage</span>
+                </div>
+                <blockquote>"The risks of moving too slowly outweigh the impacts of imperfect alignment."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Le risque d'aller trop lentement > le risque de ne pas être parfaitement aligné.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">44:05</span>
+                    <span class="tag urgency">Deadline</span>
+                </div>
+                <blockquote>"If not now, it will be too late."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> La fenêtre se ferme. Agis maintenant ou regarde les autres la saisir.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">13:09</span>
+                    <span class="tag urgency">Mindset</span>
+                </div>
+                <blockquote>"We are done running a peacetime science fair while our potential adversaries are running a wartime arms race."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Arrête de "tester des trucs". Tes concurrents sont en mode guerre.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">42:03</span>
+                    <span class="tag urgency">Cycle</span>
+                </div>
+                <blockquote>"And the cycle never stops. Always iterating."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Pas de "projet terminé". Juste des versions. V1 → ship → learn → V2 → repeat.</div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: IA-FIRST -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon ai">🤖</div>
+                <h2>Investir Massivement dans l'IA</h2>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">15:39</span>
+                    <span class="tag ai">IA-First</span>
+                </div>
+                <blockquote>"Becoming an AI first warfighting force across all domains."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> IA-first dans TOUS les domaines de ton business. Pas un département. Partout.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">16:51</span>
+                    <span class="tag ai">Profondeur</span>
+                </div>
+                <blockquote>"We will not win the future by sprinkling AI onto old tactics like digital pixie dust."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Pas de l'IA en saupoudrage cosmétique. Une refonte profonde de tes process.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">22:34</span>
+                    <span class="tag ai">Data</span>
+                </div>
+                <blockquote>"AI is only as good as the data that feeds it."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Ton avantage compétitif IA = tes données propriétaires. Accumule-les.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">17:10</span>
+                    <span class="tag ai">Expérimentation</span>
+                </div>
+                <blockquote>"Continuous experimentation campaigns... AI coordinated swarms, agent-based cyber defense, and distributed command and control."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Expérimentation continue. Agents IA, automatisation distribuée, systèmes autonomes.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">05:57</span>
+                    <span class="tag ai">Pace</span>
+                </div>
+                <blockquote>"Innovation is happening at a pace we can't even foresee."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> L'IA évolue plus vite que tu ne peux prévoir. Reste en veille permanente.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">20:20</span>
+                    <span class="tag ai">Infrastructure</span>
+                </div>
+                <blockquote>"Build data centers on military land... dramatically increase the number and breadth of resources needed to power this computing infrastructure."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Investis massivement dans ton infrastructure IA. Compute, APIs, modèles frontier.</div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: LEVERAGE -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon leverage">🔥</div>
+                <h2>Leverage Maximum</h2>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">12:52</span>
+                    <span class="tag leverage">Libération</span>
+                </div>
+                <blockquote>"No one can out-innovate an American entrepreneur who has been liberated from the constraints of stifling bureaucracy."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Libère-toi de la bureaucratie interne. Process, réunions, validations — élimine.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">11:48</span>
+                    <span class="tag leverage">Anti-bureaucratie</span>
+                </div>
+                <blockquote>"Cuts through the overgrown bureaucratic underbrush... preferably with a chainsaw, and to do so at speed and urgency."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Coupe dans la bureaucratie. Avec une tronçonneuse. À toute vitesse.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">19:24</span>
+                    <span class="tag leverage">Ultimatum</span>
+                </div>
+                <blockquote>"You want to block, you can work somewhere else."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Les bloqueurs dehors. Zéro tolérance pour ceux qui ralentissent.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">19:31</span>
+                    <span class="tag leverage">Risque</span>
+                </div>
+                <blockquote>"Barriers are now treated as operational risks, not simply bureaucratic inconveniences. We are blowing up these barriers."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Les obstacles = risques business. Explose-les, ne les contourne pas.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">08:36</span>
+                    <span class="tag leverage">Ownership</span>
+                </div>
+                <blockquote>"We created endless projects with no accountable owners. We have high churn with little progress and few outputs."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Un owner par projet. Pas de comité. Pas de "on". Un nom, une responsabilité.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">16:07</span>
+                    <span class="tag leverage">Cadence</span>
+                </div>
+                <blockquote>"What have you accomplished this week?"</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Le seul KPI qui compte : qu'as-tu LIVRÉ cette semaine?</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">28:54</span>
+                    <span class="tag leverage">Radical</span>
+                </div>
+                <blockquote>"No sacred cows, no exceptions."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Pas de vaches sacrées. Tout peut être remis en question. Tout.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">27:00</span>
+                    <span class="tag leverage">Focus</span>
+                </div>
+                <blockquote>"If it's not doing one of those three things at speed, it will be realigned or it will go away."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Si ça ne crée pas de valeur à vitesse, kill it or realign it.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">17:23</span>
+                    <span class="tag mindset">Learn</span>
+                </div>
+                <blockquote>"We never fail, which means we never learn. We're flipping that dynamic."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Si tu n'échoues jamais, tu n'apprends jamais. Échoue vite, apprends vite.</div>
+            </div>
+
+            <div class="quote-card">
+                <button class="copy-btn" onclick="copyQuote(this)">Copier</button>
+                <div class="quote-meta">
+                    <span class="timecode">39:49</span>
+                    <span class="tag leverage">Tempo</span>
+                </div>
+                <blockquote>"That is warp speed in Washington."</blockquote>
+                <div class="application"><strong>→ Entrepreneur:</strong> Ton standard = warp speed. Pas le rythme "normal" de ton industrie.</div>
+            </div>
+        </section>
+
+        <!-- HIGHLIGHT FINAL -->
+        <div class="highlight-box">
+            <div class="big-quote">"We will not stop. We will not back down."</div>
+            <div class="source">43:32</div>
+        </div>
+
+        <!-- PRINCIPES -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon" style="background: linear-gradient(135deg, var(--accent), var(--gold));">📋</div>
+                <h2>Les 7 Principes Starbase pour Entrepreneurs</h2>
+            </div>
+
+            <div class="principles">
+                <div class="principle">
+                    <div class="principle-number">1</div>
+                    <div class="principle-content">
+                        <h4>Speed > Perfection</h4>
+                        <p>Le risque d'aller trop lentement dépasse toujours le risque d'imperfection.</p>
+                    </div>
+                </div>
+                <div class="principle">
+                    <div class="principle-number">2</div>
+                    <div class="principle-content">
+                        <h4>IA-First Everywhere</h4>
+                        <p>Pas du saupoudrage. Une refonte profonde de chaque process avec l'IA.</p>
+                    </div>
+                </div>
+                <div class="principle">
+                    <div class="principle-number">3</div>
+                    <div class="principle-content">
+                        <h4>Chainsaw Bureaucracy</h4>
+                        <p>Coupe impitoyablement tout ce qui ralentit. Process, réunions, validations.</p>
+                    </div>
+                </div>
+                <div class="principle">
+                    <div class="principle-number">4</div>
+                    <div class="principle-content">
+                        <h4>One Owner, One Decision</h4>
+                        <p>Pas de comités. Un responsable par projet qui décide et exécute.</p>
+                    </div>
+                </div>
+                <div class="principle">
+                    <div class="principle-number">5</div>
+                    <div class="principle-content">
+                        <h4>Weekly Accountability</h4>
+                        <p>"Qu'as-tu accompli cette semaine?" — Livrables, pas activité.</p>
+                    </div>
+                </div>
+                <div class="principle">
+                    <div class="principle-number">6</div>
+                    <div class="principle-content">
+                        <h4>Fail → Learn → Iterate</h4>
+                        <p>Échoue vite, documente, itère. Le cycle ne s'arrête jamais.</p>
+                    </div>
+                </div>
+                <div class="principle">
+                    <div class="principle-number">7</div>
+                    <div class="principle-content">
+                        <h4>If Not Now, Too Late</h4>
+                        <p>La fenêtre se ferme. Agis maintenant ou regarde les autres gagner.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Starbase Entrepreneur Manifesto — Citations extraites pour l'action</p>
+        <p style="margin-top: 0.5rem;"><a href="https://github.com/JSLeboeuf/Starbase">github.com/JSLeboeuf/Starbase</a></p>
+    </footer>
+
+    <script>
+        function copyQuote(btn) {
+            const card = btn.closest('.quote-card');
+            const quote = card.querySelector('blockquote').textContent;
+            const timecode = card.querySelector('.timecode').textContent;
+            const text = `${timecode} — ${quote}`;
+
+            navigator.clipboard.writeText(text).then(() => {
+                btn.textContent = 'Copié!';
+                setTimeout(() => btn.textContent = 'Copier', 1500);
+            });
+        }
+    </script>
+</body>
+</html>
