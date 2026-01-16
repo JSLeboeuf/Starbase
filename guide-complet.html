@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARBASE — Guide Complet d'Exécution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #e5e5e5;
+            line-height: 1.6;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 2.5rem; font-weight: 900; color: #fff; margin-bottom: 10px; }
+        h2 { font-size: 1.8rem; font-weight: 800; color: #00D9FF; margin: 40px 0 20px; border-bottom: 2px solid #00D9FF; padding-bottom: 10px; }
+        h3 { font-size: 1.3rem; font-weight: 700; color: #fff; margin: 30px 0 15px; }
+        h4 { font-size: 1.1rem; font-weight: 600; color: #00D9FF; margin: 20px 0 10px; }
+        p { margin-bottom: 15px; }
+        .subtitle { color: #888; font-size: 1.1rem; margin-bottom: 30px; }
+
+        .section { background: #111; border: 1px solid #222; border-radius: 8px; padding: 25px; margin: 20px 0; }
+        .highlight { background: #00D9FF; color: #000; padding: 2px 8px; font-weight: 700; }
+        .cost { color: #ff4444; font-weight: 700; }
+        .gain { color: #44ff44; font-weight: 700; }
+
+        .example {
+            background: #1a1a1a;
+            border-left: 4px solid #00D9FF;
+            padding: 15px 20px;
+            margin: 15px 0;
+            font-size: 0.95rem;
+        }
+        .example-title { font-weight: 700; color: #00D9FF; margin-bottom: 8px; }
+
+        .pattern {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .pattern-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .pattern-name { font-size: 1.2rem; font-weight: 700; color: #fff; }
+        .pattern-cost { background: #ff4444; color: #fff; padding: 4px 12px; font-size: 0.85rem; font-weight: 700; border-radius: 4px; }
+
+        .seal-principle {
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%);
+            border: 1px solid #00D9FF;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        .seal-title { font-size: 1.3rem; font-weight: 800; color: #00D9FF; margin-bottom: 10px; }
+
+        .vs-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .cain { background: #2a1a1a; border: 1px solid #ff4444; border-radius: 8px; padding: 20px; }
+        .abel { background: #1a2a1a; border: 1px solid #44ff44; border-radius: 8px; padding: 20px; }
+        .cain h4 { color: #ff4444; }
+        .abel h4 { color: #44ff44; }
+
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+
+        .quote {
+            font-style: italic;
+            color: #aaa;
+            border-left: 3px solid #444;
+            padding-left: 15px;
+            margin: 15px 0;
+        }
+
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
+        th { background: #1a1a1a; color: #00D9FF; font-weight: 700; }
+
+        @media print {
+            body { background: #fff; color: #000; }
+            .section, .pattern, .seal-principle { border-color: #ccc; background: #f9f9f9; }
+            h2, h4, .seal-title, .pattern-name { color: #000; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>GUIDE COMPLET D'EXÉCUTION</h1>
+<p class="subtitle">Starbase + Navy SEAL Ethos + Identification du Leadership Toxique</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>PARTIE 1: LEADERSHIP TOXIQUE — STRATÉGIES DÉTAILLÉES</h2>
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+<p>Ces patterns sont observés dans des environnements à haute pression. Chaque stratégie a un <span class="cost">coût mesurable</span> sur la performance de l'équipe.</p>
+
+<!-- PATTERN 1 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">1. APPROPRIATION DU CRÉDIT</span>
+        <span class="pattern-cost">-$89K/an turnover</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Le leader présente systématiquement le travail de l'équipe comme le sien devant les stakeholders, investisseurs ou clients. Il utilise "je" au lieu de "nous" et minimise les contributions individuelles.</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret (style Cédric):</div>
+        <p>Marie passe 3 semaines à développer un algorithme de pricing. En réunion avec les investisseurs, le CEO dit: <em>"J'ai développé un nouveau système de pricing qui va augmenter nos marges de 15%."</em> Marie n'est pas mentionnée. Quand elle confronte, il répond: <em>"C'est normal, je suis le visage de la compagnie."</em></p>
+    </div>
+
+    <h4>Impact sur la performance:</h4>
+    <ul>
+        <li><span class="cost">Turnover +340%</span> — Les top performers partent en premier (Harvard Business Review)</li>
+        <li><span class="cost">Innovation -67%</span> — Pourquoi innover si quelqu'un d'autre prend le crédit?</li>
+        <li><span class="cost">Recrutement coûte $15K-$25K</span> par remplacement (Society for HR Management)</li>
+    </ul>
+
+    <h4>Pourquoi c'est contre-productif financièrement:</h4>
+    <p>Le coût de remplacement d'un employé = 50-200% de son salaire annuel. Un développeur senior à $100K qui part = $150K de coûts réels. Multiplié par 3-4 départs/an = <span class="cost">catastrophe financière</span>.</p>
+</div>
+
+<!-- PATTERN 2 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">2. COMMUNICATION PARADOXALE (DOUBLE BIND)</span>
+        <span class="pattern-cost">-$47K/an erreurs</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Donner des instructions contradictoires où toute action mène à la critique. Le leader dit une chose puis reproche l'opposé, créant une paralysie décisionnelle.</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret:</div>
+        <p>Lundi: <em>"Prends plus d'initiative, arrête de me demander pour tout!"</em><br>
+        Mercredi: <em>"Pourquoi t'as fait ça sans me consulter? Tu aurais dû me demander!"</em><br>
+        Résultat: L'employé est paralysé. Quoi qu'il fasse, c'est mal. Il commence à tout documenter par écrit pour se protéger — ce qui ralentit tout de 40%.</p>
+    </div>
+
+    <h4>Impact sur la performance:</h4>
+    <ul>
+        <li><span class="cost">Vélocité -40%</span> — Paralysie décisionnelle constante</li>
+        <li><span class="cost">Erreurs +67%</span> — Le stress chronique dégrade la cognition (Stanford)</li>
+        <li><span class="cost">Sick days +156%</span> — Anxiété et burnout</li>
+    </ul>
+
+    <h4>Coût réel:</h4>
+    <p>Une équipe de 5 personnes paralysée 2h/jour = 10h perdues/jour × $50/h = <span class="cost">$500/jour = $130K/an</span> en productivité brûlée.</p>
+</div>
+
+<!-- PATTERN 3 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">3. DÉPLACEMENT DE RESPONSABILITÉ</span>
+        <span class="pattern-cost">-$200K réputation</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Quand ça va bien → "J'ai décidé de...". Quand ça va mal → "L'équipe a mal exécuté". Le leader ne prend jamais la responsabilité des échecs mais capture tous les succès.</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret:</div>
+        <p>Le projet dépasse le budget de 40%. En board meeting:<br>
+        CEO: <em>"L'équipe technique a sous-estimé la complexité. J'avais dit que c'était risqué."</em><br>
+        Réalité: Le CEO avait imposé un deadline irréaliste malgré les warnings de l'équipe. Il avait dit: <em>"Je m'en fous de vos estimations, c'est ça la date."</em></p>
+    </div>
+
+    <h4>Impact sur la performance:</h4>
+    <ul>
+        <li><span class="cost">Confiance équipe: 0</span> — Personne ne prend de risques</li>
+        <li><span class="cost">Innovation: morte</span> — L'échec n'est pas toléré</li>
+        <li><span class="cost">Crédibilité externe: détruite</span> — Les clients et partenaires voient le pattern</li>
+    </ul>
+</div>
+
+<!-- PATTERN 4 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">4. RÉTENTION STRATÉGIQUE D'INFORMATION</span>
+        <span class="pattern-cost">-4x vélocité</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Garder l'information critique pour soi comme levier de pouvoir. Ne révéler que le minimum. Créer une dépendance où tout doit passer par le leader.</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret:</div>
+        <p>Le CEO a une relation avec un gros client potentiel. Il ne partage jamais les détails avec l'équipe sales.<br>
+        <em>"Je gère ce compte personnellement."</em><br>
+        Résultat: Quand le CEO est en vacances ou occupé, le deal stagne pendant 3 semaines. Le client signe avec un compétiteur. Deal perdu: <span class="cost">$500K</span>.</p>
+    </div>
+
+    <h4>Pourquoi c'est fait:</h4>
+    <p>Contrôle = Pouvoir. Si tout le monde a l'info, le leader devient remplaçable. C'est une stratégie de survie personnelle au détriment de l'organisation.</p>
+
+    <h4>Impact:</h4>
+    <ul>
+        <li><span class="cost">Single point of failure</span> — L'entreprise dépend d'une personne</li>
+        <li><span class="cost">Bus factor = 1</span> — Si le leader part, tout s'effondre</li>
+        <li><span class="cost">Deals perdus</span> — Les clients n'attendent pas</li>
+    </ul>
+</div>
+
+<!-- PATTERN 5 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">5. DÉCISIONS UNILATÉRALES PUIS BLAME</span>
+        <span class="pattern-cost">-82% adhésion</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Prendre des décisions majeures sans consultation, puis blâmer l'équipe quand ça échoue. "Vous auriez dû me prévenir" — alors qu'il n'y avait pas d'opportunité.</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret:</div>
+        <p>Vendredi 17h, email du CEO: <em>"On pivote vers le marché B2B lundi. Préparez tout."</em><br>
+        Aucune consultation. L'équipe passe le weekend à tout refaire.<br>
+        3 mois plus tard, le pivot échoue.<br>
+        CEO au board: <em>"L'équipe n'était pas alignée sur la vision B2B."</em></p>
+    </div>
+
+    <h4>Impact:</h4>
+    <ul>
+        <li><span class="cost">Engagement: détruit</span> — "Pourquoi s'investir si mon avis ne compte pas?"</li>
+        <li><span class="cost">Qualité: sabotée</span> — Pas de buy-in = exécution minimale</li>
+        <li><span class="cost">Turnover intellectuel</span> — Les gens restent mais déconnectent mentalement</li>
+    </ul>
+</div>
+
+<!-- PATTERN 6 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">6. PROMESSES SYSTÉMATIQUEMENT BRISÉES</span>
+        <span class="pattern-cost">-$200K crédibilité</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Promettre des bonus, promotions, equity, puis ne jamais livrer. Utiliser les promesses comme carotte perpétuelle.</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret:</div>
+        <p>Janvier: <em>"Si on atteint $1M ARR, tout le monde a 10% de bonus."</em><br>
+        Juin: $1.2M ARR atteint.<br>
+        Juillet: <em>"Les conditions du marché ont changé. On repousse à décembre."</em><br>
+        Décembre: <em>"On a dû réinvestir. L'année prochaine, promis."</em><br>
+        Résultat: Les 3 meilleurs performers partent en janvier.</p>
+    </div>
+
+    <h4>Coût réel:</h4>
+    <p>Bonus promis: $50K total. Coût du turnover des 3 départs: <span class="cost">$200K+</span>. Économie de court terme = catastrophe de long terme.</p>
+</div>
+
+<!-- PATTERN 7 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">7. GRANDIOSITÉ ET SENTIMENT D'EXCEPTION</span>
+        <span class="pattern-cost">-$150K investisseurs</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Croire que les règles normales ne s'appliquent pas. "Je suis différent." Ignorer les conseils, les données, les best practices parce que "mon cas est unique".</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret:</div>
+        <p>Conseiller: <em>"Les startups B2B mettent en moyenne 18 mois pour closer un enterprise deal."</em><br>
+        CEO: <em>"Oui mais moi je suis pas comme les autres. Je vais closer en 3 mois."</em><br>
+        6 mois plus tard, aucun deal. Le runway est épuisé. L'entreprise ferme.<br>
+        Post-mortem: <em>"Le marché n'était pas prêt."</em> (Pas "j'ai ignoré les conseils.")</p>
+    </div>
+
+    <h4>Impact:</h4>
+    <ul>
+        <li><span class="cost">Investisseurs échaudés</span> — Le word-of-mouth se répand</li>
+        <li><span class="cost">Erreurs répétées</span> — Pas d'apprentissage des autres</li>
+        <li><span class="cost">Hubris penalty</span> — Les gens compétents fuient</li>
+    </ul>
+</div>
+
+<!-- PATTERN 8 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">8. MANIPULATION DES RESSOURCES FINANCIÈRES</span>
+        <span class="pattern-cost">-10x coût projet</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Sous-investir intentionnellement pour garder le contrôle, puis blâmer le manque de résultats. Ou utiliser le budget comme outil de punition/récompense arbitraire.</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret:</div>
+        <p>L'équipe demande $20K pour un outil qui économiserait 10h/semaine.<br>
+        CEO: <em>"On n'a pas le budget. Faites avec."</em><br>
+        L'équipe perd 10h/semaine × 52 semaines × $50/h = <span class="cost">$26K/an</span>.<br>
+        Économie de $20K = Perte de $26K. Mais le CEO garde le "contrôle du budget".</p>
+    </div>
+
+    <h4>Pattern associé:</h4>
+    <p>Approuver les dépenses pour ses projets favoris instantanément, mais bloquer celles des autres pendant des mois. C'est du pouvoir, pas de la gestion.</p>
+</div>
+
+<!-- PATTERN 9 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">9. TRIANGULATION ET ISOLATION</span>
+        <span class="pattern-cost">-67% collaboration</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Parler de X à Y et de Y à X, mais jamais les mettre ensemble. Créer des silos artificiels. Être le "centre" de toute communication.</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret:</div>
+        <p>À Marc: <em>"Entre nous, Sophie n'est pas assez technique pour ce projet."</em><br>
+        À Sophie: <em>"Marc pense que tu n'es pas à la hauteur, mais moi je te défends."</em><br>
+        Résultat: Marc et Sophie ne se parlent plus. Tout passe par le CEO. Il contrôle tout.</p>
+    </div>
+
+    <h4>Impact:</h4>
+    <ul>
+        <li><span class="cost">Collaboration: impossible</span> — Les gens ne se font pas confiance</li>
+        <li><span class="cost">Information: déformée</span> — Tout passe par un filtre</li>
+        <li><span class="cost">Vélocité: divisée par 3</span> — Trop d'intermédiaires</li>
+    </ul>
+</div>
+
+<!-- PATTERN 10 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">10. DÉSTABILISATION TACTIQUE</span>
+        <span class="pattern-cost">-41% performance cognitive</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Changer les règles, priorités, objectifs constamment. Garder l'équipe en état d'alerte permanent. "Si tu ne sais jamais ce qui vient, tu ne peux pas me challenger."</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret:</div>
+        <p>Semaine 1: <em>"La priorité #1 c'est le produit A."</em><br>
+        Semaine 2: <em>"Laisse A, focus sur B."</em><br>
+        Semaine 3: <em>"Pourquoi A n'est pas fini?!"</em><br>
+        L'équipe est en mode survie constant. Personne ne peut faire du travail profond.</p>
+    </div>
+
+    <h4>Science:</h4>
+    <p>Le "context switching" coûte 23 minutes de récupération par interruption (UC Irvine). 5 changements/jour = <span class="cost">2h perdues</span> minimum.</p>
+</div>
+
+<!-- PATTERN 11 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">11. BLOCAGE PASSIF-AGRESSIF</span>
+        <span class="pattern-cost">-$15K/blocage</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Ne pas dire "non" directement, mais ne jamais avancer. Ignorer les emails. Reporter les décisions. Créer des obstacles administratifs.</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret:</div>
+        <p>L'équipe a besoin d'une approbation pour lancer une feature.<br>
+        Jour 1: Email envoyé. Pas de réponse.<br>
+        Jour 5: Relance. <em>"Je regarde ça."</em><br>
+        Jour 12: Relance. <em>"J'ai des questions."</em> (questions triviales)<br>
+        Jour 20: <em>"OK mais change X, Y, Z."</em><br>
+        Jour 25: <em>"Finalement non, le timing n'est plus bon."</em><br>
+        Résultat: 1 mois perdu. Le compétiteur a lancé sa feature.</p>
+    </div>
+</div>
+
+<!-- PATTERN 12 -->
+<div class="pattern">
+    <div class="pattern-header">
+        <span class="pattern-name">12. VICTIMISATION STRATÉGIQUE</span>
+        <span class="pattern-cost">-78% confiance</span>
+    </div>
+
+    <h4>Ce que c'est:</h4>
+    <p>Se positionner comme victime quand confronté. "Personne ne m'apprécie." "Je fais tout ici et c'est comme ça qu'on me remercie." Inverser les rôles agresseur/victime.</p>
+
+    <div class="example">
+        <div class="example-title">📍 Exemple concret:</div>
+        <p>L'équipe confronte le CEO sur une promesse brisée.<br>
+        CEO: <em>"Wow. Après tout ce que j'ai sacrifié pour cette compagnie. Je dors 4 heures par nuit. Et vous me faites ça? Je suis vraiment déçu."</em><br>
+        Résultat: L'équipe se sent coupable. Le sujet original (promesse brisée) est oublié. Le CEO "gagne".</p>
+    </div>
+
+    <h4>Mécanisme:</h4>
+    <p>C'est du DARVO: <strong>D</strong>eny, <strong>A</strong>ttack, <strong>R</strong>everse <strong>V</strong>ictim and <strong>O</strong>ffender. Une technique de manipulation documentée.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>PARTIE 2: NAVY SEAL ETHOS — PRINCIPES D'EXÉCUTION</h2>
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+<p>L'opposé exact du leadership toxique. Ces principes créent des équipes qui <span class="gain">surperforment de 300%+</span>.</p>
+
+<div class="seal-principle">
+    <div class="seal-title">1. EXTREME OWNERSHIP</div>
+    <p><strong>Principe:</strong> Le leader est responsable de TOUT. Pas d'excuses. Pas de blame. Si l'équipe échoue, c'est ma faute. Si l'équipe réussit, c'est grâce à eux.</p>
+
+    <h4>Pourquoi ça marche:</h4>
+    <ul>
+        <li><strong>Confiance absolue:</strong> L'équipe sait que le leader ne les sacrifiera jamais</li>
+        <li><strong>Prise de risque:</strong> Les gens osent parce qu'ils sont protégés</li>
+        <li><strong>Feedback honnête:</strong> Pas besoin de se couvrir, on peut dire la vérité</li>
+    </ul>
+
+    <div class="example">
+        <div class="example-title">📍 En pratique:</div>
+        <p>Le projet a échoué. En réunion post-mortem:<br>
+        Leader toxique: <em>"L'équipe n'a pas livré."</em><br>
+        Navy SEAL: <em>"J'ai mal communiqué les priorités. J'aurais dû vérifier l'alignement plus tôt. Voici ce que JE vais faire différemment."</em></p>
+    </div>
+
+    <p><span class="gain">Impact:</span> Équipes avec Extreme Ownership = +156% productivité, -82% turnover, +300% innovation.</p>
+</div>
+
+<div class="seal-principle">
+    <div class="seal-title">2. DECENTRALIZED COMMAND</div>
+    <p><strong>Principe:</strong> Les décisions sont prises au niveau le plus bas possible. Le leader donne l'intention ("Commander's Intent"), pas les instructions détaillées.</p>
+
+    <h4>Pourquoi ça marche:</h4>
+    <ul>
+        <li><strong>Vélocité:</strong> Pas besoin d'attendre l'approbation pour chaque détail</li>
+        <li><strong>Adaptabilité:</strong> Les gens sur le terrain voient ce que le leader ne voit pas</li>
+        <li><strong>Ownership:</strong> Quand tu décides, tu t'investis</li>
+    </ul>
+
+    <div class="example">
+        <div class="example-title">📍 En pratique:</div>
+        <p><strong>Commander's Intent:</strong> "On doit closer ce client d'ici fin du mois. Budget max $5K en concessions. Gardez-moi informé des blocages majeurs."<br>
+        <strong>Pas:</strong> "Envoie cet email à 10h, puis appelle à 14h, puis offre 10% de discount..."</p>
+    </div>
+
+    <p><span class="gain">Impact:</span> Décisions 6x plus rapides. Moins de bottlenecks. Équipe autonome.</p>
+</div>
+
+<div class="seal-principle">
+    <div class="seal-title">3. COVER AND MOVE (TEAMWORK)</div>
+    <p><strong>Principe:</strong> Les équipes/départements se soutiennent mutuellement. Pas de silos. Pas de "c'est pas mon problème". On gagne ensemble ou on perd ensemble.</p>
+
+    <h4>Pourquoi ça marche:</h4>
+    <ul>
+        <li><strong>Pas de finger-pointing:</strong> Sales ne blame pas Product, Product ne blame pas Engineering</li>
+        <li><strong>Ressources partagées:</strong> Les équipes s'aident quand une est surchargée</li>
+        <li><strong>Vision unifiée:</strong> Tout le monde voit le même objectif</li>
+    </ul>
+
+    <div class="example">
+        <div class="example-title">📍 En pratique:</div>
+        <p>L'équipe Sales est débordée avant la fin du trimestre.<br>
+        <strong>Toxique:</strong> <em>"C'est leur problème, nous on a nos propres deadlines."</em><br>
+        <strong>SEAL:</strong> L'équipe Marketing met en pause un projet non-urgent pour aider Sales à closer. Tout le monde gagne.</p>
+    </div>
+</div>
+
+<div class="seal-principle">
+    <div class="seal-title">4. SIMPLE</div>
+    <p><strong>Principe:</strong> Les plans simples fonctionnent. Les plans complexes échouent. Si tu ne peux pas expliquer le plan en 30 secondes, il est trop complexe.</p>
+
+    <h4>Pourquoi ça marche:</h4>
+    <ul>
+        <li><strong>Compréhension:</strong> Tout le monde comprend son rôle</li>
+        <li><strong>Exécution:</strong> Moins de confusion = moins d'erreurs</li>
+        <li><strong>Adaptabilité:</strong> Facile à ajuster quand les conditions changent</li>
+    </ul>
+
+    <div class="quote">"In combat, everything that can go wrong will go wrong. A complex plan compounds complexity. Keep it simple." — Jocko Willink</div>
+</div>
+
+<div class="seal-principle">
+    <div class="seal-title">5. PRIORITIZE AND EXECUTE</div>
+    <p><strong>Principe:</strong> Quand tout est une priorité, rien n'est une priorité. Identifier LA priorité #1, l'exécuter, puis passer à la suivante.</p>
+
+    <h4>Pourquoi ça marche:</h4>
+    <ul>
+        <li><strong>Focus:</strong> L'énergie est concentrée, pas dispersée</li>
+        <li><strong>Clarté:</strong> Pas d'ambiguïté sur quoi travailler</li>
+        <li><strong>Momentum:</strong> Finir des choses crée de l'élan</li>
+    </ul>
+
+    <div class="example">
+        <div class="example-title">📍 En pratique:</div>
+        <p>3 crises simultanées: bug critique, client mécontent, serveur down.<br>
+        <strong>Toxique:</strong> Panique. Tout le monde court partout. Rien n'avance.<br>
+        <strong>SEAL:</strong> "Serveur down = priorité 1 (tout est bloqué). Bug critique = priorité 2. Client = priorité 3 (on le contacte après)."</p>
+    </div>
+</div>
+
+<div class="seal-principle">
+    <div class="seal-title">6. CHECK THE EGO</div>
+    <p><strong>Principe:</strong> L'ego est l'ennemi de la performance. Accepter le feedback. Admettre les erreurs. La mission est plus importante que ta fierté.</p>
+
+    <h4>Pourquoi ça marche:</h4>
+    <ul>
+        <li><strong>Apprentissage:</strong> Tu peux apprendre de n'importe qui</li>
+        <li><strong>Collaboration:</strong> Pas de luttes de pouvoir</li>
+        <li><strong>Décisions meilleures:</strong> La meilleure idée gagne, pas la plus forte personnalité</li>
+    </ul>
+
+    <div class="quote">"Ego clouds and disrupts everything: the planning process, the ability to take good advice, and the ability to accept constructive criticism." — Jocko Willink</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>PARTIE 3: ESPRIT DE CAÏN VS ABEL</h2>
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+<p>Deux mentalités fondamentales. <span class="cost">Caïn détruit</span>. <span class="gain">Abel construit</span>.</p>
+
+<div class="vs-box">
+    <div class="cain">
+        <h4>🔴 ESPRIT DE CAÏN</h4>
+        <p><strong>Mentalité:</strong> Jeu à somme nulle. Pour que je gagne, tu dois perdre. Les ressources sont limitées. La vie est une compétition.</p>
+
+        <ul>
+            <li>Voit les collègues comme des menaces</li>
+            <li>Sabote pour avancer</li>
+            <li>Garde l'information comme pouvoir</li>
+            <li>Célèbre l'échec des autres</li>
+            <li>Prend le crédit, distribue le blame</li>
+            <li>"Moi d'abord"</li>
+        </ul>
+
+        <p><strong>Résultat:</strong> Victoires court terme, destruction long terme. Personne ne veut travailler avec toi. Réputation détruite. Isolement.</p>
+    </div>
+
+    <div class="abel">
+        <h4>🟢 ESPRIT D'ABEL</h4>
+        <p><strong>Mentalité:</strong> Jeu à somme positive. Ton succès n'enlève rien au mien. En t'aidant, je m'aide. L'abondance est créée, pas divisée.</p>
+
+        <ul>
+            <li>Voit les collègues comme des alliés</li>
+            <li>Aide activement les autres à réussir</li>
+            <li>Partage l'information librement</li>
+            <li>Célèbre le succès des autres</li>
+            <li>Distribue le crédit, prend la responsabilité</li>
+            <li>"On gagne ensemble"</li>
+        </ul>
+
+        <p><strong>Résultat:</strong> Réseau puissant. Les meilleurs veulent travailler avec toi. Opportunités qui se multiplient. Legacy positif.</p>
+    </div>
+</div>
+
+<h3>Pourquoi Abel gagne à long terme</h3>
+
+<table>
+    <tr>
+        <th>Métrique</th>
+        <th>Caïn</th>
+        <th>Abel</th>
+    </tr>
+    <tr>
+        <td>Réseau après 10 ans</td>
+        <td class="cost">Brûlé</td>
+        <td class="gain">Exponentiel</td>
+    </tr>
+    <tr>
+        <td>Referrals</td>
+        <td class="cost">0</td>
+        <td class="gain">3-5x plus</td>
+    </tr>
+    <tr>
+        <td>Talent qui veut travailler avec</td>
+        <td class="cost">Les désespérés</td>
+        <td class="gain">Les meilleurs</td>
+    </tr>
+    <tr>
+        <td>Investisseurs/Partenaires</td>
+        <td class="cost">Méfiants</td>
+        <td class="gain">Enthousiastes</td>
+    </tr>
+    <tr>
+        <td>Stress quotidien</td>
+        <td class="cost">Paranoïa constante</td>
+        <td class="gain">Flow</td>
+    </tr>
+    <tr>
+        <td>Legacy</td>
+        <td class="cost">Oublié ou détesté</td>
+        <td class="gain">Respecté</td>
+    </tr>
+</table>
+
+<div class="example">
+    <div class="example-title">📍 La réalité mathématique:</div>
+    <p>Caïn peut gagner 10 batailles et bruler 10 ponts.<br>
+    Abel peut perdre 5 batailles mais construire 50 ponts.<br>
+    Après 10 ans: Caïn a 0 ponts. Abel a un empire de relations.<br>
+    <strong>Le ROI de la générosité = infini.</strong></p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>PARTIE 4: STARBASE — RÈGLES D'EXÉCUTION</h2>
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+<div class="section">
+    <h3>Les 7 Lois Fondamentales</h3>
+
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Loi</th>
+            <th>ROI Prouvé</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><strong>Tout par écrit</strong> — Slack/Email. Les accords verbaux = malentendus.</td>
+            <td class="gain">+340% efficacité</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><strong>Décision en 7 jours max</strong> — Au-delà, la qualité ne s'améliore plus.</td>
+            <td class="gain">+89% ROI projets</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><strong>80% info = GO</strong> — Attendre 100% coûte 6x plus en temps.</td>
+            <td class="gain">6x vitesse</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><strong>Un owner par décision</strong> — Comités = paralysie.</td>
+            <td class="gain">-82% délais</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><strong>Blocage signalé en 24h</strong> — Non-signalé = $15K perdu.</td>
+            <td class="gain">-$15K/blocage</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><strong>Deadline = Promesse sacrée</strong> — Prévenir 48h avant si miss.</td>
+            <td class="gain">+78% confiance</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><strong>Sous-promettre, sur-livrer</strong> — Dire vendredi, livrer jeudi = héros.</td>
+            <td class="gain">+3x referrals</td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <h3>La Formule</h3>
+    <p style="font-size: 1.5rem; text-align: center; padding: 20px; background: #1a1a1a; border-radius: 8px;">
+        <span class="highlight">VITESSE</span> × <span class="highlight">CLARTÉ</span> × <span class="highlight">ACCOUNTABILITY</span> = <span class="gain">$$$</span>
+    </p>
+
+    <ul>
+        <li><strong>Vitesse:</strong> Décisions rapides, exécution immédiate, pas de paralysie</li>
+        <li><strong>Clarté:</strong> Écrit, single owner, objectifs mesurables</li>
+        <li><strong>Accountability:</strong> Livrables weekly, dashboard partagé, feedback public</li>
+    </ul>
+</div>
+
+<div class="section" style="background: linear-gradient(135deg, #1a2a1a 0%, #0a150a 100%); border-color: #44ff44;">
+    <h3 style="color: #44ff44;">CHAQUE JOUR DE RETARD = 0.3% DE VALEUR PERDUE</h3>
+    <p>Sur un projet de $1M, un mois de retard = $9,000 perdus.<br>
+    Sur un projet de $10M, un mois de retard = $90,000 perdus.<br>
+    <strong>Speed = Money. Toujours.</strong></p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>SYNTHÈSE: COMMENT TOUT SE CONNECTE</h2>
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+<div class="section">
+    <p><strong>Leadership Toxique</strong> = Esprit de Caïn appliqué au management. Ça "marche" à court terme (le leader garde le contrôle) mais détruit la valeur à long terme.</p>
+
+    <p><strong>Navy SEAL Ethos</strong> = Esprit d'Abel appliqué au leadership. Extreme Ownership, Decentralized Command, Cover and Move — tout est basé sur la confiance et le succès collectif.</p>
+
+    <p><strong>Starbase</strong> = Les règles opérationnelles qui transforment ces principes en actions mesurables. Pas de philosophie vague — des KPIs concrets.</p>
+
+    <h4>Le test simple:</h4>
+    <p>Pose-toi cette question avant chaque décision:<br>
+    <em>"Est-ce que cette action construit de la confiance ou la détruit?"</em><br>
+    Si tu dois réfléchir longtemps à la réponse, c'est probablement Caïn.</p>
+</div>
+
+<footer style="text-align: center; padding: 40px 0; color: #666; border-top: 1px solid #333; margin-top: 40px;">
+    <p>STARBASE GUIDE COMPLET — github.com/JSLeboeuf/Starbase</p>
+    <p style="font-size: 0.85rem; margin-top: 10px;">Speed × Clarity × Accountability = Results</p>
+</footer>
+
+</body>
+</html>
