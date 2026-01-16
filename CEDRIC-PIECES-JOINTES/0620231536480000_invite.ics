@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20230912T170000Z
+DTEND:20230912T180000Z
+DTSTAMP:20230906T153648Z
+ORGANIZER;CN=major@vetaveterinaire.com:mailto:major@vetaveterinaire.com
+UID:2ted31t1li94o3341v416t5a4g@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=C-e-d L;X-NUM-GUESTS=0:mailto:cedric2177@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=major@vetaveterinaire.com;X-NUM-GUESTS=0:mailto:major@vetaveterinaire.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=mcparisien@bloomcomptabilite.com;X-NUM-GUESTS=0:mailto:mcparisien@b
+ loomcomptabilite.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/dpy-sgar-dgj
+X-MICROSOFT-CDO-OWNERAPPTID:219043295
+CREATED:20230906T153646Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet : https://meet.google.
+ com/dpy-sgar-dgj\nOu composez le : (US) +1 929-266-2010 Code PIN : 91160735
+ 6#\nPlus de numéros de téléphone: https://tel.meet/dpy-sgar-dgj?pin=4530611
+ 442356&hs=7\n\nPour en savoir plus sur Meet : https://support.google.com/a/
+ users/answer/9282720\n\nVeuillez ne pas modifier cette section.\n-::~:~::~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~:
+ :-
+LAST-MODIFIED:20230906T153646Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Changement de licence et etc Patrick Pilon
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

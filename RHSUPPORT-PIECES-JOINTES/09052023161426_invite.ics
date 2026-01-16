@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20230814
+DTEND;VALUE=DATE:20230815
+RRULE:FREQ=WEEKLY;UNTIL=20230904;BYDAY=FR,MO,TH,TU,WE
+DTSTAMP:20230905T201426Z
+ORGANIZER;CN=info@hrsupportusa.com:mailto:info@hrsupportusa.com
+UID:4rsh7pi3fj0b6g8ci9pg5jton1_R20230814@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=felixhamel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail
+ .com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=C-e-d L;X-NUM-GUESTS=0:mailto:info@cedricleboeuf.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=info@hrsupportusa.com;X-NUM-GUESTS=0:mailto:info@hrsupportusa.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=maria@hrsupportusa.com;X-NUM-GUESTS=0:mailto:maria@hrsupportusa.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=kassem@rhsupport.ca;X-NUM-GUESTS=0:mailto:kassem@rhsupport.ca
+X-GOOGLE-CONFERENCE:https://meet.google.com/tip-kuvk-gzt
+X-MICROSOFT-CDO-OWNERAPPTID:-1090876635
+CREATED:20230725T163514Z
+DESCRIPTION:The Virtual Office is more than just a remote workspace. It's a
+  place of collaboration and motivation where we can all share tips\, answer
+  each other's questions\, and even conduct our call sessions together. The 
+ idea is to recreate the atmosphere of a physical office while allowing us t
+ o work remotely.\n\nHere are some of the benefits that the Virtual Office c
+ an offer:\n\nCollective Motivation and Stimulation: By working together in 
+ a virtual space\, we can recreate the camaraderie and energy that exist in 
+ a physical office. We can cheer each other on and share our successes throu
+ ghout the day.\n\nSharing of Tips and Knowledge: The Virtual Office will be
+  an ideal place for sharing sales advice\, tips\, and techniques. Each team
+  member can share what works for them and learn from others.\n\nInstant Sup
+ port: If you have a question or if you encounter a challenge\, you can inst
+ antly ask for help from your colleagues. Plus\, the management team will be
+  on hand to answer your queries and provide support.\n\nJoint Call Sessions
+ : We can organize joint call sessions where we all work together. This will
+  not only foster team spirit\, but it will also enable sharing effective ca
+ ll and closing techniques.\n\nPlease leave your microphone and camera open\
+ , and turn off your speaker if you're making calls. That way we'll be able 
+ to learn from each other and grow as a team.\n\nWe believe that the Virtual
+  Office will be a valuable asset to our team and we look forward to seeing 
+ how it will enhance our daily work and overall performance.\n\nWe invite yo
+ u to log in and explore the Virtual Office as soon as possible. Please feel
+  free to share your feedback and suggestions to further improve this space.
+ \n\nLet's stay connected and succeed together!\n\n-::~:~::~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nParticiper 
+ via Google Meet : https://meet.google.com/tip-kuvk-gzt\nOu composez le : (C
+ A) +1 647-735-1952 Code PIN : 776982850#\nPlus de numéros de téléphone: htt
+ ps://tel.meet/tip-kuvk-gzt?pin=7822905043976&hs=7\n\nPour en savoir plus su
+ r Meet : https://support.google.com/a/users/answer/9282720\n\nVeuillez ne p
+ as modifier cette section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230905T201420Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Virtual Office
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

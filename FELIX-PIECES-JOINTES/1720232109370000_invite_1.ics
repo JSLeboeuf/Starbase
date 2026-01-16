@@ -1,0 +1,62 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20230718T110000
+DTEND;TZID=America/New_York:20230718T120000
+DTSTAMP:20230717T210937Z
+ORGANIZER;CN=maria@hrsupportusa.com:mailto:maria@hrsupportusa.com
+UID:48m0f1c2s6ier16p2avmqe6viq@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=felixhamel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail
+ .com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=C-e-d L;X-NUM-GUESTS=0:mailto:info@cedricleboeuf.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=robinmccoy32@yahoo.com;X-NUM-GUESTS=0:mailto:robinmccoy32@yahoo.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=maria@hrsupportusa.com;X-NUM-GUESTS=0:mailto:maria@hrsupportusa.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/umg-zoxz-bmg
+X-MICROSOFT-CDO-OWNERAPPTID:1836479606
+CREATED:20230717T210935Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet : https://meet.google.
+ com/umg-zoxz-bmg\nOu composez le : (US) +1 484-424-4722 Code PIN : 80099434
+ 6#\nPlus de numéros de téléphone: https://tel.meet/umg-zoxz-bmg?pin=9250608
+ 449041&hs=7\n\nPour en savoir plus sur Meet : https://support.google.com/a/
+ users/answer/9282720\n\nVeuillez ne pas modifier cette section.\n-::~:~::~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~:
+ :-
+LAST-MODIFIED:20230717T210935Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Regional Manager of Business Development candidate: Robin McCoy
+TRANSP:OPAQUE
+ATTACH;FILENAME=Regional Manager of Business Development.pdf;FMTTYPE=applic
+ ation/pdf:https://drive.google.com/open?id=1EqJVzkssz97ZDewqZsxoNd6JbMuDNWM
+ c&authuser=0
+END:VEVENT
+END:VCALENDAR

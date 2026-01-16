@@ -1,0 +1,374 @@
+Received: from srv12.swhc.ca
+	by srv12.swhc.ca with LMTP
+	id +KuTGDc2+WgETQkAAGCJjg
+	(envelope-from <jsleboeuf3@gmail.com>)
+	for <nicolas.marois@notavo.ca>; Wed, 22 Oct 2025 15:53:27 -0400
+Received: from mail-ed1-f43.google.com ([209.85.208.43]:59671)
+	by srv12.swhc.ca with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <jsleboeuf3@gmail.com>)
+	id 1vBetk-00000002ckY-0jY5
+	for nicolas.marois@notavo.ca;
+	Wed, 22 Oct 2025 15:53:27 -0400
+Received: by mail-ed1-f43.google.com with SMTP id 4fb4d7f45d1cf-63e076e24f2so4261518a12.3
+        for <nicolas.marois@notavo.ca>; Wed, 22 Oct 2025 12:53:26 -0700 (PDT)
+From: "Jean-Samuel Leboeuf" <jsleboeuf3@gmail.com>
+To: <nicolas.marois@notavo.ca>
+References: <YQBPR0101MB9854D577BCB06ECF7D84CB0DD4E4A@YQBPR0101MB9854.CANPRD01.PROD.OUTLOOK.COM>
+In-Reply-To: <YQBPR0101MB9854D577BCB06ECF7D84CB0DD4E4A@YQBPR0101MB9854.CANPRD01.PROD.OUTLOOK.COM>
+Subject: =?utf-8?Q?Fwd:_Clinique_V=C3=A9t=C3=A9rinaire_de_Val?=
+	=?utf-8?Q?leyfield_Inc.?=
+Date: Wed, 22 Oct 2025 15:52:41 -0400
+Message-ID: <CAPYwXcNs=z=by5mRgr6gZb=pBhQrcH18rneaTMaA+Lni7kx06g@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_008D_01DC436C.33A7DBC0"
+X-Mailer: Microsoft Outlook 16.0
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1761162805; x=1761767605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=k+A9K2jdjf9axoZm0KfzYz+4sV2paSySlbufK4NdBfY=;
+        b=FWaSy6BCoNeloGycH1P4fOwcrTgjmzi/fvz9+3l8dN13ud6XbZOQ98NPUyL1ocL+Sm
+         +hXuXi0SR7405hDxNkSxjRlsYE5jM0UjtdGhJGzinGUSKGchgY1QgHN6ewPhdLf38REJ
+         J4LM+WZuAeP2jTgRUtMBN9z4uJPg37HCA4TJCWSticqW0s3KK/9WhbocAVMMyjgNpnBD
+         NpttcnjnGbIKVKVldvyjDRjwjf1ZAPwuTIMQ1a3afhbCDBcdPVYZlMmczecEuZdxzFgc
+         Rk7jDiUA7rh8d7l/ZP2WYr+2EEkyAAqIs9vlojuKU4SVOhQQuS8vjC615Zh8BViXag05
+         N4tw==
+X-Gm-Message-State: AOJu0YxRfjXs6+PUb1BjBtJNtRq/V0GRCFIWvj30gNhOnqZntbtVPsSZ
+	9vSi7ryCbR9slkAR8BEgoudzcuCvXmF7O3OShaQKPOKmITwdBDY56WQTmGX+OK+yqaMhSUORHLp
+	ysVU6qZIBCCFeVB2rZ5ybpFp6rgv+hA5d0TCpL30dsw==
+X-Gm-Gg: ASbGnctoY/IVPgbta7j6nwKht+KysCzua5gV5HVxlncooNv0L4eNh0lGhrFvVxx3vPJ
+	xFM70PqmXWa4AAS1KI1sfp2qaifRHaYv/i/xs0dAtupl/fhoRl7Cc82eccFYqecNP9X6vR1kfz3
+	+pSZ0x2WGB9leifj32L14vmLsT1grGAuzuUAwKQVUvwdr2XdhNbWYqjsXaSoPs2DQukCSO8GfnA
+	EbuYOrMqEqEXRnRsNtkt2d/tBex+D4FYS1NgmcO7na6jEHCTk5P+Obq7zZAMPPOHxrRlS3x3xJN
+	0sWNx4YVeYvTleAEcOM1sfOxWTZWOkRaAg06qPZnit6H9mK25g2DEHR+ZM2txg39RbmmF6JSGMI
+	p7Q==
+X-Google-Smtp-Source: AGHT+IE5whVeQRU7BZ1JS0ySwcl8d3RXq/q6KLF5eS66D26GKM7bNNL6sPPEJ7TkG9V9L4xkoSPiPi8r71XrbwwXX48=
+X-Received: by 2002:a05:6402:5245:b0:63c:5f76:2d22 with SMTP id
+ 4fb4d7f45d1cf-63c5f762da0mr14790599a12.21.1761162804914; Wed, 22 Oct 2025
+ 12:53:24 -0700 (PDT)
+Thread-Index: AQGQc4RkgpBKgVQFD7fHHdLDF8hZOgLx/bUM
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Ham-Report: =?ISO-8859-1?Q?Spam_detection_software=2C_running_on_the_system_=22srv12=2Eswhc=2Ec?= =?ISO-8859-1?Q?a=22=2C=0A_has_NOT_identified_this_incoming_email_as_?= =?ISO-8859-1?Q?spam=2E__The_original=0A_message_has_been_attached_to?= =?ISO-8859-1?Q?_this_so_you_can_view_it_or_label=0A_similar_future_e?= =?ISO-8859-1?Q?mail=2E__If_you_have_any_questions=2C_see=0A_root=5C=40?= =?ISO-8859-1?Q?localhost_for_details=2E=0A_Content_preview=3A__Forwa?= =?ISO-8859-1?Q?rded_message_---------_From=3A_F=C3=A9lix_Lacroix_Dat?= =?ISO-8859-1?Q?e=3A_Fri=2C=0A____Oct_3=2C_2025_at_3=3A01_PM_Subject=3A_?= =?ISO-8859-1?Q?Clinique_V=C3=A9t=C3=A9rinaire_de_Valleyfield_Inc=2E=0A?= =?ISO-8859-1?Q?____To=3A_michel=2Echabot=40hemc=2Eca_Cc=3A_Jean-Samu?= =?ISO-8859-1?Q?el_Leboeuf_=5B=2E=2E=2E=5D_=0A_Content_analysis_detai?= =?ISO-8859-1?Q?ls=3A___=280=2E1_points=2C_5=2E0_required=29=0A__pts_?= =?ISO-8859-1?Q?rule_name______________description=0A_----_----------?= =?ISO-8859-1?Q?------------_---------------------------
+	-------------?= =?ISO-8859-1?Q?----------=0A__0=2E0_URIBL=5FBLOCKED__________ADMINIS?= =?ISO-8859-1?Q?TRATOR_NOTICE=3A_The_query_to_URIBL_was_blocked=2E=0A?= =?ISO-8859-1?Q?_____________________________See=0A__________________?= =?ISO-8859-1?Q?___________http=3A//wiki=2Eapache=2Eorg/spamassassin/?= =?ISO-8859-1?Q?DnsBlocklists#dnsbl-block=0A_________________________?= =?ISO-8859-1?Q?_____for_more_information=2E=0A______________________?= =?ISO-8859-1?Q?_______=5BURI=3A_cchifirm=2Eca=5D=0A__0=2E0_RCVD=5FIN?= =?ISO-8859-1?Q?=5FVALIDITY=5FRPBL=5FBLOCKED_RBL=3A_ADMINISTRATOR_NOT?= =?ISO-8859-1?Q?ICE=3A_The_query_to=0A______________________________V?= =?ISO-8859-1?Q?alidity_was_blocked=2E__See=0A_______________________?= =?ISO-8859-1?Q?______https=3A//knowledge=2Evalidity=2Ecom/hc/en-us/a?= =?ISO-8859-1?Q?rticles/20961730681243=0A____________________________?= =?ISO-8859-1?Q?__for_more_information=2E=0A_________________________?= =?ISO-8859-1?Q?____=5B209=2E85=2E208=2E43_listed_in_bl=2Escor
+	e=2Esen?= =?ISO-8859-1?Q?derscore=2Ecom=5D=0A__0=2E0_RCVD=5FIN=5FVALIDITY=5FSA?= =?ISO-8859-1?Q?FE=5FBLOCKED_RBL=3A_ADMINISTRATOR_NOTICE=3A_The_query?= =?ISO-8859-1?Q?_to=0A______________________________Validity_was_bloc?= =?ISO-8859-1?Q?ked=2E__See=0A_____________________________https=3A//?= =?ISO-8859-1?Q?knowledge=2Evalidity=2Ecom/hc/en-us/articles/20961730?= =?ISO-8859-1?Q?681243=0A______________________________for_more_infor?= =?ISO-8859-1?Q?mation=2E=0A_____________________________=5B209=2E85=2E2?= =?ISO-8859-1?Q?08=2E43_listed_in_sa-accredit=2Ehabeas=2Ecom=5D=0A__0?= =?ISO-8859-1?Q?=2E0_RCVD=5FIN=5FVALIDITY=5FCERTIFIED=5FBLOCKED_RBL=3A_?= =?ISO-8859-1?Q?ADMINISTRATOR_NOTICE=3A_The=0A_______________________?= =?ISO-8859-1?Q?______query_to_Validity_was_blocked=2E__See=0A_______?= =?ISO-8859-1?Q?______________________https=3A//knowledge=2Evalidity=2Ec?= =?ISO-8859-1?Q?om/hc/en-us/articles/20961730681243=0A_______________?= =?ISO-8859-1?Q?_______________for_more_information=2E=0A___
+	_________?= =?ISO-8859-1?Q?______________=5B209=2E85=2E208=2E43_listed_in_sa-tru?= =?ISO-8859-1?Q?sted=2Ebondedsender=2Eorg=5D=0A_-0=2E0_SPF=5FPASS____?= =?ISO-8859-1?Q?___________SPF=3A_sender_matches_SPF_record=0A_-0=2E1?= =?ISO-8859-1?Q?_DKIM=5FVALID=5FEF__________Message_has_a_valid_DKIM_?= =?ISO-8859-1?Q?or_DK_signature_from=0A_____________________________e?= =?ISO-8859-1?Q?nvelope-from_domain=0A__0=2E1_DKIM=5FSIGNED__________?= =?ISO-8859-1?Q?__Message_has_a_DKIM_or_DK_signature=2C_not_necessari?= =?ISO-8859-1?Q?ly_valid=0A_-0=2E1_DKIM=5FVALID=5FAU__________Message?= =?ISO-8859-1?Q?_has_a_valid_DKIM_or_DK_signature_from_author's=0A___?= =?ISO-8859-1?Q?__________________________domain=0A_-0=2E1_DKIM=5FVAL?= =?ISO-8859-1?Q?ID_____________Message_has_at_least_one_valid_DKIM_or?= =?ISO-8859-1?Q?_DK_signature=0A__0=2E2_FREEMAIL=5FENVFROM=5FEND=5FDI?= =?ISO-8859-1?Q?GIT_Envelope-from_freemail_username_ends_in=0A_______?= =?ISO-8859-1?Q?______________________digit=0A____________________
+	___?= =?ISO-8859-1?Q?______=5Bjsleboeuf3=28at=29gmail=2Ecom=5D=0A__0=2E0_F?= =?ISO-8859-1?Q?REEMAIL=5FFROM__________Sender_email_is_commonly_abus?= =?ISO-8859-1?Q?ed_enduser_mail_provider=0A__________________________?= =?ISO-8859-1?Q?___=5Bjsleboeuf3=28at=29gmail=2Ecom=5D=0A__0=2E0_HTML?= =?ISO-8859-1?Q?=5FMESSAGE___________BODY=3A_HTML_included_in_message?= =?ISO-8859-1?Q?=0A__0=2E0_T=5FREMOTE=5FIMAGE_________Message_contain?= =?ISO-8859-1?Q?s_an_external_image?=
+X-Spam-Flag: NO
+X-Gm-Features: AS18NWAnOb5UKpVP0edVQRN7McHLG1XD-ApJK3tc6_FK6cVuyLKtEfdhO9RuZbc
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_008D_01DC436C.33A7DBC0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+---------- Forwarded message ---------
+From: F=C3=A9lix Lacroix <flacroix@caringuette.com =
+<mailto:flacroix@caringuette.com> >
+Date: Fri, Oct 3, 2025 at 3:01=E2=80=AFPM
+Subject: Clinique V=C3=A9t=C3=A9rinaire de Valleyfield Inc.
+To: michel.chabot@hemc.ca <mailto:michel.chabot@hemc.ca>  =
+<michel.chabot@hemc.ca <mailto:michel.chabot@hemc.ca> >
+Cc: Jean-Samuel Leboeuf <jsleboeuf3@gmail.com =
+<mailto:jsleboeuf3@gmail.com> >, Benoit Ringuette =
+<bringuette@caringuette.com <mailto:bringuette@caringuette.com> >
+
+
+
+
+Bonjour M. Chabot,
+
+=20
+
+L=E2=80=99=C3=A9quipe de Ringuette assiste Jean-Samuel Leboeuf dans le =
+cadre de la v=C3=A9rification diligente visant l=E2=80=99un de vos =
+clients, la Clinique V=C3=A9t=C3=A9rinaire de Valleyfield Inc.
+
+=20
+
+Afin de compl=C3=A9ter nos travaux, nous aimerions obtenir les documents =
+et informations suivants :
+
+=20
+
+1.	Les avis de cotisations f=C3=A9d=C3=A9ral et provincial des 2 =
+derniers exercices
+2.	Une confirmation tir=C3=A9e du site web de l=E2=80=99ARC (capture =
+d=E2=80=99=C3=A9cran en date du jour) d=C3=A9montrant que la =
+soci=C3=A9t=C3=A9 est =C3=A0 jour pour l=E2=80=99ensemble de ses =
+obligations fiscales
+3.	Attestation de Revenu Qu=C3=A9bec
+
+=20
+
+Nous vous remercions =C3=A0 l=E2=80=99avance de votre collaboration.
+
+=20
+
+Au plaisir,
+
+=20
+
+
+F=C3=A9lix Lacroix, CPA Auditeur=20
+
+ <https://www.linkedin.com/in/felix-lacroix/>=20
+
+=20
+
+
+ <https://www.caringuette.com/>=20
+
+175, rue Victoria
+Salaberry-de-Valleyfield
+(Qu=C3=A9bec), J6T 1A6=20
+
+
+  <https://www.caringuette.com/signature/telephone.png>=20
+
+ <tel:+14503714292> 450 371-4292, poste 298=20
+
+
+  <https://www.caringuette.com/signature/site-web.png>=20
+
+ <https://www.caringuette.com/> caringuette.com=20
+
+
+  <https://www.caringuette.com/signature/espace-client.png>=20
+
+ <https://ringuetteassociesinc.cchifirm.ca/3/clientportal/#/login> =
+Espace client=20
+
+=20
+
+
+------=_NextPart_000_008D_01DC436C.33A7DBC0
+Content-Type: text/html;
+	boundary="00000000000060f1210641c4abe5";
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br><div class=3D"gmail_quote =
+gmail_quote_container"><div dir=3D"ltr" class=3D"gmail_attr">---------- =
+Forwarded message ---------<br>From: <strong class=3D"gmail_sendername" =
+dir=3D"auto">F=C3=A9lix Lacroix</strong> <span dir=3D"auto">&lt;<a =
+href=3D"mailto:flacroix@caringuette.com">flacroix@caringuette.com</a>&gt;=
+</span><br>Date: Fri, Oct 3, 2025 at 3:01=E2=80=AFPM<br>Subject: =
+Clinique V=C3=A9t=C3=A9rinaire de Valleyfield Inc.<br>To: <a =
+href=3D"mailto:michel.chabot@hemc.ca">michel.chabot@hemc.ca</a> &lt;<a =
+href=3D"mailto:michel.chabot@hemc.ca">michel.chabot@hemc.ca</a>&gt;<br>Cc=
+: Jean-Samuel Leboeuf &lt;<a =
+href=3D"mailto:jsleboeuf3@gmail.com">jsleboeuf3@gmail.com</a>&gt;, =
+Benoit Ringuette &lt;<a =
+href=3D"mailto:bringuette@caringuette.com">bringuette@caringuette.com</a>=
+&gt;<br></div><br><br><div class=3D"msg1806438271599998669">
+
+
+
+
+
+<div lang=3D"FR-CA" link=3D"#467886" vlink=3D"#96607D" =
+style=3D"word-wrap:break-word">
+<div class=3D"m_-8951123428298399907WordSection1">
+<p class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif">Bonjour M. =
+Chabot,<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif"><u></u>=C2=A0<u></u>=
+</span></p>
+<p class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif">L=E2=80=99=C3=A9quip=
+e de Ringuette assiste Jean-Samuel Leboeuf dans le cadre de la =
+v=C3=A9rification diligente visant l=E2=80=99un de vos clients, la =
+Clinique V=C3=A9t=C3=A9rinaire de Valleyfield =
+Inc.<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif"><u></u>=C2=A0<u></u>=
+</span></p>
+<p class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif">Afin de =
+compl=C3=A9ter nos travaux, nous aimerions obtenir les documents et =
+informations suivants :<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif"><u></u>=C2=A0<u></u>=
+</span></p>
+<ol style=3D"margin-top:0cm" start=3D"1" type=3D"1">
+<li class=3D"m_-8951123428298399907MsoListParagraph" =
+style=3D"margin-left:0cm"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif">Les avis de =
+cotisations f=C3=A9d=C3=A9ral et provincial des 2 derniers =
+exercices<u></u><u></u></span></li><li =
+class=3D"m_-8951123428298399907MsoListParagraph" =
+style=3D"margin-left:0cm"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif">Une confirmation =
+tir=C3=A9e du site web de l=E2=80=99ARC (capture d=E2=80=99=C3=A9cran en =
+date du jour) d=C3=A9montrant que la soci=C3=A9t=C3=A9 est =C3=A0 jour =
+pour l=E2=80=99ensemble de
+ ses obligations fiscales<u></u><u></u></span></li><li =
+class=3D"m_-8951123428298399907MsoListParagraph" =
+style=3D"margin-left:0cm"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif">Attestation de =
+Revenu Qu=C3=A9bec<u></u><u></u></span></li></ol>
+<p class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif"><u></u>=C2=A0<u></u>=
+</span></p>
+<p class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif">Nous vous =
+remercions =C3=A0 l=E2=80=99avance de votre =
+collaboration.<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif"><u></u>=C2=A0<u></u>=
+</span></p>
+<p class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif">Au =
+plaisir,<u></u><u></u></span></p>
+<p class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Calibri&quot;,sans-serif"><u></u>=C2=A0<u></u>=
+</span></p>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td nowrap style=3D"padding:0cm 0cm 0cm 0cm">
+<p class=3D"MsoNormal" style=3D"margin-bottom:7.5pt"><b><span =
+style=3D"font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:=
+#152339">F=C3=A9lix Lacroix, CPA Auditeur</span></b><b><span =
+style=3D"font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:=
+#152339">
+<u></u><u></u></span></b></p>
+</td>
+<td style=3D"padding:0cm 0cm 0cm 7.5pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:7.5pt"><a =
+href=3D"https://www.linkedin.com/in/felix-lacroix/" =
+target=3D"_blank"><span =
+style=3D"font-size:12.0pt;color:blue;text-decoration:none"><img =
+border=3D"0" width=3D"16" height=3D"16" =
+style=3D"width:.1666in;height:.1666in" =
+id=3D"m_-8951123428298399907_x0000_i1029" =
+src=3D"https://www.caringuette.com/signature/linkedin-icone.png" =
+alt=3D"LinkedIn"></span></a><span =
+style=3D"font-size:12.0pt"><u></u><u></u></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span =
+style=3D"font-size:12.0pt;display:none"><u></u>=C2=A0<u></u></span></p>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"600" =
+style=3D"width:450.0pt;border-collapse:collapse">
+<tbody>
+<tr style=3D"height:39.0pt">
+<td width=3D"198" style=3D"width:148.5pt;border:none;border-right:solid =
+#182334 1.0pt;padding:0cm 0cm 0cm 0cm;height:39.0pt">
+<p class=3D"MsoNormal"><a href=3D"https://www.caringuette.com/" =
+target=3D"_blank"><span =
+style=3D"font-size:12.0pt;color:blue;text-decoration:none"><img =
+border=3D"0" width=3D"175" height=3D"46" =
+style=3D"width:1.8229in;height:.4791in" =
+id=3D"m_-8951123428298399907_x0000_i1028" =
+src=3D"https://www.caringuette.com/signature/ringuette-logo.png" =
+alt=3D"Ringuette"></span></a><span =
+style=3D"font-size:12.0pt"><u></u><u></u></span></p>
+</td>
+<td width=3D"165" style=3D"width:123.75pt;border:none;border-right:solid =
+#182334 1.0pt;padding:0cm 7.5pt 0cm 11.25pt;height:39.0pt">
+<p class=3D"MsoNormal"><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+60656b">175, rue Victoria</span><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+60656b"><br>
+</span><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+60656b">Salaberry-de-Valleyfield</span><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+60656b"><br>
+</span><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+60656b">(Qu=C3=A9bec), J6T 1A6</span><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+60656b">
+</span><span style=3D"font-size:12.0pt"><u></u><u></u></span></p>
+</td>
+<td style=3D"padding:0cm 0cm 0cm 11.25pt;height:39.0pt">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding:0cm 6.0pt 0cm 0cm">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt"><img =
+border=3D"0" width=3D"13" height=3D"13" =
+style=3D"width:.1354in;height:.1354in" =
+id=3D"m_-8951123428298399907_x0000_i1027" =
+src=3D"https://www.caringuette.com/signature/telephone.png" =
+alt=3D"T=C3=A9l=C3=A9phone"></span><span =
+style=3D"font-size:12.0pt"><u></u><u></u></span></p>
+</td>
+<td style=3D"padding:0cm 0cm 0cm 0cm">
+<p class=3D"MsoNormal" style=3D"line-height:13.5pt"><a =
+href=3D"tel:+14503714292" target=3D"_blank"><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+152339">450 371-4292, poste 298</span></a><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+152339">
+<u></u><u></u></span></p>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding:0cm 6.0pt 0cm 0cm">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt"><img =
+border=3D"0" width=3D"13" height=3D"13" =
+style=3D"width:.1354in;height:.1354in" =
+id=3D"m_-8951123428298399907_x0000_i1026" =
+src=3D"https://www.caringuette.com/signature/site-web.png" alt=3D"Site =
+web"></span><span style=3D"font-size:12.0pt"><u></u><u></u></span></p>
+</td>
+<td style=3D"padding:0cm 0cm 0cm 0cm">
+<p class=3D"MsoNormal" style=3D"line-height:13.5pt"><a =
+href=3D"https://www.caringuette.com/" target=3D"_blank"><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+152339">caringuette.com</span></a><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+152339">
+<u></u><u></u></span></p>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding:0cm 6.0pt 0cm 0cm">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt"><img =
+border=3D"0" width=3D"13" height=3D"13" =
+style=3D"width:.1354in;height:.1354in" =
+id=3D"m_-8951123428298399907_x0000_i1025" =
+src=3D"https://www.caringuette.com/signature/espace-client.png" =
+alt=3D"Espace client"></span><span =
+style=3D"font-size:12.0pt"><u></u><u></u></span></p>
+</td>
+<td style=3D"padding:0cm 0cm 0cm 0cm">
+<p class=3D"MsoNormal" style=3D"line-height:13.5pt"><a =
+href=3D"https://ringuetteassociesinc.cchifirm.ca/3/clientportal/#/login" =
+target=3D"_blank"><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+152339">Espace client</span></a><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+152339">
+<u></u><u></u></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+</div>
+</div>
+
+</div></div></div>
+
+------=_NextPart_000_008D_01DC436C.33A7DBC0--

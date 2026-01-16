@@ -1,0 +1,68 @@
+# CURSORIGNORE - Projet JEROME
+# Exclure de l'indexation pour performance maximale
+
+# Dépendances
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Caches
+.cache/
+*.log
+.DS_Store
+
+# Archives volumineuses (déjà analysées)
+ARCHIVES-GROUPE-LEBOEUF/03-PIECES-JOINTES/
+*-PIECES-JOINTES/
+*-ORGANISE/
+CEDRIC-PIECES-JOINTES/
+JEROME-PIECES-JOINTES/
+FELIX-PIECES-JOINTES/
+VALERIE-PIECES-JOINTES/
+RHSUPPORT-PIECES-JOINTES/
+MARIE-CHRISTINE-PARISIEN-PJ/
+
+# Fichiers binaires (pas utiles pour AI)
+*.pdf
+*.docx
+*.xlsx
+*.zip
+*.dmg
+*.pkg
+*.ics
+*.eml
+*.msg
+
+# Git
+.git/
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Données sensibles
+.env
+.env.*
+*.key
+infisical-secrets.json
+
+# Logs et données temporaires
+logs/
+data/vectors/
+*.sqlite
+*.db
+
+# Images (trop volumineuses)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+
+

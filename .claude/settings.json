@@ -1,0 +1,48 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Read(*)",
+      "Edit(*)",
+      "Write(*)",
+      "Glob(*)",
+      "Grep(*)",
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "Task(*)",
+      "mcp__*"
+    ],
+    "deny": [],
+    "defaultMode": "acceptEdits",
+    "additionalDirectories": []
+  },
+  "env": {
+    "NODE_OPTIONS": "--max-old-space-size=16384",
+    "UV_THREADPOOL_SIZE": "16",
+    "BASH_DEFAULT_TIMEOUT_MS": "300000",
+    "BASH_MAX_TIMEOUT_MS": "600000",
+    "MCP_TIMEOUT": "60000",
+    "MCP_TOOL_TIMEOUT": "30000",
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "16384",
+    "MAX_MCP_OUTPUT_TOKENS": "50000",
+    "BASH_MAX_OUTPUT_LENGTH": "100000",
+    "DISABLE_PROMPT_CACHING": "0",
+    "PYTHONPATH": "anthropic-docs/claude-code/plugins"
+  },
+  "model": "opus",
+  "alwaysThinkingEnabled": true,
+  "outputStyle": "Explanatory",
+  "cleanupPeriodDays": 90,
+  "enableAllProjectMcpServers": true,
+  "enabledPlugins": {
+    "plugin-dev@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "Notion@claude-plugins-official": true
+  },
+  "sandbox": {
+    "enabled": false,
+    "autoAllowBashIfSandboxed": true,
+    "allowUnsandboxedCommands": true
+  },
+  "disableAllHooks": false
+}

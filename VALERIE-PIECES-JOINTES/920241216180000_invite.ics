@@ -1,0 +1,100 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T020000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Melissa O'Connor:mailto:moconnor@bloomcomptabilite.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Felix Hame
+ l:mailto:felixhamel1991@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Valérie R
+ ainville:mailto:valerie@mkmg.ca
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Tanya Deni
+ s:mailto:tdenis@bloomcomptabilite.com
+ATTENDEE;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Jean-Samue
+ l Leboeuf:mailto:jsleboeuf3@gmail.com
+ATTENDEE;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=C-e-d L:ma
+ ilto:info@cedricleboeuf.com
+ATTENDEE;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Bloom Comp
+ tabilité (info):mailto:info@bloomcomptabilite.com
+DESCRIPTION;LANGUAGE=fr-FR:Réunion hebdomadaire :                         
+                                      Réunion Mensuel (1er lundi de chaque
+  mois)\n\nAgenda :                                                        
+                                        Agenda :\n\n  *   Bonne nouvelle   
+                                                                        - B
+ onne nouvelle\n  *   Trello                                               
+                                                - Objectif du mois\n  *   T
+ aches de la semaine\n  *   Finance de la semaine\n\n\n____________________
+ ____________________________________________________________\nMicrosoft Te
+ ams Besoin d'aide ?<https://aka.ms/JoinTeamsMeeting?omkt=fr-FR>\nRejoignez
+  la réunion maintenant<https://teams.microsoft.com/l/meetup-join/19%3amee
+ ting_NjM0NWQ1ODQtNGZjZi00YWJhLTgwNDctOGJkNjAyYTA4ZWM4%40thread.v2/0?contex
+ t=%7b%22Tid%22%3a%22dfbddad8-16b6-4118-a94d-79fb79fb4898%22%2c%22Oid%22%3a
+ %2296775344-e765-470f-adfe-ef2ade7a9589%22%7d>\nID de réunion : 282 683 7
+ 37 055\nCode secret : 3KSjDi\n________________________________\nPour les o
+ rganisateurs : Options de réunion<https://teams.microsoft.com/meetingOpti
+ ons/?organizerId=96775344-e765-470f-adfe-ef2ade7a9589&tenantId=dfbddad8-16
+ b6-4118-a94d-79fb79fb4898&threadId=19_meeting_NjM0NWQ1ODQtNGZjZi00YWJhLTgw
+ NDctOGJkNjAyYTA4ZWM4@thread.v2&messageId=0&language=fr-FR>\n______________
+ __________________________________________________________________\n\n
+UID:040000008200E00074C5B7101A82E008000000008027EF6B13FEDA01000000000000000
+ 01000000015282B26B661E442B1B87CBF285B1986
+RECURRENCE-ID;TZID=Eastern Standard Time:20240909T090000
+SUMMARY;LANGUAGE=fr-FR:Bloom - Weekly Meeting
+DTSTART;TZID=Eastern Standard Time:20240909T083000
+DTEND;TZID=Eastern Standard Time:20240909T090000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20240909T121620Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:4
+LOCATION;LANGUAGE=fr-FR:Réunion Microsoft Teams
+X-MICROSOFT-CDO-APPT-SEQUENCE:4
+X-MICROSOFT-CDO-OWNERAPPTID:524523496
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:3
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_NjM0NWQ1ODQtNGZjZi00YWJhLTgwNDctOGJkNjAyYTA4ZWM4%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%22dfbddad8-16b6-4118-a94d-79fb79fb4898%22%2c%22O
+ id%22%3a%2296775344-e765-470f-adfe-ef2ade7a9589%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/dfbddad8-16b6-4118-a94d-79fb79fb4898/96775344-e765-470f-adfe-e
+ f2ade7a9589/19_meeting_NjM0NWQ1ODQtNGZjZi00YWJhLTgwNDctOGJkNjAyYTA4ZWM4@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_NjM0NWQ1ODQtNGZjZi00YWJ
+ hLTgwNDctOGJkNjAyYTA4ZWM4@thread.v2"\,"private":true\,"type":0\,"mid":0\,"
+ rid":0\,"uid":null}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONS:[ { "DisplayName" : "Réunion Microsoft Teams"\, "Loc
+ ationAnnotation" : ""\, "LocationSource" : 0\, "Unresolved" : false\, "Loc
+ ationUri" : "" } ]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

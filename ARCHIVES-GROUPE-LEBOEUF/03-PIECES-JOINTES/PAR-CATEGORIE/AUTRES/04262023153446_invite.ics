@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:CANCEL
+BEGIN:VEVENT
+DTSTART:20230427T150000Z
+DTEND:20230427T163000Z
+DTSTAMP:20230426T193446Z
+ORGANIZER;CN=joelle.cote@rhsupport.ca:mailto:joelle.cote@rhsupport.ca
+UID:2lfh53u0fd8b5hovskobkpnurd@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=fe
+ lixhamel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=joelle
+ .cote@rhsupport.ca;X-NUM-GUESTS=0:mailto:joelle.cote@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=js
+ leboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/skp-msag-mkb
+CREATED:20230425T185552Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/sk
+ p-msag-mkb\nOr dial: (CA) +1 778-730-9122 PIN: 585962369#\nMore phone numbe
+ rs: https://tel.meet/skp-msag-mkb?pin=8398299373638&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230426T193445Z
+LOCATION:
+SEQUENCE:1
+STATUS:CANCELLED
+SUMMARY:Entrevue Alexandra Ortega
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

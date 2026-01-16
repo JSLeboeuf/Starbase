@@ -1,0 +1,701 @@
+Received: from QB1PPFC1E5F08CC.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c08::28c)
+ by YQBPR0101MB5943.CANPRD01.PROD.OUTLOOK.COM with HTTPS; Thu, 9 Oct 2025
+ 18:53:09 +0000
+Received: from YQXPR01MB4214.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:7::18)
+ by QB1PPFC1E5F08CC.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c08::28c) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9203.10; Thu, 9 Oct
+ 2025 18:53:07 +0000
+Received: from YQXPR01MB4214.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::aa3:af89:85da:a07a]) by YQXPR01MB4214.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::aa3:af89:85da:a07a%3]) with mapi id 15.20.9203.009; Thu, 9 Oct 2025
+ 18:53:07 +0000
+From: "Moukaby, Saida" <Saida.Moukaby@bnc.ca>
+To: "felixhamel1991@gmail.com" <felixhamel1991@gmail.com>,
+	"jsleboeuf3@gmail.com" <jsleboeuf3@gmail.com>
+CC: "Krotecki, Marta" <Marta.Krotecki@bnc.ca>
+Subject:
+ =?Windows-1252?Q?DOCMENTS_=C0_FOURNIR_/_CLINIQUE_V=C9T=C9RINAIRE_DE_VALLE?=
+ =?Windows-1252?Q?YFIELD_INC.?=
+Thread-Topic:
+ =?Windows-1252?Q?DOCMENTS_=C0_FOURNIR_/_CLINIQUE_V=C9T=C9RINAIRE_DE_VALLE?=
+ =?Windows-1252?Q?YFIELD_INC.?=
+Thread-Index: Adw5R+1BnpLow+krT42xY/eIk23HRwAAu9CAAAClzCA=
+Date: Thu, 9 Oct 2025 18:53:07 +0000
+Message-ID:
+ <YQXPR01MB4214F7AA5C11479AAA4CB4D18FEEA@YQXPR01MB4214.CANPRD01.PROD.OUTLOOK.COM>
+References:
+ <YQXPR01MB42148C3DA5654B754D9641378FEEA@YQXPR01MB4214.CANPRD01.PROD.OUTLOOK.COM>
+ <YQBPR0101MB5943D8CFE13E9F698572ABCEFAEEA@YQBPR0101MB5943.CANPRD01.PROD.OUTLOOK.COM>
+In-Reply-To:
+ <YQBPR0101MB5943D8CFE13E9F698572ABCEFAEEA@YQBPR0101MB5943.CANPRD01.PROD.OUTLOOK.COM>
+Accept-Language: fr-FR, fr-CA, en-US
+Content-Language: fr-FR
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: YQXPR01MB4214.CANPRD01.PROD.OUTLOOK.COM
+X-MS-Exchange-Organization-SupervisoryReview-OcrResultLocation:
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+ b0220214-9080-4592-8c96-08de076515d7
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:fr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:YQXPR01MB4214.CANPRD01.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230040)(366016)(13003099007)(8096899003)(41050700001);DIR:INT;
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|366016|13003099007|8096899003|41050700001;
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=bnc.ca;
+x-ms-exchange-organization-originalclientipaddress: 142.225.3.233
+x-ms-exchange-organization-originalserveripaddress: 2603:10b6:c01:7::18
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: b0220214-9080-4592-8c96-08de076515d7
+x-ms-traffictypediagnostic:
+ YQXPR01MB4214:EE_|QB1PPFC1E5F08CC:EE_|YQBPR0101MB5943:EE_
+x-ms-exchange-crosstenant-network-message-id:
+ b0220214-9080-4592-8c96-08de076515d7
+x-ms-exchange-crosstenant-originalarrivaltime: 09 Oct 2025 18:53:07.2569 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: c21157ca-bce3-41a8-8aa7-a23c4639610a
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+ HxwIIBF4BPSUXhJFntoZlc5OZLm0hnejN/ubYgkNeBtQPbF2Og081jI9bjZZV1SOD+Rl+h/yLWoLJ+hZ5A0MetoCogEF7+M/ezOppKfV4rk=
+x-ms-exchange-transport-crosstenantheadersstamped: QB1PPFC1E5F08CC
+x-ms-exchange-transport-endtoendlatency: 00:00:01.9718215
+x-ms-exchange-atpmessageproperties: SA|SL
+x-ms-exchange-processed-by-bccfoldering: 15.20.9203.007
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource: YQXPR01MB4214.CANPRD01.PROD.OUTLOOK.COM
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+ julg/GbuRB/lfz1FMq2wLy5W1BPbD8vd8xCwmxmw1vMqngQZDYrIL5P4iVUSo5uRQhXWoLQ4oGbZ8DC0QZPQjV1P/n99Cm5KZ4VTiOvDQ7W1XCzQs7EO/A0dY8pTOjxdBvRmY3GdtIa1Ey1d3OMYdxum3r5fjmpBQkQMJ+dFXeOerOoY9NoZ2CDa1fG1LZpVOj2XtP4KOvap/0fMu5ckIJxUVbW69yVKx3sactE66U9DlyGGzvmnND6vKdMBYB7SwBb3gfL93ORAd4LLEgORx/WeaKWrWTQpqkwLur/zDN/9sJn3mdxsfUz9U5zbrGUlGJWDLUcpMZTECwQ2sYTV2oLFTvh12dvQ2eIJimmMzSxzzE/RUkXFyqbAxIFHCO7NesUGesBYBteRvIMwUDkbueWgqdBSypYRGVzLD+S7x/fvU2Qq+Y0fpp7WmSD8i4FkYiwacceO1yXmvT3pCh5BddPF2dul+dttH44YvpEJg03hNs1WAbwbhxqRNWAgyIBcxLvx7cDMoM0nQBluARsitkXwC11Si/o+nUV27Du+d9WpRcvn3yF70QKxwqeeqEIFgo3vmlpP0EizQsZbr2UBGxXVaxiq75e5oBr9pMUkogZ0p2H7h0u7ipxNK6LAKiUSI4hsD5KLjZU8Jah2hZPJrEd+kqZ0NcAfi1tKL3LjEH8laYPNoqo9SfolIWTyZbbfQt9FqNZORmNvP1OdnUm7hk6QiXhAYIDEd+bfU8GolvA05NcV0C9VYrRmf0DKz87l5tMpMA7exiUDO0kPIOWTm94FDEJdgo3mEA87EHTMe5NBj3GGQpbpNPWyYkGZaJozK7uyUJy6E+heAGfMfaGGpw==
+Content-Type: multipart/alternative;
+	boundary="_000_YQXPR01MB4214F7AA5C11479AAA4CB4D18FEEAYQXPR01MB4214CANP_"
+MIME-Version: 1.0
+
+--_000_YQXPR01MB4214F7AA5C11479AAA4CB4D18FEEAYQXPR01MB4214CANP_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour,
+
+
+
+Je tiens premi=E8rement =E0 vous remercier de la confiance que vous portez =
+envers la Banque Nationale. Ce sera un r=E9el plaisir de vous compter parmi=
+ ma fid=E8le client=E8le.
+
+
+
+FINANCEMENT
+
+*       Achat d=92actions de la Clinique V=E9t=E9rinaire de Valleyfield Inc
+*       Achat des actions de la Cie de gestion de Claude-Andr=E9 Grenier
+
+
+
+
+L=92=E9tude du dossier d=E9butera apr=E8s la r=E9ception des documents dema=
+nd=E9s plus bas
+
+
+
+DOCUMENTS =C0 OBTENIR =96 Compagnie
+
+*       EF de la cie de gestion immobili=E8re que vous d=E9sirez acheter
+*       =C9valuation agr=E9=E9e de la b=E2tisse
+*       Phase 1 de la b=E2tisse
+*       Memo fiscal + bilan d=92ouverture
+*       =C9tats financiers int=E9rimaires de la clinique v=E9t=E9rinaire (b=
+ilan =96 =E9tats des r=E9sultats-liste des CAR et INV)
+*       LOI indiquant le bon sc=E9nario choisi (Convention de rachat des ac=
+tions, incluant une entente de non-concurrence)
+*       T4 du vendeur confirmant son salaire de 67400$
+
+
+
+DOCUMENTS =C0 OBTENIR : Particulier de tous les actionnaires
+
+*       Compl=E9ter et signer le bilan personnel & consentement ci-inclus (=
+un par actionnaire) svp sp=E9cifier les adresses des propri=E9t=E9s d=E9ten=
+ues
+*       Relev=E9s de placements personnels REER et non-REER
+
+
+
+N=92h=E9sitez pas =E0 communiquer avec moi si d=92autres informations vous =
+sont n=E9cessaires
+
+
+
+Passez une excellente journ=E9e
+
+
+
+ Sa=EFda Moukaby
+Directrice de comptes / Account Manager
+
+Service aux Entreprises / Commercial banking (Transit : 6051-1)
+Cell. : 438-349-0882
+
+1040, rue du Lux, Suite 610, Brossard (Qu=E9bec) J4Y 0E3
+
+saida.moukaby@bnc.ca<mailto:saida.moukaby@bnc.ca>
+
+Nathalie Bergeron, agente de compte transactionnel : 450-926-3572 / nathali=
+e1.bergeron@bnc.ca<mailto:nathalie1.bergeron@bnc.ca>
+
+
+Question sur nouvelle plateforme internet : Centre d'aide : Banque National=
+e Entreprises | Banque Nationale<https://can01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fwww.bnc.ca%2Fentreprises%2Fcentre-aide.html&data=
+=3D05%7C02%7CMarta.Krotecki%40bnc.ca%7Cb0220214908045928c9608de076515d7%7Cc=
+21157cabce341a88aa7a23c4639610a%7C0%7C0%7C638956327894735859%7CUnknown%7CTW=
+FpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOI=
+joiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DVYmPSTMHA2wHktTDgR03ImfNl0=
+mQO7P%2BECJUGnxiu3k%3D&reserved=3D0>
+
+Guides d'utilisateurs:  www.bnc.ca/outils-applications/entreprises/guides.h=
+tml<https://can01.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.=
+bnc.ca%2Foutils-applications%2Fentreprises%2Fguides.html&data=3D05%7C02%7CM=
+arta.Krotecki%40bnc.ca%7Cb0220214908045928c9608de076515d7%7Cc21157cabce341a=
+88aa7a23c4639610a%7C0%7C0%7C638956327894800176%7CUnknown%7CTWFpbGZsb3d8eyJF=
+bXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIld=
+UIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DjAXq96QXfdGFeI2Vnhx9eiFV5b%2B82is86REftK=
+Bz6pM%3D&reserved=3D0>
+
+Soucieux de Cybers=E9curit=E9? Procurez-vous la trousse cybereco<https://ca=
+n01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.bnc.ca%2Fabc-=
+securite.html%23cybereco&data=3D05%7C02%7CMarta.Krotecki%40bnc.ca%7Cb022021=
+4908045928c9608de076515d7%7Cc21157cabce341a88aa7a23c4639610a%7C0%7C0%7C6389=
+56327894848943%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAu=
+MDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=
+=3DbqTjc72zyYiMwoVHyyXyRPHt8%2FYY2ZzR75ZvTtA879I%3D&reserved=3D0> de la BNC
+
+
+
+
+
+
+
+
+--_000_YQXPR01MB4214F7AA5C11479AAA4CB4D18FEEAYQXPR01MB4214CANP_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Amasis MT Pro Light";}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ligatures:standardcontextual;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#467886;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ligatures:standardcontextual;
+	mso-fareast-language:EN-US;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:565141879;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1111871610 202113025 202113027 202113029 202113025 =
+202113027 202113029 202113025 202113027 202113029;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:844782103;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-693203896 202113025 202113027 202113029 202113025 2=
+02113027 202113029 202113025 202113027 202113029;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l2
+	{mso-list-id:2034988446;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-155136436 202113025 202113027 202113029 202113025 2=
+02113027 202113029 202113025 202113027 202113029;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"FR-CA" link=3D"#467886" vlink=3D"#96607D" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#104862;mso-style-textfill-fill=
+-color:#104862;mso-style-textfill-fill-alpha:100.0%">Bonjour,<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"color:#104862;mso-style-textfill-fill=
+-color:#104862;mso-style-textfill-fill-alpha:100.0%"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#104862;mso-style-textfill-fill=
+-color:#104862;mso-style-textfill-fill-alpha:100.0%">Je tiens premi=E8remen=
+t =E0 vous remercier de la confiance que vous portez envers la Banque Natio=
+nale. Ce sera un r=E9el plaisir de vous compter
+ parmi ma fid=E8le client=E8le.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#104862;mso-style-textfill-fill=
+-color:#104862;mso-style-textfill-fill-alpha:100.0%"><o:p>&nbsp;</o:p></spa=
+n></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse">
+<tbody>
+<tr>
+<td width=3D"614" valign=3D"top" style=3D"width:460.7pt;background:#E5E5E5;=
+padding:0cm 5.4pt 0cm 5.4pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:#104862;mso-style-textfill-f=
+ill-color:#104862;mso-style-textfill-fill-alpha:100.0%">FINANCEMENT<o:p></o=
+:p></span></b></p>
+</td>
+</tr>
+<tr>
+<td width=3D"614" valign=3D"top" style=3D"width:460.7pt;padding:0cm 5.4pt 0=
+cm 5.4pt">
+<ul style=3D"margin-top:0cm" type=3D"disc">
+<li class=3D"MsoListParagraph" style=3D"color:#156082;margin-left:0cm;mso-l=
+ist:l1 level1 lfo1">
+<span style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-styl=
+e-textfill-fill-alpha:100.0%"><span style=3D"color:windowtext">Achat d=92ac=
+tions de&nbsp;la Clinique V=E9t=E9rinaire de Valleyfield Inc
+<o:p></o:p></span></span></li><li class=3D"MsoListParagraph" style=3D"color=
+:#156082;margin-left:0cm;mso-list:l1 level1 lfo1">
+<span style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-styl=
+e-textfill-fill-alpha:100.0%"><span style=3D"color:windowtext">Achat des ac=
+tions de la Cie de gestion de Claude-Andr=E9&nbsp;Grenier<o:p></o:p></span>=
+</span></li></ul>
+<p class=3D"MsoNormal"><b><span style=3D"color:#104862;mso-style-textfill-f=
+ill-color:#104862;mso-style-textfill-fill-alpha:100.0%"><o:p>&nbsp;</o:p></=
+span></b></p>
+</td>
+</tr>
+<tr>
+<td width=3D"614" valign=3D"top" style=3D"width:460.7pt;padding:0cm 5.4pt 0=
+cm 5.4pt"></td>
+</tr>
+<tr style=3D"height:16.95pt">
+<td width=3D"614" valign=3D"top" style=3D"width:460.7pt;background:#E5E5E5;=
+padding:0cm 5.4pt 0cm 5.4pt;height:16.95pt">
+<p class=3D"MsoNormal"><b><span style=3D"color:#104862;mso-style-textfill-f=
+ill-color:#104862;mso-style-textfill-fill-alpha:100.0%">L=92=E9tude du doss=
+ier d=E9butera apr=E8s la r=E9ception des documents demand=E9s plus bas
+<o:p></o:p></span></b></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><b><span style=3D"color:#104862;mso-style-textfill-f=
+ill-color:#104862;mso-style-textfill-fill-alpha:100.0%">&nbsp;</span></b><s=
+pan style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-style-=
+textfill-fill-alpha:100.0%">
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"color:#104862;mso-style-textfill-f=
+ill-color:#104862;mso-style-textfill-fill-alpha:100.0%">DOCUMENTS =C0 OBTEN=
+IR =96 Compagnie<o:p></o:p></span></b></p>
+<ul style=3D"margin-top:0cm" type=3D"disc">
+<li class=3D"MsoListParagraph" style=3D"color:#156082;margin-left:0cm;mso-l=
+ist:l2 level1 lfo2">
+<span style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-styl=
+e-textfill-fill-alpha:100.0%"><span style=3D"color:windowtext">EF de la cie=
+ de gestion immobili=E8re que vous d=E9sirez acheter<o:p></o:p></span></spa=
+n></li><li class=3D"MsoListParagraph" style=3D"color:#156082;margin-left:0c=
+m;mso-list:l2 level1 lfo2">
+<span style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-styl=
+e-textfill-fill-alpha:100.0%"><span style=3D"color:windowtext">=C9valuation=
+ agr=E9=E9e de la b=E2tisse<o:p></o:p></span></span></li><li class=3D"MsoLi=
+stParagraph" style=3D"color:#156082;margin-left:0cm;mso-list:l2 level1 lfo2=
+">
+<span style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-styl=
+e-textfill-fill-alpha:100.0%"><span style=3D"color:windowtext">Phase 1 de l=
+a b=E2tisse<o:p></o:p></span></span></li><li class=3D"MsoListParagraph" sty=
+le=3D"color:#156082;margin-left:0cm;mso-list:l2 level1 lfo2">
+<span style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-styl=
+e-textfill-fill-alpha:100.0%"><span style=3D"color:windowtext">Memo fiscal =
++ bilan d=92ouverture<o:p></o:p></span></span></li><li class=3D"MsoListPara=
+graph" style=3D"color:#156082;margin-left:0cm;mso-list:l2 level1 lfo2">
+<span style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-styl=
+e-textfill-fill-alpha:100.0%"><span style=3D"color:windowtext">=C9tats fina=
+nciers int=E9rimaires de la clinique v=E9t=E9rinaire (bilan =96 =E9tats des=
+ r=E9sultats-liste des CAR et INV)<o:p></o:p></span></span></li><li class=
+=3D"MsoListParagraph" style=3D"color:#156082;margin-left:0cm;mso-list:l2 le=
+vel1 lfo2">
+<span style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-styl=
+e-textfill-fill-alpha:100.0%"><span style=3D"color:windowtext">LOI indiquan=
+t le bon sc=E9nario choisi (Convention de rachat des actions, incluant une =
+entente de non-concurrence)<o:p></o:p></span></span></li><li class=3D"MsoLi=
+stParagraph" style=3D"color:#156082;margin-left:0cm;mso-list:l2 level1 lfo2=
+">
+<span style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-styl=
+e-textfill-fill-alpha:100.0%"><span style=3D"color:windowtext">T4 du vendeu=
+r confirmant son salaire de 67400$
+<o:p></o:p></span></span></li></ul>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;color:#104862;mso-st=
+yle-textfill-fill-color:#104862;mso-style-textfill-fill-alpha:100.0%"><o:p>=
+&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"color:#104862;mso-style-textfill-f=
+ill-color:#104862;mso-style-textfill-fill-alpha:100.0%">DOCUMENTS =C0 OBTEN=
+IR&nbsp;: Particulier de tous les actionnaires<o:p></o:p></span></b></p>
+<ul style=3D"margin-top:0cm" type=3D"disc">
+<li class=3D"MsoListParagraph" style=3D"color:#156082;margin-left:0cm;mso-l=
+ist:l0 level1 lfo3">
+<span style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-styl=
+e-textfill-fill-alpha:100.0%"><span style=3D"color:windowtext">Compl=E9ter =
+et signer le bilan personnel &amp; consentement ci-inclus (un par actionnai=
+re) svp sp=E9cifier les adresses des propri=E9t=E9s
+ d=E9tenues<o:p></o:p></span></span></li><li class=3D"MsoListParagraph" sty=
+le=3D"color:#156082;margin-left:0cm;mso-list:l0 level1 lfo3">
+<span style=3D"color:#104862;mso-style-textfill-fill-color:#104862;mso-styl=
+e-textfill-fill-alpha:100.0%"><span style=3D"color:windowtext">Relev=E9s de=
+ placements personnels REER et non-REER
+<o:p></o:p></span></span></li></ul>
+<p class=3D"MsoNormal"><span style=3D"color:#104862;mso-style-textfill-fill=
+-color:#104862;mso-style-textfill-fill-alpha:100.0%"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#104862;mso-style-textfill-fill=
+-color:#104862;mso-style-textfill-fill-alpha:100.0%">N=92h=E9sitez pas =E0 =
+communiquer avec moi si d=92autres informations vous sont n=E9cessaires<o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#104862;mso-style-textfill-fill=
+-color:#104862;mso-style-textfill-fill-alpha:100.0%"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#104862;mso-style-textfill-fill=
+-color:#104862;mso-style-textfill-fill-alpha:100.0%">Passez une excellente =
+journ=E9e
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div>
+<div>
+<div>
+<div>
+<p class=3D"MsoNormal"><b><span lang=3D"FR" style=3D"font-size:8.0pt;font-f=
+amily:&quot;Arial&quot;,sans-serif;color:#1F3864;mso-ligatures:none;mso-far=
+east-language:FR-CA">&nbsp;</span></b><b><span style=3D"font-family:&quot;T=
+rebuchet MS&quot;,sans-serif;color:#00324D;mso-ligatures:none;mso-fareast-l=
+anguage:FR-CA">Sa=EFda
+ Moukaby </span></b><span style=3D"font-family:&quot;Trebuchet MS&quot;,san=
+s-serif;color:#00324D;mso-ligatures:none;mso-fareast-language:FR-CA"><br>
+</span><span style=3D"font-size:11.0pt;font-family:&quot;Trebuchet MS&quot;=
+,sans-serif;color:#00324D;mso-ligatures:none;mso-fareast-language:FR-CA">Di=
+rectrice de comptes / Account Manager</span><span style=3D"mso-ligatures:no=
+ne;mso-fareast-language:FR-CA"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;font-family:&quot;Tr=
+ebuchet MS&quot;,sans-serif;color:#00324D;mso-ligatures:none;mso-fareast-la=
+nguage:FR-CA">Service aux Entreprises / Commercial banking (Transit&nbsp;: =
+6051-1)</span><span style=3D"font-size:10.0pt;font-family:&quot;Trebuchet M=
+S&quot;,sans-serif;color:#00324D;mso-ligatures:none;mso-fareast-language:FR=
+-CA"><br>
+Cell. : 438-349-0882<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Tr=
+ebuchet MS&quot;,sans-serif;color:#00324D;mso-ligatures:none;mso-fareast-la=
+nguage:FR-CA">1040, rue du Lux, Suite 610, Brossard (Qu=E9bec) J4Y 0E3</spa=
+n><span style=3D"mso-ligatures:none;mso-fareast-language:FR-CA"><o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Tr=
+ebuchet MS&quot;,sans-serif;color:#1F3864;mso-ligatures:none;mso-fareast-la=
+nguage:FR-CA"><a href=3D"mailto:saida.moukaby@bnc.ca"><span style=3D"color:=
+blue">saida.moukaby@bnc.ca</span></a>
+</span><span style=3D"mso-ligatures:none;mso-fareast-language:FR-CA"><o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt;font-family:&quot=
+;Amasis MT Pro Light&quot;,serif;color:#1F3864;mso-ligatures:none;mso-farea=
+st-language:FR-CA">Nathalie Bergeron, agente de compte transactionnel&nbsp;=
+: 450-926-3572 /
+<a href=3D"mailto:nathalie1.bergeron@bnc.ca"><span style=3D"color:blue">nat=
+halie1.bergeron@bnc.ca</span></a>
+</span></b><b><span style=3D"font-size:11.0pt;font-family:&quot;Amasis MT P=
+ro Light&quot;,serif;mso-ligatures:none;mso-fareast-language:FR-CA"><o:p></=
+o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:8.0pt;font-family:&quot;Tre=
+buchet MS&quot;,sans-serif;color:#00324D;mso-fareast-language:FR-CA"><br>
+</span><b><span style=3D"font-size:10.0pt;font-family:&quot;Century Gothic&=
+quot;,sans-serif;color:#1F3864;mso-fareast-language:FR-CA">Question sur nou=
+velle plateforme internet&nbsp;:</span></b><span style=3D"mso-fareast-langu=
+age:FR-CA">
+<a href=3D"https://can01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.bnc.ca%2Fentreprises%2Fcentre-aide.html&amp;data=3D05%7C02%7CMarta.=
+Krotecki%40bnc.ca%7Cb0220214908045928c9608de076515d7%7Cc21157cabce341a88aa7=
+a23c4639610a%7C0%7C0%7C638956327894735859%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0e=
+U1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoy=
+fQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DVYmPSTMHA2wHktTDgR03ImfNl0mQO7P%2BECJUGnx=
+iu3k%3D&amp;reserved=3D0" originalsrc=3D"https://www.bnc.ca/entreprises/cen=
+tre-aide.html">
+<span style=3D"color:#0563C1">Centre d'aide : Banque Nationale Entreprises =
+| Banque Nationale</span></a></span><span style=3D"font-size:11.0pt;color:#=
+1F3864;mso-fareast-language:FR-CA"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"color:#1F3864;mso-fareast-language=
+:FR-CA">Guides d'utilisateurs:</span></b><span style=3D"color:#1F3864;mso-f=
+areast-language:FR-CA"> &nbsp;<a href=3D"https://can01.safelinks.protection=
+.outlook.com/?url=3Dhttp%3A%2F%2Fwww.bnc.ca%2Foutils-applications%2Fentrepr=
+ises%2Fguides.html&amp;data=3D05%7C02%7CMarta.Krotecki%40bnc.ca%7Cb02202149=
+08045928c9608de076515d7%7Cc21157cabce341a88aa7a23c4639610a%7C0%7C0%7C638956=
+327894800176%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMD=
+AwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sda=
+ta=3DjAXq96QXfdGFeI2Vnhx9eiFV5b%2B82is86REftKBz6pM%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"http://www.bnc.ca/outils-applications/entreprises/guides.html">=
+<span style=3D"color:#0563C1">www.bnc.ca/outils-applications/entreprises/gu=
+ides.html</span></a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif;color:red;mso-fareast-language:FR-CA">Soucieux de Cybers=E9curit=E9?=
+ Procurez-vous la
+<a href=3D"https://can01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.bnc.ca%2Fabc-securite.html%23cybereco&amp;data=3D05%7C02%7CMarta.Kr=
+otecki%40bnc.ca%7Cb0220214908045928c9608de076515d7%7Cc21157cabce341a88aa7a2=
+3c4639610a%7C0%7C0%7C638956327894848943%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1=
+hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ=
+%3D%3D%7C0%7C%7C%7C&amp;sdata=3DbqTjc72zyYiMwoVHyyXyRPHt8%2FYY2ZzR75ZvTtA87=
+9I%3D&amp;reserved=3D0" originalsrc=3D"https://www.bnc.ca/abc-securite.html=
+#cybereco">
+<span style=3D"color:red">trousse cybereco</span></a> de la BNC</span></b><=
+b><span style=3D"font-size:11.0pt;font-family:&quot;Arial&quot;,sans-serif;=
+color:red;mso-fareast-language:FR-CA"><o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"mso-ligatures:none;mso-fareast-langua=
+ge:FR-CA"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:FR-CA">&nbsp;<o:=
+p></o:p></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_YQXPR01MB4214F7AA5C11479AAA4CB4D18FEEAYQXPR01MB4214CANP_--

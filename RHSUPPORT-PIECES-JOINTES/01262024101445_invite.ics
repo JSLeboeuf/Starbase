@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+X-LIC-LOCATION:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Toronto:20240221T150000
+DTEND;TZID=America/Toronto:20240221T190000
+DTSTAMP:20240126T151444Z
+ORGANIZER:mailto:manon@rhsupport.ca
+UID:6u39lihhuqe0sa13onq060vkdh@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=felixhamel1991@gmail.com;X-NUM-GUESTS=0:mailto:felixhamel1991@gmail
+ .com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;X-NUM-GUESTS=0:mailto:manon@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=cedric2177@gmail.com;X-NUM-GUESTS=0:mailto:cedric2177@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=sylvie@rhsupport.ca;X-NUM-GUESTS=0:mailto:sylvie@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jsleboeuf3@gmail.com;X-NUM-GUESTS=0:mailto:jsleboeuf3@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=nancy@rhsupport.ca;X-NUM-GUESTS=0:mailto:nancy@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=martine@rhsupport.ca;X-NUM-GUESTS=0:mailto:martine@rhsupport.ca
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=dube_martin@hotmail.com;X-NUM-GUESTS=0:mailto:dube_martin@hotmail.c
+ om
+X-GOOGLE-CONFERENCE:https://meet.google.com/frb-nphj-rze
+X-MICROSOFT-CDO-OWNERAPPTID:-1100368573
+CREATED:20240126T151441Z
+DESCRIPTION:Postes internes à pourvoir à l'interne:\n\nReprésentant Bloom\n
+ Représentant RH Support\nRecruteur \nTechnicien comptable\n\n-::~:~::~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\n
+ Participer via Google Meet : https://meet.google.com/frb-nphj-rze\nOu compo
+ sez le : (CA) +1 289-434-8716 Code PIN : 286634449#\nPlus de numéros de tél
+ éphone: https://tel.meet/frb-nphj-rze?pin=4313625346317&hs=7\n\nPour en sav
+ oir plus sur Meet : https://support.google.com/a/users/answer/9282720\n\nVe
+ uillez ne pas modifier cette section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20240126T151441Z
+LOCATION:Centre communautaire Wilson\, 2 Rue Georges-Jules-Beaudet\, Coteau
+ -du-Lac\, QC J0P 1B0\, Canada
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Foire de l'emploi au Centre communautaire Wilson Coteau-du-Lac
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
