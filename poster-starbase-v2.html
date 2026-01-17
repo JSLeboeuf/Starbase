@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARBASE DOCTRINE — Poster V2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: 11in 17in;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #08080c;
+            color: #ffffff;
+            padding: 0.5in;
+            width: 11in;
+            min-height: 17in;
+            margin: 0 auto;
+        }
+
+        /* ========== HEADER ========== */
+        header {
+            text-align: center;
+            margin-bottom: 0.3in;
+            padding-bottom: 0.2in;
+            border-bottom: 4px solid #00ff88;
+        }
+
+        header h1 {
+            font-size: 52pt;
+            font-weight: 900;
+            letter-spacing: 0.15em;
+            background: linear-gradient(90deg, #00ff88 0%, #00d4ff 50%, #00ff88 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        header .tagline {
+            font-size: 18pt;
+            font-weight: 800;
+            color: #ff6b6b;
+            letter-spacing: 0.3em;
+        }
+
+        /* ========== 12 PRINCIPLES - HERO SECTION ========== */
+        .principles-section {
+            margin-bottom: 0.25in;
+        }
+
+        .principles-section h2 {
+            font-size: 11pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #00ff88;
+            margin-bottom: 12px;
+            padding-left: 4px;
+            border-left: 4px solid #00ff88;
+        }
+
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .principle {
+            background: linear-gradient(135deg, #12121a 0%, #0d0d12 100%);
+            border: 1px solid #222;
+            border-radius: 6px;
+            padding: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .principle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #00ff88, #00d4ff);
+        }
+
+        .principle-num {
+            font-size: 28pt;
+            font-weight: 900;
+            color: #00ff88;
+            opacity: 0.3;
+            position: absolute;
+            top: 4px;
+            right: 8px;
+            line-height: 1;
+        }
+
+        .principle h3 {
+            font-size: 11pt;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 4px;
+            letter-spacing: 0.02em;
+        }
+
+        .principle p {
+            font-size: 8pt;
+            color: #777;
+            line-height: 1.3;
+        }
+
+        /* ========== MIDDLE ROW - 3 COLUMNS ========== */
+        .middle-row {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr 1fr;
+            gap: 12px;
+            margin-bottom: 0.2in;
+        }
+
+        .section-box {
+            background: #0f0f14;
+            border: 1px solid #1a1a24;
+            border-radius: 6px;
+            padding: 12px;
+        }
+
+        .section-box h2 {
+            font-size: 9pt;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #000;
+            background: linear-gradient(90deg, #ffd700, #ffaa00);
+            padding: 6px 10px;
+            margin: -12px -12px 12px -12px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        /* Deadlines */
+        .deadlines {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .deadline {
+            flex: 1;
+        }
+
+        .deadline-num {
+            font-size: 32pt;
+            font-weight: 900;
+            color: #ff6b6b;
+            line-height: 1;
+        }
+
+        .deadline-label {
+            font-size: 7pt;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        /* 3 Outcomes */
+        .outcomes {
+            display: flex;
+            gap: 8px;
+        }
+
+        .outcome {
+            flex: 1;
+            text-align: center;
+            background: #1a1a24;
+            padding: 10px 6px;
+            border-radius: 4px;
+            border: 1px solid #252530;
+        }
+
+        .outcome-num {
+            font-size: 20pt;
+            font-weight: 900;
+            color: #ffd700;
+            line-height: 1;
+        }
+
+        .outcome-text {
+            font-size: 7pt;
+            color: #888;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .outcomes-intro {
+            font-size: 7pt;
+            color: #ff6b6b;
+            text-align: center;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        /* Anti-patterns */
+        .anti-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+        }
+
+        .anti {
+            background: #1a1a24;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 7pt;
+        }
+
+        .anti-bad {
+            color: #ff4444;
+            text-decoration: line-through;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .anti-good {
+            color: #00ff88;
+            font-weight: 700;
+        }
+
+        /* ========== FORMULAS ROW ========== */
+        .formulas-section {
+            margin-bottom: 0.2in;
+        }
+
+        .formulas-section h2 {
+            font-size: 9pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #00d4ff;
+            margin-bottom: 10px;
+            padding-left: 4px;
+            border-left: 4px solid #00d4ff;
+        }
+
+        .formulas-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+        }
+
+        .formula {
+            background: #0f0f14;
+            border: 1px solid #1a1a24;
+            border-radius: 4px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .formula-text {
+            font-size: 9pt;
+            font-weight: 800;
+            color: #00d4ff;
+            margin-bottom: 4px;
+        }
+
+        .formula-meaning {
+            font-size: 7pt;
+            color: #555;
+        }
+
+        /* ========== QUOTES + BIG QUOTE ROW ========== */
+        .bottom-row {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 12px;
+        }
+
+        .quotes-box h2 {
+            background: linear-gradient(90deg, #9933ff, #6600cc);
+        }
+
+        .quote {
+            padding: 8px;
+            margin-bottom: 6px;
+            background: #1a1a24;
+            border-left: 3px solid #9933ff;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .quote:last-child {
+            margin-bottom: 0;
+        }
+
+        .quote-text {
+            font-size: 8pt;
+            font-weight: 600;
+            font-style: italic;
+            color: #ccc;
+        }
+
+        /* Big Quote */
+        .big-quote-box {
+            background: linear-gradient(135deg, #0a1628 0%, #0f0f1a 100%);
+            border: 3px solid #00ff88;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .big-quote-text {
+            font-size: 22pt;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 0.03em;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .big-quote-sub {
+            font-size: 12pt;
+            color: #00ff88;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            margin-top: 0.15in;
+            text-align: center;
+            font-size: 7pt;
+            color: #333;
+            border-top: 1px solid #1a1a24;
+            padding-top: 8px;
+        }
+
+        /* ========== PRINT ========== */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>STARBASE</h1>
+        <div class="tagline">SPEED WINS. SPEED DOMINATES.</div>
+    </header>
+
+    <!-- 12 PRINCIPLES -->
+    <div class="principles-section">
+        <h2>Les 12 Principes d'Execution</h2>
+        <div class="principles-grid">
+            <div class="principle">
+                <div class="principle-num">01</div>
+                <h3>Speed > Perfection</h3>
+                <p>Trop lent > Imparfait</p>
+            </div>
+            <div class="principle">
+                <div class="principle-num">02</div>
+                <h3>Accelerate Like Hell</h3>
+                <p>Delete the dumb requirements</p>
+            </div>
+            <div class="principle">
+                <div class="principle-num">03</div>
+                <h3>One Owner</h3>
+                <p>1 personne, pas un comite</p>
+            </div>
+            <div class="principle">
+                <div class="principle-num">04</div>
+                <h3>Chainsaw</h3>
+                <p>Bureaucratie = tronconneuse</p>
+            </div>
+            <div class="principle">
+                <div class="principle-num">05</div>
+                <h3>IA-First</h3>
+                <p>Transformation, pas pixie dust</p>
+            </div>
+            <div class="principle">
+                <div class="principle-num">06</div>
+                <h3>Inject Capital</h3>
+                <p>Sous-investir = 10x le cout</p>
+            </div>
+            <div class="principle">
+                <div class="principle-num">07</div>
+                <h3>Weekly Review</h3>
+                <p>What did you accomplish?</p>
+            </div>
+            <div class="principle">
+                <div class="principle-num">08</div>
+                <h3>Fail > Learn > Ship</h3>
+                <p>Never fail = never learn</p>
+            </div>
+            <div class="principle">
+                <div class="principle-num">09</div>
+                <h3>Barriers = Risks</h3>
+                <p>Obstacles a exploser</p>
+            </div>
+            <div class="principle">
+                <div class="principle-num">10</div>
+                <h3>No Sacred Cows</h3>
+                <p>Tout peut mourir</p>
+            </div>
+            <div class="principle">
+                <div class="principle-num">11</div>
+                <h3>Wartime Mode</h3>
+                <p>Course aux armements</p>
+            </div>
+            <div class="principle">
+                <div class="principle-num">12</div>
+                <h3>If Not Now, Too Late</h3>
+                <p>La fenetre se ferme</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MIDDLE ROW -->
+    <div class="middle-row">
+        <div class="section-box">
+            <h2>Deadlines</h2>
+            <div class="deadlines">
+                <div class="deadline">
+                    <div class="deadline-num">7j</div>
+                    <div class="deadline-label">Decisions</div>
+                </div>
+                <div class="deadline">
+                    <div class="deadline-num">30j</div>
+                    <div class="deadline-label">Livrables</div>
+                </div>
+                <div class="deadline">
+                    <div class="deadline-num">1sem</div>
+                    <div class="deadline-label">Revue</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-box">
+            <h2>3 Outcomes Only - Sinon Kill It</h2>
+            <div class="outcomes">
+                <div class="outcome">
+                    <div class="outcome-num">1</div>
+                    <div class="outcome-text">Gamechanging<br>Tech / Skill</div>
+                </div>
+                <div class="outcome">
+                    <div class="outcome-num">2</div>
+                    <div class="outcome-text">Scalable<br>Product</div>
+                </div>
+                <div class="outcome">
+                    <div class="outcome-num">3</div>
+                    <div class="outcome-text">New Way<br>of Doing</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-box">
+            <h2>Anti-Patterns</h2>
+            <div class="anti-grid">
+                <div class="anti">
+                    <span class="anti-bad">"On attend les infos"</span>
+                    <span class="anti-good">80% suffit</span>
+                </div>
+                <div class="anti">
+                    <span class="anti-bad">"L'equipe decide"</span>
+                    <span class="anti-good">1 owner</span>
+                </div>
+                <div class="anti">
+                    <span class="anti-bad">"On verra plus tard"</span>
+                    <span class="anti-good">7 jours max</span>
+                </div>
+                <div class="anti">
+                    <span class="anti-bad">"C'est le process"</span>
+                    <span class="anti-good">Chainsaw</span>
+                </div>
+                <div class="anti">
+                    <span class="anti-bad">"J'ai ete occupe"</span>
+                    <span class="anti-good">T'as livre quoi?</span>
+                </div>
+                <div class="anti">
+                    <span class="anti-bad">"C'est interessant"</span>
+                    <span class="anti-good">3 outcomes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORMULAS -->
+    <div class="formulas-section">
+        <h2>Formules-Totems</h2>
+        <div class="formulas-grid">
+            <div class="formula">
+                <div class="formula-text">"Accelerate like hell"</div>
+                <div class="formula-meaning">Lenteur = illegitime</div>
+            </div>
+            <div class="formula">
+                <div class="formula-text">"Work somewhere else"</div>
+                <div class="formula-meaning">Ultimatum bloqueurs</div>
+            </div>
+            <div class="formula">
+                <div class="formula-text">"With a chainsaw"</div>
+                <div class="formula-meaning">Anti-bureaucratie</div>
+            </div>
+            <div class="formula">
+                <div class="formula-text">"Not pixie dust"</div>
+                <div class="formula-meaning">Pas de cosmetique</div>
+            </div>
+            <div class="formula">
+                <div class="formula-text">"Data hoarding = risk"</div>
+                <div class="formula-meaning">Partage par defaut</div>
+            </div>
+            <div class="formula">
+                <div class="formula-text">"No sacred cows"</div>
+                <div class="formula-meaning">Tout questionnable</div>
+            </div>
+            <div class="formula">
+                <div class="formula-text">"Warp speed"</div>
+                <div class="formula-meaning">Le standard</div>
+            </div>
+            <div class="formula">
+                <div class="formula-text">"If not now"</div>
+                <div class="formula-meaning">Trop tard</div>
+            </div>
+            <div class="formula">
+                <div class="formula-text">"Fastest wins"</div>
+                <div class="formula-meaning">Innovateur rapide</div>
+            </div>
+            <div class="formula">
+                <div class="formula-text">"Never stop"</div>
+                <div class="formula-meaning">Always iterating</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM ROW -->
+    <div class="bottom-row">
+        <div class="section-box quotes-box">
+            <h2>Citations Cles</h2>
+            <div class="quote">
+                <div class="quote-text">"The fastest innovator and iterator will be the winner."</div>
+            </div>
+            <div class="quote">
+                <div class="quote-text">"Barriers are operational risks. We are blowing them up."</div>
+            </div>
+            <div class="quote">
+                <div class="quote-text">"The cycle never stops. Always iterating."</div>
+            </div>
+            <div class="quote">
+                <div class="quote-text">"No one can out-innovate an entrepreneur liberated from bureaucracy."</div>
+            </div>
+        </div>
+
+        <div class="big-quote-box">
+            <div class="big-quote-text">"WE WILL NOT STOP.<br>WE WILL NOT BACK DOWN."</div>
+            <div class="big-quote-sub">QU'AS-TU ACCOMPLI CETTE SEMAINE?</div>
+        </div>
+    </div>
+
+    <footer>
+        STARBASE DOCTRINE | github.com/JSLeboeuf/Starbase | Speed wins. Speed dominates.
+    </footer>
+
+</body>
+</html>
